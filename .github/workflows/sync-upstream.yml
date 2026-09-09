@@ -1,15 +1,13 @@
 name: Sync upstream and overlay Prompt Decommitment
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
   sync:
-    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout target repository
@@ -21,21 +19,33 @@ jobs:
         shell: bash
         run: |
           set -euxo pipefail
-          cp .sync/prompt_decommitment_patch.zip /tmp/prompt_decommitment_patch.zip
-          cp .github/workflows/sync-upstream.yml /tmp/sync-upstream.yml
+          mkdir -p /tmp/overlay
+          overlay_paths=(
+            PATCH_MANIFEST.md
+            gr_ktc/prompt_decommitment.py
+            gr_ktc/local_qwen_vl_provider.py
+            scripts/run_mineexplorer_prompt_decommitment.py
+            scripts/analyze_prompt_decommitment.py
+            scripts/__init__.py
+            configs/prompt_decommitment_16gb.yaml
+            docs/PROMPT_DECOMMITMENT_EXPERIMENT.md
+            docs/superpowers/specs/2026-09-08-prompt-decommitment-design.md
+            docs/superpowers/plans/2026-09-08-prompt-decommitment.md
+            tests/test_prompt_decommitment.py
+            tests/test_local_qwen_vl_provider.py
+            tests/test_prompt_decommitment_analysis.py
+            .github/workflows/sync-upstream.yml
+          )
+          for path in "${overlay_paths[@]}"; do
+            test -f "$path"
+            mkdir -p "/tmp/overlay/$(dirname "$path")"
+            cp "$path" "/tmp/overlay/$path"
+          done
 
           git clone https://github.com/Yunbo-max/gr-ktc-minecraft.git /tmp/upstream
           git -C /tmp/upstream checkout f69633fabf22ccd50b3dd8baed59e5a00525dd3f
-
           rsync -a --delete --exclude='.git' /tmp/upstream/ ./
-
-          rm -rf /tmp/pdc
-          mkdir -p /tmp/pdc
-          unzip -q /tmp/prompt_decommitment_patch.zip -d /tmp/pdc
-          rsync -a --exclude='gr_ktc/__init__.py' /tmp/pdc/prompt_decommitment_patch/ ./
-
-          mkdir -p .github/workflows
-          cp /tmp/sync-upstream.yml .github/workflows/sync-upstream.yml
+          rsync -a /tmp/overlay/ ./
           rm -rf .sync
 
           python - <<'PY'
