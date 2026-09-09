@@ -69,6 +69,7 @@ jobs:
           set -euxo pipefail
           python -m pip install --upgrade pip
           python -m pip install pytest pillow numpy
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
           python -m compileall -q acquisition evaluation gr_ktc scripts tests
           PYTHONPATH=. pytest -q \
             tests/test_prompt_decommitment.py \
