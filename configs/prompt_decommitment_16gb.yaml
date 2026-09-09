@@ -1,0 +1,36 @@
+method: prompt_decommitment
+model:
+  id: Qwen3-VL-8B-Instruct
+  precision: nf4
+  gpu_memory_gib: 15
+  cpu_memory_gib: 48
+mineexplorer:
+  repo: https://github.com/meituan-longcat/MineExplorer
+  commit: cca4c5ed4b857ecf554bd51902ca9e01d359f383
+  frame_size: 20
+  loading_command_steps: 20
+conditions:
+  - base
+  - reflection
+  - decommit_ignore
+  - decommit
+pilot:
+  hop_counts: [1, 2, 3, 4]
+  per_hop: 3
+  max_steps: 200
+  temperature: 0.0
+  max_new_tokens: 192
+  seed: 42
+confirmatory:
+  hop_counts: [1, 2, 3, 4]
+  per_hop: 6
+  max_steps: 1800
+  temperature: 0.7
+  max_new_tokens: 192
+  seeds: [42, 43, 44]
+primary_metrics:
+  - task_success_rate
+  - milestone_success_rate
+mechanism_comparisons:
+  - decommit_minus_reflection
+  - decommit_minus_decommit_ignore
