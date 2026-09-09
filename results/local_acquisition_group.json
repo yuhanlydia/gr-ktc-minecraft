@@ -1,0 +1,14 @@
+{
+  "protocol": "local-voyager-acquisition-v1",
+  "group_id": "grp_8332f67eea5f341b",
+  "rollouts": 4,
+  "scores": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "mixed_outcome": false,
+  "files": 17,
+  "pool": "data/acquisition/local_t1_k4"
+}

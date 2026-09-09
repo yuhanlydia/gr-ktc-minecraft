@@ -1,0 +1,139 @@
+{
+  "protocol": "real-qwen-four-ideas-mechanism-v1",
+  "contexts": [
+    "0281",
+    "0299"
+  ],
+  "state_weight_reachability": [
+    {
+      "rank": 1,
+      "rho_shared": 0.02263096860304925,
+      "rho_individual_mean": 0.25370200788527186
+    },
+    {
+      "rank": 2,
+      "rho_shared": 0.13308984833666715,
+      "rho_individual_mean": 0.43497675124152047
+    },
+    {
+      "rank": 4,
+      "rho_shared": 0.20979409382458591,
+      "rho_individual_mean": 0.5943695526661386
+    },
+    {
+      "rank": 8,
+      "rho_shared": 0.4754708271011665,
+      "rho_individual_mean": 0.7493799299212471
+    },
+    {
+      "rank": 16,
+      "rho_shared": 0.5743626272991275,
+      "rho_individual_mean": 0.849184524987477
+    },
+    {
+      "rank": 32,
+      "rho_shared": 0.797109050411919,
+      "rho_individual_mean": 0.9412578588105525
+    },
+    {
+      "rank": 64,
+      "rho_shared": 0.9281308875385198,
+      "rho_individual_mean": 0.9907922300808034
+    }
+  ],
+  "reachable_unreachable_decomposition": [
+    {
+      "rank": 1,
+      "max_relative_reconstruction_error": 8.048234967361623e-09
+    },
+    {
+      "rank": 2,
+      "max_relative_reconstruction_error": 6.521818196603135e-09
+    },
+    {
+      "rank": 4,
+      "max_relative_reconstruction_error": 6.1759553027229686e-09
+    },
+    {
+      "rank": 8,
+      "max_relative_reconstruction_error": 5.6240332391155334e-09
+    },
+    {
+      "rank": 16,
+      "max_relative_reconstruction_error": 5.017240845006654e-09
+    },
+    {
+      "rank": 32,
+      "max_relative_reconstruction_error": 3.4479226140859964e-09
+    },
+    {
+      "rank": 64,
+      "max_relative_reconstruction_error": 1.407786665019728e-09
+    }
+  ],
+  "kv_conditioned_lora_basis": [
+    {
+      "bases": 1,
+      "rho": 0.47547084198937006,
+      "coefficients": [
+        [
+          1.0
+        ],
+        [
+          1.0
+        ]
+      ]
+    },
+    {
+      "bases": 2,
+      "rho": 0.7270763510619694,
+      "coefficients": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "privileged_future": [
+    {
+      "horizon": 1,
+      "current_to_privileged_loss": 5.747140763290304e-09
+    },
+    {
+      "horizon": 2,
+      "current_to_privileged_loss": 0.218567855656147
+    },
+    {
+      "horizon": 4,
+      "current_to_privileged_loss": 0.35501621663570404
+    },
+    {
+      "horizon": 8,
+      "current_to_privileged_loss": 0.4411346763372421
+    }
+  ],
+  "latent_population": [
+    {
+      "scene_id": "0281",
+      "weights": [
+        1.0,
+        1.956792433099072e-15
+      ],
+      "top_item": "0281"
+    },
+    {
+      "scene_id": "0299",
+      "weights": [
+        1.956792433099072e-15,
+        1.0
+      ],
+      "top_item": "0299"
+    }
+  ],
+  "scope_warning": "Uses two real causal quality-KV teacher contexts. Conditional/future/population results are mechanism checks; broader context and behavior evaluation remains required."
+}

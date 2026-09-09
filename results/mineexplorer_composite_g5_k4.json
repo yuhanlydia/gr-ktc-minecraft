@@ -1,0 +1,99 @@
+{
+  "protocol": "mineexplorer-local-pilot-v1",
+  "difficulty": "composite",
+  "groups": 5,
+  "trajectories": 20,
+  "mixed_groups": 2,
+  "successes": 2,
+  "parser_valid": 20,
+  "manifest_files": 85,
+  "peak_gpu_gib": 16.414616107940674,
+  "pool": "data/acquisition/mineexplorer_composite_g5_k4",
+  "group_results": [
+    {
+      "scene_id": "0000",
+      "task": "First craft oak planks from your oak logs, then use the nearby crafting table to craft oak stairs from those planks.",
+      "scores": [
+        1.0,
+        0.5,
+        0.0,
+        0.5
+      ],
+      "advantages": [
+        1.4142094850540161,
+        0.0,
+        -1.4142094850540161,
+        0.0
+      ],
+      "mixed_outcome": true
+    },
+    {
+      "scene_id": "0044",
+      "task": "First, mine some birch logs nearby. Use the crafting table in your inventory to craft a wooden pickaxe from the birch wood. Then find and mine the red nether bricks.",
+      "scores": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0069",
+      "task": "Mine the poppy flower, then use the nearby birch logs and crafting table to craft a birch button.",
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0081",
+      "task": "You have 4 oak logs in your inventory and there is a crafting table nearby on a stone platform. First, craft oak logs into oak planks. Then, use the crafting table to craft an oak door from the oak planks.",
+      "scores": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0097",
+      "task": "Craft an iron shovel using the crafting table, then use it to: mine the yellow concrete powder blocks, mine the red sand blocks, and dig snow layers to collect snowballs and craft a snow block.",
+      "scores": [
+        0.0,
+        0.75,
+        1.0,
+        0.75
+      ],
+      "advantages": [
+        -1.6666622161865234,
+        0.3333324193954468,
+        0.9999973177909851,
+        0.3333324193954468
+      ],
+      "mixed_outcome": true
+    }
+  ]
+}

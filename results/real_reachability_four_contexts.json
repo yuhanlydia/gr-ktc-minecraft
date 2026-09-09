@@ -1,0 +1,46 @@
+{
+  "protocol": "real-qwen-kv-reachability-data-v1",
+  "model": "Qwen3-VL-8B-Instruct",
+  "precision": "bf16",
+  "layer": 24,
+  "contexts": [
+    {
+      "scene_id": "0299",
+      "task_text": "You are in a Nether chamber. First, find and mine the nether quartz ore (brownish blocks with white streaks in the netherrack walls). Then find and mine the smooth white quartz block.",
+      "prompt_tokens": 392,
+      "response_tokens": 43,
+      "aligned_tokens": 43,
+      "feature_dim": 4096
+    },
+    {
+      "scene_id": "0391",
+      "task_text": "You have acacia logs in your inventory. First craft acacia planks from the logs, then use the nearby crafting table to craft acacia stairs from the planks.",
+      "prompt_tokens": 386,
+      "response_tokens": 42,
+      "aligned_tokens": 42,
+      "feature_dim": 4096
+    },
+    {
+      "scene_id": "0499",
+      "task_text": "Mine oak planks from the nearby wooden hut using your axe, then craft sticks from the planks you collected.",
+      "prompt_tokens": 373,
+      "response_tokens": 39,
+      "aligned_tokens": 39,
+      "feature_dim": 4096
+    },
+    {
+      "scene_id": "0549",
+      "task_text": "First, craft birch planks from the birch logs in your inventory. Then, craft a dark oak sign using dark oak planks (crafted from your dark oak logs) and sticks (crafted from your birch planks). Use the nearby crafting table for the sign recipe.",
+      "prompt_tokens": 416,
+      "response_tokens": 103,
+      "aligned_tokens": 103,
+      "feature_dim": 4096
+    }
+  ],
+  "peak_gpu_gib": 16.85773801803589,
+  "feature_semantics": "no-memory residual stream entering selected text layer",
+  "target_semantics": "matched quality-KV causal output hidden shift",
+  "source": "results/fast_kv_four_context_acquisition.json",
+  "memory_input": "results/fast_kv_four_context_memories.safetensors",
+  "scope": "first-order residual-stream proxy; actual LoRA optimization is a separate gate"
+}

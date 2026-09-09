@@ -1,0 +1,139 @@
+{
+  "protocol": "peam-compatible-local-qwen-report-v1",
+  "audit": {
+    "complete": true,
+    "trials": 99,
+    "unique_trials": 99,
+    "paired_world_restore": true,
+    "max_retries": 4,
+    "generation_caps": [
+      512,
+      2048
+    ],
+    "lower_cap_truncations": 0,
+    "peam_2048_cap_hits": 1
+  },
+  "methods": {
+    "base": {
+      "successes": 6,
+      "trials": 33,
+      "success_rate": 0.18181818181818182,
+      "wilson_95ci": [
+        0.08610768208940667,
+        0.3438823163466992
+      ],
+      "parser_valid": 110,
+      "calls": 116,
+      "parser_valid_rate": 0.9482758620689655,
+      "median_call_latency_seconds": 18.538267949945293,
+      "tokens_per_task": 367.42424242424244
+    },
+    "control": {
+      "successes": 3,
+      "trials": 33,
+      "success_rate": 0.09090909090909091,
+      "wilson_95ci": [
+        0.03140394152458165,
+        0.2357260564646973
+      ],
+      "parser_valid": 123,
+      "calls": 123,
+      "parser_valid_rate": 1.0,
+      "median_call_latency_seconds": 30.58663346315734,
+      "tokens_per_task": 275.3333333333333
+    },
+    "full": {
+      "successes": 5,
+      "trials": 33,
+      "success_rate": 0.15151515151515152,
+      "wilson_95ci": [
+        0.06650457281607566,
+        0.30919875880442127
+      ],
+      "parser_valid": 123,
+      "calls": 123,
+      "parser_valid_rate": 1.0,
+      "median_call_latency_seconds": 23.25396624999121,
+      "tokens_per_task": 245.57575757575756
+    }
+  },
+  "per_task_successes_out_of_3": {
+    "T1": {
+      "base": 3,
+      "control": 0,
+      "full": 2
+    },
+    "T2": {
+      "base": 0,
+      "control": 0,
+      "full": 0
+    },
+    "T3": {
+      "base": 0,
+      "control": 0,
+      "full": 0
+    },
+    "T4": {
+      "base": 0,
+      "control": 0,
+      "full": 0
+    },
+    "T5": {
+      "base": 0,
+      "control": 0,
+      "full": 0
+    },
+    "T6": {
+      "base": 3,
+      "control": 3,
+      "full": 3
+    },
+    "T7": {
+      "base": 0,
+      "control": 0,
+      "full": 0
+    },
+    "T8": {
+      "base": 0,
+      "control": 0,
+      "full": 0
+    },
+    "T9": {
+      "base": 0,
+      "control": 0,
+      "full": 0
+    },
+    "T10": {
+      "base": 0,
+      "control": 0,
+      "full": 0
+    },
+    "T11": {
+      "base": 0,
+      "control": 0,
+      "full": 0
+    }
+  },
+  "comparisons": {
+    "full_vs_control": {
+      "left_only": 2,
+      "right_only": 0,
+      "mcnemar_two_sided_p": 0.5
+    },
+    "full_vs_base": {
+      "left_only": 0,
+      "right_only": 1,
+      "mcnemar_two_sided_p": 1.0
+    },
+    "control_vs_base": {
+      "left_only": 0,
+      "right_only": 3,
+      "mcnemar_two_sided_p": 0.25
+    }
+  },
+  "reference_only": {
+    "voyager_reported": "18/33",
+    "peam_reported": "23/33"
+  },
+  "claim_boundary": "Local Qwen-only stress test with published PEAM task/seed/retry/verifier structure. It is not an official PEAM reproduction and is not paired with the paper's GPT-4o tier."
+}

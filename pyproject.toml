@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gr-ktc-minecraft"
+version = "0.1.0"
+description = "Group-relative KV trajectory consolidation for Minecraft agents"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pyyaml>=6",
+  "safetensors>=0.4",
+  "torch>=2.2",
+]
+
+[project.optional-dependencies]
+train = [
+  "accelerate>=1.0",
+  "bitsandbytes>=0.43",
+  "peft>=0.13",
+  "transformers>=4.57",
+]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+include = ["gr_ktc*", "acquisition*", "evaluation*", "peam_repro*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+

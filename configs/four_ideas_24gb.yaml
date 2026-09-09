@@ -1,0 +1,53 @@
+hardware:
+  gpu: rtx_3090_24gb
+  inference_dtype: bfloat16
+  train_quantization: nf4
+  gradient_checkpointing: true
+  offload_analysis_to_cpu: true
+
+model:
+  id: Qwen/Qwen3-VL-8B-Instruct
+  local_path: models/Qwen3-VL-8B-Instruct
+  max_new_tokens: 2048
+
+ideas:
+  state_weight_reachability:
+    ranks: [1, 2, 4, 8, 16, 32, 64]
+    ridge: 0.001
+    probe_contexts: 32
+  kv_conditioned_lora_basis:
+    bases: [1, 2, 4, 8]
+    rank: 8
+    temperature: 1.0
+  privileged_future_distillation:
+    horizons: [1, 2, 4, 8]
+    horizon_decay: 0.9
+    real_teacher: same_model_verified_future
+    lora_rank: 32
+    steps: 100
+    future_weight: 0.5
+  latent_population:
+    population_sizes: [8, 16, 32, 64]
+    top_k: 8
+    mutation_std: [0.0, 0.01]
+    real_archive_contexts: ["0299", "0391", "0499", "0549"]
+    prompt_layer: 24
+    retrieval_temperature: 0.05
+    memory_tokens: 4
+
+real_stages:
+  acquisition_contexts: 4
+  rollouts_per_context: 4
+  causal_layer: 24
+  behavior_seeds_per_split: 2
+  external_scene_ids: ["0000", "0034", "0044", "0065"]
+
+tasks:
+  source: data/MineExplorer-Benchmark/benchmark.jsonl
+  use_all_scenarios: true
+  split_by_hops: true
+  split_by_difficulty: true
+
+runtime:
+  default_command: "python scripts/run_new_ideas.py --scenarios data/MineExplorer-Benchmark/benchmark.jsonl --output results/four_new_ideas.json"
+  no_external_api: true

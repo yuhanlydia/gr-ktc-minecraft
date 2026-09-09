@@ -1,0 +1,799 @@
+{
+  "protocol": "cross-context-consolidation-misalignment-raw-replication-v2",
+  "scenes": [
+    "0000",
+    "0076",
+    "0251",
+    "0281",
+    "0299",
+    "0391",
+    "0499",
+    "0549"
+  ],
+  "layer": 24,
+  "subspace_rank": 2,
+  "lora_rank": 8,
+  "native_correction": "each phase-aligned successful raw KV trajectory - failed raw KV barycenter",
+  "basis_axis": "right singular vectors in latent feature space",
+  "pairs": [
+    {
+      "first": "0000",
+      "second": "0076",
+      "rho_individual_mean": 0.8202078919207899,
+      "rho_shared": 0.3948811527342241,
+      "interference": 0.4253267391865658,
+      "key_angles_rad": [
+        1.2601653337478638,
+        1.4369124174118042
+      ],
+      "key_grassmann": 1.911212682723999,
+      "value_angles_rad": [
+        1.2930433750152588,
+        1.4444633722305298
+      ],
+      "value_grassmann": 1.9386686086654663,
+      "joint_angles_rad": [
+        1.3358983993530273,
+        1.5073022842407227
+      ],
+      "joint_grassmann": 2.01409649848938,
+      "kv_mean_grassmann": 1.9249406456947327
+    },
+    {
+      "first": "0000",
+      "second": "0251",
+      "rho_individual_mean": 0.7632844935006708,
+      "rho_shared": 0.34948597253490854,
+      "interference": 0.4137985209657623,
+      "key_angles_rad": [
+        0.4535375237464905,
+        1.2976527214050293
+      ],
+      "key_grassmann": 1.3746267557144165,
+      "value_angles_rad": [
+        0.8590252995491028,
+        1.1333175897598267
+      ],
+      "value_grassmann": 1.422087550163269,
+      "joint_angles_rad": [
+        0.612029492855072,
+        1.127400279045105
+      ],
+      "joint_grassmann": 1.2828139066696167,
+      "kv_mean_grassmann": 1.3983571529388428
+    },
+    {
+      "first": "0000",
+      "second": "0281",
+      "rho_individual_mean": 0.7273414179519238,
+      "rho_shared": 0.3229158999306436,
+      "interference": 0.40442551802128013,
+      "key_angles_rad": [
+        0.9545350074768066,
+        1.5324307680130005
+      ],
+      "key_grassmann": 1.8054033517837524,
+      "value_angles_rad": [
+        1.2054656744003296,
+        1.471171259880066
+      ],
+      "value_grassmann": 1.901970624923706,
+      "joint_angles_rad": [
+        1.045152187347412,
+        1.52809476852417
+      ],
+      "joint_grassmann": 1.8513283729553223,
+      "kv_mean_grassmann": 1.8536869883537292
+    },
+    {
+      "first": "0000",
+      "second": "0299",
+      "rho_individual_mean": 0.7829319462782554,
+      "rho_shared": 0.3927781487891565,
+      "interference": 0.39015379748909884,
+      "key_angles_rad": [
+        0.6371665596961975,
+        0.9734067320823669
+      ],
+      "key_grassmann": 1.1634010076522827,
+      "value_angles_rad": [
+        0.9712523221969604,
+        1.5671460628509521
+      ],
+      "value_grassmann": 1.8437130451202393,
+      "joint_angles_rad": [
+        0.7646446824073792,
+        1.0846904516220093
+      ],
+      "joint_grassmann": 1.3271152973175049,
+      "kv_mean_grassmann": 1.503557026386261
+    },
+    {
+      "first": "0000",
+      "second": "0391",
+      "rho_individual_mean": 0.7796689411591233,
+      "rho_shared": 0.22907603224690398,
+      "interference": 0.5505929089122193,
+      "key_angles_rad": [
+        0.28728991746902466,
+        0.42106500267982483
+      ],
+      "key_grassmann": 0.5097364187240601,
+      "value_angles_rad": [
+        0.35716474056243896,
+        0.8460627794265747
+      ],
+      "value_grassmann": 0.918362021446228,
+      "joint_angles_rad": [
+        0.31218966841697693,
+        0.528739869594574
+      ],
+      "joint_grassmann": 0.6140262484550476,
+      "kv_mean_grassmann": 0.714049220085144
+    },
+    {
+      "first": "0000",
+      "second": "0499",
+      "rho_individual_mean": 0.7956809004592136,
+      "rho_shared": 0.32274484310095586,
+      "interference": 0.4729360573582577,
+      "key_angles_rad": [
+        1.5474399328231812,
+        1.5568886995315552
+      ],
+      "key_grassmann": 2.1951019763946533,
+      "value_angles_rad": [
+        1.3442306518554688,
+        1.5116008520126343
+      ],
+      "value_grassmann": 2.0228428840637207,
+      "joint_angles_rad": [
+        1.5352197885513306,
+        1.54845130443573
+      ],
+      "joint_grassmann": 2.18050479888916,
+      "kv_mean_grassmann": 2.108972430229187
+    },
+    {
+      "first": "0000",
+      "second": "0549",
+      "rho_individual_mean": 0.7341500554044305,
+      "rho_shared": 0.38539734839519435,
+      "interference": 0.3487527070092361,
+      "key_angles_rad": [
+        0.45585620403289795,
+        1.2069804668426514
+      ],
+      "key_grassmann": 1.290196418762207,
+      "value_angles_rad": [
+        0.8364745378494263,
+        1.1474915742874146
+      ],
+      "value_grassmann": 1.4200093746185303,
+      "joint_angles_rad": [
+        0.6090995073318481,
+        1.0628647804260254
+      ],
+      "joint_grassmann": 1.2250239849090576,
+      "kv_mean_grassmann": 1.3551028966903687
+    },
+    {
+      "first": "0076",
+      "second": "0251",
+      "rho_individual_mean": 0.8306277136740399,
+      "rho_shared": 0.5044934760343639,
+      "interference": 0.326134237639676,
+      "key_angles_rad": [
+        1.2149393558502197,
+        1.3365106582641602
+      ],
+      "key_grassmann": 1.8061944246292114,
+      "value_angles_rad": [
+        1.4061541557312012,
+        1.44071626663208
+      ],
+      "value_grassmann": 2.0131895542144775,
+      "joint_angles_rad": [
+        1.3149880170822144,
+        1.4213327169418335
+      ],
+      "joint_grassmann": 1.9363316297531128,
+      "kv_mean_grassmann": 1.9096919894218445
+    },
+    {
+      "first": "0076",
+      "second": "0281",
+      "rho_individual_mean": 0.7946846381252928,
+      "rho_shared": 0.47282275539902663,
+      "interference": 0.32186188272626615,
+      "key_angles_rad": [
+        1.2427034378051758,
+        1.4836453199386597
+      ],
+      "key_grassmann": 1.9353333711624146,
+      "value_angles_rad": [
+        1.380664587020874,
+        1.5248125791549683
+      ],
+      "value_grassmann": 2.05700945854187,
+      "joint_angles_rad": [
+        1.261733055114746,
+        1.4799219369888306
+      ],
+      "joint_grassmann": 1.9447722434997559,
+      "kv_mean_grassmann": 1.9961714148521423
+    },
+    {
+      "first": "0076",
+      "second": "0299",
+      "rho_individual_mean": 0.8502751664516242,
+      "rho_shared": 0.45061783612933315,
+      "interference": 0.399657330322291,
+      "key_angles_rad": [
+        1.2851145267486572,
+        1.5176113843917847
+      ],
+      "key_grassmann": 1.988633632659912,
+      "value_angles_rad": [
+        1.2498555183410645,
+        1.5326086282730103
+      ],
+      "value_grassmann": 1.97763192653656,
+      "joint_angles_rad": [
+        1.3347773551940918,
+        1.4685922861099243
+      ],
+      "joint_grassmann": 1.9845386743545532,
+      "kv_mean_grassmann": 1.983132779598236
+    },
+    {
+      "first": "0076",
+      "second": "0391",
+      "rho_individual_mean": 0.8470121613324921,
+      "rho_shared": 0.3818350426350672,
+      "interference": 0.46517711869742495,
+      "key_angles_rad": [
+        1.324764609336853,
+        1.4521050453186035
+      ],
+      "key_grassmann": 1.965606927871704,
+      "value_angles_rad": [
+        1.27734375,
+        1.5053625106811523
+      ],
+      "value_grassmann": 1.9742653369903564,
+      "joint_angles_rad": [
+        1.4209550619125366,
+        1.4954233169555664
+      ],
+      "joint_grassmann": 2.0628631114959717,
+      "kv_mean_grassmann": 1.9699361324310303
+    },
+    {
+      "first": "0076",
+      "second": "0499",
+      "rho_individual_mean": 0.8630241206325825,
+      "rho_shared": 0.43072825097674927,
+      "interference": 0.4322958696558332,
+      "key_angles_rad": [
+        1.5084611177444458,
+        1.5665143728256226
+      ],
+      "key_grassmann": 2.1747236251831055,
+      "value_angles_rad": [
+        1.3847554922103882,
+        1.53391695022583
+      ],
+      "value_grassmann": 2.0665063858032227,
+      "joint_angles_rad": [
+        1.5249104499816895,
+        1.5687748193740845
+      ],
+      "joint_grassmann": 2.1877858638763428,
+      "kv_mean_grassmann": 2.120615005493164
+    },
+    {
+      "first": "0076",
+      "second": "0549",
+      "rho_individual_mean": 0.8014932755777993,
+      "rho_shared": 0.47004989371352746,
+      "interference": 0.3314433818642718,
+      "key_angles_rad": [
+        1.2824679613113403,
+        1.449148416519165
+      ],
+      "key_grassmann": 1.9351370334625244,
+      "value_angles_rad": [
+        1.4007794857025146,
+        1.5098094940185547
+      ],
+      "value_grassmann": 2.0595407485961914,
+      "joint_angles_rad": [
+        1.4134867191314697,
+        1.4524768590927124
+      ],
+      "joint_grassmann": 2.0267298221588135,
+      "kv_mean_grassmann": 1.997338891029358
+    },
+    {
+      "first": "0251",
+      "second": "0281",
+      "rho_individual_mean": 0.7377612397051737,
+      "rho_shared": 0.448463796352497,
+      "interference": 0.2892974433526767,
+      "key_angles_rad": [
+        1.0340280532836914,
+        1.397218942642212
+      ],
+      "key_grassmann": 1.7382274866104126,
+      "value_angles_rad": [
+        1.2324302196502686,
+        1.2971771955490112
+      ],
+      "value_grassmann": 1.7892884016036987,
+      "joint_angles_rad": [
+        1.1118372678756714,
+        1.4037370681762695
+      ],
+      "joint_grassmann": 1.7907148599624634,
+      "kv_mean_grassmann": 1.7637579441070557
+    },
+    {
+      "first": "0251",
+      "second": "0299",
+      "rho_individual_mean": 0.7933517680315052,
+      "rho_shared": 0.4714678507063861,
+      "interference": 0.3218839173251191,
+      "key_angles_rad": [
+        0.7056609392166138,
+        1.4021954536437988
+      ],
+      "key_grassmann": 1.5697482824325562,
+      "value_angles_rad": [
+        0.9780097007751465,
+        1.5226008892059326
+      ],
+      "value_grassmann": 1.8096452951431274,
+      "joint_angles_rad": [
+        0.8318896889686584,
+        1.3610515594482422
+      ],
+      "joint_grassmann": 1.5951493978500366,
+      "kv_mean_grassmann": 1.6896967887878418
+    },
+    {
+      "first": "0251",
+      "second": "0391",
+      "rho_individual_mean": 0.7900887629123732,
+      "rho_shared": 0.37932234607345083,
+      "interference": 0.41076641683892234,
+      "key_angles_rad": [
+        0.46331578493118286,
+        1.3435401916503906
+      ],
+      "key_grassmann": 1.4211832284927368,
+      "value_angles_rad": [
+        0.8726243376731873,
+        1.0027798414230347
+      ],
+      "value_grassmann": 1.329300880432129,
+      "joint_angles_rad": [
+        0.6302323341369629,
+        1.1473610401153564
+      ],
+      "joint_grassmann": 1.3090569972991943,
+      "kv_mean_grassmann": 1.3752420544624329
+    },
+    {
+      "first": "0251",
+      "second": "0499",
+      "rho_individual_mean": 0.8061007222124634,
+      "rho_shared": 0.501175254708408,
+      "interference": 0.30492546750405547,
+      "key_angles_rad": [
+        1.5162099599838257,
+        1.5550631284713745
+      ],
+      "key_grassmann": 2.171891689300537,
+      "value_angles_rad": [
+        1.4725005626678467,
+        1.5268940925598145
+      ],
+      "value_grassmann": 2.1212410926818848,
+      "joint_angles_rad": [
+        1.5239676237106323,
+        1.5673819780349731
+      ],
+      "joint_grassmann": 2.1861298084259033,
+      "kv_mean_grassmann": 2.146566390991211
+    },
+    {
+      "first": "0251",
+      "second": "0549",
+      "rho_individual_mean": 0.7445698771576803,
+      "rho_shared": 0.4542541993881378,
+      "interference": 0.2903156777695425,
+      "key_angles_rad": [
+        0.43133631348609924,
+        1.4234139919281006
+      ],
+      "key_grassmann": 1.4873325824737549,
+      "value_angles_rad": [
+        0.8249760270118713,
+        1.3209222555160522
+      ],
+      "value_grassmann": 1.5573762655258179,
+      "joint_angles_rad": [
+        0.5655110478401184,
+        1.3253685235977173
+      ],
+      "joint_grassmann": 1.4409734010696411,
+      "kv_mean_grassmann": 1.5223544239997864
+    },
+    {
+      "first": "0281",
+      "second": "0299",
+      "rho_individual_mean": 0.7574086924827581,
+      "rho_shared": 0.5037798043047406,
+      "interference": 0.25362888817801754,
+      "key_angles_rad": [
+        0.7918412089347839,
+        1.4976861476898193
+      ],
+      "key_grassmann": 1.6941299438476562,
+      "value_angles_rad": [
+        1.0155435800552368,
+        1.394760012626648
+      ],
+      "value_grassmann": 1.7253071069717407,
+      "joint_angles_rad": [
+        0.8407235145568848,
+        1.540104627609253
+      ],
+      "joint_grassmann": 1.7546334266662598,
+      "kv_mean_grassmann": 1.7097185254096985
+    },
+    {
+      "first": "0281",
+      "second": "0391",
+      "rho_individual_mean": 0.7541456873636261,
+      "rho_shared": 0.3745239298461879,
+      "interference": 0.3796217575174382,
+      "key_angles_rad": [
+        0.952492356300354,
+        1.5414186716079712
+      ],
+      "key_grassmann": 1.8119639158248901,
+      "value_angles_rad": [
+        1.1604328155517578,
+        1.3813514709472656
+      ],
+      "value_grassmann": 1.8040887117385864,
+      "joint_angles_rad": [
+        1.0316530466079712,
+        1.5140085220336914
+      ],
+      "joint_grassmann": 1.8320834636688232,
+      "kv_mean_grassmann": 1.8080263137817383
+    },
+    {
+      "first": "0281",
+      "second": "0499",
+      "rho_individual_mean": 0.7701576466637163,
+      "rho_shared": 0.4116313646599671,
+      "interference": 0.35852628200374925,
+      "key_angles_rad": [
+        1.5013729333877563,
+        1.524803876876831
+      ],
+      "key_grassmann": 2.1398942470550537,
+      "value_angles_rad": [
+        1.4446176290512085,
+        1.5245811939239502
+      ],
+      "value_grassmann": 2.100301742553711,
+      "joint_angles_rad": [
+        1.5076593160629272,
+        1.5281134843826294
+      ],
+      "joint_grassmann": 2.1466643810272217,
+      "kv_mean_grassmann": 2.1200979948043823
+    },
+    {
+      "first": "0281",
+      "second": "0549",
+      "rho_individual_mean": 0.7086268016089332,
+      "rho_shared": 0.4513707558511606,
+      "interference": 0.2572560457577726,
+      "key_angles_rad": [
+        0.9166897535324097,
+        1.428892970085144
+      ],
+      "key_grassmann": 1.6976616382598877,
+      "value_angles_rad": [
+        1.0678017139434814,
+        1.5240024328231812
+      ],
+      "value_grassmann": 1.8608556985855103,
+      "joint_angles_rad": [
+        0.9642286896705627,
+        1.4883605241775513
+      ],
+      "joint_grassmann": 1.7734018564224243,
+      "kv_mean_grassmann": 1.779258668422699
+    },
+    {
+      "first": "0299",
+      "second": "0391",
+      "rho_individual_mean": 0.8097362156899576,
+      "rho_shared": 0.43807367368816397,
+      "interference": 0.3716625420017936,
+      "key_angles_rad": [
+        0.6351771354675293,
+        0.9824330806732178
+      ],
+      "key_grassmann": 1.1698822975158691,
+      "value_angles_rad": [
+        0.9632149934768677,
+        1.4879146814346313
+      ],
+      "value_grassmann": 1.7724765539169312,
+      "joint_angles_rad": [
+        0.7655398845672607,
+        1.0643353462219238
+      ],
+      "joint_grassmann": 1.3110533952713013,
+      "kv_mean_grassmann": 1.4711794257164001
+    },
+    {
+      "first": "0299",
+      "second": "0499",
+      "rho_individual_mean": 0.8257481749900479,
+      "rho_shared": 0.3969046413992998,
+      "interference": 0.4288435335907481,
+      "key_angles_rad": [
+        1.4053765535354614,
+        1.5673902034759521
+      ],
+      "key_grassmann": 2.1051828861236572,
+      "value_angles_rad": [
+        1.4508824348449707,
+        1.550135850906372
+      ],
+      "value_grassmann": 2.1232006549835205,
+      "joint_angles_rad": [
+        1.451430082321167,
+        1.5574206113815308
+      ],
+      "joint_grassmann": 2.1288983821868896,
+      "kv_mean_grassmann": 2.114191770553589
+    },
+    {
+      "first": "0299",
+      "second": "0549",
+      "rho_individual_mean": 0.7642173299352647,
+      "rho_shared": 0.47434290686374825,
+      "interference": 0.28987442307151645,
+      "key_angles_rad": [
+        0.6403676867485046,
+        1.517600655555725
+      ],
+      "key_grassmann": 1.6471741199493408,
+      "value_angles_rad": [
+        1.0551753044128418,
+        1.482252597808838
+      ],
+      "value_grassmann": 1.8194690942764282,
+      "joint_angles_rad": [
+        0.7685397863388062,
+        1.4780417680740356
+      ],
+      "joint_grassmann": 1.6659114360809326,
+      "kv_mean_grassmann": 1.7333216071128845
+    },
+    {
+      "first": "0391",
+      "second": "0499",
+      "rho_individual_mean": 0.8224851698709159,
+      "rho_shared": 0.3129851029870031,
+      "interference": 0.5095000668839128,
+      "key_angles_rad": [
+        1.486715316772461,
+        1.5693813562393188
+      ],
+      "key_grassmann": 2.1617770195007324,
+      "value_angles_rad": [
+        1.335880994796753,
+        1.4799822568893433
+      ],
+      "value_grassmann": 1.993721604347229,
+      "joint_angles_rad": [
+        1.4879878759384155,
+        1.5643812417984009
+      ],
+      "joint_grassmann": 2.159026861190796,
+      "kv_mean_grassmann": 2.0777493119239807
+    },
+    {
+      "first": "0391",
+      "second": "0549",
+      "rho_individual_mean": 0.7609543248161327,
+      "rho_shared": 0.3414204994010759,
+      "interference": 0.4195338254150568,
+      "key_angles_rad": [
+        0.4471592307090759,
+        1.1444720029830933
+      ],
+      "key_grassmann": 1.2287260293960571,
+      "value_angles_rad": [
+        0.8858202695846558,
+        1.1256959438323975
+      ],
+      "value_grassmann": 1.4324346780776978,
+      "joint_angles_rad": [
+        0.6144647002220154,
+        1.0193995237350464
+      ],
+      "joint_grassmann": 1.1902698278427124,
+      "kv_mean_grassmann": 1.3305803537368774
+    },
+    {
+      "first": "0499",
+      "second": "0549",
+      "rho_individual_mean": 0.776966284116223,
+      "rho_shared": 0.4180119231134758,
+      "interference": 0.35895436100274725,
+      "key_angles_rad": [
+        1.5098958015441895,
+        1.5595113039016724
+      ],
+      "key_grassmann": 2.170681953430176,
+      "value_angles_rad": [
+        1.493199348449707,
+        1.5685797929763794
+      ],
+      "value_grassmann": 2.165660858154297,
+      "joint_angles_rad": [
+        1.5220853090286255,
+        1.5657178163528442
+      ],
+      "joint_grassmann": 2.183624505996704,
+      "kv_mean_grassmann": 2.1681714057922363
+    }
+  ],
+  "correlations": {
+    "key_grassmann": {
+      "spearman": 0.15927750410509034,
+      "two_sided_permutation_p": 0.41654583454165456,
+      "permutations": 100000,
+      "permutation_exact": false,
+      "bootstrap_90ci_pair_resampling": [
+        -0.20264819264411926,
+        0.49628037214279175
+      ],
+      "bootstrap_95ci_context_resampling": [
+        -0.7137614488601685,
+        0.832969605922699
+      ],
+      "valid_context_bootstraps": 9994
+    },
+    "value_grassmann": {
+      "spearman": 0.04816639299397921,
+      "two_sided_permutation_p": 0.8088519114808852,
+      "permutations": 100000,
+      "permutation_exact": false,
+      "bootstrap_90ci_pair_resampling": [
+        -0.28068679571151733,
+        0.3705403506755829
+      ],
+      "bootstrap_95ci_context_resampling": [
+        -0.6379845142364502,
+        0.7647058963775635
+      ],
+      "valid_context_bootstraps": 9994
+    },
+    "joint_grassmann": {
+      "spearman": 0.14066776135741654,
+      "two_sided_permutation_p": 0.4748452515474845,
+      "permutations": 100000,
+      "permutation_exact": false,
+      "bootstrap_90ci_pair_resampling": [
+        -0.23086215555667877,
+        0.4894056022167206
+      ],
+      "bootstrap_95ci_context_resampling": [
+        -0.7596172094345093,
+        0.8142414689064026
+      ],
+      "valid_context_bootstraps": 9994
+    },
+    "kv_mean_grassmann": {
+      "spearman": 0.07170224411603723,
+      "two_sided_permutation_p": 0.7170928290717092,
+      "permutations": 100000,
+      "permutation_exact": false,
+      "bootstrap_90ci_pair_resampling": [
+        -0.27417826652526855,
+        0.4061530828475952
+      ],
+      "bootstrap_95ci_context_resampling": [
+        -0.7346036434173584,
+        0.7219034433364868
+      ],
+      "valid_context_bootstraps": 9994
+    }
+  },
+  "consensus_spectrum": {
+    "key": {
+      "nonzero_eigenvalues": [
+        0.6191704869270325,
+        0.3395809233188629,
+        0.18485909700393677,
+        0.15653394162654877,
+        0.1267118602991104,
+        0.12625393271446228,
+        0.12071023136377335,
+        0.09923972189426422,
+        0.0660300999879837,
+        0.0607495941221714,
+        0.033714551478624344,
+        0.0288726594299078,
+        0.01493317075073719,
+        0.009519766084849834,
+        0.008775664493441582,
+        0.004345031455159187
+      ],
+      "top_r_mean": 0.4793757200241089,
+      "trace": 2.0000007152557373
+    },
+    "value": {
+      "nonzero_eigenvalues": [
+        0.4781782925128937,
+        0.329873263835907,
+        0.1742669939994812,
+        0.1670277714729309,
+        0.14237111806869507,
+        0.13014253973960876,
+        0.1165585145354271,
+        0.09363136440515518,
+        0.07511782646179199,
+        0.06862913072109222,
+        0.06046069413423538,
+        0.0460926778614521,
+        0.04419378563761711,
+        0.03621448948979378,
+        0.030888518318533897,
+        0.006352985743433237
+      ],
+      "top_r_mean": 0.4040257930755615,
+      "trace": 2.0
+    },
+    "joint": {
+      "nonzero_eigenvalues": [
+        0.5663650631904602,
+        0.3643580973148346,
+        0.17482683062553406,
+        0.14703188836574554,
+        0.13030105829238892,
+        0.12345418334007263,
+        0.12225153297185898,
+        0.08880647271871567,
+        0.07839024066925049,
+        0.06155489385128021,
+        0.04151348024606705,
+        0.03482891991734505,
+        0.028728222474455833,
+        0.016830774024128914,
+        0.015713447704911232,
+        0.005044931545853615
+      ],
+      "top_r_mean": 0.4653615951538086,
+      "trace": 1.9999998807907104
+    }
+  },
+  "preregistered_primary": "key_grassmann",
+  "gate_rule": "positive Spearman, permutation p <= 0.05, context-bootstrap 95% lower bound > 0",
+  "gate_pass": false,
+  "next_action": "stop Grassmann method branch; preregistered misalignment hypothesis did not replicate",
+  "scope_warning": "Eight-context raw-trajectory replication; pair observations remain dependent, so context-cluster bootstrap is required. Reachability is a residual-stream low-rank proxy."
+}

@@ -1,0 +1,50 @@
+{
+  "protocol": "synthetic-mechanism-gate-v1",
+  "runs": [
+    {
+      "seed": 42,
+      "groups": 90,
+      "rollouts_per_group": 4,
+      "latent_ranking_auc": 0.9985185265541077,
+      "merge_alignment": {
+        "A": 0.8097265362739563,
+        "B": 0.9028261303901672,
+        "C": 0.987276554107666,
+        "D-SB": 0.06476683169603348
+      },
+      "schrodinger_control_energy": 0.7634265422821045,
+      "closed_form_lora_relative_error": 1.0159682517496549e-07
+    },
+    {
+      "seed": 43,
+      "groups": 90,
+      "rollouts_per_group": 4,
+      "latent_ranking_auc": 0.998054027557373,
+      "merge_alignment": {
+        "A": 0.939512312412262,
+        "B": 0.22987079620361328,
+        "C": 0.9568765163421631,
+        "D-SB": 0.34258347749710083
+      },
+      "schrodinger_control_energy": 1.0747246742248535,
+      "closed_form_lora_relative_error": 1.052303630899587e-07
+    },
+    {
+      "seed": 44,
+      "groups": 90,
+      "rollouts_per_group": 4,
+      "latent_ranking_auc": 0.99583899974823,
+      "merge_alignment": {
+        "A": 0.9220960736274719,
+        "B": 0.30475351214408875,
+        "C": 0.9638209342956543,
+        "D-SB": 0.6077669858932495
+      },
+      "schrodinger_control_energy": 0.8772321939468384,
+      "closed_form_lora_relative_error": 1.0022316132562992e-07
+    }
+  ],
+  "mean_latent_ranking_auc": 0.9974705179532369,
+  "mean_lora_relative_error": 1.023501165301847e-07,
+  "scope_warning": "Mechanism sanity check only; not Minecraft task success."
+}

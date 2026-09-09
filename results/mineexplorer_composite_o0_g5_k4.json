@@ -1,0 +1,107 @@
+{
+  "protocol": "mineexplorer-local-pilot-v1",
+  "difficulty": "composite",
+  "offset": 0,
+  "requested_scene_ids": [
+    "0391",
+    "0413",
+    "0480",
+    "0499",
+    "0531"
+  ],
+  "groups": 5,
+  "trajectories": 20,
+  "mixed_groups": 2,
+  "successes": 6,
+  "parser_valid": 20,
+  "manifest_files": 85,
+  "peak_gpu_gib": 16.439228534698486,
+  "pool": "data/acquisition/mineexplorer_composite_stable_s1_fixed2_g5_k4",
+  "group_results": [
+    {
+      "scene_id": "0391",
+      "task": "You have acacia logs in your inventory. First craft acacia planks from the logs, then use the nearby crafting table to craft acacia stairs from the planks.",
+      "scores": [
+        1.0,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "advantages": [
+        1.732042908668518,
+        -0.5773476362228394,
+        -0.5773476362228394,
+        -0.5773476362228394
+      ],
+      "mixed_outcome": true
+    },
+    {
+      "scene_id": "0413",
+      "task": "Using the crafting table nearby, first craft sticks from the birch planks in your inventory, then use the sticks and remaining birch planks to craft a birch sign.",
+      "scores": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0480",
+      "task": "First, craft melon seeds from the melon slice in your inventory. Then, craft a golden pickaxe using the 3 gold ingots and 2 sticks in your inventory at the nearby crafting table.",
+      "scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0499",
+      "task": "Mine oak planks from the nearby wooden hut using your axe, then craft sticks from the planks you collected.",
+      "scores": [
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "advantages": [
+        -0.5773476362228394,
+        -0.5773476362228394,
+        -0.5773476362228394,
+        1.732042908668518
+      ],
+      "mixed_outcome": true
+    },
+    {
+      "scene_id": "0531",
+      "task": "Craft a wooden pickaxe using the oak logs and crafting table in the clearing, then use it to mine andesite from the stone wall ahead.",
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    }
+  ]
+}

@@ -1,0 +1,514 @@
+{
+  "protocol": "peam-compatible-local-qwen-v1",
+  "scope_warning": "Published PEAM task/seed/retry/verifier protocol with local Qwen only; not an official PEAM reproduction and not Azure-GPT-4o parity.",
+  "minecraft": "1.19",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "retry_budget": 4,
+  "max_new_tokens": 256,
+  "summary": {
+    "conditions": {
+      "base": {
+        "successes": 3,
+        "trials": 3,
+        "success_rate": 1.0,
+        "wilson_95ci": [
+          0.43850296824495455,
+          1.0
+        ],
+        "parser_valid_calls": 4,
+        "calls": 4,
+        "tokens": 226
+      },
+      "control": {
+        "successes": 0,
+        "trials": 3,
+        "success_rate": 0.0,
+        "wilson_95ci": [
+          0.0,
+          0.5614970317550455
+        ],
+        "parser_valid_calls": 12,
+        "calls": 12,
+        "tokens": 842
+      },
+      "full": {
+        "successes": 1,
+        "trials": 3,
+        "success_rate": 0.3333333333333333,
+        "wilson_95ci": [
+          0.06149194472039615,
+          0.7923403991979523
+        ],
+        "parser_valid_calls": 10,
+        "calls": 10,
+        "tokens": 580
+      }
+    },
+    "comparisons": {
+      "full_vs_control": {
+        "pairs": 3,
+        "left_only": 1,
+        "right_only": 0,
+        "mcnemar_two_sided_p": 1.0
+      },
+      "full_vs_base": {
+        "pairs": 3,
+        "left_only": 0,
+        "right_only": 2,
+        "mcnemar_two_sided_p": 0.5
+      },
+      "control_vs_base": {
+        "pairs": 3,
+        "left_only": 0,
+        "right_only": 3,
+        "mcnemar_two_sided_p": 0.25
+      }
+    }
+  },
+  "elapsed_seconds": 1862.5241558130365,
+  "peak_gpu_gib": 6.797764301300049,
+  "trials": [
+    {
+      "task_id": "T1",
+      "category": "craft",
+      "task": "Craft a crafting table",
+      "seed": 42,
+      "condition": "base",
+      "task_success": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "parser_valid": true,
+          "task_success": true,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 56,
+          "latency_seconds": 31.503707048948854,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"jungle_log\", 4);\n  await craftItem(bot, \"jungle_planks\", 4);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "jungle_planks": 8,
+            "crafting_table": 1
+          }
+        }
+      ]
+    },
+    {
+      "task_id": "T1",
+      "category": "craft",
+      "task": "Craft a crafting table",
+      "seed": 42,
+      "condition": "control",
+      "task_success": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 69,
+          "latency_seconds": 61.992102971998975,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {}
+        },
+        {
+          "attempt": 2,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=3000): Read timed out. (read timeout=180)",
+          "generated_tokens": 69,
+          "latency_seconds": 203.55671183904633,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {}
+        },
+        {
+          "attempt": 3,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 69,
+          "latency_seconds": 184.58978443196975,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {}
+        },
+        {
+          "attempt": 4,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 69,
+          "latency_seconds": 170.52319886093028,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {}
+        }
+      ]
+    },
+    {
+      "task_id": "T1",
+      "category": "craft",
+      "task": "Craft a crafting table",
+      "seed": 42,
+      "condition": "full",
+      "task_success": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 41,
+          "latency_seconds": 166.22419833182357,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 4);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {}
+        },
+        {
+          "attempt": 2,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 41,
+          "latency_seconds": 155.07563482201658,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 3);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "oak_log": 2
+          }
+        },
+        {
+          "attempt": 3,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 69,
+          "latency_seconds": 34.26963249896653,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "oak_log": 5
+          }
+        },
+        {
+          "attempt": 4,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 42,
+          "latency_seconds": 18.14504305878654,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"oak_planks\", 4);\n}\n```",
+          "final_inventory": {
+            "oak_log": 3,
+            "oak_planks": 16
+          }
+        }
+      ]
+    },
+    {
+      "task_id": "T1",
+      "category": "craft",
+      "task": "Craft a crafting table",
+      "seed": 43,
+      "condition": "base",
+      "task_success": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 56,
+          "latency_seconds": 18.611565753119066,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"oak_planks\", 4);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "oak_sapling": 1
+          }
+        },
+        {
+          "attempt": 2,
+          "parser_valid": true,
+          "task_success": true,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 56,
+          "latency_seconds": 17.492989285849035,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"oak_planks\", 4);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "oak_sapling": 1,
+            "crafting_table": 2
+          }
+        }
+      ]
+    },
+    {
+      "task_id": "T1",
+      "category": "craft",
+      "task": "Craft a crafting table",
+      "seed": 43,
+      "condition": "control",
+      "task_success": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 83,
+          "latency_seconds": 76.89721435820684,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 4);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "oak_log": 7
+          }
+        },
+        {
+          "attempt": 2,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 69,
+          "latency_seconds": 50.74999936390668,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "oak_log": 10
+          }
+        },
+        {
+          "attempt": 3,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 69,
+          "latency_seconds": 33.14892993494868,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "oak_log": 13
+          }
+        },
+        {
+          "attempt": 4,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 69,
+          "latency_seconds": 37.74233957985416,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "oak_log": 16
+          }
+        }
+      ]
+    },
+    {
+      "task_id": "T1",
+      "category": "craft",
+      "task": "Craft a crafting table",
+      "seed": 43,
+      "condition": "full",
+      "task_success": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 69,
+          "latency_seconds": 35.526597255142406,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "oak_log": 3
+          }
+        },
+        {
+          "attempt": 2,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 69,
+          "latency_seconds": 90.97504446702078,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "oak_log": 6
+          }
+        },
+        {
+          "attempt": 3,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 69,
+          "latency_seconds": 58.637480119010434,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "oak_log": 10,
+            "dark_oak_sapling": 1
+          }
+        },
+        {
+          "attempt": 4,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 69,
+          "latency_seconds": 40.20802380796522,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "oak_log": 14,
+            "dark_oak_sapling": 1
+          }
+        }
+      ]
+    },
+    {
+      "task_id": "T1",
+      "category": "craft",
+      "task": "Craft a crafting table",
+      "seed": 44,
+      "condition": "base",
+      "task_success": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "parser_valid": true,
+          "task_success": true,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 58,
+          "latency_seconds": 18.71743417903781,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"dark_oak_log\", 1);\n  await craftItem(bot, \"dark_oak_planks\", 4);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "crafting_table": 1
+          }
+        }
+      ]
+    },
+    {
+      "task_id": "T1",
+      "category": "craft",
+      "task": "Craft a crafting table",
+      "seed": 44,
+      "condition": "control",
+      "task_success": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 69,
+          "latency_seconds": 46.15824440587312,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "apple": 1,
+            "oak_sapling": 1,
+            "oak_log": 3
+          }
+        },
+        {
+          "attempt": 2,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 69,
+          "latency_seconds": 42.516019540140405,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "apple": 1,
+            "oak_sapling": 2,
+            "oak_log": 6,
+            "red_mushroom": 3
+          }
+        },
+        {
+          "attempt": 3,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 69,
+          "latency_seconds": 36.190846051089466,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "apple": 1,
+            "oak_sapling": 2,
+            "oak_log": 9,
+            "red_mushroom": 3
+          }
+        },
+        {
+          "attempt": 4,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 69,
+          "latency_seconds": 72.90665144403465,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "apple": 1,
+            "oak_sapling": 2,
+            "oak_log": 12,
+            "red_mushroom": 3
+          }
+        }
+      ]
+    },
+    {
+      "task_id": "T1",
+      "category": "craft",
+      "task": "Craft a crafting table",
+      "seed": 44,
+      "condition": "full",
+      "task_success": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "parser_valid": true,
+          "task_success": false,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 42,
+          "latency_seconds": 61.931643216870725,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 4);\n  await craftItem(bot, \"oak_planks\", 4);\n}\n```",
+          "final_inventory": {
+            "oak_planks": 16
+          }
+        },
+        {
+          "attempt": 2,
+          "parser_valid": true,
+          "task_success": true,
+          "parse_error": null,
+          "execution_error": null,
+          "generated_tokens": 69,
+          "latency_seconds": 76.12045558192767,
+          "response": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await mineBlock(bot, \"oak_log\", 1);\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+          "final_inventory": {
+            "oak_planks": 12,
+            "crafting_table": 1,
+            "oak_log": 3
+          }
+        }
+      ]
+    }
+  ],
+  "valid_for_primary_results": false,
+  "invalid_reason": "Conditions shared a mutable Minecraft world; fixed execution order caused cross-condition resource contamination."
+}

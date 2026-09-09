@@ -1,0 +1,436 @@
+{
+  "protocol": "latent-population-kv-v1",
+  "archive_ids": [
+    "0299",
+    "0391",
+    "0499",
+    "0549"
+  ],
+  "scene_ids": [
+    "0299",
+    "0391",
+    "0499",
+    "0549"
+  ],
+  "seeds": [
+    340
+  ],
+  "temperature": 0.05,
+  "summary": {
+    "base": {
+      "full_successes": 4,
+      "mean_score": 1.0,
+      "parser_valid": 4,
+      "trials": 4
+    },
+    "matched": {
+      "full_successes": 4,
+      "mean_score": 1.0,
+      "parser_valid": 4,
+      "trials": 4
+    },
+    "population": {
+      "full_successes": 4,
+      "mean_score": 1.0,
+      "parser_valid": 4,
+      "trials": 4
+    },
+    "uniform": {
+      "full_successes": 4,
+      "mean_score": 1.0,
+      "parser_valid": 4,
+      "trials": 4
+    }
+  },
+  "comparisons": {
+    "matched_vs_base": {
+      "condition_only": 0,
+      "base_only": 0,
+      "p": 1.0
+    },
+    "population_vs_base": {
+      "condition_only": 0,
+      "base_only": 0,
+      "p": 1.0
+    },
+    "uniform_vs_base": {
+      "condition_only": 0,
+      "base_only": 0,
+      "p": 1.0
+    }
+  },
+  "retrieval_accuracy": 1.0,
+  "trials": [
+    {
+      "scene_id": "0299",
+      "seed": 340,
+      "condition": "base",
+      "score": 1.0,
+      "parser_valid": true,
+      "error": null,
+      "posterior": [
+        0.3171335756778717,
+        0.20077502727508545,
+        0.24915233254432678,
+        0.23293909430503845
+      ],
+      "used_weights": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "retrieved": "0299",
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 340,
+      "condition": "matched",
+      "score": 1.0,
+      "parser_valid": true,
+      "error": null,
+      "posterior": [
+        0.2713180184364319,
+        0.2263464480638504,
+        0.257522851228714,
+        0.24481263756752014
+      ],
+      "used_weights": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "retrieved": "0299",
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 340,
+      "condition": "population",
+      "score": 1.0,
+      "parser_valid": true,
+      "error": null,
+      "posterior": [
+        0.28613725304603577,
+        0.218341663479805,
+        0.254140168428421,
+        0.24138090014457703
+      ],
+      "used_weights": [
+        0.28613725304603577,
+        0.218341663479805,
+        0.254140168428421,
+        0.24138090014457703
+      ],
+      "retrieved": "0299",
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 340,
+      "condition": "uniform",
+      "score": 1.0,
+      "parser_valid": true,
+      "error": null,
+      "posterior": [
+        0.2802770435810089,
+        0.22221441566944122,
+        0.2552550137042999,
+        0.24225348234176636
+      ],
+      "used_weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "retrieved": "0299",
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0391",
+      "seed": 340,
+      "condition": "base",
+      "score": 1.0,
+      "parser_valid": true,
+      "error": null,
+      "posterior": [
+        0.18165218830108643,
+        0.2933780252933502,
+        0.2575325667858124,
+        0.26743724942207336
+      ],
+      "used_weights": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "retrieved": "0391",
+      "generated_tokens": 43,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0391",
+      "seed": 340,
+      "condition": "matched",
+      "score": 1.0,
+      "parser_valid": true,
+      "error": null,
+      "posterior": [
+        0.18135415017604828,
+        0.29367706179618835,
+        0.2576289176940918,
+        0.26733991503715515
+      ],
+      "used_weights": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "retrieved": "0391",
+      "generated_tokens": 43,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0391",
+      "seed": 340,
+      "condition": "population",
+      "score": 1.0,
+      "parser_valid": true,
+      "error": null,
+      "posterior": [
+        0.18055304884910583,
+        0.2944667637348175,
+        0.2572208642959595,
+        0.2677593529224396
+      ],
+      "used_weights": [
+        0.18055304884910583,
+        0.2944667637348175,
+        0.2572208642959595,
+        0.2677593529224396
+      ],
+      "retrieved": "0391",
+      "generated_tokens": 43,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0391",
+      "seed": 340,
+      "condition": "uniform",
+      "score": 1.0,
+      "parser_valid": true,
+      "error": null,
+      "posterior": [
+        0.18204006552696228,
+        0.2926522195339203,
+        0.25781679153442383,
+        0.2674909830093384
+      ],
+      "used_weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "retrieved": "0391",
+      "generated_tokens": 43,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0499",
+      "seed": 340,
+      "condition": "base",
+      "score": 1.0,
+      "parser_valid": true,
+      "error": null,
+      "posterior": [
+        0.21255187690258026,
+        0.2529248595237732,
+        0.2740759253501892,
+        0.26044735312461853
+      ],
+      "used_weights": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "retrieved": "0499",
+      "generated_tokens": 40,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0499",
+      "seed": 340,
+      "condition": "matched",
+      "score": 1.0,
+      "parser_valid": true,
+      "error": null,
+      "posterior": [
+        0.21394866704940796,
+        0.25101980566978455,
+        0.274467796087265,
+        0.2605636715888977
+      ],
+      "used_weights": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "retrieved": "0499",
+      "generated_tokens": 40,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0499",
+      "seed": 340,
+      "condition": "population",
+      "score": 1.0,
+      "parser_valid": true,
+      "error": null,
+      "posterior": [
+        0.21237415075302124,
+        0.25191596150398254,
+        0.27477598190307617,
+        0.26093387603759766
+      ],
+      "used_weights": [
+        0.21237415075302124,
+        0.25191596150398254,
+        0.27477598190307617,
+        0.26093387603759766
+      ],
+      "retrieved": "0499",
+      "generated_tokens": 40,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0499",
+      "seed": 340,
+      "condition": "uniform",
+      "score": 1.0,
+      "parser_valid": true,
+      "error": null,
+      "posterior": [
+        0.21343590319156647,
+        0.25057873129844666,
+        0.2748260796070099,
+        0.261159211397171
+      ],
+      "used_weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "retrieved": "0499",
+      "generated_tokens": 40,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0549",
+      "seed": 340,
+      "condition": "base",
+      "score": 1.0,
+      "parser_valid": true,
+      "error": null,
+      "posterior": [
+        0.2041265219449997,
+        0.25678274035453796,
+        0.2599300444126129,
+        0.27916064858436584
+      ],
+      "used_weights": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "retrieved": "0549",
+      "generated_tokens": 98,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 8, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 8, \"birch_planks\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\");\n}\n```"
+    },
+    {
+      "scene_id": "0549",
+      "seed": 340,
+      "condition": "matched",
+      "score": 1.0,
+      "parser_valid": true,
+      "error": null,
+      "posterior": [
+        0.2043982744216919,
+        0.25678494572639465,
+        0.2598336338996887,
+        0.27898314595222473
+      ],
+      "used_weights": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "retrieved": "0549",
+      "generated_tokens": 98,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 8, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 8, \"birch_planks\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\");\n}\n```"
+    },
+    {
+      "scene_id": "0549",
+      "seed": 340,
+      "condition": "population",
+      "score": 1.0,
+      "parser_valid": true,
+      "error": null,
+      "posterior": [
+        0.20569898188114166,
+        0.2554073631763458,
+        0.26009780168533325,
+        0.2787957787513733
+      ],
+      "used_weights": [
+        0.20569898188114166,
+        0.2554073631763458,
+        0.26009780168533325,
+        0.2787957787513733
+      ],
+      "retrieved": "0549",
+      "generated_tokens": 103,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 4, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 8, \"birch_planks\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\", \"crafting_table\");\n}\n```"
+    },
+    {
+      "scene_id": "0549",
+      "seed": 340,
+      "condition": "uniform",
+      "score": 1.0,
+      "parser_valid": true,
+      "error": null,
+      "posterior": [
+        0.2051163613796234,
+        0.2556558847427368,
+        0.26036927103996277,
+        0.278858482837677
+      ],
+      "used_weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "retrieved": "0549",
+      "generated_tokens": 103,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 4, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 8, \"birch_planks\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\", \"crafting_table\");\n}\n```"
+    }
+  ],
+  "elapsed_seconds": 366.4664430960547,
+  "peak_gpu_gib": 16.560052394866943,
+  "scope_warning": "Prompt-latent retrieval over four acquired native-KV memories; held-out-task retrieval has no oracle matched memory."
+}

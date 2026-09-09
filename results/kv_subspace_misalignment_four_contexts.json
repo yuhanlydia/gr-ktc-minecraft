@@ -1,0 +1,241 @@
+{
+  "protocol": "cross-context-consolidation-misalignment-pilot-v1",
+  "scenes": [
+    "0299",
+    "0391",
+    "0499",
+    "0549"
+  ],
+  "layer": 24,
+  "subspace_rank": 2,
+  "lora_rank": 8,
+  "native_correction": "positive_KV_barycenter - failed_KV_barycenter",
+  "basis_axis": "right singular vectors in latent feature space",
+  "pairs": [
+    {
+      "first": "0299",
+      "second": "0391",
+      "rho_individual_mean": 0.8002294277179118,
+      "rho_shared": 0.48890528109988374,
+      "interference": 0.3113241466180281,
+      "key_angles_rad": [
+        1.0053189992904663,
+        1.5692546367645264
+      ],
+      "key_grassmann": 1.8636595010757446,
+      "value_angles_rad": [
+        1.0921974182128906,
+        1.5490814447402954
+      ],
+      "value_grassmann": 1.895401954650879,
+      "joint_angles_rad": [
+        1.0422528982162476,
+        1.5616719722747803
+      ],
+      "joint_grassmann": 1.8775278329849243,
+      "kv_mean_grassmann": 1.8795307278633118
+    },
+    {
+      "first": "0299",
+      "second": "0499",
+      "rho_individual_mean": 0.8562270798017932,
+      "rho_shared": 0.4628382754275634,
+      "interference": 0.39338880437422985,
+      "key_angles_rad": [
+        1.1558692455291748,
+        1.534670114517212
+      ],
+      "key_grassmann": 1.9212615489959717,
+      "value_angles_rad": [
+        0.9747533202171326,
+        1.4428045749664307
+      ],
+      "value_grassmann": 1.7412148714065552,
+      "joint_angles_rad": [
+        1.103989601135254,
+        1.5621817111968994
+      ],
+      "joint_grassmann": 1.9129048585891724,
+      "kv_mean_grassmann": 1.8312382102012634
+    },
+    {
+      "first": "0299",
+      "second": "0549",
+      "rho_individual_mean": 0.7190870594884393,
+      "rho_shared": 0.4735770470027785,
+      "interference": 0.24551001248566084,
+      "key_angles_rad": [
+        1.0413609743118286,
+        1.3854360580444336
+      ],
+      "key_grassmann": 1.7331664562225342,
+      "value_angles_rad": [
+        1.067889928817749,
+        1.300066590309143
+      ],
+      "value_grassmann": 1.6824275255203247,
+      "joint_angles_rad": [
+        1.0639698505401611,
+        1.3324223756790161
+      ],
+      "joint_grassmann": 1.7051043510437012,
+      "kv_mean_grassmann": 1.7077969908714294
+    },
+    {
+      "first": "0391",
+      "second": "0499",
+      "rho_individual_mean": 0.8425843344984505,
+      "rho_shared": 0.4727569564912024,
+      "interference": 0.3698273780072481,
+      "key_angles_rad": [
+        1.287388801574707,
+        1.564711570739746
+      ],
+      "key_grassmann": 2.0262508392333984,
+      "value_angles_rad": [
+        1.3659422397613525,
+        1.4533425569534302
+      ],
+      "value_grassmann": 1.9944931268692017,
+      "joint_angles_rad": [
+        1.3317046165466309,
+        1.5280461311340332
+      ],
+      "joint_grassmann": 2.026909351348877,
+      "kv_mean_grassmann": 2.0103719830513
+    },
+    {
+      "first": "0391",
+      "second": "0549",
+      "rho_individual_mean": 0.7054443141850966,
+      "rho_shared": 0.4048672205739916,
+      "interference": 0.30057709361110496,
+      "key_angles_rad": [
+        0.9460248947143555,
+        1.532109022140503
+      ],
+      "key_grassmann": 1.8006446361541748,
+      "value_angles_rad": [
+        1.1043736934661865,
+        1.5442566871643066
+      ],
+      "value_grassmann": 1.8985177278518677,
+      "joint_angles_rad": [
+        1.0085227489471436,
+        1.5390363931655884
+      ],
+      "joint_grassmann": 1.8400410413742065,
+      "kv_mean_grassmann": 1.8495811820030212
+    },
+    {
+      "first": "0499",
+      "second": "0549",
+      "rho_individual_mean": 0.761441966268978,
+      "rho_shared": 0.44565911359398946,
+      "interference": 0.3157828526749885,
+      "key_angles_rad": [
+        1.2321100234985352,
+        1.5541787147521973
+      ],
+      "key_grassmann": 1.9833221435546875,
+      "value_angles_rad": [
+        1.0704971551895142,
+        1.517877221107483
+      ],
+      "value_grassmann": 1.857394814491272,
+      "joint_angles_rad": [
+        1.181619644165039,
+        1.5704667568206787
+      ],
+      "joint_grassmann": 1.9653475284576416,
+      "kv_mean_grassmann": 1.9203584790229797
+    }
+  ],
+  "correlations": {
+    "key_grassmann": {
+      "spearman": 0.8285714285714286,
+      "exact_two_sided_permutation_p": 0.058333333333333334,
+      "permutations": 720,
+      "bootstrap_90ci_pair_resampling": [
+        0.09090909361839294,
+        1.0
+      ]
+    },
+    "value_grassmann": {
+      "spearman": 0.2,
+      "exact_two_sided_permutation_p": 0.7138888888888889,
+      "permutations": 720,
+      "bootstrap_90ci_pair_resampling": [
+        -1.0,
+        0.939393937587738
+      ]
+    },
+    "joint_grassmann": {
+      "spearman": 0.8285714285714286,
+      "exact_two_sided_permutation_p": 0.058333333333333334,
+      "permutations": 720,
+      "bootstrap_90ci_pair_resampling": [
+        0.09090909361839294,
+        1.0
+      ]
+    },
+    "kv_mean_grassmann": {
+      "spearman": 0.42857142857142855,
+      "exact_two_sided_permutation_p": 0.41944444444444445,
+      "permutations": 720,
+      "bootstrap_90ci_pair_resampling": [
+        -0.6000000238418579,
+        1.0
+      ]
+    }
+  },
+  "consensus_spectrum": {
+    "key": {
+      "nonzero_eigenvalues": [
+        0.5700939297676086,
+        0.3336094319820404,
+        0.26052409410476685,
+        0.24669258296489716,
+        0.2031923234462738,
+        0.16973093152046204,
+        0.12494224309921265,
+        0.09121531248092651
+      ],
+      "top_r_mean": 0.45185166597366333,
+      "trace": 2.0000009536743164
+    },
+    "value": {
+      "nonzero_eigenvalues": [
+        0.541353702545166,
+        0.40492287278175354,
+        0.25921306014060974,
+        0.23930257558822632,
+        0.20294271409511566,
+        0.16224528849124908,
+        0.10722897201776505,
+        0.08279181271791458
+      ],
+      "top_r_mean": 0.4731382727622986,
+      "trace": 2.0000011920928955
+    },
+    "joint": {
+      "nonzero_eigenvalues": [
+        0.554396390914917,
+        0.35716158151626587,
+        0.26208916306495667,
+        0.2458837926387787,
+        0.1983937919139862,
+        0.1612820327281952,
+        0.12793487310409546,
+        0.09285933524370193
+      ],
+      "top_r_mean": 0.45577898621559143,
+      "trace": 2.0000009536743164
+    }
+  },
+  "preregistered_primary": "mean of separate K and V Grassmann distances",
+  "gate_rule": "Spearman > 0.5, exact permutation p <= 0.10, pair-bootstrap 90% lower bound > 0",
+  "gate_pass": false,
+  "next_action": "stop Grassmann method branch; four-context pilot does not support misalignment hypothesis",
+  "scope_warning": "Only four contexts/six dependent pairs and four-token merged supports. Pair bootstrap is descriptive; exact permutation is the primary finite-sample test. Raw per-rollout successful KV trajectories are required for a definitive study."
+}

@@ -1,0 +1,54 @@
+hardware:
+  gpu: rtx_3090_24gb
+  load_in_4bit: true
+  quant_type: nf4
+  double_quant: true
+  compute_dtype: bfloat16
+  gradient_checkpointing: true
+
+model:
+  id: Qwen/Qwen3-VL-8B-Instruct
+  local_path: models/Qwen3-VL-8B-Instruct
+  max_new_tokens_pilot: 512
+  max_new_tokens_main: 2048
+  temperature: 0.7
+  top_p: 0.9
+
+acquisition:
+  rollouts_per_group: 4
+  retry_cycles_max: 4
+  verifier_only_score: true
+  clear_fast_memory_after_task: true
+
+kv:
+  pilot_layers: [two_thirds, last]
+  storage_dtype: float16
+  offload_to_cpu_per_token: true
+  pin_memory: true
+
+subspace:
+  positive_rank: 16
+  negative_rank: 16
+  whitening_epsilon: 1.0e-5
+
+merge:
+  method: b
+  temperature: 1.0
+  negative_scale: 1.0
+  phases: 16
+  soft_dtw_gamma: 0.1
+  sinkhorn_support_points: 4
+  sinkhorn_epsilon: 0.1
+
+lora:
+  rank: 32
+  alpha: 64
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+  micro_batch_size: 1
+  gradient_accumulation_steps: 16
+  learning_rate: 2.0e-4
+  steps: 100
+  warmup_ratio: 0.05
+  dpo_beta: 0.1
+

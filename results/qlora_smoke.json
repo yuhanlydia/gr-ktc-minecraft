@@ -1,0 +1,24 @@
+{
+  "protocol": "qlora-consolidation-smoke-v1",
+  "steps": 1,
+  "losses": [
+    1.8339768648147583
+  ],
+  "elapsed_seconds": 2.973163992865011,
+  "sequence_tokens": 54,
+  "trainable_parameters": 87293952,
+  "lora_rank": 32,
+  "lora_alpha": 64,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "peak_gpu_gib": 9.960113525390625,
+  "adapter_directory": "results/qlora_smoke",
+  "scope_warning": "One successful real rollout BC smoke; not the full 100-step GRTA/DPO run."
+}

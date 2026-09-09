@@ -1,0 +1,395 @@
+{
+  "protocol": "causal-kv-complement-search-v2",
+  "rank": 8,
+  "rho_shared_linear_proxy": 0.47547076754834383,
+  "contexts": {
+    "0281": {
+      "candidates": [
+        {
+          "name": "weight_only",
+          "key_scale": null,
+          "value_scale": null,
+          "relative_state_mse": 0.03238030895590782,
+          "effect_rho": 0.0
+        },
+        {
+          "name": "kv_k0.5_v0",
+          "key_scale": 0.5,
+          "value_scale": 0.0,
+          "relative_state_mse": 0.028574805706739426,
+          "effect_rho": 0.11752521991729736
+        },
+        {
+          "name": "kv_k0.5_v0.0625",
+          "key_scale": 0.5,
+          "value_scale": 0.0625,
+          "relative_state_mse": 0.026089712977409363,
+          "effect_rho": 0.19427227973937988
+        },
+        {
+          "name": "kv_k0.5_v0.125",
+          "key_scale": 0.5,
+          "value_scale": 0.125,
+          "relative_state_mse": 0.02766590751707554,
+          "effect_rho": 0.14559465646743774
+        },
+        {
+          "name": "kv_k0.5_v0.1875",
+          "key_scale": 0.5,
+          "value_scale": 0.1875,
+          "relative_state_mse": 0.02871020697057247,
+          "effect_rho": 0.11334359645843506
+        },
+        {
+          "name": "kv_k0.5_v0.25",
+          "key_scale": 0.5,
+          "value_scale": 0.25,
+          "relative_state_mse": 0.029749279841780663,
+          "effect_rho": 0.08125394582748413
+        },
+        {
+          "name": "kv_k0.75_v0",
+          "key_scale": 0.75,
+          "value_scale": 0.0,
+          "relative_state_mse": 0.02705017663538456,
+          "effect_rho": 0.16461032629013062
+        },
+        {
+          "name": "kv_k0.75_v0.0625",
+          "key_scale": 0.75,
+          "value_scale": 0.0625,
+          "relative_state_mse": 0.029237661510705948,
+          "effect_rho": 0.09705424308776855
+        },
+        {
+          "name": "kv_k0.75_v0.125",
+          "key_scale": 0.75,
+          "value_scale": 0.125,
+          "relative_state_mse": 0.028008943423628807,
+          "effect_rho": 0.13500070571899414
+        },
+        {
+          "name": "kv_k0.75_v0.1875",
+          "key_scale": 0.75,
+          "value_scale": 0.1875,
+          "relative_state_mse": 0.02885672077536583,
+          "effect_rho": 0.10881882905960083
+        },
+        {
+          "name": "kv_k0.75_v0.25",
+          "key_scale": 0.75,
+          "value_scale": 0.25,
+          "relative_state_mse": 0.027679841965436935,
+          "effect_rho": 0.14516431093215942
+        },
+        {
+          "name": "kv_k1_v0",
+          "key_scale": 1.0,
+          "value_scale": 0.0,
+          "relative_state_mse": 0.023792652413249016,
+          "effect_rho": 0.2652122974395752
+        },
+        {
+          "name": "kv_k1_v0.0625",
+          "key_scale": 1.0,
+          "value_scale": 0.0625,
+          "relative_state_mse": 0.02238689363002777,
+          "effect_rho": 0.30862629413604736
+        },
+        {
+          "name": "kv_k1_v0.125",
+          "key_scale": 1.0,
+          "value_scale": 0.125,
+          "relative_state_mse": 0.021605616435408592,
+          "effect_rho": 0.3327544331550598
+        },
+        {
+          "name": "kv_k1_v0.1875",
+          "key_scale": 1.0,
+          "value_scale": 0.1875,
+          "relative_state_mse": 0.021405188366770744,
+          "effect_rho": 0.3389442563056946
+        },
+        {
+          "name": "kv_k1_v0.25",
+          "key_scale": 1.0,
+          "value_scale": 0.25,
+          "relative_state_mse": 0.021316690370440483,
+          "effect_rho": 0.34167730808258057
+        },
+        {
+          "name": "kv_k1.25_v0",
+          "key_scale": 1.25,
+          "value_scale": 0.0,
+          "relative_state_mse": 0.6164625287055969,
+          "effect_rho": -18.038192749023438
+        },
+        {
+          "name": "kv_k1.25_v0.0625",
+          "key_scale": 1.25,
+          "value_scale": 0.0625,
+          "relative_state_mse": 0.6055633425712585,
+          "effect_rho": -17.70159339904785
+        },
+        {
+          "name": "kv_k1.25_v0.125",
+          "key_scale": 1.25,
+          "value_scale": 0.125,
+          "relative_state_mse": 0.4740305244922638,
+          "effect_rho": -13.639469146728516
+        },
+        {
+          "name": "kv_k1.25_v0.1875",
+          "key_scale": 1.25,
+          "value_scale": 0.1875,
+          "relative_state_mse": 0.4591517746448517,
+          "effect_rho": -13.179969787597656
+        },
+        {
+          "name": "kv_k1.25_v0.25",
+          "key_scale": 1.25,
+          "value_scale": 0.25,
+          "relative_state_mse": 0.3010707497596741,
+          "effect_rho": -8.297958374023438
+        },
+        {
+          "name": "kv_k1.5_v0",
+          "key_scale": 1.5,
+          "value_scale": 0.0,
+          "relative_state_mse": 1.5344836711883545,
+          "effect_rho": -46.389408111572266
+        },
+        {
+          "name": "kv_k1.5_v0.0625",
+          "key_scale": 1.5,
+          "value_scale": 0.0625,
+          "relative_state_mse": 6.300678253173828,
+          "effect_rho": -193.58363342285156
+        },
+        {
+          "name": "kv_k1.5_v0.125",
+          "key_scale": 1.5,
+          "value_scale": 0.125,
+          "relative_state_mse": 4.23958158493042,
+          "effect_rho": -129.9308624267578
+        },
+        {
+          "name": "kv_k1.5_v0.1875",
+          "key_scale": 1.5,
+          "value_scale": 0.1875,
+          "relative_state_mse": 2.3141746520996094,
+          "effect_rho": -70.46858215332031
+        },
+        {
+          "name": "kv_k1.5_v0.25",
+          "key_scale": 1.5,
+          "value_scale": 0.25,
+          "relative_state_mse": 0.21963293850421906,
+          "effect_rho": -5.782917022705078
+        }
+      ],
+      "selected": {
+        "name": "kv_k1_v0.25",
+        "key_scale": 1.0,
+        "value_scale": 0.25,
+        "relative_state_mse": 0.021316690370440483,
+        "effect_rho": 0.34167730808258057
+      }
+    },
+    "0299": {
+      "candidates": [
+        {
+          "name": "weight_only",
+          "key_scale": null,
+          "value_scale": null,
+          "relative_state_mse": 0.030703285709023476,
+          "effect_rho": 0.0
+        },
+        {
+          "name": "kv_k0.5_v0",
+          "key_scale": 0.5,
+          "value_scale": 0.0,
+          "relative_state_mse": 0.026127099990844727,
+          "effect_rho": 0.14904546737670898
+        },
+        {
+          "name": "kv_k0.5_v0.0625",
+          "key_scale": 0.5,
+          "value_scale": 0.0625,
+          "relative_state_mse": 0.026151344180107117,
+          "effect_rho": 0.1482558250427246
+        },
+        {
+          "name": "kv_k0.5_v0.125",
+          "key_scale": 0.5,
+          "value_scale": 0.125,
+          "relative_state_mse": 0.02605428919196129,
+          "effect_rho": 0.15141689777374268
+        },
+        {
+          "name": "kv_k0.5_v0.1875",
+          "key_scale": 0.5,
+          "value_scale": 0.1875,
+          "relative_state_mse": 0.021250341087579727,
+          "effect_rho": 0.30788058042526245
+        },
+        {
+          "name": "kv_k0.5_v0.25",
+          "key_scale": 0.5,
+          "value_scale": 0.25,
+          "relative_state_mse": 0.025992700830101967,
+          "effect_rho": 0.1534227728843689
+        },
+        {
+          "name": "kv_k0.75_v0",
+          "key_scale": 0.75,
+          "value_scale": 0.0,
+          "relative_state_mse": 0.02794465981423855,
+          "effect_rho": 0.0898478627204895
+        },
+        {
+          "name": "kv_k0.75_v0.0625",
+          "key_scale": 0.75,
+          "value_scale": 0.0625,
+          "relative_state_mse": 0.02484911121428013,
+          "effect_rho": 0.19066929817199707
+        },
+        {
+          "name": "kv_k0.75_v0.125",
+          "key_scale": 0.75,
+          "value_scale": 0.125,
+          "relative_state_mse": 0.024935267865657806,
+          "effect_rho": 0.18786323070526123
+        },
+        {
+          "name": "kv_k0.75_v0.1875",
+          "key_scale": 0.75,
+          "value_scale": 0.1875,
+          "relative_state_mse": 0.02384367771446705,
+          "effect_rho": 0.2234160304069519
+        },
+        {
+          "name": "kv_k0.75_v0.25",
+          "key_scale": 0.75,
+          "value_scale": 0.25,
+          "relative_state_mse": 0.026485061272978783,
+          "effect_rho": 0.1373867392539978
+        },
+        {
+          "name": "kv_k1_v0",
+          "key_scale": 1.0,
+          "value_scale": 0.0,
+          "relative_state_mse": 0.023317230865359306,
+          "effect_rho": 0.24056237936019897
+        },
+        {
+          "name": "kv_k1_v0.0625",
+          "key_scale": 1.0,
+          "value_scale": 0.0625,
+          "relative_state_mse": 0.02137661911547184,
+          "effect_rho": 0.30376768112182617
+        },
+        {
+          "name": "kv_k1_v0.125",
+          "key_scale": 1.0,
+          "value_scale": 0.125,
+          "relative_state_mse": 0.023017721250653267,
+          "effect_rho": 0.2503172755241394
+        },
+        {
+          "name": "kv_k1_v0.1875",
+          "key_scale": 1.0,
+          "value_scale": 0.1875,
+          "relative_state_mse": 0.02494368888437748,
+          "effect_rho": 0.18758893013000488
+        },
+        {
+          "name": "kv_k1_v0.25",
+          "key_scale": 1.0,
+          "value_scale": 0.25,
+          "relative_state_mse": 0.02448451705276966,
+          "effect_rho": 0.20254409313201904
+        },
+        {
+          "name": "kv_k1.25_v0",
+          "key_scale": 1.25,
+          "value_scale": 0.0,
+          "relative_state_mse": 0.14644122123718262,
+          "effect_rho": -3.769561767578125
+        },
+        {
+          "name": "kv_k1.25_v0.0625",
+          "key_scale": 1.25,
+          "value_scale": 0.0625,
+          "relative_state_mse": 0.12230807542800903,
+          "effect_rho": -2.9835500717163086
+        },
+        {
+          "name": "kv_k1.25_v0.125",
+          "key_scale": 1.25,
+          "value_scale": 0.125,
+          "relative_state_mse": 0.10240110009908676,
+          "effect_rho": -2.33518385887146
+        },
+        {
+          "name": "kv_k1.25_v0.1875",
+          "key_scale": 1.25,
+          "value_scale": 0.1875,
+          "relative_state_mse": 0.08895563334226608,
+          "effect_rho": -1.8972675800323486
+        },
+        {
+          "name": "kv_k1.25_v0.25",
+          "key_scale": 1.25,
+          "value_scale": 0.25,
+          "relative_state_mse": 0.08087366819381714,
+          "effect_rho": -1.6340396404266357
+        },
+        {
+          "name": "kv_k1.5_v0",
+          "key_scale": 1.5,
+          "value_scale": 0.0,
+          "relative_state_mse": 0.39646920561790466,
+          "effect_rho": -11.912924766540527
+        },
+        {
+          "name": "kv_k1.5_v0.0625",
+          "key_scale": 1.5,
+          "value_scale": 0.0625,
+          "relative_state_mse": 0.37077048420906067,
+          "effect_rho": -11.075922966003418
+        },
+        {
+          "name": "kv_k1.5_v0.125",
+          "key_scale": 1.5,
+          "value_scale": 0.125,
+          "relative_state_mse": 0.34678468108177185,
+          "effect_rho": -10.294709205627441
+        },
+        {
+          "name": "kv_k1.5_v0.1875",
+          "key_scale": 1.5,
+          "value_scale": 0.1875,
+          "relative_state_mse": 0.329450398683548,
+          "effect_rho": -9.730134963989258
+        },
+        {
+          "name": "kv_k1.5_v0.25",
+          "key_scale": 1.5,
+          "value_scale": 0.25,
+          "relative_state_mse": 0.3193822503089905,
+          "effect_rho": -9.402217864990234
+        }
+      ],
+      "selected": {
+        "name": "kv_k0.5_v0.1875",
+        "key_scale": 0.5,
+        "value_scale": 0.1875,
+        "relative_state_mse": 0.021250341087579727,
+        "effect_rho": 0.30788058042526245
+      }
+    }
+  },
+  "selection_rule": "minimum teacher-forced layer-24 state MSE; no environment outcome used",
+  "scope_warning": "Two-dimensional key/value scale search over the native quality-KV support; not a full learned unreachable KV projection."
+}

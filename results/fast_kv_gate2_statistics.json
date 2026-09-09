@@ -1,0 +1,101 @@
+{
+  "protocol": "real-fast-kv-gate2-statistics-v1",
+  "paired_trials": 16,
+  "contexts": [
+    "0281",
+    "0299"
+  ],
+  "conditions": {
+    "no_memory": {
+      "mean_score": 0.3125,
+      "full_successes": 5,
+      "parser_valid": 11,
+      "trials": 16,
+      "success_wilson_95ci": [
+        0.14164643854782039,
+        0.5559564416525933
+      ]
+    },
+    "context_only": {
+      "mean_score": 0.59375,
+      "full_successes": 9,
+      "parser_valid": 14,
+      "trials": 16,
+      "success_wilson_95ci": [
+        0.331785563988119,
+        0.7690134759450765
+      ]
+    },
+    "layer24_quality": {
+      "mean_score": 0.90625,
+      "full_successes": 14,
+      "parser_valid": 16,
+      "trials": 16,
+      "success_wilson_95ci": [
+        0.639771727342413,
+        0.9650225122567595
+      ]
+    },
+    "positive_all_layers": {
+      "mean_score": 0.65625,
+      "full_successes": 10,
+      "parser_valid": 12,
+      "trials": 16,
+      "success_wilson_95ci": [
+        0.38641040545502714,
+        0.8151876744113636
+      ]
+    },
+    "failed_all_layers": {
+      "mean_score": 0.4375,
+      "full_successes": 7,
+      "parser_valid": 12,
+      "trials": 16,
+      "success_wilson_95ci": [
+        0.23098652405492354,
+        0.6682144360118811
+      ]
+    }
+  },
+  "quality_comparisons": {
+    "no_memory": {
+      "quality_only_successes": 9,
+      "other_only_successes": 0,
+      "mcnemar_two_sided_p": 0.00390625,
+      "quality_score_wins": 10,
+      "quality_score_losses": 0,
+      "score_sign_test_two_sided_p": 0.001953125
+    },
+    "context_only": {
+      "quality_only_successes": 5,
+      "other_only_successes": 0,
+      "mcnemar_two_sided_p": 0.0625,
+      "quality_score_wins": 6,
+      "quality_score_losses": 0,
+      "score_sign_test_two_sided_p": 0.03125
+    },
+    "positive_all_layers": {
+      "quality_only_successes": 5,
+      "other_only_successes": 1,
+      "mcnemar_two_sided_p": 0.21875,
+      "quality_score_wins": 5,
+      "quality_score_losses": 1,
+      "score_sign_test_two_sided_p": 0.21875
+    },
+    "failed_all_layers": {
+      "quality_only_successes": 7,
+      "other_only_successes": 0,
+      "mcnemar_two_sided_p": 0.015625,
+      "quality_score_wins": 8,
+      "quality_score_losses": 0,
+      "score_sign_test_two_sided_p": 0.0078125
+    }
+  },
+  "failed_vs_no_memory": {
+    "failed_only_successes": 4,
+    "no_memory_only_successes": 2,
+    "mcnemar_two_sided_p": 0.6875
+  },
+  "gate2_pass": true,
+  "scope_warning": "Mechanism gate on two contexts; not PEAM held-out success."
+}

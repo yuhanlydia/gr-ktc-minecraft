@@ -1,0 +1,45 @@
+{
+  "protocol": "real-qwen-privileged-future-v1",
+  "model": "Qwen3-VL-8B-Instruct",
+  "layer": 24,
+  "teacher_privilege": "successful future action plus environment verifier terminal score",
+  "student_information": "current observation and task only",
+  "contexts": [
+    {
+      "scene_id": "0299",
+      "tokens": 43,
+      "verified_score": 1.0,
+      "hidden_loss": 1.6721606254577637,
+      "logit_kl": 0.000138846633490175,
+      "effect_norm": 535.2446899414062
+    },
+    {
+      "scene_id": "0391",
+      "tokens": 42,
+      "verified_score": 1.0,
+      "hidden_loss": 2.2473738193511963,
+      "logit_kl": 0.00042040858534164727,
+      "effect_norm": 613.335205078125
+    },
+    {
+      "scene_id": "0499",
+      "tokens": 39,
+      "verified_score": 1.0,
+      "hidden_loss": 2.0187394618988037,
+      "logit_kl": 0.007637383881956339,
+      "effect_norm": 560.2711791992188
+    },
+    {
+      "scene_id": "0549",
+      "tokens": 103,
+      "verified_score": 1.0,
+      "hidden_loss": 2.6695401668548584,
+      "logit_kl": 0.04784778878092766,
+      "effect_norm": 1046.264404296875
+    }
+  ],
+  "mean_hidden_loss": 2.1519535183906555,
+  "mean_logit_kl": 0.014011106970428955,
+  "peak_gpu_gib": 16.741177082061768,
+  "scope_warning": "Frozen same-model teacher target export; no student adapter optimization or held-out behavior claim yet."
+}

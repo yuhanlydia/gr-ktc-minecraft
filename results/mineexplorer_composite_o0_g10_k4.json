@@ -1,0 +1,197 @@
+{
+  "protocol": "mineexplorer-local-pilot-v1",
+  "difficulty": "composite",
+  "offset": 0,
+  "requested_scene_ids": [
+    "0360",
+    "0475",
+    "0532",
+    "0541",
+    "0549",
+    "0570",
+    "0656",
+    "0673",
+    "0692",
+    "0717"
+  ],
+  "groups": 10,
+  "trajectories": 40,
+  "mixed_groups": 2,
+  "successes": 9,
+  "parser_valid": 40,
+  "manifest_files": 170,
+  "peak_gpu_gib": 16.438069820404053,
+  "pool": "data/acquisition/mineexplorer_composite_stable_s2_g10_k4",
+  "group_results": [
+    {
+      "scene_id": "0360",
+      "task": "Mine the oak door, then craft oak slabs and an iron sword at the crafting table, and finally mine the damaged anvil with your pickaxe.",
+      "scores": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0475",
+      "task": "Mine warped hyphae and end stone bricks using the provided tools, then use the crafting table to craft dark oak planks from the dark oak logs, and finally craft a spruce fence gate using spruce logs and sticks made from the planks.",
+      "scores": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0532",
+      "task": "Mine a jungle log from the nearby tree, then use the crafting table to craft a wooden pickaxe.",
+      "scores": [
+        0.5,
+        0.0,
+        0.5,
+        0.5
+      ],
+      "advantages": [
+        0.5773476362228394,
+        -1.732042908668518,
+        0.5773476362228394,
+        0.5773476362228394
+      ],
+      "mixed_outcome": true
+    },
+    {
+      "scene_id": "0541",
+      "task": "Craft white dye from bones, then use it along with dandelions and orange wool to craft yellow wool. Use the nearby crafting table if needed.",
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0549",
+      "task": "First, craft birch planks from the birch logs in your inventory. Then, craft a dark oak sign using dark oak planks (crafted from your dark oak logs) and sticks (crafted from your birch planks). Use the nearby crafting table for the sign recipe.",
+      "scores": [
+        1.0,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "advantages": [
+        1.732042908668518,
+        -0.5773476362228394,
+        -0.5773476362228394,
+        -0.5773476362228394
+      ],
+      "mixed_outcome": true
+    },
+    {
+      "scene_id": "0570",
+      "task": "First, mine the chiseled red sandstone blocks from the pillar ahead of you. Then, mine sandstone blocks from the platform to the left and use the crafting table on top of it to craft a sandstone wall.",
+      "scores": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0656",
+      "task": "You are in a stone brick workshop with a crafting table. You have 3 dark oak logs in your inventory. First, craft dark oak stairs using the crafting table. Then, craft a dark oak door using the crafting table.",
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0673",
+      "task": "Craft sandstone from the sand in your inventory, then craft a quartz block from the quartz in your inventory.",
+      "scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0692",
+      "task": "First, gather oak logs and use the crafting table to craft a wooden shovel. Then, craft a wooden pickaxe, mine the stone wall for cobblestone, and craft cobblestone stairs.",
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0717",
+      "task": "You are in a room divided by a diorite wall. Mine through the diorite wall with your pickaxe to reach the crafting table on the other side, then use the stone in your inventory to craft stone slabs.",
+      "scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    }
+  ]
+}

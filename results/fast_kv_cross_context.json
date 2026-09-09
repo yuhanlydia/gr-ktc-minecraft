@@ -1,0 +1,525 @@
+{
+  "protocol": "real-fast-kv-cross-context-v1",
+  "scene_ids": [
+    "0281",
+    "0299"
+  ],
+  "memory_tokens": 4,
+  "value_scale": 0.25,
+  "acquisitions": {
+    "0281": {
+      "records": [
+        {
+          "seed": 100,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+        },
+        {
+          "seed": 101,
+          "parser_valid": false,
+          "score": 0.0,
+          "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+        },
+        {
+          "seed": 102,
+          "parser_valid": false,
+          "score": 0.0,
+          "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+        },
+        {
+          "seed": 103,
+          "parser_valid": false,
+          "score": 0.0,
+          "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+        }
+      ],
+      "advantages": [
+        1.7320468425750732,
+        -0.5773489475250244,
+        -0.5773489475250244,
+        -0.5773489475250244
+      ]
+    },
+    "0299": {
+      "records": [
+        {
+          "seed": 100,
+          "parser_valid": true,
+          "score": 0.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(bot => bot.inventory.count(\"diamond_pickaxe\") > 0 && bot.nearbyBlocks.includes(\"nether_quartz_ore\"));\n  await bot.mineBlock(\"nether_quartz_ore\", 1);\n  await bot.exploreUntil(bot => bot.nearbyBlocks.includes(\"quartz_block\"));\n  await bot.mineBlock(\"quartz_block\", 1);\n}\n```"
+        },
+        {
+          "seed": 101,
+          "parser_valid": true,
+          "score": 0.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+        },
+        {
+          "seed": 102,
+          "parser_valid": true,
+          "score": 0.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+        },
+        {
+          "seed": 103,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+        }
+      ],
+      "advantages": [
+        -0.5773489475250244,
+        -0.5773489475250244,
+        -0.5773489475250244,
+        1.7320468425750732
+      ]
+    }
+  },
+  "skipped_all_equal": {},
+  "summary": {
+    "no_memory": {
+      "mean_score": 0.25,
+      "full_successes": 2,
+      "parser_valid": 5,
+      "trials": 8
+    },
+    "positive_memory": {
+      "mean_score": 0.5625,
+      "full_successes": 4,
+      "parser_valid": 6,
+      "trials": 8
+    },
+    "failed_memory": {
+      "mean_score": 0.375,
+      "full_successes": 3,
+      "parser_valid": 5,
+      "trials": 8
+    },
+    "contrastive_memory": {
+      "mean_score": 0.5,
+      "full_successes": 4,
+      "parser_valid": 4,
+      "trials": 8
+    },
+    "cross_context_memory": {
+      "mean_score": 0.5,
+      "full_successes": 3,
+      "parser_valid": 6,
+      "trials": 8
+    }
+  },
+  "trials": [
+    {
+      "scene_id": "0281",
+      "seed": 200,
+      "condition": "no_memory",
+      "parser_valid": false,
+      "score": 0.0,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "generated_tokens": 384,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 200,
+      "condition": "positive_memory",
+      "parser_valid": false,
+      "score": 0.0,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "generated_tokens": 384,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 200,
+      "condition": "failed_memory",
+      "parser_valid": false,
+      "score": 0.0,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "generated_tokens": 384,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 200,
+      "condition": "contrastive_memory",
+      "parser_valid": false,
+      "score": 0.0,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await craftItem(bot, \"iron_leggings\", 1);",
+      "generated_tokens": 42,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 200,
+      "condition": "cross_context_memory",
+      "parser_valid": true,
+      "score": 0.5,
+      "error": null,
+      "generated_tokens": 92,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await placeItem(bot, \"crafting_table\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 201,
+      "condition": "no_memory",
+      "parser_valid": false,
+      "score": 0.0,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "generated_tokens": 384,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 201,
+      "condition": "positive_memory",
+      "parser_valid": false,
+      "score": 0.0,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "generated_tokens": 384,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 201,
+      "condition": "failed_memory",
+      "parser_valid": false,
+      "score": 0.0,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "generated_tokens": 384,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 201,
+      "condition": "contrastive_memory",
+      "parser_valid": false,
+      "score": 0.0,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await craftItem(bot, \"iron_leggings\", 1);",
+      "generated_tokens": 42,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 201,
+      "condition": "cross_context_memory",
+      "parser_valid": false,
+      "score": 0.0,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "generated_tokens": 384,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 202,
+      "condition": "no_memory",
+      "parser_valid": false,
+      "score": 0.0,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "generated_tokens": 384,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 202,
+      "condition": "positive_memory",
+      "parser_valid": true,
+      "score": 0.5,
+      "error": null,
+      "generated_tokens": 66,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await bot.useOn(bot.findBlock({ matching: \"crafting_table\", maxDistance: 5 }));\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 202,
+      "condition": "failed_memory",
+      "parser_valid": false,
+      "score": 0.0,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "generated_tokens": 384,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 202,
+      "condition": "contrastive_memory",
+      "parser_valid": false,
+      "score": 0.0,
+      "error": "unknown: Unexpected token (2:35)\n\n  1 | async function solveTask(bot) {\n> 2 |   await mineBlock(bot, \"stone\", 1);\n    |                                    ^",
+      "generated_tokens": 24,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"stone\", 1);\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 202,
+      "condition": "cross_context_memory",
+      "parser_valid": true,
+      "score": 0.5,
+      "error": null,
+      "generated_tokens": 61,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await bot.useOn(bot.findBlock({ name: \"crafting_table\" }));\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 203,
+      "condition": "no_memory",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 95,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 203,
+      "condition": "positive_memory",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 78,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 203,
+      "condition": "failed_memory",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 95,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 203,
+      "condition": "contrastive_memory",
+      "parser_valid": false,
+      "score": 0.0,
+      "error": "unknown: Unexpected token (2:48)\n\n  1 | async function solveTask(bot) {\n> 2 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n    |                                                 ^",
+      "generated_tokens": 29,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 203,
+      "condition": "cross_context_memory",
+      "parser_valid": false,
+      "score": 0.0,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "generated_tokens": 384,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 200,
+      "condition": "no_memory",
+      "parser_valid": true,
+      "score": 0.0,
+      "error": null,
+      "generated_tokens": 69,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 200,
+      "condition": "positive_memory",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 200,
+      "condition": "failed_memory",
+      "parser_valid": true,
+      "score": 0.0,
+      "error": null,
+      "generated_tokens": 69,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 200,
+      "condition": "contrastive_memory",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 200,
+      "condition": "cross_context_memory",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 201,
+      "condition": "no_memory",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 201,
+      "condition": "positive_memory",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 201,
+      "condition": "failed_memory",
+      "parser_valid": true,
+      "score": 0.0,
+      "error": null,
+      "generated_tokens": 75,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 201,
+      "condition": "contrastive_memory",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 201,
+      "condition": "cross_context_memory",
+      "parser_valid": true,
+      "score": 0.0,
+      "error": null,
+      "generated_tokens": 69,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 202,
+      "condition": "no_memory",
+      "parser_valid": true,
+      "score": 0.0,
+      "error": null,
+      "generated_tokens": 69,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 202,
+      "condition": "positive_memory",
+      "parser_valid": true,
+      "score": 0.0,
+      "error": null,
+      "generated_tokens": 75,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 202,
+      "condition": "failed_memory",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 202,
+      "condition": "contrastive_memory",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 202,
+      "condition": "cross_context_memory",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 203,
+      "condition": "no_memory",
+      "parser_valid": true,
+      "score": 0.0,
+      "error": null,
+      "generated_tokens": 69,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 203,
+      "condition": "positive_memory",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 203,
+      "condition": "failed_memory",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 203,
+      "condition": "contrastive_memory",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 203,
+      "condition": "cross_context_memory",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    }
+  ],
+  "evaluation_seconds": 898.6007600279991,
+  "peak_gpu_gib": 16.54877805709839,
+  "scope_warning": "Two-context mechanism pilot; not the full Gate 2 suite."
+}

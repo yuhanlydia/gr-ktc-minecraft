@@ -1,0 +1,101 @@
+{
+  "protocol": "causal-kv-complement-search-v1",
+  "rank": 8,
+  "rho_shared_linear_proxy": 0.47547076754834383,
+  "contexts": {
+    "0281": {
+      "candidates": [
+        {
+          "name": "weight_only",
+          "value_scale": null,
+          "relative_state_mse": 0.032074108719825745,
+          "effect_rho": 0.0
+        },
+        {
+          "name": "kv_0",
+          "value_scale": 0.0,
+          "relative_state_mse": 0.029656747356057167,
+          "effect_rho": 0.0753679871559143
+        },
+        {
+          "name": "kv_0.0625",
+          "value_scale": 0.0625,
+          "relative_state_mse": 0.028736380860209465,
+          "effect_rho": 0.10406291484832764
+        },
+        {
+          "name": "kv_0.125",
+          "value_scale": 0.125,
+          "relative_state_mse": 0.02848045714199543,
+          "effect_rho": 0.1120421290397644
+        },
+        {
+          "name": "kv_0.1875",
+          "value_scale": 0.1875,
+          "relative_state_mse": 0.02809836156666279,
+          "effect_rho": 0.12395501136779785
+        },
+        {
+          "name": "kv_0.25",
+          "value_scale": 0.25,
+          "relative_state_mse": 0.02846887707710266,
+          "effect_rho": 0.11240309476852417
+        }
+      ],
+      "selected": {
+        "name": "kv_0.1875",
+        "value_scale": 0.1875,
+        "relative_state_mse": 0.02809836156666279,
+        "effect_rho": 0.12395501136779785
+      }
+    },
+    "0299": {
+      "candidates": [
+        {
+          "name": "weight_only",
+          "value_scale": null,
+          "relative_state_mse": 0.0302744098007679,
+          "effect_rho": 0.0
+        },
+        {
+          "name": "kv_0",
+          "value_scale": 0.0,
+          "relative_state_mse": 0.0218789242208004,
+          "effect_rho": 0.2773129343986511
+        },
+        {
+          "name": "kv_0.0625",
+          "value_scale": 0.0625,
+          "relative_state_mse": 0.0199872013181448,
+          "effect_rho": 0.33979880809783936
+        },
+        {
+          "name": "kv_0.125",
+          "value_scale": 0.125,
+          "relative_state_mse": 0.019350741058588028,
+          "effect_rho": 0.36082184314727783
+        },
+        {
+          "name": "kv_0.1875",
+          "value_scale": 0.1875,
+          "relative_state_mse": 0.018266672268509865,
+          "effect_rho": 0.3966299295425415
+        },
+        {
+          "name": "kv_0.25",
+          "value_scale": 0.25,
+          "relative_state_mse": 0.018468691036105156,
+          "effect_rho": 0.3899570107460022
+        }
+      ],
+      "selected": {
+        "name": "kv_0.1875",
+        "value_scale": 0.1875,
+        "relative_state_mse": 0.018266672268509865,
+        "effect_rho": 0.3966299295425415
+      }
+    }
+  },
+  "selection_rule": "minimum teacher-forced layer-24 state MSE; no environment outcome used",
+  "scope_warning": "One-dimensional value-scale search over the native quality-KV support; not a full learned unreachable KV projection."
+}

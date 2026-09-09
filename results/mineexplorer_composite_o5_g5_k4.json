@@ -1,0 +1,100 @@
+{
+  "protocol": "mineexplorer-local-pilot-v1",
+  "difficulty": "composite",
+  "offset": 5,
+  "groups": 5,
+  "trajectories": 20,
+  "mixed_groups": 2,
+  "successes": 0,
+  "parser_valid": 18,
+  "manifest_files": 85,
+  "peak_gpu_gib": 16.44817352294922,
+  "pool": "data/acquisition/mineexplorer_composite_supported_o5_g5_k4",
+  "group_results": [
+    {
+      "scene_id": "0106",
+      "task": "Mine the crafting table nearby, then place it and use it to craft a ladder, a jungle door, and yellow stained glass.",
+      "scores": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0183",
+      "task": "You have dark oak logs in your inventory and a crafting table nearby. First, open the crafting table and craft dark oak planks from the logs. Then, craft a dark oak pressure plate from the planks.",
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0210",
+      "task": "Craft a crafting table from oak planks, then use it to craft a ladder from sticks.",
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0217",
+      "task": "Mine dark oak logs from the nearby tree, then use the crafting table to craft a dark oak sign.",
+      "scores": [
+        0.5,
+        0.5,
+        0.5,
+        0.0
+      ],
+      "advantages": [
+        0.5773476362228394,
+        0.5773476362228394,
+        0.5773476362228394,
+        -1.732042908668518
+      ],
+      "mixed_outcome": true
+    },
+    {
+      "scene_id": "0230",
+      "task": "Mine the magenta wool blocks blocking the doorway, then go inside and use the crafting table to craft a lapis block from your 9 lapis lazuli.",
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.5
+      ],
+      "advantages": [
+        -0.5773476362228394,
+        -0.5773476362228394,
+        -0.5773476362228394,
+        1.732042908668518
+      ],
+      "mixed_outcome": true
+    }
+  ]
+}

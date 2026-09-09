@@ -1,0 +1,28 @@
+protocol:
+  name: local-qwen-voyager-v1
+  api_free: true
+  peam_claim: local-acquisition-control
+  minecraft_version: "1.19"
+  server_bind: 127.0.0.1
+  online_mode: false
+  seeds: [42, 43, 44]
+
+model:
+  path: models/Qwen3-VL-8B-Instruct
+  role: [fast_policy, local_rollout_sampler]
+  precision_acquisition: bf16
+  precision_training: nf4
+  max_new_tokens_smoke: 192
+  temperature: 0.7
+  top_p: 0.9
+
+experiment:
+  rollouts_per_group: 4
+  local_smoke_scenes: 10
+  fast_memory_scope: task_retry_cycle
+  score: environment_verifier_only
+  slow_tier_api: null
+
+comparison:
+  peam_reported_is_reference_only: true
+  reason: PEAM uses Azure GPT-4o for slow-tier acquisition while this protocol is API-free

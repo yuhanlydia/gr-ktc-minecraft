@@ -1,0 +1,923 @@
+{
+  "protocol": "real-fast-kv-cross-context-v1",
+  "scene_ids": [
+    "0281",
+    "0299",
+    "0391",
+    "0499",
+    "0549",
+    "0251",
+    "0000",
+    "0076"
+  ],
+  "memory_tokens": 4,
+  "value_scale": 0.25,
+  "target_contexts": 8,
+  "acquisition_seeds": [
+    500,
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507
+  ],
+  "evaluation_seeds": [
+    200,
+    201,
+    202,
+    203
+  ],
+  "evaluation_skipped": true,
+  "acquisitions": {
+    "0281": {
+      "records": [
+        {
+          "seed": 500,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+        },
+        {
+          "seed": 501,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+        },
+        {
+          "seed": 502,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+        },
+        {
+          "seed": 503,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+        },
+        {
+          "seed": 504,
+          "parser_valid": false,
+          "score": 0.0,
+          "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+        },
+        {
+          "seed": 505,
+          "parser_valid": false,
+          "score": 0.0,
+          "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+        },
+        {
+          "seed": 506,
+          "parser_valid": false,
+          "score": 0.0,
+          "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+        },
+        {
+          "seed": 507,
+          "parser_valid": false,
+          "score": 0.0,
+          "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+        }
+      ],
+      "advantages": [
+        0.9999979734420776,
+        0.9999979734420776,
+        0.9999979734420776,
+        0.9999979734420776,
+        -0.9999979734420776,
+        -0.9999979734420776,
+        -0.9999979734420776,
+        -0.9999979734420776
+      ]
+    },
+    "0299": {
+      "records": [
+        {
+          "seed": 500,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+        },
+        {
+          "seed": 501,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+        },
+        {
+          "seed": 502,
+          "parser_valid": true,
+          "score": 0.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+        },
+        {
+          "seed": 503,
+          "parser_valid": true,
+          "score": 0.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+        },
+        {
+          "seed": 504,
+          "parser_valid": true,
+          "score": 0.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+        },
+        {
+          "seed": 505,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+        },
+        {
+          "seed": 506,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+        },
+        {
+          "seed": 507,
+          "parser_valid": true,
+          "score": 0.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+        }
+      ],
+      "advantages": [
+        0.9999979734420776,
+        0.9999979734420776,
+        -0.9999979734420776,
+        -0.9999979734420776,
+        -0.9999979734420776,
+        0.9999979734420776,
+        0.9999979734420776,
+        -0.9999979734420776
+      ]
+    },
+    "0391": {
+      "records": [
+        {
+          "seed": 500,
+          "parser_valid": true,
+          "score": 0.5,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await placeItem(bot, \"acacia_planks\", 6);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+        },
+        {
+          "seed": 501,
+          "parser_valid": true,
+          "score": 0.5,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await placeItem(bot, \"acacia_planks\", 6);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+        },
+        {
+          "seed": 502,
+          "parser_valid": true,
+          "score": 0.5,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await placeItem(bot, \"acacia_stairs\", 4);\n}\n```"
+        },
+        {
+          "seed": 503,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+        },
+        {
+          "seed": 504,
+          "parser_valid": true,
+          "score": 0.5,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await placeItem(bot, \"acacia_planks\", 6);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+        },
+        {
+          "seed": 505,
+          "parser_valid": true,
+          "score": 0.5,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await placeItem(bot, \"crafting_table\", 1);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+        },
+        {
+          "seed": 506,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+        },
+        {
+          "seed": 507,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+        }
+      ],
+      "advantages": [
+        -0.7745934724807739,
+        -0.7745934724807739,
+        -0.7745934724807739,
+        1.2909890413284302,
+        -0.7745934724807739,
+        -0.7745934724807739,
+        1.2909890413284302,
+        1.2909890413284302
+      ]
+    },
+    "0499": {
+      "records": [
+        {
+          "seed": 500,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+        },
+        {
+          "seed": 501,
+          "parser_valid": true,
+          "score": 0.0,
+          "error": "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=3000): Read timed out. (read timeout=120)",
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+        },
+        {
+          "seed": 502,
+          "parser_valid": true,
+          "score": 0.5,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+        },
+        {
+          "seed": 503,
+          "parser_valid": true,
+          "score": 0.5,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 1);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+        },
+        {
+          "seed": 504,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+        },
+        {
+          "seed": 505,
+          "parser_valid": true,
+          "score": 0.5,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 1);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+        },
+        {
+          "seed": 506,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+        },
+        {
+          "seed": 507,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+        }
+      ],
+      "advantages": [
+        0.8980239033699036,
+        -1.9756525754928589,
+        -0.5388143658638,
+        -0.5388143658638,
+        0.8980239033699036,
+        -0.5388143658638,
+        0.8980239033699036,
+        0.8980239033699036
+      ]
+    },
+    "0549": {
+      "records": [
+        {
+          "seed": 500,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 8, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 8, \"birch_planks\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\");\n}\n```"
+        },
+        {
+          "seed": 501,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 8, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 8, \"birch_planks\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\");\n}\n```"
+        },
+        {
+          "seed": 502,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 8, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 8, \"birch_planks\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\", \"crafting_table\");\n}\n```"
+        },
+        {
+          "seed": 503,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 8, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 8, \"birch_planks\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\");\n}\n```"
+        },
+        {
+          "seed": 504,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 8, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 8, \"birch_planks\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\", \"crafting_table\");\n}\n```"
+        },
+        {
+          "seed": 505,
+          "parser_valid": true,
+          "score": 0.0,
+          "error": "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=3000): Read timed out. (read timeout=120)",
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 8, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 16, \"birch_planks\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\");\n}\n```"
+        },
+        {
+          "seed": 506,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 8, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 8, \"birch_planks\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\");\n}\n```"
+        },
+        {
+          "seed": 507,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 8, \"birch_log\", 4);\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\", 4);\n  await craftItem(bot, \"stick\", 8, \"birch_planks\", 8);\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", 1, \"stick\", 1, \"crafting_table\", 1);\n}\n```"
+        }
+      ],
+      "advantages": [
+        0.3779633343219757,
+        0.3779633343219757,
+        0.3779633343219757,
+        0.3779633343219757,
+        0.3779633343219757,
+        -2.6457433700561523,
+        0.3779633343219757,
+        0.3779633343219757
+      ]
+    },
+    "0251": {
+      "records": [
+        {
+          "seed": 500,
+          "parser_valid": true,
+          "score": 0.5,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 2, \"birch_log\");\n  await craftItem(bot, \"fishing_rod\", 1, \"birch_planks\", \"string\");\n}\n```"
+        },
+        {
+          "seed": 501,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 2, \"birch_log\");\n  await craftItem(bot, \"stick\", 6, \"birch_planks\");\n  await craftItem(bot, \"fishing_rod\", 1, \"stick\", \"string\");\n}\n```"
+        },
+        {
+          "seed": 502,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 2, \"birch_log\");\n  await craftItem(bot, \"stick\", 4, \"birch_planks\");\n  await craftItem(bot, \"fishing_rod\", 1, \"stick\", \"string\");\n}\n```"
+        },
+        {
+          "seed": 503,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 2, \"birch_log\");\n  await craftItem(bot, \"stick\", 4, \"birch_planks\");\n  await craftItem(bot, \"fishing_rod\", 1, \"stick\", \"string\");\n}\n```"
+        },
+        {
+          "seed": 504,
+          "parser_valid": true,
+          "score": 0.5,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 2, \"birch_log\");\n  await craftItem(bot, \"fishing_rod\", 1, \"birch_planks\", \"string\");\n}\n```"
+        },
+        {
+          "seed": 505,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 2, \"birch_log\");\n  await craftItem(bot, \"stick\", 4, \"birch_planks\");\n  await craftItem(bot, \"fishing_rod\", 1, \"stick\", \"string\");\n}\n```"
+        },
+        {
+          "seed": 506,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 2, \"birch_log\");\n  await craftItem(bot, \"stick\", 6, \"birch_planks\");\n  await craftItem(bot, \"fishing_rod\", 1, \"stick\", \"string\");\n}\n```"
+        },
+        {
+          "seed": 507,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 2, \"birch_log\");\n  await craftItem(bot, \"stick\", 6, \"birch_planks\");\n  await craftItem(bot, \"fishing_rod\", 1, \"stick\", \"string\");\n}\n```"
+        }
+      ],
+      "advantages": [
+        -1.732042908668518,
+        0.5773476362228394,
+        0.5773476362228394,
+        0.5773476362228394,
+        -1.732042908668518,
+        0.5773476362228394,
+        0.5773476362228394,
+        0.5773476362228394
+      ]
+    },
+    "0000": {
+      "records": [
+        {
+          "seed": 500,
+          "parser_valid": true,
+          "score": 0.5,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 6);\n  await placeItem(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"oak_stairs\", 6);\n}\n```"
+        },
+        {
+          "seed": 501,
+          "parser_valid": true,
+          "score": 0.5,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 6);\n  await placeItem(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"oak_stairs\", 6);\n}\n```"
+        },
+        {
+          "seed": 502,
+          "parser_valid": true,
+          "score": 0.5,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 6);\n  await placeItem(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"oak_stairs\", 6);\n}\n```"
+        },
+        {
+          "seed": 503,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"oak_stairs\", 6);\n}\n```"
+        },
+        {
+          "seed": 504,
+          "parser_valid": true,
+          "score": 0.5,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 6);\n  await placeItem(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"oak_stairs\", 6);\n}\n```"
+        },
+        {
+          "seed": 505,
+          "parser_valid": true,
+          "score": 0.5,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 6);\n  await placeItem(bot, \"crafting_table\", 1);\n  await craftItem(bot, \"oak_stairs\", 6);\n}\n```"
+        },
+        {
+          "seed": 506,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"oak_stairs\", 6);\n}\n```"
+        },
+        {
+          "seed": 507,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"oak_stairs\", 6);\n}\n```"
+        }
+      ],
+      "advantages": [
+        -0.7745934724807739,
+        -0.7745934724807739,
+        -0.7745934724807739,
+        1.2909890413284302,
+        -0.7745934724807739,
+        -0.7745934724807739,
+        1.2909890413284302,
+        1.2909890413284302
+      ]
+    },
+    "0076": {
+      "records": [
+        {
+          "seed": 500,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_pressure_plate\", 1);\n}\n```"
+        },
+        {
+          "seed": 501,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_pressure_plate\", 1);\n}\n```"
+        },
+        {
+          "seed": 502,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_pressure_plate\", 1);\n}\n```"
+        },
+        {
+          "seed": 503,
+          "parser_valid": true,
+          "score": 0.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await bot.craftItem(\"oak_pressure_plate\", 1);\n}\n```"
+        },
+        {
+          "seed": 504,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_pressure_plate\", 1);\n}\n```"
+        },
+        {
+          "seed": 505,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_pressure_plate\", 1);\n}\n```"
+        },
+        {
+          "seed": 506,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_pressure_plate\", 1);\n}\n```"
+        },
+        {
+          "seed": 507,
+          "parser_valid": true,
+          "score": 1.0,
+          "error": null,
+          "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_pressure_plate\", 1);\n}\n```"
+        }
+      ],
+      "advantages": [
+        0.3779633343219757,
+        0.3779633343219757,
+        0.3779633343219757,
+        -2.6457433700561523,
+        0.3779633343219757,
+        0.3779633343219757,
+        0.3779633343219757,
+        0.3779633343219757
+      ]
+    }
+  },
+  "skipped_all_equal": {
+    "0532": [
+      {
+        "seed": 500,
+        "parser_valid": true,
+        "score": 0.5,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"jungle_log\", 1);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n}\n```"
+      },
+      {
+        "seed": 501,
+        "parser_valid": true,
+        "score": 0.5,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"jungle_log\", 1);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n}\n```"
+      },
+      {
+        "seed": 502,
+        "parser_valid": true,
+        "score": 0.5,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"jungle_log\", 1);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n}\n```"
+      },
+      {
+        "seed": 503,
+        "parser_valid": true,
+        "score": 0.5,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"jungle_log\", 1);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n}\n```"
+      },
+      {
+        "seed": 504,
+        "parser_valid": true,
+        "score": 0.5,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"jungle_log\", 1);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n}\n```"
+      },
+      {
+        "seed": 505,
+        "parser_valid": true,
+        "score": 0.5,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"jungle_log\", 1);\n  await craftItem(bot, \"wooden_pickaxe\", 1, \"jungle_log\");\n}\n```"
+      },
+      {
+        "seed": 506,
+        "parser_valid": true,
+        "score": 0.5,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"jungle_log\", 1);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n}\n```"
+      },
+      {
+        "seed": 507,
+        "parser_valid": true,
+        "score": 0.5,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"jungle_log\", 1);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n}\n```"
+      }
+    ],
+    "0034": [
+      {
+        "seed": 500,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await bot.use(bot.inventory.items().find(item => item.name === 'crafting_table'));\n  await bot.craftItem('diamond_shovel');\n}\n```"
+      },
+      {
+        "seed": 501,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await bot.use(bot.inventory['crafting_table']);\n  await bot.craftItem(\"diamond_shovel\");\n}\n```"
+      },
+      {
+        "seed": 502,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await bot.use(bot.inventory.items()[0]); // Use crafting table\n  await bot.craftItem(\"diamond_shovel\");\n}\n```"
+      },
+      {
+        "seed": 503,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await bot.use(bot.inventory.findItem(\"crafting_table\"));\n  await bot.craftItem(\"diamond_shovel\");\n}\n```"
+      },
+      {
+        "seed": 504,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await bot.use(bot.inventory.find(item => item.name === \"crafting_table\"));\n  await bot.craftItem(\"diamond_shovel\");\n}\n```"
+      },
+      {
+        "seed": 505,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await bot.use(bot.findBlock({ match: \"crafting_table\" }));\n  await bot.craftItem(\"diamond_shovel\");\n}\n```"
+      },
+      {
+        "seed": 506,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await bot.use(bot.inventory.findInventoryItem(\"crafting_table\"));\n  await bot.craftItem(\"diamond_shovel\");\n}\n```"
+      },
+      {
+        "seed": 507,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"crafting_table\", 1);\n  await craftItem(bot, \"diamond_shovel\");\n}\n```"
+      }
+    ],
+    "0044": [
+      {
+        "seed": 500,
+        "parser_valid": true,
+        "score": 0.5,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"birch_log\", 1);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n  await mineBlock(bot, \"red_nether_bricks\", 1);\n}\n```"
+      },
+      {
+        "seed": 501,
+        "parser_valid": true,
+        "score": 0.5,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"birch_log\", 1);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n  await mineBlock(bot, \"red_nether_bricks\", 1);\n}\n```"
+      },
+      {
+        "seed": 502,
+        "parser_valid": true,
+        "score": 0.5,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"birch_log\", 1);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n  await mineBlock(bot, \"red_nether_bricks\", 1);\n}\n```"
+      },
+      {
+        "seed": 503,
+        "parser_valid": true,
+        "score": 0.5,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"birch_log\", 1);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n  await mineBlock(bot, \"red_nether_bricks\", 1);\n}\n```"
+      },
+      {
+        "seed": 504,
+        "parser_valid": true,
+        "score": 0.5,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"birch_log\", 1);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n  await mineBlock(bot, \"red_nether_bricks\", 1);\n}\n```"
+      },
+      {
+        "seed": 505,
+        "parser_valid": true,
+        "score": 0.5,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"birch_log\", 3);\n  await craftItem(bot, \"wooden_pickaxe\", 1, \"birch_log\");\n  await mineBlock(bot, \"red_nether_bricks\", 1);\n}\n```"
+      },
+      {
+        "seed": 506,
+        "parser_valid": true,
+        "score": 0.5,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"birch_log\", 1);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n  await mineBlock(bot, \"red_nether_bricks\", 1);\n}\n```"
+      },
+      {
+        "seed": 507,
+        "parser_valid": true,
+        "score": 0.5,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"birch_log\", 1);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n  await mineBlock(bot, \"red_nether_bricks\", 1);\n}\n```"
+      }
+    ],
+    "0065": [
+      {
+        "seed": 500,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(\"crafting_table\");\n  await bot.craftItem(\"lapis_block\", 1);\n}\n```"
+      },
+      {
+        "seed": 501,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(bot => bot.inventory.count(\"crafting_table\") > 0);\n  await bot.craftItem(bot, \"lapis_block\", 1);\n}\n```"
+      },
+      {
+        "seed": 502,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(\"crafting_table\", 1);\n  await bot.craftItem(\"lapis_block\", 1);\n}\n```"
+      },
+      {
+        "seed": 503,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(\"crafting_table\");\n  await bot.craftItem(\"lapis_block\", 1);\n}\n```"
+      },
+      {
+        "seed": 504,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(bot => bot.inventory.count(\"crafting_table\") > 0);\n  await bot.craftItem(bot, \"lapis_block\", 1);\n}\n```"
+      },
+      {
+        "seed": 505,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(bot => bot.isBlock(bot.pos, \"crafting_table\"));\n  await bot.craftItem(bot, \"lapis_block\", 1);\n}\n```"
+      },
+      {
+        "seed": 506,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(\"crafting_table\");\n  await bot.craftItem(\"lapis_block\", 1);\n}\n```"
+      },
+      {
+        "seed": 507,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(\"crafting_table\");\n  await bot.craftItem(\"lapis_block\", 1);\n}\n```"
+      }
+    ],
+    "0069": [
+      {
+        "seed": 500,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"poppy\", 1);\n  await craftItem(bot, \"birch_button\", 1, [\"birch_log\", \"birch_log\", \"birch_log\", \"birch_log\"]);\n  await placeItem(bot, \"birch_button\", 1);\n}\n```"
+      },
+      {
+        "seed": 501,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"poppy\", 1);\n  await craftItem(bot, \"birch_button\", 1, [\"birch_log\", \"birch_log\", \"birch_log\", \"birch_log\"]);\n  await placeItem(bot, \"birch_button\", 1);\n}\n```"
+      },
+      {
+        "seed": 502,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"poppy\", 1);\n  await mineBlock(bot, \"birch_log\", 1);\n  await craftItem(bot, \"birch_button\", 1);\n}\n```"
+      },
+      {
+        "seed": 503,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"poppy\", 1);\n  await craftItem(bot, \"birch_button\", 1, [\"birch_log\", \"birch_log\", \"birch_log\", \"birch_log\"]);\n  await placeItem(bot, \"birch_button\", 1);\n}\n```"
+      },
+      {
+        "seed": 504,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"poppy\", 1);\n  await craftItem(bot, \"birch_button\", 1, [\"birch_log\", \"birch_log\", \"birch_log\", \"birch_log\"]);\n  await placeItem(bot, \"birch_button\", 1);\n}\n```"
+      },
+      {
+        "seed": 505,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"poppy\", 1);\n  await craftItem(bot, \"birch_button\", 1, [\"birch_log\", \"crafting_table\"]);\n}\n```"
+      },
+      {
+        "seed": 506,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"poppy\", 1);\n  await craftItem(bot, \"birch_button\", 1, [\"birch_log\", \"birch_log\", \"birch_log\", \"birch_log\"]);\n  await placeItem(bot, \"birch_button\", 1);\n}\n```"
+      },
+      {
+        "seed": 507,
+        "parser_valid": true,
+        "score": 0.0,
+        "error": null,
+        "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"poppy\", 1);\n  await mineBlock(bot, \"birch_log\", 3);\n  await craftItem(bot, \"birch_button\", 1, { birch_log: 3 });\n}\n```"
+      }
+    ]
+  },
+  "summary": {
+    "no_memory": {
+      "mean_score": null,
+      "full_successes": 0,
+      "parser_valid": 0,
+      "trials": 0
+    },
+    "positive_memory": {
+      "mean_score": null,
+      "full_successes": 0,
+      "parser_valid": 0,
+      "trials": 0
+    },
+    "failed_memory": {
+      "mean_score": null,
+      "full_successes": 0,
+      "parser_valid": 0,
+      "trials": 0
+    },
+    "contrastive_memory": {
+      "mean_score": null,
+      "full_successes": 0,
+      "parser_valid": 0,
+      "trials": 0
+    },
+    "cross_context_memory": {
+      "mean_score": null,
+      "full_successes": 0,
+      "parser_valid": 0,
+      "trials": 0
+    }
+  },
+  "trials": [],
+  "evaluation_seconds": 2.522999420762062e-05,
+  "peak_gpu_gib": 16.44928216934204,
+  "scope_warning": "Mechanism acquisition; mixed outcomes are selected without using evaluation seeds."
+}

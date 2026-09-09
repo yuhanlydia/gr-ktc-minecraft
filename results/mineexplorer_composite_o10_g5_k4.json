@@ -1,0 +1,100 @@
+{
+  "protocol": "mineexplorer-local-pilot-v1",
+  "difficulty": "composite",
+  "offset": 10,
+  "groups": 5,
+  "trajectories": 20,
+  "mixed_groups": 4,
+  "successes": 6,
+  "parser_valid": 17,
+  "manifest_files": 85,
+  "peak_gpu_gib": 16.42931365966797,
+  "pool": "data/acquisition/mineexplorer_composite_supported_o10_g5_k4",
+  "group_results": [
+    {
+      "scene_id": "0251",
+      "task": "Craft birch planks from the birch logs in your inventory, then craft a fishing rod using sticks (made from the planks) and the string in your inventory. Use the nearby crafting table for the fishing rod recipe.",
+      "scores": [
+        1.0,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "advantages": [
+        1.732042908668518,
+        -0.5773476362228394,
+        -0.5773476362228394,
+        -0.5773476362228394
+      ],
+      "mixed_outcome": true
+    },
+    {
+      "scene_id": "0253",
+      "task": "Mine birch logs from the nearby birch tree, then use the crafting table with your iron ingots to craft an iron axe.",
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0281",
+      "task": "Mine the chiseled sandstone blocks in the wall (marked by torches) to access the room behind, then use the crafting table inside to craft iron leggings from the iron ingots in your inventory.",
+      "scores": [
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "advantages": [
+        -0.9999979734420776,
+        0.9999979734420776,
+        0.9999979734420776,
+        -0.9999979734420776
+      ],
+      "mixed_outcome": true
+    },
+    {
+      "scene_id": "0284",
+      "task": "Mine through the smooth sandstone structure to access and collect the sandstone slab hidden inside.",
+      "scores": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "advantages": [
+        -0.5773489475250244,
+        -0.5773489475250244,
+        1.7320468425750732,
+        -0.5773489475250244
+      ],
+      "mixed_outcome": true
+    },
+    {
+      "scene_id": "0299",
+      "task": "You are in a Nether chamber. First, find and mine the nether quartz ore (brownish blocks with white streaks in the netherrack walls). Then find and mine the smooth white quartz block.",
+      "scores": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "advantages": [
+        0.9999979734420776,
+        -0.9999979734420776,
+        -0.9999979734420776,
+        0.9999979734420776
+      ],
+      "mixed_outcome": true
+    }
+  ]
+}

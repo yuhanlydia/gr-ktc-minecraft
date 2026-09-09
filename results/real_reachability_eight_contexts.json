@@ -1,0 +1,78 @@
+{
+  "protocol": "real-qwen-kv-reachability-data-v1",
+  "model": "Qwen3-VL-8B-Instruct",
+  "precision": "bf16",
+  "layer": 24,
+  "contexts": [
+    {
+      "scene_id": "0281",
+      "task_text": "Mine the chiseled sandstone blocks in the wall (marked by torches) to access the room behind, then use the crafting table inside to craft iron leggings from the iron ingots in your inventory.",
+      "prompt_tokens": 266,
+      "response_tokens": 77,
+      "aligned_tokens": 77,
+      "feature_dim": 4096
+    },
+    {
+      "scene_id": "0299",
+      "task_text": "You are in a Nether chamber. First, find and mine the nether quartz ore (brownish blocks with white streaks in the netherrack walls). Then find and mine the smooth white quartz block.",
+      "prompt_tokens": 279,
+      "response_tokens": 43,
+      "aligned_tokens": 43,
+      "feature_dim": 4096
+    },
+    {
+      "scene_id": "0391",
+      "task_text": "You have acacia logs in your inventory. First craft acacia planks from the logs, then use the nearby crafting table to craft acacia stairs from the planks.",
+      "prompt_tokens": 253,
+      "response_tokens": 42,
+      "aligned_tokens": 42,
+      "feature_dim": 4096
+    },
+    {
+      "scene_id": "0499",
+      "task_text": "Mine oak planks from the nearby wooden hut using your axe, then craft sticks from the planks you collected.",
+      "prompt_tokens": 244,
+      "response_tokens": 39,
+      "aligned_tokens": 39,
+      "feature_dim": 4096
+    },
+    {
+      "scene_id": "0549",
+      "task_text": "First, craft birch planks from the birch logs in your inventory. Then, craft a dark oak sign using dark oak planks (crafted from your dark oak logs) and sticks (crafted from your birch planks). Use the nearby crafting table for the sign recipe.",
+      "prompt_tokens": 286,
+      "response_tokens": 97,
+      "aligned_tokens": 97,
+      "feature_dim": 4096
+    },
+    {
+      "scene_id": "0251",
+      "task_text": "Craft birch planks from the birch logs in your inventory, then craft a fishing rod using sticks (made from the planks) and the string in your inventory. Use the nearby crafting table for the fishing rod recipe.",
+      "prompt_tokens": 275,
+      "response_tokens": 71,
+      "aligned_tokens": 71,
+      "feature_dim": 4096
+    },
+    {
+      "scene_id": "0000",
+      "task_text": "First craft oak planks from your oak logs, then use the nearby crafting table to craft oak stairs from those planks.",
+      "prompt_tokens": 249,
+      "response_tokens": 42,
+      "aligned_tokens": 42,
+      "feature_dim": 4096
+    },
+    {
+      "scene_id": "0076",
+      "task_text": "Craft an oak pressure plate.",
+      "prompt_tokens": 230,
+      "response_tokens": 27,
+      "aligned_tokens": 27,
+      "feature_dim": 4096
+    }
+  ],
+  "peak_gpu_gib": 16.690244674682617,
+  "feature_semantics": "no-memory residual stream entering selected text layer",
+  "target_semantics": "matched quality-KV causal output hidden shift",
+  "source": "results/fast_kv_eight_context_acquisition.json",
+  "memory_input": "results/fast_kv_eight_context_memories.safetensors",
+  "scope": "first-order residual-stream proxy; actual LoRA optimization is a separate gate"
+}

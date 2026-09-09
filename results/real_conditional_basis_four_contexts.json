@@ -1,0 +1,410 @@
+{
+  "protocol": "real-reachability-conditions-v1",
+  "rank": 8,
+  "scene_ids": [
+    "0299",
+    "0391",
+    "0499",
+    "0549"
+  ],
+  "seeds": [
+    320,
+    321
+  ],
+  "conditions": [
+    "base",
+    "state",
+    "weight_shared",
+    "weight_conditional"
+  ],
+  "complement_value_scales": {},
+  "conditional_bases": 2,
+  "conditional_coefficients": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "summary": {
+    "base": {
+      "full_successes": 6,
+      "mean_score": 0.8125,
+      "parser_valid": 8,
+      "trials": 8
+    },
+    "state": {
+      "full_successes": 8,
+      "mean_score": 1.0,
+      "parser_valid": 8,
+      "trials": 8
+    },
+    "weight_shared": {
+      "full_successes": 3,
+      "mean_score": 0.625,
+      "parser_valid": 8,
+      "trials": 8
+    },
+    "weight_conditional": {
+      "full_successes": 2,
+      "mean_score": 0.5625,
+      "parser_valid": 8,
+      "trials": 8
+    }
+  },
+  "comparisons": {
+    "state_vs_base": {
+      "condition_only": 2,
+      "base_only": 0,
+      "p": 0.5
+    },
+    "weight_shared_vs_base": {
+      "condition_only": 0,
+      "base_only": 3,
+      "p": 0.25
+    },
+    "weight_conditional_vs_base": {
+      "condition_only": 0,
+      "base_only": 4,
+      "p": 0.125
+    }
+  },
+  "trials": [
+    {
+      "scene_id": "0299",
+      "seed": 320,
+      "condition": "base",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 320,
+      "condition": "state",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 320,
+      "condition": "weight_shared",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 320,
+      "condition": "weight_conditional",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 321,
+      "condition": "base",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 75,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 321,
+      "condition": "state",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 321,
+      "condition": "weight_shared",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 89,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil((block) => block.name === \"nether_quartz_ore\", 1);\n  await bot.mineBlock(\"nether_quartz_ore\", 1);\n  await bot.exploreUntil((block) => block.name === \"quartz_block\", 1);\n  await bot.mineBlock(\"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 321,
+      "condition": "weight_conditional",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 75,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0391",
+      "seed": 320,
+      "condition": "base",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 43,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0391",
+      "seed": 320,
+      "condition": "state",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 43,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0391",
+      "seed": 320,
+      "condition": "weight_shared",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 57,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await placeItem(bot, \"crafting_table\", 1);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0391",
+      "seed": 320,
+      "condition": "weight_conditional",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 57,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await placeItem(bot, \"crafting_table\", 1);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0391",
+      "seed": 321,
+      "condition": "base",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 58,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await placeItem(bot, \"acacia_planks\", 6);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0391",
+      "seed": 321,
+      "condition": "state",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 43,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0391",
+      "seed": 321,
+      "condition": "weight_shared",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 58,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await placeItem(bot, \"acacia_planks\", 6);\n  await craftItem(bot, \"acacia_stairs\", 4);\n}\n```"
+    },
+    {
+      "scene_id": "0391",
+      "seed": 321,
+      "condition": "weight_conditional",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 58,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"acacia_planks\", 6);\n  await placeItem(bot, \"acacia_planks\", 6);\n  await craftItem(bot, \"acacia_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0499",
+      "seed": 320,
+      "condition": "base",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 40,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0499",
+      "seed": 320,
+      "condition": "state",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 40,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0499",
+      "seed": 320,
+      "condition": "weight_shared",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 41,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 12);\n}\n```"
+    },
+    {
+      "scene_id": "0499",
+      "seed": 320,
+      "condition": "weight_conditional",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 41,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 12);\n}\n```"
+    },
+    {
+      "scene_id": "0499",
+      "seed": 321,
+      "condition": "base",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 40,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0499",
+      "seed": 321,
+      "condition": "state",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 40,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0499",
+      "seed": 321,
+      "condition": "weight_shared",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 41,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 12);\n}\n```"
+    },
+    {
+      "scene_id": "0499",
+      "seed": 321,
+      "condition": "weight_conditional",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 40,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"stick\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0549",
+      "seed": 320,
+      "condition": "base",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 103,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 4, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 8, \"birch_planks\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\", \"crafting_table\");\n}\n```"
+    },
+    {
+      "scene_id": "0549",
+      "seed": 320,
+      "condition": "state",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 103,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 4, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 8, \"birch_planks\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\", \"crafting_table\");\n}\n```"
+    },
+    {
+      "scene_id": "0549",
+      "seed": 320,
+      "condition": "weight_shared",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 109,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 4, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 8, \"birch_planks\");\n  await placeItem(bot, \"crafting_table\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\");\n}\n```"
+    },
+    {
+      "scene_id": "0549",
+      "seed": 320,
+      "condition": "weight_conditional",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 120,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 4, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"sticks\", 8, \"birch_planks\");\n  await exploreUntil(bot, \"crafting_table\");\n  await placeItem(bot, \"crafting_table\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"sticks\");\n}\n```"
+    },
+    {
+      "scene_id": "0549",
+      "seed": 321,
+      "condition": "base",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 103,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 4, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 8, \"birch_planks\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\", \"crafting_table\");\n}\n```"
+    },
+    {
+      "scene_id": "0549",
+      "seed": 321,
+      "condition": "state",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 99,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 8, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 16, \"birch_planks\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\");\n}\n```"
+    },
+    {
+      "scene_id": "0549",
+      "seed": 321,
+      "condition": "weight_shared",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 109,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 4, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 8, \"birch_planks\");\n  await placeItem(bot, \"crafting_table\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\");\n}\n```"
+    },
+    {
+      "scene_id": "0549",
+      "seed": 321,
+      "condition": "weight_conditional",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 109,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"birch_planks\", 4, \"birch_log\");\n  await craftItem(bot, \"dark_oak_planks\", 4, \"dark_oak_log\");\n  await craftItem(bot, \"stick\", 8, \"birch_planks\");\n  await exploreUntil(bot, \"crafting_table\");\n  await craftItem(bot, \"dark_oak_sign\", 1, \"dark_oak_planks\", \"stick\");\n}\n```"
+    }
+  ],
+  "rho_individual_mean": 0.7808356969934449,
+  "rho_shared": 0.3201912122292745,
+  "elapsed_seconds": 743.4250468369573,
+  "peak_gpu_gib": 16.58082342147827,
+  "scope_warning": "state_plus_weight uses full quality KV as an upper bound; decomposed variants inject the exact offline unreachable component as scheduled or query-retrieved hidden memory, not a reconstructed KV cache."
+}

@@ -1,0 +1,113 @@
+{
+  "protocol": "real-qwen-state-weight-reachability-proxy-v1",
+  "contexts": [
+    "0299",
+    "0391",
+    "0499",
+    "0549"
+  ],
+  "rank_curve": [
+    {
+      "rank": 1,
+      "rho_shared": 0.12434346015891207,
+      "rho_individual_mean": 0.3443176129766974
+    },
+    {
+      "rank": 2,
+      "rho_shared": 0.13329863332972025,
+      "rho_individual_mean": 0.4912898982406013
+    },
+    {
+      "rank": 4,
+      "rho_shared": 0.27037027306445227,
+      "rho_individual_mean": 0.6312778908511637
+    },
+    {
+      "rank": 8,
+      "rho_shared": 0.32019116547445015,
+      "rho_individual_mean": 0.7808357056805866
+    },
+    {
+      "rank": 16,
+      "rho_shared": 0.45622214898296165,
+      "rho_individual_mean": 0.8869314816212087
+    },
+    {
+      "rank": 32,
+      "rho_shared": 0.590636748734376,
+      "rho_individual_mean": 0.9534031388134081
+    },
+    {
+      "rank": 64,
+      "rho_shared": 0.7995639092635254,
+      "rho_individual_mean": 0.9854929422548835
+    }
+  ],
+  "context_heterogeneity": [
+    {
+      "contexts": 1,
+      "rank": 8,
+      "rho_mean": 0.7808357056805866,
+      "rho_min": 0.6243019831605495,
+      "rho_max": 0.8985819865823319,
+      "subsets": 4
+    },
+    {
+      "contexts": 2,
+      "rank": 8,
+      "rho_mean": 0.45810064591966654,
+      "rho_min": 0.4048672205739916,
+      "rho_max": 0.4889053888223458,
+      "subsets": 6
+    },
+    {
+      "contexts": 3,
+      "rank": 8,
+      "rho_mean": 0.3653279587613208,
+      "rho_min": 0.32037870869823926,
+      "rho_max": 0.3906604882103015,
+      "subsets": 4
+    },
+    {
+      "contexts": 4,
+      "rank": 8,
+      "rho_mean": 0.32019116547445015,
+      "rho_min": 0.32019116547445015,
+      "rho_max": 0.32019116547445015,
+      "subsets": 1
+    }
+  ],
+  "individual_at_max_rank": [
+    {
+      "scene_id": "0299",
+      "rho": 0.9999999999999423,
+      "target_norm": 226.72543334960938,
+      "reachable_norm": 226.72695922851562,
+      "unreachable_norm": 5.4474923672387376e-05
+    },
+    {
+      "scene_id": "0391",
+      "rho": 0.9999999999999436,
+      "target_norm": 241.2017822265625,
+      "reachable_norm": 241.2035369873047,
+      "unreachable_norm": 5.7276705774711445e-05
+    },
+    {
+      "scene_id": "0499",
+      "rho": 0.9999999999999553,
+      "target_norm": 196.72506713867188,
+      "reachable_norm": 196.72592163085938,
+      "unreachable_norm": 4.162439290666953e-05
+    },
+    {
+      "scene_id": "0549",
+      "rho": 0.9419717690196932,
+      "target_norm": 280.85906982421875,
+      "reachable_norm": 272.599853515625,
+      "unreachable_norm": 67.6600341796875
+    }
+  ],
+  "rho_individual_mean_at_max_rank": 0.9854929422548835,
+  "rho_joint_at_max_rank": 0.7995639092635254,
+  "scope_warning": "Real causal KV effects with a residual-stream linear proxy; not yet an optimized multi-module QLoRA Jacobian fit."
+}

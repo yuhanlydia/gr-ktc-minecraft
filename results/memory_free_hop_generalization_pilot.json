@@ -1,0 +1,303 @@
+{
+  "protocol": "memory-free-qlora-v1",
+  "scene_ids": [
+    "0002",
+    "0000",
+    "0006",
+    "0010"
+  ],
+  "seeds": [
+    400,
+    401
+  ],
+  "summary": {
+    "base": {
+      "mean_score": 0.2708333333333333,
+      "full_successes": 0,
+      "trials": 8,
+      "success_wilson_95ci": [
+        0.0,
+        0.32440756488388023
+      ],
+      "parser_valid": 8
+    },
+    "control": {
+      "mean_score": 0.3958333333333333,
+      "full_successes": 2,
+      "trials": 8,
+      "success_wilson_95ci": [
+        0.071479212752109,
+        0.5907245696898311
+      ],
+      "parser_valid": 8
+    },
+    "full": {
+      "mean_score": 0.3958333333333333,
+      "full_successes": 2,
+      "trials": 8,
+      "success_wilson_95ci": [
+        0.071479212752109,
+        0.5907245696898311
+      ],
+      "parser_valid": 8
+    }
+  },
+  "comparisons": {
+    "full_vs_base": {
+      "full_only": 2,
+      "other_only": 0,
+      "mcnemar_two_sided_p": 0.5
+    },
+    "full_vs_control": {
+      "full_only": 0,
+      "other_only": 0,
+      "mcnemar_two_sided_p": 1.0
+    }
+  },
+  "trials": [
+    {
+      "scene_id": "0002",
+      "seed": 400,
+      "condition": "base",
+      "parser_valid": true,
+      "score": 0.0,
+      "error": null,
+      "generated_tokens": 31,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"polished_diorite_stairs\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0002",
+      "seed": 400,
+      "condition": "control",
+      "parser_valid": true,
+      "score": 0.0,
+      "error": null,
+      "generated_tokens": 31,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"polished_diorite_stairs\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0002",
+      "seed": 400,
+      "condition": "full",
+      "parser_valid": true,
+      "score": 0.0,
+      "error": null,
+      "generated_tokens": 31,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"polished_diorite_stairs\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0000",
+      "seed": 400,
+      "condition": "base",
+      "parser_valid": true,
+      "score": 0.5,
+      "error": null,
+      "generated_tokens": 55,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 10);\n  await placeItem(bot, \"crafting_table\");\n  await craftItem(bot, \"oak_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0000",
+      "seed": 400,
+      "condition": "control",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 10);\n  await craftItem(bot, \"oak_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0000",
+      "seed": 400,
+      "condition": "full",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 10);\n  await craftItem(bot, \"oak_stairs\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0006",
+      "seed": 400,
+      "condition": "base",
+      "parser_valid": true,
+      "score": 0.3333333333333333,
+      "error": null,
+      "generated_tokens": 69,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"gray_glazed_terracotta\");\n  await mineBlock(bot, \"lime_stained_glass_pane\", 1);\n  await useCraftingTable(bot);\n  await craftItem(bot, \"cobblestone_slab\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0006",
+      "seed": 400,
+      "condition": "control",
+      "parser_valid": true,
+      "score": 0.3333333333333333,
+      "error": null,
+      "generated_tokens": 100,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"gray_glazed_terracotta\", 1);\n  await mineBlock(bot, \"lime_stained_glass_pane\", 1);\n  await mineBlock(bot, \"lime_stained_glass_pane\", 1);\n  await mineBlock(bot, \"lime_stained_glass_pane\", 1);\n  await craftItem(bot, \"cobblestone_slab\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0006",
+      "seed": 400,
+      "condition": "full",
+      "parser_valid": true,
+      "score": 0.3333333333333333,
+      "error": null,
+      "generated_tokens": 100,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"gray_glazed_terracotta\", 1);\n  await mineBlock(bot, \"lime_stained_glass_pane\", 1);\n  await mineBlock(bot, \"lime_stained_glass_pane\", 1);\n  await mineBlock(bot, \"lime_stained_glass_pane\", 1);\n  await craftItem(bot, \"cobblestone_slab\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0010",
+      "seed": 400,
+      "condition": "base",
+      "parser_valid": true,
+      "score": 0.25,
+      "error": null,
+      "generated_tokens": 108,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"purple_banner\", 5);\n  await bot.move(\"forward\");\n  await bot.move(\"forward\");\n  await bot.move(\"forward\");\n  await mineBlock(bot, \"cyan_stained_glass\", 1);\n  await bot.move(\"back\");\n  await bot.move(\"back\");\n  await bot.move(\"right\");\n  await bot.move(\"right\");\n  await mineBlock(bot, \"orange_glazed_terracotta\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0010",
+      "seed": 400,
+      "condition": "control",
+      "parser_valid": true,
+      "score": 0.25,
+      "error": null,
+      "generated_tokens": 76,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"purple_banner\", 1);\n  await mineBlock(bot, \"potted_red_tulip\", 1);\n  await mineBlock(bot, \"cyan_stained_glass\", 1);\n  await mineBlock(bot, \"orange_glazed_terracotta\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0010",
+      "seed": 400,
+      "condition": "full",
+      "parser_valid": true,
+      "score": 0.25,
+      "error": null,
+      "generated_tokens": 46,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"cyan_stained_glass\", 1);\n  await mineBlock(bot, \"orange_glazed_terracotta\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0002",
+      "seed": 401,
+      "condition": "base",
+      "parser_valid": true,
+      "score": 0.0,
+      "error": null,
+      "generated_tokens": 28,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"polished_diorite_stairs\");\n}\n```"
+    },
+    {
+      "scene_id": "0002",
+      "seed": 401,
+      "condition": "control",
+      "parser_valid": true,
+      "score": 0.0,
+      "error": null,
+      "generated_tokens": 31,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"polished_diorite_stairs\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0002",
+      "seed": 401,
+      "condition": "full",
+      "parser_valid": true,
+      "score": 0.0,
+      "error": null,
+      "generated_tokens": 31,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"polished_diorite_stairs\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0000",
+      "seed": 401,
+      "condition": "base",
+      "parser_valid": true,
+      "score": 0.5,
+      "error": null,
+      "generated_tokens": 55,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 10);\n  await placeItem(bot, \"crafting_table\");\n  await craftItem(bot, \"oak_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0000",
+      "seed": 401,
+      "condition": "control",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 10);\n  await craftItem(bot, \"oak_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0000",
+      "seed": 401,
+      "condition": "full",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 103,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 1);\n  await craftItem(bot, \"oak_planks\", 1);\n  await craftItem(bot, \"oak_planks\", 1);\n  await craftItem(bot, \"oak_stairs\", 1);\n  await craftItem(bot, \"oak_stairs\", 1);\n  await craftItem(bot, \"oak_stairs\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0006",
+      "seed": 401,
+      "condition": "base",
+      "parser_valid": true,
+      "score": 0.3333333333333333,
+      "error": null,
+      "generated_tokens": 82,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"gray_glazed_terracotta\");\n  await mineBlock(bot, \"lime_stained_glass_pane\", 1);\n  await use(bot, \"crafting_table\");\n  await mineBlock(bot, \"cobblestone\", 1);\n  await craftItem(bot, \"cobblestone_slab\");\n}\n```"
+    },
+    {
+      "scene_id": "0006",
+      "seed": 401,
+      "condition": "control",
+      "parser_valid": true,
+      "score": 0.3333333333333333,
+      "error": null,
+      "generated_tokens": 100,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"gray_glazed_terracotta\", 1);\n  await mineBlock(bot, \"lime_stained_glass_pane\", 1);\n  await mineBlock(bot, \"lime_stained_glass_pane\", 1);\n  await mineBlock(bot, \"lime_stained_glass_pane\", 1);\n  await craftItem(bot, \"cobblestone_slab\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0006",
+      "seed": 401,
+      "condition": "full",
+      "parser_valid": true,
+      "score": 0.3333333333333333,
+      "error": null,
+      "generated_tokens": 100,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"gray_glazed_terracotta\", 1);\n  await mineBlock(bot, \"lime_stained_glass_pane\", 1);\n  await mineBlock(bot, \"lime_stained_glass_pane\", 1);\n  await mineBlock(bot, \"lime_stained_glass_pane\", 1);\n  await craftItem(bot, \"cobblestone_slab\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0010",
+      "seed": 401,
+      "condition": "base",
+      "parser_valid": true,
+      "score": 0.25,
+      "error": null,
+      "generated_tokens": 108,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"purple_banner\", 1);\n  await bot.move(\"forward\");\n  await bot.move(\"forward\");\n  await bot.move(\"forward\");\n  await mineBlock(bot, \"cyan_stained_glass\", 1);\n  await bot.move(\"back\");\n  await bot.move(\"right\");\n  await bot.move(\"right\");\n  await bot.move(\"back\");\n  await mineBlock(bot, \"orange_glazed_terracotta\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0010",
+      "seed": 401,
+      "condition": "control",
+      "parser_valid": true,
+      "score": 0.25,
+      "error": null,
+      "generated_tokens": 85,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"purple_banner\", 1);\n  await mineBlock(bot, \"purple_banner\", 1);\n  await mineBlock(bot, \"purple_banner\", 1);\n  await mineBlock(bot, \"cyan_stained_glass\", 1);\n  await mineBlock(bot, \"orange_glazed_terracotta\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0010",
+      "seed": 401,
+      "condition": "full",
+      "parser_valid": true,
+      "score": 0.25,
+      "error": null,
+      "generated_tokens": 106,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"stone_bricks\", 1);\n  await mineBlock(bot, \"oak_planks\", 1);\n  await mineBlock(bot, \"dark_oak_log\", 1);\n  await mineBlock(bot, \"dark_oak_leaves\", 1);\n  await mineBlock(bot, \"cyan_stained_glass\", 1);\n  await mineBlock(bot, \"orange_glazed_terracotta\", 1);\n}\n```"
+    }
+  ],
+  "elapsed_seconds": 442.0816584250424,
+  "peak_gpu_gib": 6.796142101287842,
+  "suite": "heldout",
+  "scope_warning": "MineExplorer memory-free generalization; not PEAM held-out success."
+}

@@ -1,0 +1,252 @@
+diff --git a/setup.py b/setup.py
+index 8ef258f..aa93c0a 100644
+--- a/setup.py
++++ b/setup.py
+@@ -1,6 +1,5 @@
+ import os
+ import pathlib
+-import pkg_resources
+ from setuptools import setup, find_packages
+ 
+ 
+@@ -19,7 +18,9 @@ def _read_file(fname):
+ def _read_install_requires():
+     with pathlib.Path("requirements.txt").open() as fp:
+         return [
+-            str(requirement) for requirement in pkg_resources.parse_requirements(fp)
++            line.strip()
++            for line in fp
++            if line.strip() and not line.lstrip().startswith("#")
+         ]
+ 
+ 
+diff --git a/voyager/env/bridge.py b/voyager/env/bridge.py
+index 188d14e..7866aa2 100644
+--- a/voyager/env/bridge.py
++++ b/voyager/env/bridge.py
+@@ -147,6 +147,7 @@ class VoyagerEnv(gym.Env):
+             "spread": options.get("spread", False),
+             "waitTicks": options.get("wait_ticks", 5),
+             "position": options.get("position", None),
++            "killOnHardReset": options.get("kill_on_hard_reset", True),
+         }
+ 
+         self.unpause()
+diff --git a/voyager/env/mineflayer/index.js b/voyager/env/mineflayer/index.js
+index 7fb0a87..220ba62 100644
+--- a/voyager/env/mineflayer/index.js
++++ b/voyager/env/mineflayer/index.js
+@@ -22,6 +22,16 @@ const app = express();
+ app.use(bodyParser.json({ limit: "50mb" }));
+ app.use(bodyParser.urlencoded({ limit: "50mb", extended: false }));
+ 
++// Readiness endpoint used by experiment orchestration. It does not mutate the
++// Minecraft process or require an authenticated game session.
++app.get("/health", (_req, res) => {
++    res.json({
++        status: "ok",
++        botSpawned: bot !== null && bot.entity !== undefined,
++        protocol: "voyager-mineflayer-v1",
++    });
++});
++
+ app.post("/start", (req, res) => {
+     if (bot) onDisconnect("Restarting bot");
+     bot = null;
+@@ -51,10 +61,45 @@ app.post("/start", (req, res) => {
+ 
+     bot.once("spawn", async () => {
+         bot.removeListener("error", onConnectionFailed);
++        let lastFinitePosition = bot.entity.position.clone();
++        bot.prependListener("physicsTick", () => {
++            // A /start request replaces the bot. Mineflayer can emit one final
++            // physics tick after quit(), when the old entity is already gone.
++            if (!bot.entity || !bot.entity.position) return;
++            const position = bot.entity.position;
++            if ([position.x, position.y, position.z].every(Number.isFinite)) {
++                lastFinitePosition = position.clone();
++            } else {
++                bot.entity.position.set(
++                    lastFinitePosition.x,
++                    lastFinitePosition.y,
++                    lastFinitePosition.z
++                );
++            }
++            const velocity = bot.entity.velocity;
++            if (velocity && ![velocity.x, velocity.y, velocity.z].every(Number.isFinite)) {
++                velocity.set(0, 0, 0);
++            }
++            if (!Number.isFinite(bot.entity.yaw)) bot.entity.yaw = 0;
++            if (!Number.isFinite(bot.entity.pitch)) bot.entity.pitch = 0;
++        });
+         let itemTicks = 1;
+         if (req.body.reset === "hard") {
++            // MineExplorer setup often clears a volume (including y=-1) and
++            // restores the floor in the immediately following command. Pause
++            // client physics across this command batch so Mineflayer cannot
++            // emit a transient falling/NaN movement packet between the two
++            // server-side world edits.
++            bot.physicsEnabled = false;
+             bot.chat("/clear @s");
+-            bot.chat("/kill @s");
++            // The original client+better-respawn stack tolerates `/kill`.
++            // A headless Mineflayer bot on a dedicated server can emit a NaN
++            // movement packet during that death/respawn race.  Local offline
++            // experiments therefore opt out explicitly while retaining hard
++            // inventory/equipment reset semantics.
++            if (req.body.killOnHardReset !== false) {
++                bot.chat("/kill @s");
++            }
+             const inventory = req.body.inventory ? req.body.inventory : {};
+             const equipment = req.body.equipment
+                 ? req.body.equipment
+@@ -80,6 +125,20 @@ app.post("/start", (req, res) => {
+                     itemTicks += 1;
+                 }
+             }
++            const setupCommands = Array.isArray(req.body.setupCommands)
++                ? req.body.setupCommands
++                : [];
++            for (const command of setupCommands) {
++                if (typeof command !== "string" || !command.startsWith("/")) {
++                    throw new Error("setupCommands must contain slash commands");
++                }
++                // MineExplorer records target the player with @p; in this
++                // single-bot local server @s is unambiguous and deterministic.
++                bot.chat(command.replaceAll("@p", "@s"));
++                itemTicks += 1;
++            }
++            await new Promise((resolve) => setTimeout(resolve, 200));
++            bot.physicsEnabled = true;
+         }
+ 
+         if (req.body.position) {
+@@ -99,7 +158,10 @@ app.post("/start", (req, res) => {
+         const tool = require("mineflayer-tool").plugin;
+         const collectBlock = require("mineflayer-collectblock").plugin;
+         const pvp = require("mineflayer-pvp").plugin;
+-        const minecraftHawkEye = require("minecrafthawkeye");
++        // Newer CommonJS interop exposes HawkEye as `default`; the Voyager
++        // lockfile-era package exposed the function directly.
++        const hawkEyeModule = require("minecrafthawkeye");
++        const minecraftHawkEye = hawkEyeModule.default || hawkEyeModule;
+         bot.loadPlugin(pathfinder);
+         bot.loadPlugin(tool);
+         bot.loadPlugin(collectBlock);
+@@ -154,6 +216,13 @@ app.post("/step", async (req, res) => {
+     let response_sent = false;
+     function otherError(err) {
+         console.log("Uncaught Error");
++        if (!bot) {
++            if (!response_sent) {
++                response_sent = true;
++                res.status(500).json({ error: String(err) });
++            }
++            return;
++        }
+         bot.emit("error", handleError(err));
+         bot.waitForTicks(bot.waitTicks).then(() => {
+             if (!response_sent) {
+@@ -212,11 +281,17 @@ app.post("/step", async (req, res) => {
+     bot.stuckPosList = [];
+ 
+     function onTick() {
++        if (!bot || !bot.pathfinder) return;
+         bot.globalTickCounter++;
+         if (bot.pathfinder.isMoving()) {
+             bot.stuckTickCounter++;
+             if (bot.stuckTickCounter >= 100) {
+-                onStuck(1.5);
++                // Random command teleports race Mineflayer's movement packets
++                // on a dedicated server and can trigger
++                // `Invalid move player packet`. Local benchmark runs disable
++                // this distribution-changing recovery and let the caller's
++                // timeout/verifier record a genuine failure instead.
++                if (req.body.stuckTeleport !== false) onStuck(1.5);
+                 bot.stuckTickCounter = 0;
+             }
+         }
+@@ -399,7 +474,10 @@ app.post("/step", async (req, res) => {
+ });
+ 
+ app.post("/stop", (req, res) => {
+-    bot.end();
++    if (bot) {
++        bot.end();
++        bot = null;
++    }
+     res.json({
+         message: "Bot stopped",
+     });
+diff --git a/voyager/env/mineflayer/mineflayer-collectblock/src/CollectBlock.ts b/voyager/env/mineflayer/mineflayer-collectblock/src/CollectBlock.ts
+index d2be878..7bf7e97 100644
+--- a/voyager/env/mineflayer/mineflayer-collectblock/src/CollectBlock.ts
++++ b/voyager/env/mineflayer/mineflayer-collectblock/src/CollectBlock.ts
+@@ -67,11 +67,17 @@ async function collectAll(
+                             );
+                             // @ts-ignore
+                         } else if (err.name === "NoItem") {
++                            if (closest.name == null) {
++                                return;
++                            }
+                             const properties =
+                                 bot.registry.blocksByName[closest.name];
+-                            const leastTool = Object.keys(
+-                                properties.harvestTools
+-                            )[0];
++                            const leastTool = Number(
++                                Object.keys(properties.harvestTools ?? {})[0]
++                            );
++                            if (!Number.isInteger(leastTool)) {
++                                return;
++                            }
+                             const item = bot.registry.items[leastTool];
+                             bot.chat(
+                                 `I need at least a ${item.name} to mine ${closest.name}!  Skip it!`
+diff --git a/voyager/env/mineflayer/package.json b/voyager/env/mineflayer/package.json
+index 9e389d2..f2c4f90 100644
+--- a/voyager/env/mineflayer/package.json
++++ b/voyager/env/mineflayer/package.json
+@@ -10,16 +10,19 @@
+     "author": "",
+     "license": "ISC",
+     "dependencies": {
++        "@babel/core": "7.22.5",
++        "@babel/generator": "7.22.5",
+         "body-parser": "^1.20.2",
+         "express": "^4.18.2",
++        "graceful-fs": "^4.2.11",
+         "magic-string": "^0.30.0",
+-        "minecraft-data": "^3.31.0",
++        "minecraft-data": "3.31.0",
+         "minecrafthawkeye": "^1.3.6",
+-        "mineflayer": "^4.8.1",
++        "mineflayer": "4.14.0",
+         "mineflayer-collectblock": "file:mineflayer-collectblock",
+-        "mineflayer-pathfinder": "^2.4.2",
+-        "mineflayer-pvp": "^1.3.2",
+-        "mineflayer-tool": "^1.2.0",
++        "mineflayer-pathfinder": "2.4.2",
++        "mineflayer-pvp": "1.3.2",
++        "mineflayer-tool": "1.2.0",
+         "mocha": "^10.2.0",
+         "prismarine-biome": "^1.3.0",
+         "prismarine-block": "=1.16.3",
+@@ -27,12 +30,12 @@
+         "prismarine-item": "^1.12.1",
+         "prismarine-nbt": "^2.2.1",
+         "prismarine-recipe": "^1.3.1",
+-        "prismarine-viewer": "^1.24.0",
+-        "typescript": "^4.9.5",
+-        "vec3": "^0.1.8",
+-        "graceful-fs": "^4.2.11"
++        "prismarine-viewer": "1.24.0",
++        "typescript": "4.9.5",
++        "vec3": "^0.1.8"
+     },
+     "devDependencies": {
++        "node": "18.20.8",
+         "prettier": "2.8.5"
+     }
+ }
+

@@ -1,0 +1,18 @@
+{
+  "protocol": "local-qwen-voyager-v1",
+  "task": "Collect 4 oak logs",
+  "precision": "bf16",
+  "elapsed_seconds": 2.5911065849941224,
+  "prompt_tokens": 332,
+  "generated_tokens": 18,
+  "kv_tokens": 17,
+  "layers": [
+    24,
+    35
+  ],
+  "response": "```javascript\nawait mineBlock(bot, \"oak_log\", 4);\n```",
+  "parser_valid": false,
+  "parse_error": "No async function found",
+  "executed": false,
+  "post_inventory": null
+}

@@ -1,0 +1,182 @@
+{
+  "protocol": "local-smoke-v1",
+  "scope_warning": "Deterministic prerequisite smoke scenes; not PEAM held-out results.",
+  "scenes": 10,
+  "parser_valid": 10,
+  "successes": 10,
+  "peak_gpu_gib": 16.424333095550537,
+  "records": [
+    {
+      "index": 0,
+      "task_id": "T1",
+      "task": "Craft a crafting table",
+      "generation_seed": 42,
+      "parser_valid": true,
+      "task_success": true,
+      "parse_error": null,
+      "response": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+      "generated_tokens": 27,
+      "kv_tokens": 26,
+      "elapsed_seconds": 8.845072375843301,
+      "final_inventory": {
+        "crafting_table": 1
+      }
+    },
+    {
+      "index": 1,
+      "task_id": "T2",
+      "task": "Craft a wooden pickaxe",
+      "generation_seed": 42,
+      "parser_valid": true,
+      "task_success": true,
+      "parse_error": null,
+      "response": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n}\n```",
+      "generated_tokens": 28,
+      "kv_tokens": 27,
+      "elapsed_seconds": 5.989933473058045,
+      "final_inventory": {
+        "wooden_pickaxe": 1,
+        "crafting_table": 1
+      }
+    },
+    {
+      "index": 2,
+      "task_id": "T3",
+      "task": "Craft a stone pickaxe",
+      "generation_seed": 42,
+      "parser_valid": true,
+      "task_success": true,
+      "parse_error": null,
+      "response": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"stone_pickaxe\", 1);\n}\n```",
+      "generated_tokens": 27,
+      "kv_tokens": 26,
+      "elapsed_seconds": 5.936304955976084,
+      "final_inventory": {
+        "stone_pickaxe": 1,
+        "crafting_table": 1
+      }
+    },
+    {
+      "index": 3,
+      "task_id": "T4",
+      "task": "Craft a furnace",
+      "generation_seed": 42,
+      "parser_valid": true,
+      "task_success": true,
+      "parse_error": null,
+      "response": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"furnace\", 1);\n}\n```",
+      "generated_tokens": 27,
+      "kv_tokens": 26,
+      "elapsed_seconds": 6.807687795953825,
+      "final_inventory": {
+        "furnace": 1,
+        "crafting_table": 1
+      }
+    },
+    {
+      "index": 4,
+      "task_id": "T5",
+      "task": "Craft an iron pickaxe",
+      "generation_seed": 42,
+      "parser_valid": true,
+      "task_success": true,
+      "parse_error": null,
+      "response": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"iron_pickaxe\", 1);\n}\n```",
+      "generated_tokens": 27,
+      "kv_tokens": 26,
+      "elapsed_seconds": 6.563613213831559,
+      "final_inventory": {
+        "iron_pickaxe": 1,
+        "crafting_table": 1
+      }
+    },
+    {
+      "index": 5,
+      "task_id": "T1",
+      "task": "Craft a crafting table",
+      "generation_seed": 43,
+      "parser_valid": true,
+      "task_success": true,
+      "parse_error": null,
+      "response": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+      "generated_tokens": 27,
+      "kv_tokens": 26,
+      "elapsed_seconds": 8.807624882087111,
+      "final_inventory": {
+        "crafting_table": 1,
+        "iron_pickaxe": 1
+      }
+    },
+    {
+      "index": 6,
+      "task_id": "T2",
+      "task": "Craft a wooden pickaxe",
+      "generation_seed": 43,
+      "parser_valid": true,
+      "task_success": true,
+      "parse_error": null,
+      "response": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n}\n```",
+      "generated_tokens": 28,
+      "kv_tokens": 27,
+      "elapsed_seconds": 6.478742667008191,
+      "final_inventory": {
+        "wooden_pickaxe": 1,
+        "crafting_table": 1,
+        "iron_pickaxe": 1
+      }
+    },
+    {
+      "index": 7,
+      "task_id": "T3",
+      "task": "Craft a stone pickaxe",
+      "generation_seed": 43,
+      "parser_valid": true,
+      "task_success": true,
+      "parse_error": null,
+      "response": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"stone_pickaxe\", 1);\n}\n```",
+      "generated_tokens": 27,
+      "kv_tokens": 26,
+      "elapsed_seconds": 6.5220682309009135,
+      "final_inventory": {
+        "stone_pickaxe": 1,
+        "crafting_table": 1,
+        "iron_pickaxe": 1
+      }
+    },
+    {
+      "index": 8,
+      "task_id": "T4",
+      "task": "Craft a furnace",
+      "generation_seed": 43,
+      "parser_valid": true,
+      "task_success": true,
+      "parse_error": null,
+      "response": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"furnace\", 1);\n}\n```",
+      "generated_tokens": 27,
+      "kv_tokens": 26,
+      "elapsed_seconds": 6.5421880930662155,
+      "final_inventory": {
+        "furnace": 1,
+        "crafting_table": 1,
+        "iron_pickaxe": 1
+      }
+    },
+    {
+      "index": 9,
+      "task_id": "T5",
+      "task": "Craft an iron pickaxe",
+      "generation_seed": 43,
+      "parser_valid": true,
+      "task_success": true,
+      "parse_error": null,
+      "response": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"iron_pickaxe\", 1);\n}\n```",
+      "generated_tokens": 27,
+      "kv_tokens": 26,
+      "elapsed_seconds": 6.3211111079435796,
+      "final_inventory": {
+        "iron_pickaxe": 1,
+        "crafting_table": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,5764 @@
+{
+  "protocol": "four-ideas-api-free-mechanism-v1",
+  "seed": 42,
+  "scenario_file": "data/MineExplorer-Benchmark/benchmark.jsonl",
+  "scenario_count": 813,
+  "available_scenario_count": 813,
+  "scope_warning": "Tensor mechanism study; replace synthetic activation factory with recorded model KV/hidden states for causal claims.",
+  "state_weight_reachability": {
+    "probe_contexts": 32,
+    "rank": 8,
+    "rho_individual_mean": 0.9999999971311522,
+    "rho_shared": 0.8089714942296165,
+    "rank_curve": [
+      {
+        "rank": 1,
+        "rho_shared": 0.18864581604938901,
+        "rho_individual_mean": 0.26749848300418255
+      },
+      {
+        "rank": 2,
+        "rho_shared": 0.32210812680776313,
+        "rho_individual_mean": 0.4861744148126842
+      },
+      {
+        "rank": 4,
+        "rho_shared": 0.5419391675213436,
+        "rho_individual_mean": 0.7856851264138959
+      },
+      {
+        "rank": 8,
+        "rho_shared": 0.8089714942296165,
+        "rho_individual_mean": 0.9999999971311522
+      },
+      {
+        "rank": 16,
+        "rho_shared": 0.9996479935982281,
+        "rho_individual_mean": 0.9999999971311522
+      },
+      {
+        "rank": 32,
+        "rho_shared": 0.9996479935982281,
+        "rho_individual_mean": 0.9999999971311522
+      }
+    ],
+    "per_context": [
+      {
+        "scene_id": "0000",
+        "difficulty": 0.31,
+        "rho": 0.9999999971932066,
+        "reachable_energy_fraction": 0.9999095797538757,
+        "unreachable_energy_fraction": 2.806793464316115e-09
+      },
+      {
+        "scene_id": "0001",
+        "difficulty": 0.31,
+        "rho": 0.9999999959636571,
+        "reachable_energy_fraction": 0.9998952150344849,
+        "unreachable_energy_fraction": 4.036342815538774e-09
+      },
+      {
+        "scene_id": "0002",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999970991894,
+        "reachable_energy_fraction": 0.9999111294746399,
+        "unreachable_energy_fraction": 2.9008107027550523e-09
+      },
+      {
+        "scene_id": "0003",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999974922703,
+        "reachable_energy_fraction": 0.9999141097068787,
+        "unreachable_energy_fraction": 2.5077298015929728e-09
+      },
+      {
+        "scene_id": "0004",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999973136646,
+        "reachable_energy_fraction": 0.9999160170555115,
+        "unreachable_energy_fraction": 2.6863353763673103e-09
+      },
+      {
+        "scene_id": "0005",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972965061,
+        "reachable_energy_fraction": 0.999920666217804,
+        "unreachable_energy_fraction": 2.703493873212892e-09
+      },
+      {
+        "scene_id": "0006",
+        "difficulty": 0.43,
+        "rho": 0.9999999979187273,
+        "reachable_energy_fraction": 0.9999232888221741,
+        "unreachable_energy_fraction": 2.081272709730797e-09
+      },
+      {
+        "scene_id": "0007",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977702475,
+        "reachable_energy_fraction": 0.9999136328697205,
+        "unreachable_energy_fraction": 2.229752382731931e-09
+      },
+      {
+        "scene_id": "0008",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999979371662,
+        "reachable_energy_fraction": 0.9999299049377441,
+        "unreachable_energy_fraction": 2.0628336816486126e-09
+      },
+      {
+        "scene_id": "0009",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999973042246,
+        "reachable_energy_fraction": 0.9999150633811951,
+        "unreachable_energy_fraction": 2.695775380701093e-09
+      },
+      {
+        "scene_id": "0010",
+        "difficulty": 0.55,
+        "rho": 0.9999999972767075,
+        "reachable_energy_fraction": 0.9999135732650757,
+        "unreachable_energy_fraction": 2.7232924804110326e-09
+      },
+      {
+        "scene_id": "0011",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972531878,
+        "reachable_energy_fraction": 0.9999252557754517,
+        "unreachable_energy_fraction": 2.7468121110985066e-09
+      },
+      {
+        "scene_id": "0012",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.99999999770039,
+        "reachable_energy_fraction": 0.9999194741249084,
+        "unreachable_energy_fraction": 2.299610057932e-09
+      },
+      {
+        "scene_id": "0013",
+        "difficulty": 0.31,
+        "rho": 0.9999999981627118,
+        "reachable_energy_fraction": 0.9999266862869263,
+        "unreachable_energy_fraction": 1.8372882104600308e-09
+      },
+      {
+        "scene_id": "0014",
+        "difficulty": 0.43,
+        "rho": 0.9999999970040252,
+        "reachable_energy_fraction": 0.9999029040336609,
+        "unreachable_energy_fraction": 2.995974801578427e-09
+      },
+      {
+        "scene_id": "0015",
+        "difficulty": 0.31,
+        "rho": 0.9999999961355214,
+        "reachable_energy_fraction": 0.9999004006385803,
+        "unreachable_energy_fraction": 3.86447851496996e-09
+      },
+      {
+        "scene_id": "0016",
+        "difficulty": 0.63,
+        "rho": 0.9999999974575055,
+        "reachable_energy_fraction": 0.9999196529388428,
+        "unreachable_energy_fraction": 2.5424944372076652e-09
+      },
+      {
+        "scene_id": "0017",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999973336952,
+        "reachable_energy_fraction": 0.9999216198921204,
+        "unreachable_energy_fraction": 2.6663047325570233e-09
+      },
+      {
+        "scene_id": "0018",
+        "difficulty": 0.31,
+        "rho": 0.9999999970811358,
+        "reachable_energy_fraction": 0.9999152421951294,
+        "unreachable_energy_fraction": 2.918864261403087e-09
+      },
+      {
+        "scene_id": "0019",
+        "difficulty": 0.55,
+        "rho": 0.9999999983559243,
+        "reachable_energy_fraction": 0.9999336004257202,
+        "unreachable_energy_fraction": 1.644075653395305e-09
+      },
+      {
+        "scene_id": "0020",
+        "difficulty": 0.31,
+        "rho": 0.999999995168419,
+        "reachable_energy_fraction": 0.9999040961265564,
+        "unreachable_energy_fraction": 4.831580913133848e-09
+      },
+      {
+        "scene_id": "0021",
+        "difficulty": 0.55,
+        "rho": 0.9999999967481242,
+        "reachable_energy_fraction": 0.9999027252197266,
+        "unreachable_energy_fraction": 3.2518756576394026e-09
+      },
+      {
+        "scene_id": "0022",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999949412043,
+        "reachable_energy_fraction": 0.9999039769172668,
+        "unreachable_energy_fraction": 5.058795604639954e-09
+      },
+      {
+        "scene_id": "0023",
+        "difficulty": 0.43,
+        "rho": 0.9999999975433921,
+        "reachable_energy_fraction": 0.9999161958694458,
+        "unreachable_energy_fraction": 2.456607806067268e-09
+      },
+      {
+        "scene_id": "0024",
+        "difficulty": 0.31,
+        "rho": 0.9999999978038655,
+        "reachable_energy_fraction": 0.9999236464500427,
+        "unreachable_energy_fraction": 2.1961343854570714e-09
+      },
+      {
+        "scene_id": "0025",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999996480631,
+        "reachable_energy_fraction": 0.9999069571495056,
+        "unreachable_energy_fraction": 3.519369018434304e-09
+      },
+      {
+        "scene_id": "0026",
+        "difficulty": 0.55,
+        "rho": 0.9999999970791171,
+        "reachable_energy_fraction": 0.9999184608459473,
+        "unreachable_energy_fraction": 2.9208828689064603e-09
+      },
+      {
+        "scene_id": "0027",
+        "difficulty": 0.31,
+        "rho": 0.9999999972956641,
+        "reachable_energy_fraction": 0.9999089241027832,
+        "unreachable_energy_fraction": 2.704335866354768e-09
+      },
+      {
+        "scene_id": "0028",
+        "difficulty": 0.31,
+        "rho": 0.9999999983448374,
+        "reachable_energy_fraction": 0.9999284744262695,
+        "unreachable_energy_fraction": 1.6551625625638167e-09
+      },
+      {
+        "scene_id": "0029",
+        "difficulty": 0.31,
+        "rho": 0.9999999958989304,
+        "reachable_energy_fraction": 0.9999114871025085,
+        "unreachable_energy_fraction": 4.10106970605284e-09
+      },
+      {
+        "scene_id": "0030",
+        "difficulty": 0.31,
+        "rho": 0.999999996315222,
+        "reachable_energy_fraction": 0.9999054670333862,
+        "unreachable_energy_fraction": 3.684778038248737e-09
+      },
+      {
+        "scene_id": "0031",
+        "difficulty": 0.31,
+        "rho": 0.9999999975277954,
+        "reachable_energy_fraction": 0.9999175071716309,
+        "unreachable_energy_fraction": 2.472204663206412e-09
+      },
+      {
+        "scene_id": "0032",
+        "difficulty": 0.31,
+        "rho": 0.9999999970400498,
+        "reachable_energy_fraction": 0.9999176859855652,
+        "unreachable_energy_fraction": 2.95995028487539e-09
+      },
+      {
+        "scene_id": "0033",
+        "difficulty": 0.55,
+        "rho": 0.9999999972000384,
+        "reachable_energy_fraction": 0.9999186396598816,
+        "unreachable_energy_fraction": 2.799961595911782e-09
+      },
+      {
+        "scene_id": "0034",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999980695041,
+        "reachable_energy_fraction": 0.9999282360076904,
+        "unreachable_energy_fraction": 1.9304959852917136e-09
+      },
+      {
+        "scene_id": "0035",
+        "difficulty": 0.31,
+        "rho": 0.9999999976991806,
+        "reachable_energy_fraction": 0.9999240040779114,
+        "unreachable_energy_fraction": 2.3008195348950267e-09
+      },
+      {
+        "scene_id": "0036",
+        "difficulty": 0.31,
+        "rho": 0.9999999966777049,
+        "reachable_energy_fraction": 0.9999169707298279,
+        "unreachable_energy_fraction": 3.322295105689932e-09
+      },
+      {
+        "scene_id": "0037",
+        "difficulty": 0.55,
+        "rho": 0.9999999971489761,
+        "reachable_energy_fraction": 0.999912440776825,
+        "unreachable_energy_fraction": 2.8510238614387617e-09
+      },
+      {
+        "scene_id": "0038",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999978415322,
+        "reachable_energy_fraction": 0.9999194145202637,
+        "unreachable_energy_fraction": 2.1584678489006137e-09
+      },
+      {
+        "scene_id": "0039",
+        "difficulty": 0.31,
+        "rho": 0.9999999970101212,
+        "reachable_energy_fraction": 0.9999073147773743,
+        "unreachable_energy_fraction": 2.9898787889948153e-09
+      },
+      {
+        "scene_id": "0040",
+        "difficulty": 0.55,
+        "rho": 0.9999999974142769,
+        "reachable_energy_fraction": 0.9999207258224487,
+        "unreachable_energy_fraction": 2.58572296907289e-09
+      },
+      {
+        "scene_id": "0041",
+        "difficulty": 0.31,
+        "rho": 0.9999999976108876,
+        "reachable_energy_fraction": 0.9999189376831055,
+        "unreachable_energy_fraction": 2.3891124634189964e-09
+      },
+      {
+        "scene_id": "0042",
+        "difficulty": 0.31,
+        "rho": 0.9999999955803528,
+        "reachable_energy_fraction": 0.9998992681503296,
+        "unreachable_energy_fraction": 4.419647314790609e-09
+      },
+      {
+        "scene_id": "0043",
+        "difficulty": 0.31,
+        "rho": 0.999999997621947,
+        "reachable_energy_fraction": 0.9999228715896606,
+        "unreachable_energy_fraction": 2.3780528657368905e-09
+      },
+      {
+        "scene_id": "0044",
+        "difficulty": 0.31,
+        "rho": 0.9999999966007491,
+        "reachable_energy_fraction": 0.999921441078186,
+        "unreachable_energy_fraction": 3.3992508807756394e-09
+      },
+      {
+        "scene_id": "0045",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999976133521,
+        "reachable_energy_fraction": 0.9999220371246338,
+        "unreachable_energy_fraction": 2.3866477683043286e-09
+      },
+      {
+        "scene_id": "0046",
+        "difficulty": 0.31,
+        "rho": 0.9999999976076359,
+        "reachable_energy_fraction": 0.9999216794967651,
+        "unreachable_energy_fraction": 2.3923640846135186e-09
+      },
+      {
+        "scene_id": "0047",
+        "difficulty": 0.55,
+        "rho": 0.9999999979029677,
+        "reachable_energy_fraction": 0.9999209046363831,
+        "unreachable_energy_fraction": 2.097032325565351e-09
+      },
+      {
+        "scene_id": "0048",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999969234571,
+        "reachable_energy_fraction": 0.9999074935913086,
+        "unreachable_energy_fraction": 3.076542798297055e-09
+      },
+      {
+        "scene_id": "0049",
+        "difficulty": 0.55,
+        "rho": 0.9999999966406552,
+        "reachable_energy_fraction": 0.9999228715896606,
+        "unreachable_energy_fraction": 3.359344802333908e-09
+      },
+      {
+        "scene_id": "0050",
+        "difficulty": 0.55,
+        "rho": 0.9999999964370563,
+        "reachable_energy_fraction": 0.999908983707428,
+        "unreachable_energy_fraction": 3.562943717838607e-09
+      },
+      {
+        "scene_id": "0051",
+        "difficulty": 0.43,
+        "rho": 0.9999999956753605,
+        "reachable_energy_fraction": 0.9998939037322998,
+        "unreachable_energy_fraction": 4.324639757413706e-09
+      },
+      {
+        "scene_id": "0052",
+        "difficulty": 0.31,
+        "rho": 0.9999999974882703,
+        "reachable_energy_fraction": 0.9999184012413025,
+        "unreachable_energy_fraction": 2.5117297131060923e-09
+      },
+      {
+        "scene_id": "0053",
+        "difficulty": 0.55,
+        "rho": 0.9999999971350811,
+        "reachable_energy_fraction": 0.9999071359634399,
+        "unreachable_energy_fraction": 2.8649187466811554e-09
+      },
+      {
+        "scene_id": "0054",
+        "difficulty": 0.31,
+        "rho": 0.9999999981120961,
+        "reachable_energy_fraction": 0.9999313950538635,
+        "unreachable_energy_fraction": 1.887903833264204e-09
+      },
+      {
+        "scene_id": "0055",
+        "difficulty": 0.43,
+        "rho": 0.9999999968582061,
+        "reachable_energy_fraction": 0.9999153017997742,
+        "unreachable_energy_fraction": 3.1417939361233493e-09
+      },
+      {
+        "scene_id": "0056",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999968177979,
+        "reachable_energy_fraction": 0.9999057650566101,
+        "unreachable_energy_fraction": 3.1822020574168164e-09
+      },
+      {
+        "scene_id": "0057",
+        "difficulty": 0.43,
+        "rho": 0.9999999982268996,
+        "reachable_energy_fraction": 0.9999274611473083,
+        "unreachable_energy_fraction": 1.7731004442467224e-09
+      },
+      {
+        "scene_id": "0058",
+        "difficulty": 0.55,
+        "rho": 0.9999999973219011,
+        "reachable_energy_fraction": 0.9999170303344727,
+        "unreachable_energy_fraction": 2.6780988537922212e-09
+      },
+      {
+        "scene_id": "0059",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999996449243,
+        "reachable_energy_fraction": 0.9999088048934937,
+        "unreachable_energy_fraction": 3.5507570217419016e-09
+      },
+      {
+        "scene_id": "0060",
+        "difficulty": 0.31,
+        "rho": 0.9999999975095074,
+        "reachable_energy_fraction": 0.9999216794967651,
+        "unreachable_energy_fraction": 2.4904924789126426e-09
+      },
+      {
+        "scene_id": "0061",
+        "difficulty": 0.43,
+        "rho": 0.9999999936804196,
+        "reachable_energy_fraction": 0.9998820424079895,
+        "unreachable_energy_fraction": 6.3195804145266266e-09
+      },
+      {
+        "scene_id": "0062",
+        "difficulty": 0.31,
+        "rho": 0.9999999982357242,
+        "reachable_energy_fraction": 0.9999280571937561,
+        "unreachable_energy_fraction": 1.7642758365354894e-09
+      },
+      {
+        "scene_id": "0063",
+        "difficulty": 0.31,
+        "rho": 0.999999997960071,
+        "reachable_energy_fraction": 0.9999231100082397,
+        "unreachable_energy_fraction": 2.039928892472176e-09
+      },
+      {
+        "scene_id": "0064",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999968599601,
+        "reachable_energy_fraction": 0.9999066591262817,
+        "unreachable_energy_fraction": 3.1400400057890465e-09
+      },
+      {
+        "scene_id": "0065",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999966699704,
+        "reachable_energy_fraction": 0.999910295009613,
+        "unreachable_energy_fraction": 3.3300295854132855e-09
+      },
+      {
+        "scene_id": "0066",
+        "difficulty": 0.43,
+        "rho": 0.9999999979712242,
+        "reachable_energy_fraction": 0.9999255537986755,
+        "unreachable_energy_fraction": 2.0287758140113965e-09
+      },
+      {
+        "scene_id": "0067",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999960671059,
+        "reachable_energy_fraction": 0.9999069571495056,
+        "unreachable_energy_fraction": 3.932894010461041e-09
+      },
+      {
+        "scene_id": "0068",
+        "difficulty": 0.43,
+        "rho": 0.9999999967587196,
+        "reachable_energy_fraction": 0.9999053478240967,
+        "unreachable_energy_fraction": 3.241280355226195e-09
+      },
+      {
+        "scene_id": "0069",
+        "difficulty": 0.31,
+        "rho": 0.999999997964571,
+        "reachable_energy_fraction": 0.9999268651008606,
+        "unreachable_energy_fraction": 2.03542915855337e-09
+      },
+      {
+        "scene_id": "0070",
+        "difficulty": 0.55,
+        "rho": 0.9999999956988781,
+        "reachable_energy_fraction": 0.9999005794525146,
+        "unreachable_energy_fraction": 4.3011221251276766e-09
+      },
+      {
+        "scene_id": "0071",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999973137388,
+        "reachable_energy_fraction": 0.999921441078186,
+        "unreachable_energy_fraction": 2.6862612134692654e-09
+      },
+      {
+        "scene_id": "0072",
+        "difficulty": 0.43,
+        "rho": 0.9999999974866725,
+        "reachable_energy_fraction": 0.9999159574508667,
+        "unreachable_energy_fraction": 2.513327546083133e-09
+      },
+      {
+        "scene_id": "0073",
+        "difficulty": 0.55,
+        "rho": 0.9999999949999134,
+        "reachable_energy_fraction": 0.9998842477798462,
+        "unreachable_energy_fraction": 5.000086567008566e-09
+      },
+      {
+        "scene_id": "0074",
+        "difficulty": 0.55,
+        "rho": 0.9999999981290916,
+        "reachable_energy_fraction": 0.9999280571937561,
+        "unreachable_energy_fraction": 1.870908539203242e-09
+      },
+      {
+        "scene_id": "0075",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999978956151,
+        "reachable_energy_fraction": 0.9999277591705322,
+        "unreachable_energy_fraction": 2.1043848885682337e-09
+      },
+      {
+        "scene_id": "0076",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999998351188,
+        "reachable_energy_fraction": 0.9999281167984009,
+        "unreachable_energy_fraction": 1.6488119758406583e-09
+      },
+      {
+        "scene_id": "0077",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999968858456,
+        "reachable_energy_fraction": 0.9999167919158936,
+        "unreachable_energy_fraction": 3.1141544898360962e-09
+      },
+      {
+        "scene_id": "0078",
+        "difficulty": 0.47,
+        "rho": 0.9999999963192734,
+        "reachable_energy_fraction": 0.9999105930328369,
+        "unreachable_energy_fraction": 3.680726612387275e-09
+      },
+      {
+        "scene_id": "0079",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999968988725,
+        "reachable_energy_fraction": 0.999904453754425,
+        "unreachable_energy_fraction": 3.1011275769543545e-09
+      },
+      {
+        "scene_id": "0080",
+        "difficulty": 0.51,
+        "rho": 0.999999997542102,
+        "reachable_energy_fraction": 0.9999118447303772,
+        "unreachable_energy_fraction": 2.4578978852218825e-09
+      },
+      {
+        "scene_id": "0081",
+        "difficulty": 0.31,
+        "rho": 0.9999999976074242,
+        "reachable_energy_fraction": 0.999917209148407,
+        "unreachable_energy_fraction": 2.392575693122012e-09
+      },
+      {
+        "scene_id": "0082",
+        "difficulty": 0.31,
+        "rho": 0.9999999973743696,
+        "reachable_energy_fraction": 0.9999237656593323,
+        "unreachable_energy_fraction": 2.625630379782251e-09
+      },
+      {
+        "scene_id": "0083",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999976321566,
+        "reachable_energy_fraction": 0.9999193549156189,
+        "unreachable_energy_fraction": 2.3678432548024375e-09
+      },
+      {
+        "scene_id": "0084",
+        "difficulty": 0.55,
+        "rho": 0.9999999976443352,
+        "reachable_energy_fraction": 0.9999209046363831,
+        "unreachable_energy_fraction": 2.3556647743561143e-09
+      },
+      {
+        "scene_id": "0085",
+        "difficulty": 0.43,
+        "rho": 0.9999999971754281,
+        "reachable_energy_fraction": 0.9999089241027832,
+        "unreachable_energy_fraction": 2.8245719096986477e-09
+      },
+      {
+        "scene_id": "0086",
+        "difficulty": 0.31,
+        "rho": 0.9999999974894217,
+        "reachable_energy_fraction": 0.9999115467071533,
+        "unreachable_energy_fraction": 2.510578189784951e-09
+      },
+      {
+        "scene_id": "0087",
+        "difficulty": 0.31,
+        "rho": 0.999999996183881,
+        "reachable_energy_fraction": 0.9998994469642639,
+        "unreachable_energy_fraction": 3.816118976374128e-09
+      },
+      {
+        "scene_id": "0088",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999948491198,
+        "reachable_energy_fraction": 0.9999051094055176,
+        "unreachable_energy_fraction": 5.150880166837624e-09
+      },
+      {
+        "scene_id": "0089",
+        "difficulty": 0.31,
+        "rho": 0.9999999962924524,
+        "reachable_energy_fraction": 0.9999080300331116,
+        "unreachable_energy_fraction": 3.7075476022607745e-09
+      },
+      {
+        "scene_id": "0090",
+        "difficulty": 0.43,
+        "rho": 0.9999999982425571,
+        "reachable_energy_fraction": 0.9999355673789978,
+        "unreachable_energy_fraction": 1.7574428579081314e-09
+      },
+      {
+        "scene_id": "0091",
+        "difficulty": 0.43,
+        "rho": 0.9999999982465131,
+        "reachable_energy_fraction": 0.9999352693557739,
+        "unreachable_energy_fraction": 1.753486911226787e-09
+      },
+      {
+        "scene_id": "0092",
+        "difficulty": 0.31,
+        "rho": 0.9999999975828289,
+        "reachable_energy_fraction": 0.9999188184738159,
+        "unreachable_energy_fraction": 2.417171129920348e-09
+      },
+      {
+        "scene_id": "0093",
+        "difficulty": 0.55,
+        "rho": 0.9999999974916204,
+        "reachable_energy_fraction": 0.9999256730079651,
+        "unreachable_energy_fraction": 2.5083797261515883e-09
+      },
+      {
+        "scene_id": "0094",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999976806827,
+        "reachable_energy_fraction": 0.9999207258224487,
+        "unreachable_energy_fraction": 2.3193174047975162e-09
+      },
+      {
+        "scene_id": "0095",
+        "difficulty": 0.31,
+        "rho": 0.9999999977182344,
+        "reachable_energy_fraction": 0.9999171495437622,
+        "unreachable_energy_fraction": 2.2817654432572e-09
+      },
+      {
+        "scene_id": "0096",
+        "difficulty": 0.31,
+        "rho": 0.9999999979116208,
+        "reachable_energy_fraction": 0.9999274015426636,
+        "unreachable_energy_fraction": 2.0883792473114227e-09
+      },
+      {
+        "scene_id": "0097",
+        "difficulty": 0.55,
+        "rho": 0.9999999977866462,
+        "reachable_energy_fraction": 0.9999165534973145,
+        "unreachable_energy_fraction": 2.2133539445690076e-09
+      },
+      {
+        "scene_id": "0098",
+        "difficulty": 0.31,
+        "rho": 0.9999999978944122,
+        "reachable_energy_fraction": 0.9999212026596069,
+        "unreachable_energy_fraction": 2.1055879262377175e-09
+      },
+      {
+        "scene_id": "0099",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999965862995,
+        "reachable_energy_fraction": 0.9999043345451355,
+        "unreachable_energy_fraction": 3.413700433441136e-09
+      },
+      {
+        "scene_id": "0100",
+        "difficulty": 0.31,
+        "rho": 0.9999999966640791,
+        "reachable_energy_fraction": 0.9999011754989624,
+        "unreachable_energy_fraction": 3.3359208728711565e-09
+      },
+      {
+        "scene_id": "0101",
+        "difficulty": 0.31,
+        "rho": 0.9999999979781935,
+        "reachable_energy_fraction": 0.9999248385429382,
+        "unreachable_energy_fraction": 2.0218064999966145e-09
+      },
+      {
+        "scene_id": "0102",
+        "difficulty": 0.55,
+        "rho": 0.9999999980719246,
+        "reachable_energy_fraction": 0.9999253749847412,
+        "unreachable_energy_fraction": 1.928075255008821e-09
+      },
+      {
+        "scene_id": "0103",
+        "difficulty": 0.43,
+        "rho": 0.9999999975202702,
+        "reachable_energy_fraction": 0.9999182820320129,
+        "unreachable_energy_fraction": 2.4797297548673214e-09
+      },
+      {
+        "scene_id": "0104",
+        "difficulty": 0.43,
+        "rho": 0.9999999970805064,
+        "reachable_energy_fraction": 0.9999068379402161,
+        "unreachable_energy_fraction": 2.9194937578580493e-09
+      },
+      {
+        "scene_id": "0105",
+        "difficulty": 0.31,
+        "rho": 0.9999999972370752,
+        "reachable_energy_fraction": 0.9999188184738159,
+        "unreachable_energy_fraction": 2.7629247778548915e-09
+      },
+      {
+        "scene_id": "0106",
+        "difficulty": 0.55,
+        "rho": 0.999999997781397,
+        "reachable_energy_fraction": 0.9999242424964905,
+        "unreachable_energy_fraction": 2.2186030790294353e-09
+      },
+      {
+        "scene_id": "0107",
+        "difficulty": 0.55,
+        "rho": 0.9999999963854522,
+        "reachable_energy_fraction": 0.9999029040336609,
+        "unreachable_energy_fraction": 3.614547772201604e-09
+      },
+      {
+        "scene_id": "0108",
+        "difficulty": 0.55,
+        "rho": 0.9999999949794266,
+        "reachable_energy_fraction": 0.9999073147773743,
+        "unreachable_energy_fraction": 5.020573290437369e-09
+      },
+      {
+        "scene_id": "0109",
+        "difficulty": 0.31,
+        "rho": 0.9999999972788822,
+        "reachable_energy_fraction": 0.9999123215675354,
+        "unreachable_energy_fraction": 2.721117775550397e-09
+      },
+      {
+        "scene_id": "0110",
+        "difficulty": 0.47,
+        "rho": 0.9999999973771634,
+        "reachable_energy_fraction": 0.9999168515205383,
+        "unreachable_energy_fraction": 2.6228366145630844e-09
+      },
+      {
+        "scene_id": "0111",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972291271,
+        "reachable_energy_fraction": 0.9999256134033203,
+        "unreachable_energy_fraction": 2.770872864488183e-09
+      },
+      {
+        "scene_id": "0112",
+        "difficulty": 0.55,
+        "rho": 0.9999999974675778,
+        "reachable_energy_fraction": 0.9999241232872009,
+        "unreachable_energy_fraction": 2.532422271883661e-09
+      },
+      {
+        "scene_id": "0113",
+        "difficulty": 0.31,
+        "rho": 0.9999999974812774,
+        "reachable_energy_fraction": 0.999923050403595,
+        "unreachable_energy_fraction": 2.5187225638489963e-09
+      },
+      {
+        "scene_id": "0114",
+        "difficulty": 0.43,
+        "rho": 0.9999999970843177,
+        "reachable_energy_fraction": 0.9999098181724548,
+        "unreachable_energy_fraction": 2.9156821401699062e-09
+      },
+      {
+        "scene_id": "0115",
+        "difficulty": 0.55,
+        "rho": 0.9999999975647884,
+        "reachable_energy_fraction": 0.9999174475669861,
+        "unreachable_energy_fraction": 2.435211587936692e-09
+      },
+      {
+        "scene_id": "0116",
+        "difficulty": 0.43,
+        "rho": 0.9999999954721098,
+        "reachable_energy_fraction": 0.9999033212661743,
+        "unreachable_energy_fraction": 4.527890062888673e-09
+      },
+      {
+        "scene_id": "0117",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999956317925,
+        "reachable_energy_fraction": 0.9998887777328491,
+        "unreachable_energy_fraction": 4.3682075734352566e-09
+      },
+      {
+        "scene_id": "0118",
+        "difficulty": 0.55,
+        "rho": 0.9999999972286617,
+        "reachable_energy_fraction": 0.9999200105667114,
+        "unreachable_energy_fraction": 2.771338269980106e-09
+      },
+      {
+        "scene_id": "0119",
+        "difficulty": 0.43,
+        "rho": 0.9999999978270879,
+        "reachable_energy_fraction": 0.9999174475669861,
+        "unreachable_energy_fraction": 2.172912072495592e-09
+      },
+      {
+        "scene_id": "0120",
+        "difficulty": 0.43,
+        "rho": 0.9999999982122396,
+        "reachable_energy_fraction": 0.9999270439147949,
+        "unreachable_energy_fraction": 1.7877603841753853e-09
+      },
+      {
+        "scene_id": "0121",
+        "difficulty": 0.43,
+        "rho": 0.9999999984446543,
+        "reachable_energy_fraction": 0.9999325275421143,
+        "unreachable_energy_fraction": 1.5553457410888427e-09
+      },
+      {
+        "scene_id": "0122",
+        "difficulty": 0.31,
+        "rho": 0.9999999956037481,
+        "reachable_energy_fraction": 0.9999043941497803,
+        "unreachable_energy_fraction": 4.396251807037288e-09
+      },
+      {
+        "scene_id": "0123",
+        "difficulty": 0.31,
+        "rho": 0.9999999966790775,
+        "reachable_energy_fraction": 0.9999058842658997,
+        "unreachable_energy_fraction": 3.3209224259422854e-09
+      },
+      {
+        "scene_id": "0124",
+        "difficulty": 0.43,
+        "rho": 0.9999999969326935,
+        "reachable_energy_fraction": 0.9999129772186279,
+        "unreachable_energy_fraction": 3.0673064088659885e-09
+      },
+      {
+        "scene_id": "0125",
+        "difficulty": 0.55,
+        "rho": 0.9999999974147997,
+        "reachable_energy_fraction": 0.9999191164970398,
+        "unreachable_energy_fraction": 2.5852002760728965e-09
+      },
+      {
+        "scene_id": "0126",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999996983209,
+        "reachable_energy_fraction": 0.9999260902404785,
+        "unreachable_energy_fraction": 3.016791039200939e-09
+      },
+      {
+        "scene_id": "0127",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999978403418,
+        "reachable_energy_fraction": 0.9999243021011353,
+        "unreachable_energy_fraction": 2.159658230027617e-09
+      },
+      {
+        "scene_id": "0128",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977560439,
+        "reachable_energy_fraction": 0.9999226331710815,
+        "unreachable_energy_fraction": 2.2439561320197754e-09
+      },
+      {
+        "scene_id": "0129",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999959655732,
+        "reachable_energy_fraction": 0.9999136924743652,
+        "unreachable_energy_fraction": 4.034426570598271e-09
+      },
+      {
+        "scene_id": "0130",
+        "difficulty": 0.55,
+        "rho": 0.9999999984611339,
+        "reachable_energy_fraction": 0.9999324679374695,
+        "unreachable_energy_fraction": 1.5388661456228192e-09
+      },
+      {
+        "scene_id": "0131",
+        "difficulty": 0.31,
+        "rho": 0.9999999956880958,
+        "reachable_energy_fraction": 0.9998844265937805,
+        "unreachable_energy_fraction": 4.311904167053626e-09
+      },
+      {
+        "scene_id": "0132",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999969346544,
+        "reachable_energy_fraction": 0.9999074339866638,
+        "unreachable_energy_fraction": 3.0653455329598955e-09
+      },
+      {
+        "scene_id": "0133",
+        "difficulty": 0.55,
+        "rho": 0.9999999977121468,
+        "reachable_energy_fraction": 0.9999194145202637,
+        "unreachable_energy_fraction": 2.2878532401904295e-09
+      },
+      {
+        "scene_id": "0134",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999979333221,
+        "reachable_energy_fraction": 0.9999302625656128,
+        "unreachable_energy_fraction": 2.0666779398936796e-09
+      },
+      {
+        "scene_id": "0135",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977701283,
+        "reachable_energy_fraction": 0.9999212622642517,
+        "unreachable_energy_fraction": 2.2298718427293807e-09
+      },
+      {
+        "scene_id": "0136",
+        "difficulty": 0.31,
+        "rho": 0.9999999977212121,
+        "reachable_energy_fraction": 0.9999156594276428,
+        "unreachable_energy_fraction": 2.2787878251051552e-09
+      },
+      {
+        "scene_id": "0137",
+        "difficulty": 0.43,
+        "rho": 0.9999999982986346,
+        "reachable_energy_fraction": 0.9999297857284546,
+        "unreachable_energy_fraction": 1.7013653819120123e-09
+      },
+      {
+        "scene_id": "0138",
+        "difficulty": 0.31,
+        "rho": 0.9999999980388958,
+        "reachable_energy_fraction": 0.9999252557754517,
+        "unreachable_energy_fraction": 1.9611041679468144e-09
+      },
+      {
+        "scene_id": "0139",
+        "difficulty": 0.31,
+        "rho": 0.9999999983505173,
+        "reachable_energy_fraction": 0.9999334216117859,
+        "unreachable_energy_fraction": 1.6494826615698344e-09
+      },
+      {
+        "scene_id": "0140",
+        "difficulty": 0.63,
+        "rho": 0.9999999983810418,
+        "reachable_energy_fraction": 0.9999342560768127,
+        "unreachable_energy_fraction": 1.6189581897307903e-09
+      },
+      {
+        "scene_id": "0141",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999971960352,
+        "reachable_energy_fraction": 0.9999157786369324,
+        "unreachable_energy_fraction": 2.8039648380939752e-09
+      },
+      {
+        "scene_id": "0142",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999967484717,
+        "reachable_energy_fraction": 0.9999110698699951,
+        "unreachable_energy_fraction": 3.251528157832695e-09
+      },
+      {
+        "scene_id": "0143",
+        "difficulty": 0.55,
+        "rho": 0.9999999979622821,
+        "reachable_energy_fraction": 0.9999229907989502,
+        "unreachable_energy_fraction": 2.0377177722963324e-09
+      },
+      {
+        "scene_id": "0144",
+        "difficulty": 0.31,
+        "rho": 0.9999999970821103,
+        "reachable_energy_fraction": 0.9999135732650757,
+        "unreachable_energy_fraction": 2.917889707632071e-09
+      },
+      {
+        "scene_id": "0145",
+        "difficulty": 0.55,
+        "rho": 0.9999999950072276,
+        "reachable_energy_fraction": 0.9999129176139832,
+        "unreachable_energy_fraction": 4.992772417722335e-09
+      },
+      {
+        "scene_id": "0146",
+        "difficulty": 0.43,
+        "rho": 0.9999999979211615,
+        "reachable_energy_fraction": 0.9999205470085144,
+        "unreachable_energy_fraction": 2.078838434727004e-09
+      },
+      {
+        "scene_id": "0147",
+        "difficulty": 0.31,
+        "rho": 0.999999998127857,
+        "reachable_energy_fraction": 0.9999290108680725,
+        "unreachable_energy_fraction": 1.8721431072066252e-09
+      },
+      {
+        "scene_id": "0148",
+        "difficulty": 0.43,
+        "rho": 0.9999999969567018,
+        "reachable_energy_fraction": 0.9999151229858398,
+        "unreachable_energy_fraction": 3.0432980580030744e-09
+      },
+      {
+        "scene_id": "0149",
+        "difficulty": 0.43,
+        "rho": 0.9999999972322068,
+        "reachable_energy_fraction": 0.999907910823822,
+        "unreachable_energy_fraction": 2.767793105817873e-09
+      },
+      {
+        "scene_id": "0150",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999970454595,
+        "reachable_energy_fraction": 0.9999111890792847,
+        "unreachable_energy_fraction": 2.9545406121656015e-09
+      },
+      {
+        "scene_id": "0151",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999971081553,
+        "reachable_energy_fraction": 0.9999057650566101,
+        "unreachable_energy_fraction": 2.8918445416081795e-09
+      },
+      {
+        "scene_id": "0152",
+        "difficulty": 0.43,
+        "rho": 0.9999999977536649,
+        "reachable_energy_fraction": 0.999918520450592,
+        "unreachable_energy_fraction": 2.246335117916942e-09
+      },
+      {
+        "scene_id": "0153",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999975073445,
+        "reachable_energy_fraction": 0.9999179244041443,
+        "unreachable_energy_fraction": 2.4926556374538222e-09
+      },
+      {
+        "scene_id": "0154",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999969162774,
+        "reachable_energy_fraction": 0.9999104738235474,
+        "unreachable_energy_fraction": 3.083722610597306e-09
+      },
+      {
+        "scene_id": "0155",
+        "difficulty": 0.31,
+        "rho": 0.999999997182332,
+        "reachable_energy_fraction": 0.9999141693115234,
+        "unreachable_energy_fraction": 2.8176680988423186e-09
+      },
+      {
+        "scene_id": "0156",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999996354389,
+        "reachable_energy_fraction": 0.9999099969863892,
+        "unreachable_energy_fraction": 3.645611146296801e-09
+      },
+      {
+        "scene_id": "0157",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999973201448,
+        "reachable_energy_fraction": 0.9999175667762756,
+        "unreachable_energy_fraction": 2.6798552266171782e-09
+      },
+      {
+        "scene_id": "0158",
+        "difficulty": 0.31,
+        "rho": 0.9999999972873693,
+        "reachable_energy_fraction": 0.9999163150787354,
+        "unreachable_energy_fraction": 2.7126305646163473e-09
+      },
+      {
+        "scene_id": "0159",
+        "difficulty": 0.31,
+        "rho": 0.9999999968522456,
+        "reachable_energy_fraction": 0.9999120235443115,
+        "unreachable_energy_fraction": 3.147754501497957e-09
+      },
+      {
+        "scene_id": "0160",
+        "difficulty": 0.31,
+        "rho": 0.9999999973647754,
+        "reachable_energy_fraction": 0.9999226927757263,
+        "unreachable_energy_fraction": 2.6352247051164568e-09
+      },
+      {
+        "scene_id": "0161",
+        "difficulty": 0.43,
+        "rho": 0.9999999976253491,
+        "reachable_energy_fraction": 0.999921977519989,
+        "unreachable_energy_fraction": 2.374650920344834e-09
+      },
+      {
+        "scene_id": "0162",
+        "difficulty": 0.31,
+        "rho": 0.9999999968390798,
+        "reachable_energy_fraction": 0.9999189376831055,
+        "unreachable_energy_fraction": 3.1609201922577768e-09
+      },
+      {
+        "scene_id": "0163",
+        "difficulty": 0.43,
+        "rho": 0.9999999979620614,
+        "reachable_energy_fraction": 0.9999206066131592,
+        "unreachable_energy_fraction": 2.037938484633628e-09
+      },
+      {
+        "scene_id": "0164",
+        "difficulty": 0.31,
+        "rho": 0.9999999958410472,
+        "reachable_energy_fraction": 0.9999176263809204,
+        "unreachable_energy_fraction": 4.158952737753907e-09
+      },
+      {
+        "scene_id": "0165",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999965335904,
+        "reachable_energy_fraction": 0.999907374382019,
+        "unreachable_energy_fraction": 3.4664096038028447e-09
+      },
+      {
+        "scene_id": "0166",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999970603914,
+        "reachable_energy_fraction": 0.9999114274978638,
+        "unreachable_energy_fraction": 2.939608556573603e-09
+      },
+      {
+        "scene_id": "0167",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999959124596,
+        "reachable_energy_fraction": 0.9999061226844788,
+        "unreachable_energy_fraction": 4.087540528274758e-09
+      },
+      {
+        "scene_id": "0168",
+        "difficulty": 0.55,
+        "rho": 0.9999999970655942,
+        "reachable_energy_fraction": 0.9999107122421265,
+        "unreachable_energy_fraction": 2.9344058294356046e-09
+      },
+      {
+        "scene_id": "0169",
+        "difficulty": 0.43,
+        "rho": 0.9999999983442192,
+        "reachable_energy_fraction": 0.9999356865882874,
+        "unreachable_energy_fraction": 1.6557808457662304e-09
+      },
+      {
+        "scene_id": "0170",
+        "difficulty": 0.31,
+        "rho": 0.9999999953694072,
+        "reachable_energy_fraction": 0.999910295009613,
+        "unreachable_energy_fraction": 4.630592798093858e-09
+      },
+      {
+        "scene_id": "0171",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999978790345,
+        "reachable_energy_fraction": 0.999923050403595,
+        "unreachable_energy_fraction": 2.1209654033071956e-09
+      },
+      {
+        "scene_id": "0172",
+        "difficulty": 0.47,
+        "rho": 0.9999999979281381,
+        "reachable_energy_fraction": 0.9999237656593323,
+        "unreachable_energy_fraction": 2.0718617932402594e-09
+      },
+      {
+        "scene_id": "0173",
+        "difficulty": 0.43,
+        "rho": 0.9999999973568441,
+        "reachable_energy_fraction": 0.9999113082885742,
+        "unreachable_energy_fraction": 2.643155916359774e-09
+      },
+      {
+        "scene_id": "0174",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977724423,
+        "reachable_energy_fraction": 0.9999168515205383,
+        "unreachable_energy_fraction": 2.227557693856852e-09
+      },
+      {
+        "scene_id": "0175",
+        "difficulty": 0.51,
+        "rho": 0.999999997591921,
+        "reachable_energy_fraction": 0.9999191761016846,
+        "unreachable_energy_fraction": 2.408078847437878e-09
+      },
+      {
+        "scene_id": "0176",
+        "difficulty": 0.43,
+        "rho": 0.9999999980742033,
+        "reachable_energy_fraction": 0.9999261498451233,
+        "unreachable_energy_fraction": 1.925796855317685e-09
+      },
+      {
+        "scene_id": "0177",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999936801632,
+        "reachable_energy_fraction": 0.9998903274536133,
+        "unreachable_energy_fraction": 6.31983665400071e-09
+      },
+      {
+        "scene_id": "0178",
+        "difficulty": 0.31,
+        "rho": 0.9999999968461188,
+        "reachable_energy_fraction": 0.9999198913574219,
+        "unreachable_energy_fraction": 3.1538811562370483e-09
+      },
+      {
+        "scene_id": "0179",
+        "difficulty": 0.31,
+        "rho": 0.9999999962039007,
+        "reachable_energy_fraction": 0.9999006986618042,
+        "unreachable_energy_fraction": 3.796099434794087e-09
+      },
+      {
+        "scene_id": "0180",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999969011018,
+        "reachable_energy_fraction": 0.9999089241027832,
+        "unreachable_energy_fraction": 3.098898249120907e-09
+      },
+      {
+        "scene_id": "0181",
+        "difficulty": 0.43,
+        "rho": 0.9999999962430284,
+        "reachable_energy_fraction": 0.9999163150787354,
+        "unreachable_energy_fraction": 3.7569716226926175e-09
+      },
+      {
+        "scene_id": "0182",
+        "difficulty": 0.55,
+        "rho": 0.9999999972993516,
+        "reachable_energy_fraction": 0.9999215602874756,
+        "unreachable_energy_fraction": 2.700648371600778e-09
+      },
+      {
+        "scene_id": "0183",
+        "difficulty": 0.31,
+        "rho": 0.99999999765188,
+        "reachable_energy_fraction": 0.9999234080314636,
+        "unreachable_energy_fraction": 2.3481201427699716e-09
+      },
+      {
+        "scene_id": "0184",
+        "difficulty": 0.55,
+        "rho": 0.9999999968871132,
+        "reachable_energy_fraction": 0.9999071955680847,
+        "unreachable_energy_fraction": 3.1128868371865792e-09
+      },
+      {
+        "scene_id": "0185",
+        "difficulty": 0.55,
+        "rho": 0.9999999959134186,
+        "reachable_energy_fraction": 0.9999009370803833,
+        "unreachable_energy_fraction": 4.086581295581482e-09
+      },
+      {
+        "scene_id": "0186",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972146708,
+        "reachable_energy_fraction": 0.9999105334281921,
+        "unreachable_energy_fraction": 2.785329078491827e-09
+      },
+      {
+        "scene_id": "0187",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999976448829,
+        "reachable_energy_fraction": 0.9999315738677979,
+        "unreachable_energy_fraction": 2.355117212360369e-09
+      },
+      {
+        "scene_id": "0188",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999959809305,
+        "reachable_energy_fraction": 0.9999043941497803,
+        "unreachable_energy_fraction": 4.019069521632446e-09
+      },
+      {
+        "scene_id": "0189",
+        "difficulty": 0.31,
+        "rho": 0.9999999972783107,
+        "reachable_energy_fraction": 0.9999157190322876,
+        "unreachable_energy_fraction": 2.721689318363474e-09
+      },
+      {
+        "scene_id": "0190",
+        "difficulty": 0.43,
+        "rho": 0.9999999952277716,
+        "reachable_energy_fraction": 0.9999011754989624,
+        "unreachable_energy_fraction": 4.7722283902373874e-09
+      },
+      {
+        "scene_id": "0191",
+        "difficulty": 0.31,
+        "rho": 0.9999999976737352,
+        "reachable_energy_fraction": 0.9999186992645264,
+        "unreachable_energy_fraction": 2.3262647363964106e-09
+      },
+      {
+        "scene_id": "0192",
+        "difficulty": 0.31,
+        "rho": 0.9999999984704155,
+        "reachable_energy_fraction": 0.9999291896820068,
+        "unreachable_energy_fraction": 1.529584459092348e-09
+      },
+      {
+        "scene_id": "0193",
+        "difficulty": 0.31,
+        "rho": 0.9999999976336744,
+        "reachable_energy_fraction": 0.999916672706604,
+        "unreachable_energy_fraction": 2.366325579927775e-09
+      },
+      {
+        "scene_id": "0194",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999976213169,
+        "reachable_energy_fraction": 0.9999146461486816,
+        "unreachable_energy_fraction": 2.3786832503702726e-09
+      },
+      {
+        "scene_id": "0195",
+        "difficulty": 0.31,
+        "rho": 0.9999999970413528,
+        "reachable_energy_fraction": 0.999910831451416,
+        "unreachable_energy_fraction": 2.958647105089085e-09
+      },
+      {
+        "scene_id": "0196",
+        "difficulty": 0.43,
+        "rho": 0.9999999955559973,
+        "reachable_energy_fraction": 0.9998945593833923,
+        "unreachable_energy_fraction": 4.444002499326416e-09
+      },
+      {
+        "scene_id": "0197",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999975258199,
+        "reachable_energy_fraction": 0.9999173879623413,
+        "unreachable_energy_fraction": 2.474179972011825e-09
+      },
+      {
+        "scene_id": "0198",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999971689721,
+        "reachable_energy_fraction": 0.999916136264801,
+        "unreachable_energy_fraction": 2.831027856586843e-09
+      },
+      {
+        "scene_id": "0199",
+        "difficulty": 0.31,
+        "rho": 0.9999999973932243,
+        "reachable_energy_fraction": 0.9999160766601562,
+        "unreachable_energy_fraction": 2.606775684199647e-09
+      },
+      {
+        "scene_id": "0200",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999971485332,
+        "reachable_energy_fraction": 0.9999128580093384,
+        "unreachable_energy_fraction": 2.851466840425587e-09
+      },
+      {
+        "scene_id": "0201",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999955482588,
+        "reachable_energy_fraction": 0.9998902678489685,
+        "unreachable_energy_fraction": 4.451741197897263e-09
+      },
+      {
+        "scene_id": "0202",
+        "difficulty": 0.31,
+        "rho": 0.999999998321411,
+        "reachable_energy_fraction": 0.9999315738677979,
+        "unreachable_energy_fraction": 1.6785890455395247e-09
+      },
+      {
+        "scene_id": "0203",
+        "difficulty": 0.43,
+        "rho": 0.9999999970945505,
+        "reachable_energy_fraction": 0.9999175071716309,
+        "unreachable_energy_fraction": 2.905449658641146e-09
+      },
+      {
+        "scene_id": "0204",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999974110212,
+        "reachable_energy_fraction": 0.9999139308929443,
+        "unreachable_energy_fraction": 2.5889788091149057e-09
+      },
+      {
+        "scene_id": "0205",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999969698938,
+        "reachable_energy_fraction": 0.999914824962616,
+        "unreachable_energy_fraction": 3.0301061659798734e-09
+      },
+      {
+        "scene_id": "0206",
+        "difficulty": 0.43,
+        "rho": 0.999999998125941,
+        "reachable_energy_fraction": 0.999934196472168,
+        "unreachable_energy_fraction": 1.8740589080579184e-09
+      },
+      {
+        "scene_id": "0207",
+        "difficulty": 0.31,
+        "rho": 0.9999999964036594,
+        "reachable_energy_fraction": 0.9999045729637146,
+        "unreachable_energy_fraction": 3.5963405586869612e-09
+      },
+      {
+        "scene_id": "0208",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999959574005,
+        "reachable_energy_fraction": 0.9998912215232849,
+        "unreachable_energy_fraction": 4.042599588416351e-09
+      },
+      {
+        "scene_id": "0209",
+        "difficulty": 0.31,
+        "rho": 0.9999999981353028,
+        "reachable_energy_fraction": 0.9999293088912964,
+        "unreachable_energy_fraction": 1.8646970634250692e-09
+      },
+      {
+        "scene_id": "0210",
+        "difficulty": 0.31,
+        "rho": 0.9999999977487074,
+        "reachable_energy_fraction": 0.9999300837516785,
+        "unreachable_energy_fraction": 2.2512927078111034e-09
+      },
+      {
+        "scene_id": "0211",
+        "difficulty": 0.31,
+        "rho": 0.9999999980708103,
+        "reachable_energy_fraction": 0.9999303817749023,
+        "unreachable_energy_fraction": 1.9291896968809397e-09
+      },
+      {
+        "scene_id": "0212",
+        "difficulty": 0.31,
+        "rho": 0.99999999617641,
+        "reachable_energy_fraction": 0.9999145269393921,
+        "unreachable_energy_fraction": 3.823589889151435e-09
+      },
+      {
+        "scene_id": "0213",
+        "difficulty": 0.31,
+        "rho": 0.9999999975717535,
+        "reachable_energy_fraction": 0.999919056892395,
+        "unreachable_energy_fraction": 2.4282464927694036e-09
+      },
+      {
+        "scene_id": "0214",
+        "difficulty": 0.31,
+        "rho": 0.9999999975765455,
+        "reachable_energy_fraction": 0.9999259114265442,
+        "unreachable_energy_fraction": 2.4234545481505165e-09
+      },
+      {
+        "scene_id": "0215",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999980062881,
+        "reachable_energy_fraction": 0.9999262690544128,
+        "unreachable_energy_fraction": 1.993711862269265e-09
+      },
+      {
+        "scene_id": "0216",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999997823666,
+        "reachable_energy_fraction": 0.9999179840087891,
+        "unreachable_energy_fraction": 2.1763340019020916e-09
+      },
+      {
+        "scene_id": "0217",
+        "difficulty": 0.31,
+        "rho": 0.9999999957492303,
+        "reachable_energy_fraction": 0.9999008178710938,
+        "unreachable_energy_fraction": 4.250769958247247e-09
+      },
+      {
+        "scene_id": "0218",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999981130205,
+        "reachable_energy_fraction": 0.9999266862869263,
+        "unreachable_energy_fraction": 1.886979461573901e-09
+      },
+      {
+        "scene_id": "0219",
+        "difficulty": 0.31,
+        "rho": 0.999999996757025,
+        "reachable_energy_fraction": 0.9999094605445862,
+        "unreachable_energy_fraction": 3.2429749996509827e-09
+      },
+      {
+        "scene_id": "0220",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999978469489,
+        "reachable_energy_fraction": 0.9999213814735413,
+        "unreachable_energy_fraction": 2.1530510707634676e-09
+      },
+      {
+        "scene_id": "0221",
+        "difficulty": 0.47,
+        "rho": 0.999999994417269,
+        "reachable_energy_fraction": 0.9999015927314758,
+        "unreachable_energy_fraction": 5.582731166242638e-09
+      },
+      {
+        "scene_id": "0222",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999980752651,
+        "reachable_energy_fraction": 0.9999286532402039,
+        "unreachable_energy_fraction": 1.9247348159723288e-09
+      },
+      {
+        "scene_id": "0223",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999996986761,
+        "reachable_energy_fraction": 0.9999024868011475,
+        "unreachable_energy_fraction": 3.0132389916559532e-09
+      },
+      {
+        "scene_id": "0224",
+        "difficulty": 0.47,
+        "rho": 0.9999999969831868,
+        "reachable_energy_fraction": 0.9999054670333862,
+        "unreachable_energy_fraction": 3.0168132436614314e-09
+      },
+      {
+        "scene_id": "0225",
+        "difficulty": 0.63,
+        "rho": 0.9999999971716959,
+        "reachable_energy_fraction": 0.9999150037765503,
+        "unreachable_energy_fraction": 2.8283040354182276e-09
+      },
+      {
+        "scene_id": "0226",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999954800411,
+        "reachable_energy_fraction": 0.999902069568634,
+        "unreachable_energy_fraction": 4.519958629600751e-09
+      },
+      {
+        "scene_id": "0227",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999996670837,
+        "reachable_energy_fraction": 0.9999104142189026,
+        "unreachable_energy_fraction": 3.329162945320263e-09
+      },
+      {
+        "scene_id": "0228",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999981233689,
+        "reachable_energy_fraction": 0.9999282360076904,
+        "unreachable_energy_fraction": 1.87663107276137e-09
+      },
+      {
+        "scene_id": "0229",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999996386222,
+        "reachable_energy_fraction": 0.999902069568634,
+        "unreachable_energy_fraction": 3.6137781656009338e-09
+      },
+      {
+        "scene_id": "0230",
+        "difficulty": 0.31,
+        "rho": 0.999999997757086,
+        "reachable_energy_fraction": 0.9999216198921204,
+        "unreachable_energy_fraction": 2.2429140766888622e-09
+      },
+      {
+        "scene_id": "0231",
+        "difficulty": 0.55,
+        "rho": 0.9999999969085673,
+        "reachable_energy_fraction": 0.9999090433120728,
+        "unreachable_energy_fraction": 3.0914326654141178e-09
+      },
+      {
+        "scene_id": "0232",
+        "difficulty": 0.55,
+        "rho": 0.9999999978367636,
+        "reachable_energy_fraction": 0.9999200701713562,
+        "unreachable_energy_fraction": 2.1632362567913788e-09
+      },
+      {
+        "scene_id": "0233",
+        "difficulty": 0.43,
+        "rho": 0.9999999967029792,
+        "reachable_energy_fraction": 0.9999098181724548,
+        "unreachable_energy_fraction": 3.2970208785343402e-09
+      },
+      {
+        "scene_id": "0234",
+        "difficulty": 0.31,
+        "rho": 0.9999999968928381,
+        "reachable_energy_fraction": 0.9999058842658997,
+        "unreachable_energy_fraction": 3.107161861137797e-09
+      },
+      {
+        "scene_id": "0235",
+        "difficulty": 0.51,
+        "rho": 0.9999999963536862,
+        "reachable_energy_fraction": 0.9999109506607056,
+        "unreachable_energy_fraction": 3.6463139174713888e-09
+      },
+      {
+        "scene_id": "0236",
+        "difficulty": 0.31,
+        "rho": 0.9999999980479304,
+        "reachable_energy_fraction": 0.9999215006828308,
+        "unreachable_energy_fraction": 1.9520696170616247e-09
+      },
+      {
+        "scene_id": "0237",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999969151833,
+        "reachable_energy_fraction": 0.9999213814735413,
+        "unreachable_energy_fraction": 3.0848168464103765e-09
+      },
+      {
+        "scene_id": "0238",
+        "difficulty": 0.31,
+        "rho": 0.9999999976884675,
+        "reachable_energy_fraction": 0.9999188780784607,
+        "unreachable_energy_fraction": 2.3115325209488446e-09
+      },
+      {
+        "scene_id": "0239",
+        "difficulty": 0.55,
+        "rho": 0.9999999970290379,
+        "reachable_energy_fraction": 0.9999074339866638,
+        "unreachable_energy_fraction": 2.970962142967437e-09
+      },
+      {
+        "scene_id": "0240",
+        "difficulty": 0.31,
+        "rho": 0.9999999957330329,
+        "reachable_energy_fraction": 0.9999047517776489,
+        "unreachable_energy_fraction": 4.266967223998108e-09
+      },
+      {
+        "scene_id": "0241",
+        "difficulty": 0.31,
+        "rho": 0.9999999977271576,
+        "reachable_energy_fraction": 0.9999170303344727,
+        "unreachable_energy_fraction": 2.2728423587636826e-09
+      },
+      {
+        "scene_id": "0242",
+        "difficulty": 0.47,
+        "rho": 0.9999999961987663,
+        "reachable_energy_fraction": 0.9998980164527893,
+        "unreachable_energy_fraction": 3.8012335501491634e-09
+      },
+      {
+        "scene_id": "0243",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999960520682,
+        "reachable_energy_fraction": 0.9999009966850281,
+        "unreachable_energy_fraction": 3.947931759284984e-09
+      },
+      {
+        "scene_id": "0244",
+        "difficulty": 0.47,
+        "rho": 0.99999999756935,
+        "reachable_energy_fraction": 0.9999220371246338,
+        "unreachable_energy_fraction": 2.430649903573112e-09
+      },
+      {
+        "scene_id": "0245",
+        "difficulty": 0.31,
+        "rho": 0.9999999972296422,
+        "reachable_energy_fraction": 0.9999179840087891,
+        "unreachable_energy_fraction": 2.770357943049362e-09
+      },
+      {
+        "scene_id": "0246",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977556224,
+        "reachable_energy_fraction": 0.9999169111251831,
+        "unreachable_energy_fraction": 2.244377572679923e-09
+      },
+      {
+        "scene_id": "0247",
+        "difficulty": 0.43,
+        "rho": 0.9999999984640853,
+        "reachable_energy_fraction": 0.9999303221702576,
+        "unreachable_energy_fraction": 1.5359147287341557e-09
+      },
+      {
+        "scene_id": "0248",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999965213574,
+        "reachable_energy_fraction": 0.9999101161956787,
+        "unreachable_energy_fraction": 3.4786424851773745e-09
+      },
+      {
+        "scene_id": "0249",
+        "difficulty": 0.43,
+        "rho": 0.9999999965640918,
+        "reachable_energy_fraction": 0.9999171495437622,
+        "unreachable_energy_fraction": 3.435908224602713e-09
+      },
+      {
+        "scene_id": "0250",
+        "difficulty": 0.31,
+        "rho": 0.9999999963583255,
+        "reachable_energy_fraction": 0.999909520149231,
+        "unreachable_energy_fraction": 3.641674517496085e-09
+      },
+      {
+        "scene_id": "0251",
+        "difficulty": 0.31,
+        "rho": 0.9999999947927233,
+        "reachable_energy_fraction": 0.9998887777328491,
+        "unreachable_energy_fraction": 5.2072768319533225e-09
+      },
+      {
+        "scene_id": "0252",
+        "difficulty": 0.43,
+        "rho": 0.9999999971262862,
+        "reachable_energy_fraction": 0.9999187588691711,
+        "unreachable_energy_fraction": 2.873713933482236e-09
+      },
+      {
+        "scene_id": "0253",
+        "difficulty": 0.31,
+        "rho": 0.9999999967469225,
+        "reachable_energy_fraction": 0.999906063079834,
+        "unreachable_energy_fraction": 3.2530775850858618e-09
+      },
+      {
+        "scene_id": "0254",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972280663,
+        "reachable_energy_fraction": 0.9999033212661743,
+        "unreachable_energy_fraction": 2.771933793610515e-09
+      },
+      {
+        "scene_id": "0255",
+        "difficulty": 0.43,
+        "rho": 0.9999999981159758,
+        "reachable_energy_fraction": 0.9999331831932068,
+        "unreachable_energy_fraction": 1.884024047882349e-09
+      },
+      {
+        "scene_id": "0256",
+        "difficulty": 0.31,
+        "rho": 0.9999999985220516,
+        "reachable_energy_fraction": 0.9999370574951172,
+        "unreachable_energy_fraction": 1.4779484303062418e-09
+      },
+      {
+        "scene_id": "0257",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999964495708,
+        "reachable_energy_fraction": 0.9999064803123474,
+        "unreachable_energy_fraction": 3.5504292839050322e-09
+      },
+      {
+        "scene_id": "0258",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999971709891,
+        "reachable_energy_fraction": 0.9999117255210876,
+        "unreachable_energy_fraction": 2.829010803395704e-09
+      },
+      {
+        "scene_id": "0259",
+        "difficulty": 0.43,
+        "rho": 0.999999997350389,
+        "reachable_energy_fraction": 0.9999201893806458,
+        "unreachable_energy_fraction": 2.6496109750695496e-09
+      },
+      {
+        "scene_id": "0260",
+        "difficulty": 0.43,
+        "rho": 0.9999999967362888,
+        "reachable_energy_fraction": 0.9999054670333862,
+        "unreachable_energy_fraction": 3.2637110791711166e-09
+      },
+      {
+        "scene_id": "0261",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999976456753,
+        "reachable_energy_fraction": 0.9999169111251831,
+        "unreachable_energy_fraction": 2.3543247351653918e-09
+      },
+      {
+        "scene_id": "0262",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999975764312,
+        "reachable_energy_fraction": 0.9999187588691711,
+        "unreachable_energy_fraction": 2.423568679077448e-09
+      },
+      {
+        "scene_id": "0263",
+        "difficulty": 0.31,
+        "rho": 0.9999999962070588,
+        "reachable_energy_fraction": 0.9999129176139832,
+        "unreachable_energy_fraction": 3.792941072333633e-09
+      },
+      {
+        "scene_id": "0264",
+        "difficulty": 0.31,
+        "rho": 0.9999999968136165,
+        "reachable_energy_fraction": 0.9999091625213623,
+        "unreachable_energy_fraction": 3.1863836014167646e-09
+      },
+      {
+        "scene_id": "0265",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999994142869,
+        "reachable_energy_fraction": 0.9998955130577087,
+        "unreachable_energy_fraction": 5.857130780384523e-09
+      },
+      {
+        "scene_id": "0266",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999971967444,
+        "reachable_energy_fraction": 0.9999143481254578,
+        "unreachable_energy_fraction": 2.8032556276258447e-09
+      },
+      {
+        "scene_id": "0267",
+        "difficulty": 0.55,
+        "rho": 0.9999999963984595,
+        "reachable_energy_fraction": 0.9999014139175415,
+        "unreachable_energy_fraction": 3.6015403992450956e-09
+      },
+      {
+        "scene_id": "0268",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999960965928,
+        "reachable_energy_fraction": 0.9998981356620789,
+        "unreachable_energy_fraction": 3.9034073751054166e-09
+      },
+      {
+        "scene_id": "0269",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972659078,
+        "reachable_energy_fraction": 0.9999141693115234,
+        "unreachable_energy_fraction": 2.7340920638607713e-09
+      },
+      {
+        "scene_id": "0270",
+        "difficulty": 0.43,
+        "rho": 0.9999999968416754,
+        "reachable_energy_fraction": 0.9999120235443115,
+        "unreachable_energy_fraction": 3.158324712870808e-09
+      },
+      {
+        "scene_id": "0271",
+        "difficulty": 0.31,
+        "rho": 0.9999999972862967,
+        "reachable_energy_fraction": 0.9999119639396667,
+        "unreachable_energy_fraction": 2.71370326210274e-09
+      },
+      {
+        "scene_id": "0272",
+        "difficulty": 0.43,
+        "rho": 0.9999999961192373,
+        "reachable_energy_fraction": 0.9999024868011475,
+        "unreachable_energy_fraction": 3.880762822205952e-09
+      },
+      {
+        "scene_id": "0273",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977313362,
+        "reachable_energy_fraction": 0.9999200701713562,
+        "unreachable_energy_fraction": 2.2686637013435984e-09
+      },
+      {
+        "scene_id": "0274",
+        "difficulty": 0.55,
+        "rho": 0.9999999971469671,
+        "reachable_energy_fraction": 0.9999087452888489,
+        "unreachable_energy_fraction": 2.8530329210241234e-09
+      },
+      {
+        "scene_id": "0275",
+        "difficulty": 0.43,
+        "rho": 0.999999996992459,
+        "reachable_energy_fraction": 0.9999095797538757,
+        "unreachable_energy_fraction": 3.007540883004367e-09
+      },
+      {
+        "scene_id": "0276",
+        "difficulty": 0.31,
+        "rho": 0.9999999965618033,
+        "reachable_energy_fraction": 0.9999048113822937,
+        "unreachable_energy_fraction": 3.4381966163010702e-09
+      },
+      {
+        "scene_id": "0277",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977086023,
+        "reachable_energy_fraction": 0.9999232292175293,
+        "unreachable_energy_fraction": 2.2913977382188477e-09
+      },
+      {
+        "scene_id": "0278",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999963225836,
+        "reachable_energy_fraction": 0.9999019503593445,
+        "unreachable_energy_fraction": 3.6774163714170527e-09
+      },
+      {
+        "scene_id": "0279",
+        "difficulty": 0.35,
+        "rho": 0.9999999978496353,
+        "reachable_energy_fraction": 0.9999244213104248,
+        "unreachable_energy_fraction": 2.1503645530884796e-09
+      },
+      {
+        "scene_id": "0280",
+        "difficulty": 0.63,
+        "rho": 0.9999999977166356,
+        "reachable_energy_fraction": 0.9999229311943054,
+        "unreachable_energy_fraction": 2.283364386457265e-09
+      },
+      {
+        "scene_id": "0281",
+        "difficulty": 0.31,
+        "rho": 0.9999999978389296,
+        "reachable_energy_fraction": 0.9999244809150696,
+        "unreachable_energy_fraction": 2.16107043371494e-09
+      },
+      {
+        "scene_id": "0282",
+        "difficulty": 0.31,
+        "rho": 0.9999999968272786,
+        "reachable_energy_fraction": 0.9999027848243713,
+        "unreachable_energy_fraction": 3.1727214189203323e-09
+      },
+      {
+        "scene_id": "0283",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999981694668,
+        "reachable_energy_fraction": 0.9999228715896606,
+        "unreachable_energy_fraction": 1.8305331694890015e-09
+      },
+      {
+        "scene_id": "0284",
+        "difficulty": 0.31,
+        "rho": 0.9999999972442832,
+        "reachable_energy_fraction": 0.9999143481254578,
+        "unreachable_energy_fraction": 2.755716765889815e-09
+      },
+      {
+        "scene_id": "0285",
+        "difficulty": 0.43,
+        "rho": 0.9999999967293348,
+        "reachable_energy_fraction": 0.9999076724052429,
+        "unreachable_energy_fraction": 3.2706650721081587e-09
+      },
+      {
+        "scene_id": "0286",
+        "difficulty": 0.43,
+        "rho": 0.999999997168847,
+        "reachable_energy_fraction": 0.9999117255210876,
+        "unreachable_energy_fraction": 2.8311528676994158e-09
+      },
+      {
+        "scene_id": "0287",
+        "difficulty": 0.31,
+        "rho": 0.9999999967730694,
+        "reachable_energy_fraction": 0.9999107122421265,
+        "unreachable_energy_fraction": 3.2269307226329147e-09
+      },
+      {
+        "scene_id": "0288",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999974877444,
+        "reachable_energy_fraction": 0.9999202489852905,
+        "unreachable_energy_fraction": 2.5122557367751597e-09
+      },
+      {
+        "scene_id": "0289",
+        "difficulty": 0.55,
+        "rho": 0.9999999978241348,
+        "reachable_energy_fraction": 0.9999227523803711,
+        "unreachable_energy_fraction": 2.17586504369649e-09
+      },
+      {
+        "scene_id": "0290",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999978009094,
+        "reachable_energy_fraction": 0.9999233484268188,
+        "unreachable_energy_fraction": 2.1990906873270433e-09
+      },
+      {
+        "scene_id": "0291",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999959792055,
+        "reachable_energy_fraction": 0.9998983144760132,
+        "unreachable_energy_fraction": 4.020794364123503e-09
+      },
+      {
+        "scene_id": "0292",
+        "difficulty": 0.31,
+        "rho": 0.9999999957846545,
+        "reachable_energy_fraction": 0.9998923540115356,
+        "unreachable_energy_fraction": 4.215345406066717e-09
+      },
+      {
+        "scene_id": "0293",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999997401852,
+        "reachable_energy_fraction": 0.999917209148407,
+        "unreachable_energy_fraction": 2.59814791903068e-09
+      },
+      {
+        "scene_id": "0294",
+        "difficulty": 0.55,
+        "rho": 0.9999999979048578,
+        "reachable_energy_fraction": 0.9999244213104248,
+        "unreachable_energy_fraction": 2.0951420598436243e-09
+      },
+      {
+        "scene_id": "0295",
+        "difficulty": 0.55,
+        "rho": 0.9999999961912353,
+        "reachable_energy_fraction": 0.9998998641967773,
+        "unreachable_energy_fraction": 3.808764859059011e-09
+      },
+      {
+        "scene_id": "0296",
+        "difficulty": 0.31,
+        "rho": 0.9999999972550071,
+        "reachable_energy_fraction": 0.9999117851257324,
+        "unreachable_energy_fraction": 2.744992899650356e-09
+      },
+      {
+        "scene_id": "0297",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977122488,
+        "reachable_energy_fraction": 0.9999234080314636,
+        "unreachable_energy_fraction": 2.287751099672164e-09
+      },
+      {
+        "scene_id": "0298",
+        "difficulty": 0.43,
+        "rho": 0.9999999975053087,
+        "reachable_energy_fraction": 0.9999200701713562,
+        "unreachable_energy_fraction": 2.494691342391775e-09
+      },
+      {
+        "scene_id": "0299",
+        "difficulty": 0.31,
+        "rho": 0.9999999979725684,
+        "reachable_energy_fraction": 0.9999215006828308,
+        "unreachable_energy_fraction": 2.0274315559731804e-09
+      },
+      {
+        "scene_id": "0300",
+        "difficulty": 0.43,
+        "rho": 0.9999999973578881,
+        "reachable_energy_fraction": 0.9999218583106995,
+        "unreachable_energy_fraction": 2.6421118626274165e-09
+      },
+      {
+        "scene_id": "0301",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999973265047,
+        "reachable_energy_fraction": 0.9999197125434875,
+        "unreachable_energy_fraction": 2.6734954250429155e-09
+      },
+      {
+        "scene_id": "0302",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999979533682,
+        "reachable_energy_fraction": 0.9999271035194397,
+        "unreachable_energy_fraction": 2.046631752961048e-09
+      },
+      {
+        "scene_id": "0303",
+        "difficulty": 0.31,
+        "rho": 0.9999999972181077,
+        "reachable_energy_fraction": 0.9999172687530518,
+        "unreachable_energy_fraction": 2.7818922720967976e-09
+      },
+      {
+        "scene_id": "0304",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999996920262,
+        "reachable_energy_fraction": 0.9999120831489563,
+        "unreachable_energy_fraction": 3.0797380201619262e-09
+      },
+      {
+        "scene_id": "0305",
+        "difficulty": 0.55,
+        "rho": 0.9999999976292551,
+        "reachable_energy_fraction": 0.9999200105667114,
+        "unreachable_energy_fraction": 2.370744933699598e-09
+      },
+      {
+        "scene_id": "0306",
+        "difficulty": 0.55,
+        "rho": 0.9999999966323131,
+        "reachable_energy_fraction": 0.999910295009613,
+        "unreachable_energy_fraction": 3.3676870181409413e-09
+      },
+      {
+        "scene_id": "0307",
+        "difficulty": 0.31,
+        "rho": 0.999999996942967,
+        "reachable_energy_fraction": 0.9999024868011475,
+        "unreachable_energy_fraction": 3.057033071129922e-09
+      },
+      {
+        "scene_id": "0308",
+        "difficulty": 0.31,
+        "rho": 0.9999999977078738,
+        "reachable_energy_fraction": 0.9999164938926697,
+        "unreachable_energy_fraction": 2.292126044523002e-09
+      },
+      {
+        "scene_id": "0309",
+        "difficulty": 0.63,
+        "rho": 0.9999999978872076,
+        "reachable_energy_fraction": 0.9999182820320129,
+        "unreachable_energy_fraction": 2.112792385489115e-09
+      },
+      {
+        "scene_id": "0310",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999970120224,
+        "reachable_energy_fraction": 0.9999097585678101,
+        "unreachable_energy_fraction": 2.987977643087447e-09
+      },
+      {
+        "scene_id": "0311",
+        "difficulty": 0.63,
+        "rho": 0.9999999970588545,
+        "reachable_energy_fraction": 0.9999079704284668,
+        "unreachable_energy_fraction": 2.941145549328894e-09
+      },
+      {
+        "scene_id": "0312",
+        "difficulty": 0.31,
+        "rho": 0.9999999966384273,
+        "reachable_energy_fraction": 0.9999099969863892,
+        "unreachable_energy_fraction": 3.3615725758551207e-09
+      },
+      {
+        "scene_id": "0313",
+        "difficulty": 0.31,
+        "rho": 0.9999999967379776,
+        "reachable_energy_fraction": 0.9999026656150818,
+        "unreachable_energy_fraction": 3.2620224299506617e-09
+      },
+      {
+        "scene_id": "0314",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.99999999766698,
+        "reachable_energy_fraction": 0.9999200701713562,
+        "unreachable_energy_fraction": 2.333019999412045e-09
+      },
+      {
+        "scene_id": "0315",
+        "difficulty": 0.43,
+        "rho": 0.9999999981575385,
+        "reachable_energy_fraction": 0.9999294877052307,
+        "unreachable_energy_fraction": 1.8424615166878766e-09
+      },
+      {
+        "scene_id": "0316",
+        "difficulty": 0.63,
+        "rho": 0.9999999970601763,
+        "reachable_energy_fraction": 0.9999074339866638,
+        "unreachable_energy_fraction": 2.9398237177957753e-09
+      },
+      {
+        "scene_id": "0317",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999973660723,
+        "reachable_energy_fraction": 0.999920666217804,
+        "unreachable_energy_fraction": 2.6339277425790897e-09
+      },
+      {
+        "scene_id": "0318",
+        "difficulty": 0.31,
+        "rho": 0.9999999969231456,
+        "reachable_energy_fraction": 0.9999095797538757,
+        "unreachable_energy_fraction": 3.0768545489223698e-09
+      },
+      {
+        "scene_id": "0319",
+        "difficulty": 0.43,
+        "rho": 0.9999999979085097,
+        "reachable_energy_fraction": 0.9999264478683472,
+        "unreachable_energy_fraction": 2.0914903142710273e-09
+      },
+      {
+        "scene_id": "0320",
+        "difficulty": 0.43,
+        "rho": 0.999999997116627,
+        "reachable_energy_fraction": 0.9999088644981384,
+        "unreachable_energy_fraction": 2.8833728737964748e-09
+      },
+      {
+        "scene_id": "0321",
+        "difficulty": 0.43,
+        "rho": 0.9999999986138872,
+        "reachable_energy_fraction": 0.9999363422393799,
+        "unreachable_energy_fraction": 1.3861127801106932e-09
+      },
+      {
+        "scene_id": "0322",
+        "difficulty": 0.31,
+        "rho": 0.9999999970068387,
+        "reachable_energy_fraction": 0.9999141693115234,
+        "unreachable_energy_fraction": 2.993161274389422e-09
+      },
+      {
+        "scene_id": "0323",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999969798333,
+        "reachable_energy_fraction": 0.9999077320098877,
+        "unreachable_energy_fraction": 3.020166783329614e-09
+      },
+      {
+        "scene_id": "0324",
+        "difficulty": 0.55,
+        "rho": 0.9999999974025624,
+        "reachable_energy_fraction": 0.9999265670776367,
+        "unreachable_energy_fraction": 2.597437598339525e-09
+      },
+      {
+        "scene_id": "0325",
+        "difficulty": 0.43,
+        "rho": 0.9999999973776678,
+        "reachable_energy_fraction": 0.9999169111251831,
+        "unreachable_energy_fraction": 2.6223323512652996e-09
+      },
+      {
+        "scene_id": "0326",
+        "difficulty": 0.55,
+        "rho": 0.9999999977379079,
+        "reachable_energy_fraction": 0.999924898147583,
+        "unreachable_energy_fraction": 2.262092069216237e-09
+      },
+      {
+        "scene_id": "0327",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999996937465,
+        "reachable_energy_fraction": 0.9999135136604309,
+        "unreachable_energy_fraction": 3.0625348923507545e-09
+      },
+      {
+        "scene_id": "0328",
+        "difficulty": 0.31,
+        "rho": 0.9999999974537022,
+        "reachable_energy_fraction": 0.9999141693115234,
+        "unreachable_energy_fraction": 2.546297839245426e-09
+      },
+      {
+        "scene_id": "0329",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999971813073,
+        "reachable_energy_fraction": 0.9999107718467712,
+        "unreachable_energy_fraction": 2.8186926126494427e-09
+      },
+      {
+        "scene_id": "0330",
+        "difficulty": 0.63,
+        "rho": 0.9999999970835504,
+        "reachable_energy_fraction": 0.9999178051948547,
+        "unreachable_energy_fraction": 2.916449748369132e-09
+      },
+      {
+        "scene_id": "0331",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999982057884,
+        "reachable_energy_fraction": 0.999925971031189,
+        "unreachable_energy_fraction": 1.7942115571045747e-09
+      },
+      {
+        "scene_id": "0332",
+        "difficulty": 0.55,
+        "rho": 0.9999999976225346,
+        "reachable_energy_fraction": 0.9999189972877502,
+        "unreachable_energy_fraction": 2.377465335712259e-09
+      },
+      {
+        "scene_id": "0333",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999981460908,
+        "reachable_energy_fraction": 0.9999292492866516,
+        "unreachable_energy_fraction": 1.8539092483393915e-09
+      },
+      {
+        "scene_id": "0334",
+        "difficulty": 0.31,
+        "rho": 0.9999999973849159,
+        "reachable_energy_fraction": 0.9999133944511414,
+        "unreachable_energy_fraction": 2.615084149226732e-09
+      },
+      {
+        "scene_id": "0335",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999980462102,
+        "reachable_energy_fraction": 0.9999296069145203,
+        "unreachable_energy_fraction": 1.953789796615979e-09
+      },
+      {
+        "scene_id": "0336",
+        "difficulty": 0.51,
+        "rho": 0.9999999975633468,
+        "reachable_energy_fraction": 0.9999159574508667,
+        "unreachable_energy_fraction": 2.4366531015118653e-09
+      },
+      {
+        "scene_id": "0337",
+        "difficulty": 0.31,
+        "rho": 0.9999999966311001,
+        "reachable_energy_fraction": 0.9999114871025085,
+        "unreachable_energy_fraction": 3.3689000478176467e-09
+      },
+      {
+        "scene_id": "0338",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972319437,
+        "reachable_energy_fraction": 0.9999166131019592,
+        "unreachable_energy_fraction": 2.768056450719314e-09
+      },
+      {
+        "scene_id": "0339",
+        "difficulty": 0.55,
+        "rho": 0.9999999954343806,
+        "reachable_energy_fraction": 0.999900758266449,
+        "unreachable_energy_fraction": 4.565619438068325e-09
+      },
+      {
+        "scene_id": "0340",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999979751037,
+        "reachable_energy_fraction": 0.9999257922172546,
+        "unreachable_energy_fraction": 2.0248962506741464e-09
+      },
+      {
+        "scene_id": "0341",
+        "difficulty": 0.55,
+        "rho": 0.9999999948537044,
+        "reachable_energy_fraction": 0.999902606010437,
+        "unreachable_energy_fraction": 5.1462953898351316e-09
+      },
+      {
+        "scene_id": "0342",
+        "difficulty": 0.31,
+        "rho": 0.9999999976135729,
+        "reachable_energy_fraction": 0.9999171495437622,
+        "unreachable_energy_fraction": 2.386427055967033e-09
+      },
+      {
+        "scene_id": "0343",
+        "difficulty": 0.55,
+        "rho": 0.9999999972474787,
+        "reachable_energy_fraction": 0.9999149441719055,
+        "unreachable_energy_fraction": 2.752521321980339e-09
+      },
+      {
+        "scene_id": "0344",
+        "difficulty": 0.43,
+        "rho": 0.9999999973776058,
+        "reachable_energy_fraction": 0.9999138712882996,
+        "unreachable_energy_fraction": 2.6223943017100737e-09
+      },
+      {
+        "scene_id": "0345",
+        "difficulty": 0.43,
+        "rho": 0.9999999961804161,
+        "reachable_energy_fraction": 0.9998960494995117,
+        "unreachable_energy_fraction": 3.819583760389378e-09
+      },
+      {
+        "scene_id": "0346",
+        "difficulty": 0.55,
+        "rho": 0.9999999979139862,
+        "reachable_energy_fraction": 0.9999274015426636,
+        "unreachable_energy_fraction": 2.0860138061351563e-09
+      },
+      {
+        "scene_id": "0347",
+        "difficulty": 0.31,
+        "rho": 0.9999999974604122,
+        "reachable_energy_fraction": 0.9999158382415771,
+        "unreachable_energy_fraction": 2.5395878733291966e-09
+      },
+      {
+        "scene_id": "0348",
+        "difficulty": 0.43,
+        "rho": 0.999999994959197,
+        "reachable_energy_fraction": 0.9999096989631653,
+        "unreachable_energy_fraction": 5.040802886213669e-09
+      },
+      {
+        "scene_id": "0349",
+        "difficulty": 0.55,
+        "rho": 0.9999999961653676,
+        "reachable_energy_fraction": 0.9999032616615295,
+        "unreachable_energy_fraction": 3.834632611443567e-09
+      },
+      {
+        "scene_id": "0350",
+        "difficulty": 0.63,
+        "rho": 0.9999999963749779,
+        "reachable_energy_fraction": 0.99990314245224,
+        "unreachable_energy_fraction": 3.6250220603051275e-09
+      },
+      {
+        "scene_id": "0351",
+        "difficulty": 0.55,
+        "rho": 0.999999998438242,
+        "reachable_energy_fraction": 0.9999397993087769,
+        "unreachable_energy_fraction": 1.5617579451898678e-09
+      },
+      {
+        "scene_id": "0352",
+        "difficulty": 0.31,
+        "rho": 0.9999999981993501,
+        "reachable_energy_fraction": 0.9999297261238098,
+        "unreachable_energy_fraction": 1.8006498514466784e-09
+      },
+      {
+        "scene_id": "0353",
+        "difficulty": 0.31,
+        "rho": 0.9999999975085467,
+        "reachable_energy_fraction": 0.9999226927757263,
+        "unreachable_energy_fraction": 2.491453265918153e-09
+      },
+      {
+        "scene_id": "0354",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999961070462,
+        "reachable_energy_fraction": 0.9999045133590698,
+        "unreachable_energy_fraction": 3.892953959194756e-09
+      },
+      {
+        "scene_id": "0355",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999967190364,
+        "reachable_energy_fraction": 0.9999135136604309,
+        "unreachable_energy_fraction": 3.2809635008845817e-09
+      },
+      {
+        "scene_id": "0356",
+        "difficulty": 0.63,
+        "rho": 0.9999999964347579,
+        "reachable_energy_fraction": 0.9999181032180786,
+        "unreachable_energy_fraction": 3.565242101544186e-09
+      },
+      {
+        "scene_id": "0357",
+        "difficulty": 0.31,
+        "rho": 0.9999999977796324,
+        "reachable_energy_fraction": 0.9999173879623413,
+        "unreachable_energy_fraction": 2.2203676675047745e-09
+      },
+      {
+        "scene_id": "0358",
+        "difficulty": 0.43,
+        "rho": 0.9999999961144242,
+        "reachable_energy_fraction": 0.9999104738235474,
+        "unreachable_energy_fraction": 3.885575861062307e-09
+      },
+      {
+        "scene_id": "0359",
+        "difficulty": 0.43,
+        "rho": 0.9999999977502464,
+        "reachable_energy_fraction": 0.9999200701713562,
+        "unreachable_energy_fraction": 2.249753494609763e-09
+      },
+      {
+        "scene_id": "0360",
+        "difficulty": 0.55,
+        "rho": 0.9999999976188102,
+        "reachable_energy_fraction": 0.9999200701713562,
+        "unreachable_energy_fraction": 2.3811899119152713e-09
+      },
+      {
+        "scene_id": "0361",
+        "difficulty": 0.31,
+        "rho": 0.9999999974123795,
+        "reachable_energy_fraction": 0.9999101758003235,
+        "unreachable_energy_fraction": 2.5876205622665793e-09
+      },
+      {
+        "scene_id": "0362",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999980431492,
+        "reachable_energy_fraction": 0.9999242424964905,
+        "unreachable_energy_fraction": 1.9568506814948705e-09
+      },
+      {
+        "scene_id": "0363",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999968883576,
+        "reachable_energy_fraction": 0.9999071955680847,
+        "unreachable_energy_fraction": 3.1116424992205793e-09
+      },
+      {
+        "scene_id": "0364",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999978237073,
+        "reachable_energy_fraction": 0.9999180436134338,
+        "unreachable_energy_fraction": 2.1762927016055755e-09
+      },
+      {
+        "scene_id": "0365",
+        "difficulty": 0.43,
+        "rho": 0.9999999979251445,
+        "reachable_energy_fraction": 0.9999309778213501,
+        "unreachable_energy_fraction": 2.0748556206484636e-09
+      },
+      {
+        "scene_id": "0366",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999981534348,
+        "reachable_energy_fraction": 0.9999258518218994,
+        "unreachable_energy_fraction": 1.8465652340537986e-09
+      },
+      {
+        "scene_id": "0367",
+        "difficulty": 0.31,
+        "rho": 0.9999999974169219,
+        "reachable_energy_fraction": 0.9999217391014099,
+        "unreachable_energy_fraction": 2.583078195783628e-09
+      },
+      {
+        "scene_id": "0368",
+        "difficulty": 0.55,
+        "rho": 0.9999999978592697,
+        "reachable_energy_fraction": 0.9999264478683472,
+        "unreachable_energy_fraction": 2.1407302597253874e-09
+      },
+      {
+        "scene_id": "0369",
+        "difficulty": 0.55,
+        "rho": 0.9999999980199465,
+        "reachable_energy_fraction": 0.9999307990074158,
+        "unreachable_energy_fraction": 1.9800534545311166e-09
+      },
+      {
+        "scene_id": "0370",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999976329067,
+        "reachable_energy_fraction": 0.9999220371246338,
+        "unreachable_energy_fraction": 2.3670931881270008e-09
+      },
+      {
+        "scene_id": "0371",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999969227148,
+        "reachable_energy_fraction": 0.9999063014984131,
+        "unreachable_energy_fraction": 3.0772850934113194e-09
+      },
+      {
+        "scene_id": "0372",
+        "difficulty": 0.43,
+        "rho": 0.9999999980780243,
+        "reachable_energy_fraction": 0.9999268651008606,
+        "unreachable_energy_fraction": 1.9219756897115303e-09
+      },
+      {
+        "scene_id": "0373",
+        "difficulty": 0.43,
+        "rho": 0.9999999971611457,
+        "reachable_energy_fraction": 0.9999246001243591,
+        "unreachable_energy_fraction": 2.8388542627766356e-09
+      },
+      {
+        "scene_id": "0374",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999997120399,
+        "reachable_energy_fraction": 0.9999164342880249,
+        "unreachable_energy_fraction": 2.8796010020926133e-09
+      },
+      {
+        "scene_id": "0375",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999970001957,
+        "reachable_energy_fraction": 0.9999091029167175,
+        "unreachable_energy_fraction": 2.999804182834964e-09
+      },
+      {
+        "scene_id": "0376",
+        "difficulty": 0.31,
+        "rho": 0.9999999959386425,
+        "reachable_energy_fraction": 0.9999015927314758,
+        "unreachable_energy_fraction": 4.061357472551208e-09
+      },
+      {
+        "scene_id": "0377",
+        "difficulty": 0.31,
+        "rho": 0.99999999799957,
+        "reachable_energy_fraction": 0.9999310374259949,
+        "unreachable_energy_fraction": 2.000430043835877e-09
+      },
+      {
+        "scene_id": "0378",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999970510032,
+        "reachable_energy_fraction": 0.9999227523803711,
+        "unreachable_energy_fraction": 2.9489968245144382e-09
+      },
+      {
+        "scene_id": "0379",
+        "difficulty": 0.43,
+        "rho": 0.9999999973350032,
+        "reachable_energy_fraction": 0.9999146461486816,
+        "unreachable_energy_fraction": 2.66499666778941e-09
+      },
+      {
+        "scene_id": "0380",
+        "difficulty": 0.31,
+        "rho": 0.9999999968995035,
+        "reachable_energy_fraction": 0.99991375207901,
+        "unreachable_energy_fraction": 3.1004965261871575e-09
+      },
+      {
+        "scene_id": "0381",
+        "difficulty": 0.55,
+        "rho": 0.9999999958862759,
+        "reachable_energy_fraction": 0.9999015927314758,
+        "unreachable_energy_fraction": 4.1137240280875176e-09
+      },
+      {
+        "scene_id": "0382",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999953611632,
+        "reachable_energy_fraction": 0.999896228313446,
+        "unreachable_energy_fraction": 4.638836870185514e-09
+      },
+      {
+        "scene_id": "0383",
+        "difficulty": 0.43,
+        "rho": 0.9999999983744084,
+        "reachable_energy_fraction": 0.9999294877052307,
+        "unreachable_energy_fraction": 1.6255915502583207e-09
+      },
+      {
+        "scene_id": "0384",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999982710007,
+        "reachable_energy_fraction": 0.9999299049377441,
+        "unreachable_energy_fraction": 1.7289992770841422e-09
+      },
+      {
+        "scene_id": "0385",
+        "difficulty": 0.43,
+        "rho": 0.9999999969470545,
+        "reachable_energy_fraction": 0.9999018907546997,
+        "unreachable_energy_fraction": 3.052945451997857e-09
+      },
+      {
+        "scene_id": "0386",
+        "difficulty": 0.31,
+        "rho": 0.9999999972415919,
+        "reachable_energy_fraction": 0.9999154806137085,
+        "unreachable_energy_fraction": 2.7584081685461115e-09
+      },
+      {
+        "scene_id": "0387",
+        "difficulty": 0.55,
+        "rho": 0.9999999973495383,
+        "reachable_energy_fraction": 0.9999205470085144,
+        "unreachable_energy_fraction": 2.6504616279510174e-09
+      },
+      {
+        "scene_id": "0388",
+        "difficulty": 0.43,
+        "rho": 0.99999999660047,
+        "reachable_energy_fraction": 0.9999015927314758,
+        "unreachable_energy_fraction": 3.39952999084403e-09
+      },
+      {
+        "scene_id": "0389",
+        "difficulty": 0.31,
+        "rho": 0.9999999978082502,
+        "reachable_energy_fraction": 0.9999246597290039,
+        "unreachable_energy_fraction": 2.191749670643617e-09
+      },
+      {
+        "scene_id": "0390",
+        "difficulty": 0.31,
+        "rho": 0.9999999971395039,
+        "reachable_energy_fraction": 0.9999067783355713,
+        "unreachable_energy_fraction": 2.8604960622402587e-09
+      },
+      {
+        "scene_id": "0391",
+        "difficulty": 0.31,
+        "rho": 0.9999999982175478,
+        "reachable_energy_fraction": 0.9999321699142456,
+        "unreachable_energy_fraction": 1.7824521858500475e-09
+      },
+      {
+        "scene_id": "0392",
+        "difficulty": 0.31,
+        "rho": 0.9999999982993029,
+        "reachable_energy_fraction": 0.9999286532402039,
+        "unreachable_energy_fraction": 1.7006971386734904e-09
+      },
+      {
+        "scene_id": "0393",
+        "difficulty": 0.55,
+        "rho": 0.9999999972938167,
+        "reachable_energy_fraction": 0.99991375207901,
+        "unreachable_energy_fraction": 2.706183277467744e-09
+      },
+      {
+        "scene_id": "0394",
+        "difficulty": 0.43,
+        "rho": 0.9999999940983769,
+        "reachable_energy_fraction": 0.9998841285705566,
+        "unreachable_energy_fraction": 5.901623190140981e-09
+      },
+      {
+        "scene_id": "0395",
+        "difficulty": 0.43,
+        "rho": 0.99999999761097,
+        "reachable_energy_fraction": 0.9999163746833801,
+        "unreachable_energy_fraction": 2.3890298628259643e-09
+      },
+      {
+        "scene_id": "0396",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972257526,
+        "reachable_energy_fraction": 0.9999180436134338,
+        "unreachable_energy_fraction": 2.7742474983938337e-09
+      },
+      {
+        "scene_id": "0397",
+        "difficulty": 0.31,
+        "rho": 0.999999997589474,
+        "reachable_energy_fraction": 0.9999143481254578,
+        "unreachable_energy_fraction": 2.4105260010287566e-09
+      },
+      {
+        "scene_id": "0398",
+        "difficulty": 0.31,
+        "rho": 0.9999999967220861,
+        "reachable_energy_fraction": 0.9999186396598816,
+        "unreachable_energy_fraction": 3.2779139402805413e-09
+      },
+      {
+        "scene_id": "0399",
+        "difficulty": 0.43,
+        "rho": 0.9999999976533499,
+        "reachable_energy_fraction": 0.9999245405197144,
+        "unreachable_energy_fraction": 2.346649985440763e-09
+      },
+      {
+        "scene_id": "0400",
+        "difficulty": 0.43,
+        "rho": 0.9999999981347879,
+        "reachable_energy_fraction": 0.9999284744262695,
+        "unreachable_energy_fraction": 1.8652119848638904e-09
+      },
+      {
+        "scene_id": "0401",
+        "difficulty": 0.31,
+        "rho": 0.9999999973725214,
+        "reachable_energy_fraction": 0.9999182820320129,
+        "unreachable_energy_fraction": 2.627478457029042e-09
+      },
+      {
+        "scene_id": "0402",
+        "difficulty": 0.43,
+        "rho": 0.9999999978083766,
+        "reachable_energy_fraction": 0.9999225735664368,
+        "unreachable_energy_fraction": 2.1916233272634145e-09
+      },
+      {
+        "scene_id": "0403",
+        "difficulty": 0.31,
+        "rho": 0.9999999979685172,
+        "reachable_energy_fraction": 0.999926745891571,
+        "unreachable_energy_fraction": 2.0314827597900376e-09
+      },
+      {
+        "scene_id": "0404",
+        "difficulty": 0.31,
+        "rho": 0.9999999976081151,
+        "reachable_energy_fraction": 0.99991774559021,
+        "unreachable_energy_fraction": 2.3918849123560904e-09
+      },
+      {
+        "scene_id": "0405",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999997143796,
+        "reachable_energy_fraction": 0.9999181032180786,
+        "unreachable_energy_fraction": 2.856203940027058e-09
+      },
+      {
+        "scene_id": "0406",
+        "difficulty": 0.31,
+        "rho": 0.9999999985221056,
+        "reachable_energy_fraction": 0.9999338388442993,
+        "unreachable_energy_fraction": 1.4778943624449425e-09
+      },
+      {
+        "scene_id": "0407",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977600861,
+        "reachable_energy_fraction": 0.9999228715896606,
+        "unreachable_energy_fraction": 2.239913809987115e-09
+      },
+      {
+        "scene_id": "0408",
+        "difficulty": 0.55,
+        "rho": 0.9999999942060686,
+        "reachable_energy_fraction": 0.999889612197876,
+        "unreachable_energy_fraction": 5.793931556752341e-09
+      },
+      {
+        "scene_id": "0409",
+        "difficulty": 0.43,
+        "rho": 0.9999999959581122,
+        "reachable_energy_fraction": 0.9998967051506042,
+        "unreachable_energy_fraction": 4.041887713412962e-09
+      },
+      {
+        "scene_id": "0410",
+        "difficulty": 0.55,
+        "rho": 0.9999999975625398,
+        "reachable_energy_fraction": 0.999913215637207,
+        "unreachable_energy_fraction": 2.437460233650768e-09
+      },
+      {
+        "scene_id": "0411",
+        "difficulty": 0.43,
+        "rho": 0.9999999955862193,
+        "reachable_energy_fraction": 0.9998983144760132,
+        "unreachable_energy_fraction": 4.41378045223928e-09
+      },
+      {
+        "scene_id": "0412",
+        "difficulty": 0.63,
+        "rho": 0.9999999970980145,
+        "reachable_energy_fraction": 0.9999131560325623,
+        "unreachable_energy_fraction": 2.9019855407597106e-09
+      },
+      {
+        "scene_id": "0413",
+        "difficulty": 0.31,
+        "rho": 0.9999999971507733,
+        "reachable_energy_fraction": 0.9999244213104248,
+        "unreachable_energy_fraction": 2.8492266324064985e-09
+      },
+      {
+        "scene_id": "0414",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972022339,
+        "reachable_energy_fraction": 0.9999170899391174,
+        "unreachable_energy_fraction": 2.797766240902888e-09
+      },
+      {
+        "scene_id": "0415",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999958071164,
+        "reachable_energy_fraction": 0.9999125599861145,
+        "unreachable_energy_fraction": 4.192883817921711e-09
+      },
+      {
+        "scene_id": "0416",
+        "difficulty": 0.55,
+        "rho": 0.9999999977175693,
+        "reachable_energy_fraction": 0.9999170303344727,
+        "unreachable_energy_fraction": 2.2824306888935553e-09
+      },
+      {
+        "scene_id": "0417",
+        "difficulty": 0.31,
+        "rho": 0.9999999975213495,
+        "reachable_energy_fraction": 0.9999134540557861,
+        "unreachable_energy_fraction": 2.478650396042781e-09
+      },
+      {
+        "scene_id": "0418",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999974476587,
+        "reachable_energy_fraction": 0.9999168515205383,
+        "unreachable_energy_fraction": 2.5523414493022756e-09
+      },
+      {
+        "scene_id": "0419",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999984661174,
+        "reachable_energy_fraction": 0.9999322295188904,
+        "unreachable_energy_fraction": 1.5338825765098818e-09
+      },
+      {
+        "scene_id": "0420",
+        "difficulty": 0.31,
+        "rho": 0.9999999971245982,
+        "reachable_energy_fraction": 0.9999123215675354,
+        "unreachable_energy_fraction": 2.875401916568876e-09
+      },
+      {
+        "scene_id": "0421",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999976731135,
+        "reachable_energy_fraction": 0.9999198913574219,
+        "unreachable_energy_fraction": 2.3268864612902007e-09
+      },
+      {
+        "scene_id": "0422",
+        "difficulty": 0.55,
+        "rho": 0.9999999974949652,
+        "reachable_energy_fraction": 0.9999156594276428,
+        "unreachable_energy_fraction": 2.5050348462229977e-09
+      },
+      {
+        "scene_id": "0423",
+        "difficulty": 0.31,
+        "rho": 0.9999999964379388,
+        "reachable_energy_fraction": 0.9999057650566101,
+        "unreachable_energy_fraction": 3.56206109053403e-09
+      },
+      {
+        "scene_id": "0424",
+        "difficulty": 0.31,
+        "rho": 0.9999999972574383,
+        "reachable_energy_fraction": 0.9999116063117981,
+        "unreachable_energy_fraction": 2.7425617332710317e-09
+      },
+      {
+        "scene_id": "0425",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999976768347,
+        "reachable_energy_fraction": 0.9999161958694458,
+        "unreachable_energy_fraction": 2.323165437800867e-09
+      },
+      {
+        "scene_id": "0426",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977717992,
+        "reachable_energy_fraction": 0.9999266266822815,
+        "unreachable_energy_fraction": 2.22820095707732e-09
+      },
+      {
+        "scene_id": "0427",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972913567,
+        "reachable_energy_fraction": 0.9999200105667114,
+        "unreachable_energy_fraction": 2.7086433096457085e-09
+      },
+      {
+        "scene_id": "0428",
+        "difficulty": 0.31,
+        "rho": 0.9999999982970273,
+        "reachable_energy_fraction": 0.9999285340309143,
+        "unreachable_energy_fraction": 1.702972651784762e-09
+      },
+      {
+        "scene_id": "0429",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972994982,
+        "reachable_energy_fraction": 0.9999102354049683,
+        "unreachable_energy_fraction": 2.7005018221615273e-09
+      },
+      {
+        "scene_id": "0430",
+        "difficulty": 0.43,
+        "rho": 0.9999999975855569,
+        "reachable_energy_fraction": 0.9999225735664368,
+        "unreachable_energy_fraction": 2.414443089904239e-09
+      },
+      {
+        "scene_id": "0431",
+        "difficulty": 0.55,
+        "rho": 0.9999999977759777,
+        "reachable_energy_fraction": 0.9999228119850159,
+        "unreachable_energy_fraction": 2.2240222996572356e-09
+      },
+      {
+        "scene_id": "0432",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999981288176,
+        "reachable_energy_fraction": 0.9999257326126099,
+        "unreachable_energy_fraction": 1.8711823202011146e-09
+      },
+      {
+        "scene_id": "0433",
+        "difficulty": 0.31,
+        "rho": 0.9999999981079088,
+        "reachable_energy_fraction": 0.9999287128448486,
+        "unreachable_energy_fraction": 1.8920911504238802e-09
+      },
+      {
+        "scene_id": "0434",
+        "difficulty": 0.63,
+        "rho": 0.999999995177256,
+        "reachable_energy_fraction": 0.9998999834060669,
+        "unreachable_energy_fraction": 4.822743981947042e-09
+      },
+      {
+        "scene_id": "0435",
+        "difficulty": 0.55,
+        "rho": 0.9999999967460205,
+        "reachable_energy_fraction": 0.9999107122421265,
+        "unreachable_energy_fraction": 3.2539795302710672e-09
+      },
+      {
+        "scene_id": "0436",
+        "difficulty": 0.43,
+        "rho": 0.9999999979236767,
+        "reachable_energy_fraction": 0.9999209642410278,
+        "unreachable_energy_fraction": 2.076323335487018e-09
+      },
+      {
+        "scene_id": "0437",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999997366565,
+        "reachable_energy_fraction": 0.9999165534973145,
+        "unreachable_energy_fraction": 2.633435025600761e-09
+      },
+      {
+        "scene_id": "0438",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999956799095,
+        "reachable_energy_fraction": 0.9998908042907715,
+        "unreachable_energy_fraction": 4.320090507548002e-09
+      },
+      {
+        "scene_id": "0439",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999965835473,
+        "reachable_energy_fraction": 0.9999165534973145,
+        "unreachable_energy_fraction": 3.4164526763191816e-09
+      },
+      {
+        "scene_id": "0440",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999997178682,
+        "reachable_energy_fraction": 0.9999148845672607,
+        "unreachable_energy_fraction": 2.8213180680580763e-09
+      },
+      {
+        "scene_id": "0441",
+        "difficulty": 0.31,
+        "rho": 0.9999999969957282,
+        "reachable_energy_fraction": 0.9999037384986877,
+        "unreachable_energy_fraction": 3.0042719423306607e-09
+      },
+      {
+        "scene_id": "0442",
+        "difficulty": 0.47,
+        "rho": 0.9999999966436806,
+        "reachable_energy_fraction": 0.9999016523361206,
+        "unreachable_energy_fraction": 3.3563194445918043e-09
+      },
+      {
+        "scene_id": "0443",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999974789381,
+        "reachable_energy_fraction": 0.9999139308929443,
+        "unreachable_energy_fraction": 2.5210620258064864e-09
+      },
+      {
+        "scene_id": "0444",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977583296,
+        "reachable_energy_fraction": 0.9999297857284546,
+        "unreachable_energy_fraction": 2.241670404856677e-09
+      },
+      {
+        "scene_id": "0445",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999980838794,
+        "reachable_energy_fraction": 0.9999289512634277,
+        "unreachable_energy_fraction": 1.916120595524262e-09
+      },
+      {
+        "scene_id": "0446",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999974491043,
+        "reachable_energy_fraction": 0.9999220967292786,
+        "unreachable_energy_fraction": 2.5508957168796087e-09
+      },
+      {
+        "scene_id": "0447",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972020704,
+        "reachable_energy_fraction": 0.999911904335022,
+        "unreachable_energy_fraction": 2.797929443687508e-09
+      },
+      {
+        "scene_id": "0448",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999963265778,
+        "reachable_energy_fraction": 0.9999041557312012,
+        "unreachable_energy_fraction": 3.6734222330636612e-09
+      },
+      {
+        "scene_id": "0449",
+        "difficulty": 0.43,
+        "rho": 0.9999999971074058,
+        "reachable_energy_fraction": 0.9999171495437622,
+        "unreachable_energy_fraction": 2.8925941641944064e-09
+      },
+      {
+        "scene_id": "0450",
+        "difficulty": 0.31,
+        "rho": 0.999999996932321,
+        "reachable_energy_fraction": 0.9999200701713562,
+        "unreachable_energy_fraction": 3.0676789997130527e-09
+      },
+      {
+        "scene_id": "0451",
+        "difficulty": 0.43,
+        "rho": 0.9999999947887701,
+        "reachable_energy_fraction": 0.9998933672904968,
+        "unreachable_energy_fraction": 5.211230114099408e-09
+      },
+      {
+        "scene_id": "0452",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999970822568,
+        "reachable_energy_fraction": 0.9999158978462219,
+        "unreachable_energy_fraction": 2.9177431581928204e-09
+      },
+      {
+        "scene_id": "0453",
+        "difficulty": 0.31,
+        "rho": 0.9999999976851497,
+        "reachable_energy_fraction": 0.9999191164970398,
+        "unreachable_energy_fraction": 2.3148503114356345e-09
+      },
+      {
+        "scene_id": "0454",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999978016006,
+        "reachable_energy_fraction": 0.999926745891571,
+        "unreachable_energy_fraction": 2.1983994624719116e-09
+      },
+      {
+        "scene_id": "0455",
+        "difficulty": 0.31,
+        "rho": 0.9999999952234339,
+        "reachable_energy_fraction": 0.9999063014984131,
+        "unreachable_energy_fraction": 4.776566253639203e-09
+      },
+      {
+        "scene_id": "0456",
+        "difficulty": 0.43,
+        "rho": 0.9999999967987528,
+        "reachable_energy_fraction": 0.9999099969863892,
+        "unreachable_energy_fraction": 3.201247267270446e-09
+      },
+      {
+        "scene_id": "0457",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999968392607,
+        "reachable_energy_fraction": 0.999904990196228,
+        "unreachable_energy_fraction": 3.160739225904763e-09
+      },
+      {
+        "scene_id": "0458",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999967740509,
+        "reachable_energy_fraction": 0.99992835521698,
+        "unreachable_energy_fraction": 3.225949063434541e-09
+      },
+      {
+        "scene_id": "0459",
+        "difficulty": 0.31,
+        "rho": 0.9999999969756548,
+        "reachable_energy_fraction": 0.9999134540557861,
+        "unreachable_energy_fraction": 3.0243452187050934e-09
+      },
+      {
+        "scene_id": "0460",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999973620146,
+        "reachable_energy_fraction": 0.9999113082885742,
+        "unreachable_energy_fraction": 2.6379853856894897e-09
+      },
+      {
+        "scene_id": "0461",
+        "difficulty": 0.31,
+        "rho": 0.9999999976875157,
+        "reachable_energy_fraction": 0.9999171495437622,
+        "unreachable_energy_fraction": 2.3124844261701583e-09
+      },
+      {
+        "scene_id": "0462",
+        "difficulty": 0.55,
+        "rho": 0.9999999972921965,
+        "reachable_energy_fraction": 0.9999148845672607,
+        "unreachable_energy_fraction": 2.707803536949882e-09
+      },
+      {
+        "scene_id": "0463",
+        "difficulty": 0.31,
+        "rho": 0.9999999979654768,
+        "reachable_energy_fraction": 0.999921977519989,
+        "unreachable_energy_fraction": 2.034523216565276e-09
+      },
+      {
+        "scene_id": "0464",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999979638261,
+        "reachable_energy_fraction": 0.9999323487281799,
+        "unreachable_energy_fraction": 2.0361738961582887e-09
+      },
+      {
+        "scene_id": "0465",
+        "difficulty": 0.43,
+        "rho": 0.9999999967575081,
+        "reachable_energy_fraction": 0.999903678894043,
+        "unreachable_energy_fraction": 3.242491830590666e-09
+      },
+      {
+        "scene_id": "0466",
+        "difficulty": 0.43,
+        "rho": 0.9999999976572783,
+        "reachable_energy_fraction": 0.9999196529388428,
+        "unreachable_energy_fraction": 2.3427217943350342e-09
+      },
+      {
+        "scene_id": "0467",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999985410091,
+        "reachable_energy_fraction": 0.9999369978904724,
+        "unreachable_energy_fraction": 1.4589909280715574e-09
+      },
+      {
+        "scene_id": "0468",
+        "difficulty": 0.31,
+        "rho": 0.9999999965688708,
+        "reachable_energy_fraction": 0.999911904335022,
+        "unreachable_energy_fraction": 3.4311291585709114e-09
+      },
+      {
+        "scene_id": "0469",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999955818526,
+        "reachable_energy_fraction": 0.9998993873596191,
+        "unreachable_energy_fraction": 4.418147625528945e-09
+      },
+      {
+        "scene_id": "0470",
+        "difficulty": 0.43,
+        "rho": 0.9999999980275346,
+        "reachable_energy_fraction": 0.999920129776001,
+        "unreachable_energy_fraction": 1.9724655242470135e-09
+      },
+      {
+        "scene_id": "0471",
+        "difficulty": 0.51,
+        "rho": 0.9999999969795768,
+        "reachable_energy_fraction": 0.9999136924743652,
+        "unreachable_energy_fraction": 3.0204232448483026e-09
+      },
+      {
+        "scene_id": "0472",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999973835875,
+        "reachable_energy_fraction": 0.9999117255210876,
+        "unreachable_energy_fraction": 2.6164126420979983e-09
+      },
+      {
+        "scene_id": "0473",
+        "difficulty": 0.31,
+        "rho": 0.9999999978283206,
+        "reachable_energy_fraction": 0.9999229907989502,
+        "unreachable_energy_fraction": 2.171679280849048e-09
+      },
+      {
+        "scene_id": "0474",
+        "difficulty": 0.43,
+        "rho": 0.9999999963021021,
+        "reachable_energy_fraction": 0.9998963475227356,
+        "unreachable_energy_fraction": 3.6978977657753376e-09
+      },
+      {
+        "scene_id": "0475",
+        "difficulty": 0.55,
+        "rho": 0.999999996349566,
+        "reachable_energy_fraction": 0.9999198913574219,
+        "unreachable_energy_fraction": 3.6504339551157727e-09
+      },
+      {
+        "scene_id": "0476",
+        "difficulty": 0.43,
+        "rho": 0.9999999967963973,
+        "reachable_energy_fraction": 0.9999129176139832,
+        "unreachable_energy_fraction": 3.203602716439491e-09
+      },
+      {
+        "scene_id": "0477",
+        "difficulty": 0.43,
+        "rho": 0.9999999982793203,
+        "reachable_energy_fraction": 0.9999255537986755,
+        "unreachable_energy_fraction": 1.7206797098268112e-09
+      },
+      {
+        "scene_id": "0478",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999966616026,
+        "reachable_energy_fraction": 0.999910831451416,
+        "unreachable_energy_fraction": 3.3383975583944903e-09
+      },
+      {
+        "scene_id": "0479",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999982350656,
+        "reachable_energy_fraction": 0.9999294877052307,
+        "unreachable_energy_fraction": 1.764934420833697e-09
+      },
+      {
+        "scene_id": "0480",
+        "difficulty": 0.31,
+        "rho": 0.999999997577273,
+        "reachable_energy_fraction": 0.9999139904975891,
+        "unreachable_energy_fraction": 2.422727130024782e-09
+      },
+      {
+        "scene_id": "0481",
+        "difficulty": 0.31,
+        "rho": 0.9999999976069792,
+        "reachable_energy_fraction": 0.9999169707298279,
+        "unreachable_energy_fraction": 2.393020892554887e-09
+      },
+      {
+        "scene_id": "0482",
+        "difficulty": 0.55,
+        "rho": 0.9999999959667777,
+        "reachable_energy_fraction": 0.9998995065689087,
+        "unreachable_energy_fraction": 4.033222200661157e-09
+      },
+      {
+        "scene_id": "0483",
+        "difficulty": 0.43,
+        "rho": 0.9999999978400779,
+        "reachable_energy_fraction": 0.9999257922172546,
+        "unreachable_energy_fraction": 2.1599220190182677e-09
+      },
+      {
+        "scene_id": "0484",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999997470675,
+        "reachable_energy_fraction": 0.999921441078186,
+        "unreachable_energy_fraction": 2.5293249716895616e-09
+      },
+      {
+        "scene_id": "0485",
+        "difficulty": 0.31,
+        "rho": 0.9999999979102607,
+        "reachable_energy_fraction": 0.9999302625656128,
+        "unreachable_energy_fraction": 2.0897392705165885e-09
+      },
+      {
+        "scene_id": "0486",
+        "difficulty": 0.31,
+        "rho": 0.9999999956164485,
+        "reachable_energy_fraction": 0.9998924732208252,
+        "unreachable_energy_fraction": 4.383551299724786e-09
+      },
+      {
+        "scene_id": "0487",
+        "difficulty": 0.43,
+        "rho": 0.9999999974771919,
+        "reachable_energy_fraction": 0.9999150037765503,
+        "unreachable_energy_fraction": 2.522808184579617e-09
+      },
+      {
+        "scene_id": "0488",
+        "difficulty": 0.51,
+        "rho": 0.9999999971195046,
+        "reachable_energy_fraction": 0.9999180436134338,
+        "unreachable_energy_fraction": 2.8804953977612513e-09
+      },
+      {
+        "scene_id": "0489",
+        "difficulty": 0.31,
+        "rho": 0.9999999980644054,
+        "reachable_energy_fraction": 0.9999278783798218,
+        "unreachable_energy_fraction": 1.935594573510002e-09
+      },
+      {
+        "scene_id": "0490",
+        "difficulty": 0.43,
+        "rho": 0.9999999963945091,
+        "reachable_energy_fraction": 0.999904215335846,
+        "unreachable_energy_fraction": 3.6054910168559218e-09
+      },
+      {
+        "scene_id": "0491",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999962425192,
+        "reachable_energy_fraction": 0.9999144077301025,
+        "unreachable_energy_fraction": 3.757480548927106e-09
+      },
+      {
+        "scene_id": "0492",
+        "difficulty": 0.55,
+        "rho": 0.999999997526856,
+        "reachable_energy_fraction": 0.9999231100082397,
+        "unreachable_energy_fraction": 2.473143911885245e-09
+      },
+      {
+        "scene_id": "0493",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999973672397,
+        "reachable_energy_fraction": 0.9999139904975891,
+        "unreachable_energy_fraction": 2.6327604540909988e-09
+      },
+      {
+        "scene_id": "0494",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999997904905,
+        "reachable_energy_fraction": 0.9999285936355591,
+        "unreachable_energy_fraction": 2.0950949863873802e-09
+      },
+      {
+        "scene_id": "0495",
+        "difficulty": 0.31,
+        "rho": 0.999999997390477,
+        "reachable_energy_fraction": 0.9999210238456726,
+        "unreachable_energy_fraction": 2.6095230420963844e-09
+      },
+      {
+        "scene_id": "0496",
+        "difficulty": 0.31,
+        "rho": 0.9999999980532612,
+        "reachable_energy_fraction": 0.9999228119850159,
+        "unreachable_energy_fraction": 1.9467387701865846e-09
+      },
+      {
+        "scene_id": "0497",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977927976,
+        "reachable_energy_fraction": 0.9999160170555115,
+        "unreachable_energy_fraction": 2.2072024208341645e-09
+      },
+      {
+        "scene_id": "0498",
+        "difficulty": 0.31,
+        "rho": 0.9999999986753743,
+        "reachable_energy_fraction": 0.9999370574951172,
+        "unreachable_energy_fraction": 1.324625742427088e-09
+      },
+      {
+        "scene_id": "0499",
+        "difficulty": 0.31,
+        "rho": 0.9999999969004156,
+        "reachable_energy_fraction": 0.9999135732650757,
+        "unreachable_energy_fraction": 3.0995843669501255e-09
+      },
+      {
+        "scene_id": "0500",
+        "difficulty": 0.55,
+        "rho": 0.9999999980499069,
+        "reachable_energy_fraction": 0.999930202960968,
+        "unreachable_energy_fraction": 1.950093198033187e-09
+      },
+      {
+        "scene_id": "0501",
+        "difficulty": 0.47,
+        "rho": 0.9999999962724399,
+        "reachable_energy_fraction": 0.999899685382843,
+        "unreachable_energy_fraction": 3.727560038413458e-09
+      },
+      {
+        "scene_id": "0502",
+        "difficulty": 0.55,
+        "rho": 0.9999999966050709,
+        "reachable_energy_fraction": 0.9999026656150818,
+        "unreachable_energy_fraction": 3.3949292266299835e-09
+      },
+      {
+        "scene_id": "0503",
+        "difficulty": 0.31,
+        "rho": 0.9999999966723617,
+        "reachable_energy_fraction": 0.9999079704284668,
+        "unreachable_energy_fraction": 3.327638165018243e-09
+      },
+      {
+        "scene_id": "0504",
+        "difficulty": 0.55,
+        "rho": 0.9999999970077751,
+        "reachable_energy_fraction": 0.9999175071716309,
+        "unreachable_energy_fraction": 2.992224912290453e-09
+      },
+      {
+        "scene_id": "0505",
+        "difficulty": 0.43,
+        "rho": 0.9999999978494951,
+        "reachable_energy_fraction": 0.9999255537986755,
+        "unreachable_energy_fraction": 2.1505048852787922e-09
+      },
+      {
+        "scene_id": "0506",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999998092108,
+        "reachable_energy_fraction": 0.9999234080314636,
+        "unreachable_energy_fraction": 1.9078918445103454e-09
+      },
+      {
+        "scene_id": "0507",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999976182609,
+        "reachable_energy_fraction": 0.99991774559021,
+        "unreachable_energy_fraction": 2.381739250267856e-09
+      },
+      {
+        "scene_id": "0508",
+        "difficulty": 0.55,
+        "rho": 0.999999995603301,
+        "reachable_energy_fraction": 0.9999021887779236,
+        "unreachable_energy_fraction": 4.396699004871607e-09
+      },
+      {
+        "scene_id": "0509",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999982335565,
+        "reachable_energy_fraction": 0.9999289512634277,
+        "unreachable_energy_fraction": 1.76644354699107e-09
+      },
+      {
+        "scene_id": "0510",
+        "difficulty": 0.31,
+        "rho": 0.9999999981929165,
+        "reachable_energy_fraction": 0.9999274015426636,
+        "unreachable_energy_fraction": 1.8070834828520788e-09
+      },
+      {
+        "scene_id": "0511",
+        "difficulty": 0.43,
+        "rho": 0.9999999976923079,
+        "reachable_energy_fraction": 0.9999232292175293,
+        "unreachable_energy_fraction": 2.3076922595066662e-09
+      },
+      {
+        "scene_id": "0512",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999974600378,
+        "reachable_energy_fraction": 0.9999157786369324,
+        "unreachable_energy_fraction": 2.5399622405331e-09
+      },
+      {
+        "scene_id": "0513",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999998321495,
+        "reachable_energy_fraction": 0.999932050704956,
+        "unreachable_energy_fraction": 1.6785050016565606e-09
+      },
+      {
+        "scene_id": "0514",
+        "difficulty": 0.55,
+        "rho": 0.9999999977819397,
+        "reachable_energy_fraction": 0.9999192953109741,
+        "unreachable_energy_fraction": 2.2180601799703936e-09
+      },
+      {
+        "scene_id": "0515",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999996708589,
+        "reachable_energy_fraction": 0.9999017715454102,
+        "unreachable_energy_fraction": 3.2914111436355142e-09
+      },
+      {
+        "scene_id": "0516",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999971457307,
+        "reachable_energy_fraction": 0.9999107718467712,
+        "unreachable_energy_fraction": 2.854269265384346e-09
+      },
+      {
+        "scene_id": "0517",
+        "difficulty": 0.31,
+        "rho": 0.9999999960373818,
+        "reachable_energy_fraction": 0.9999116063117981,
+        "unreachable_energy_fraction": 3.962618233543935e-09
+      },
+      {
+        "scene_id": "0518",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999970040855,
+        "reachable_energy_fraction": 0.9999104738235474,
+        "unreachable_energy_fraction": 2.9959146274904924e-09
+      },
+      {
+        "scene_id": "0519",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999949511197,
+        "reachable_energy_fraction": 0.9998986721038818,
+        "unreachable_energy_fraction": 5.048880424851632e-09
+      },
+      {
+        "scene_id": "0520",
+        "difficulty": 0.55,
+        "rho": 0.9999999963356178,
+        "reachable_energy_fraction": 0.9998974204063416,
+        "unreachable_energy_fraction": 3.6643823531079533e-09
+      },
+      {
+        "scene_id": "0521",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999978995734,
+        "reachable_energy_fraction": 0.9999218583106995,
+        "unreachable_energy_fraction": 2.10042672144084e-09
+      },
+      {
+        "scene_id": "0522",
+        "difficulty": 0.47,
+        "rho": 0.9999999968627374,
+        "reachable_energy_fraction": 0.9999114871025085,
+        "unreachable_energy_fraction": 3.1372626718706442e-09
+      },
+      {
+        "scene_id": "0523",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999978646732,
+        "reachable_energy_fraction": 0.9999203085899353,
+        "unreachable_energy_fraction": 2.135326804264537e-09
+      },
+      {
+        "scene_id": "0524",
+        "difficulty": 0.31,
+        "rho": 0.9999999977527778,
+        "reachable_energy_fraction": 0.9999174475669861,
+        "unreachable_energy_fraction": 2.2472221861136177e-09
+      },
+      {
+        "scene_id": "0525",
+        "difficulty": 0.55,
+        "rho": 0.9999999975669919,
+        "reachable_energy_fraction": 0.9999282360076904,
+        "unreachable_energy_fraction": 2.433008239322021e-09
+      },
+      {
+        "scene_id": "0526",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999967856754,
+        "reachable_energy_fraction": 0.9999103546142578,
+        "unreachable_energy_fraction": 3.214324584277506e-09
+      },
+      {
+        "scene_id": "0527",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999969339781,
+        "reachable_energy_fraction": 0.9999368786811829,
+        "unreachable_energy_fraction": 3.066021880826497e-09
+      },
+      {
+        "scene_id": "0528",
+        "difficulty": 0.31,
+        "rho": 0.9999999967002438,
+        "reachable_energy_fraction": 0.9999099373817444,
+        "unreachable_energy_fraction": 3.2997562460224117e-09
+      },
+      {
+        "scene_id": "0529",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999979584004,
+        "reachable_energy_fraction": 0.9999247789382935,
+        "unreachable_energy_fraction": 2.041599556079632e-09
+      },
+      {
+        "scene_id": "0530",
+        "difficulty": 0.31,
+        "rho": 0.9999999973671315,
+        "reachable_energy_fraction": 0.9999140501022339,
+        "unreachable_energy_fraction": 2.6328683677689924e-09
+      },
+      {
+        "scene_id": "0531",
+        "difficulty": 0.31,
+        "rho": 0.9999999970972187,
+        "reachable_energy_fraction": 0.9999168515205383,
+        "unreachable_energy_fraction": 2.902781348623762e-09
+      },
+      {
+        "scene_id": "0532",
+        "difficulty": 0.31,
+        "rho": 0.9999999974040669,
+        "reachable_energy_fraction": 0.9999237060546875,
+        "unreachable_energy_fraction": 2.595933024096553e-09
+      },
+      {
+        "scene_id": "0533",
+        "difficulty": 0.31,
+        "rho": 0.9999999978083249,
+        "reachable_energy_fraction": 0.9999256134033203,
+        "unreachable_energy_fraction": 2.191675063656362e-09
+      },
+      {
+        "scene_id": "0534",
+        "difficulty": 0.43,
+        "rho": 0.9999999979097152,
+        "reachable_energy_fraction": 0.9999240636825562,
+        "unreachable_energy_fraction": 2.0902848341108893e-09
+      },
+      {
+        "scene_id": "0535",
+        "difficulty": 0.31,
+        "rho": 0.9999999970408313,
+        "reachable_energy_fraction": 0.999913215637207,
+        "unreachable_energy_fraction": 2.959168687866054e-09
+      },
+      {
+        "scene_id": "0536",
+        "difficulty": 0.43,
+        "rho": 0.9999999972559308,
+        "reachable_energy_fraction": 0.9999179840087891,
+        "unreachable_energy_fraction": 2.7440691940938677e-09
+      },
+      {
+        "scene_id": "0537",
+        "difficulty": 0.55,
+        "rho": 0.99999999735514,
+        "reachable_energy_fraction": 0.9999150037765503,
+        "unreachable_energy_fraction": 2.6448601087025736e-09
+      },
+      {
+        "scene_id": "0538",
+        "difficulty": 0.43,
+        "rho": 0.9999999959152753,
+        "reachable_energy_fraction": 0.9998990297317505,
+        "unreachable_energy_fraction": 4.084724558595099e-09
+      },
+      {
+        "scene_id": "0539",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999971846031,
+        "reachable_energy_fraction": 0.9999129176139832,
+        "unreachable_energy_fraction": 2.8153968045785405e-09
+      },
+      {
+        "scene_id": "0540",
+        "difficulty": 0.31,
+        "rho": 0.9999999977901409,
+        "reachable_energy_fraction": 0.9999217391014099,
+        "unreachable_energy_fraction": 2.2098589624874876e-09
+      },
+      {
+        "scene_id": "0541",
+        "difficulty": 0.31,
+        "rho": 0.9999999977289488,
+        "reachable_energy_fraction": 0.999919056892395,
+        "unreachable_energy_fraction": 2.2710511249357523e-09
+      },
+      {
+        "scene_id": "0542",
+        "difficulty": 0.31,
+        "rho": 0.9999999982337072,
+        "reachable_energy_fraction": 0.999929666519165,
+        "unreachable_energy_fraction": 1.7662927787043259e-09
+      },
+      {
+        "scene_id": "0543",
+        "difficulty": 0.47,
+        "rho": 0.9999999970931309,
+        "reachable_energy_fraction": 0.9999076128005981,
+        "unreachable_energy_fraction": 2.906868967755827e-09
+      },
+      {
+        "scene_id": "0544",
+        "difficulty": 0.31,
+        "rho": 0.9999999966716808,
+        "reachable_energy_fraction": 0.9999178647994995,
+        "unreachable_energy_fraction": 3.328319175821548e-09
+      },
+      {
+        "scene_id": "0545",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977099499,
+        "reachable_energy_fraction": 0.9999232888221741,
+        "unreachable_energy_fraction": 2.2900501495115577e-09
+      },
+      {
+        "scene_id": "0546",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999970252804,
+        "reachable_energy_fraction": 0.9999144673347473,
+        "unreachable_energy_fraction": 2.9747195817719785e-09
+      },
+      {
+        "scene_id": "0547",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999958727432,
+        "reachable_energy_fraction": 0.9999082684516907,
+        "unreachable_energy_fraction": 4.1272567585792785e-09
+      },
+      {
+        "scene_id": "0548",
+        "difficulty": 0.55,
+        "rho": 0.9999999967803024,
+        "reachable_energy_fraction": 0.999910295009613,
+        "unreachable_energy_fraction": 3.219697619627482e-09
+      },
+      {
+        "scene_id": "0549",
+        "difficulty": 0.31,
+        "rho": 0.9999999968839797,
+        "reachable_energy_fraction": 0.9999074935913086,
+        "unreachable_energy_fraction": 3.1160203306512813e-09
+      },
+      {
+        "scene_id": "0550",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999971537472,
+        "reachable_energy_fraction": 0.9999061226844788,
+        "unreachable_energy_fraction": 2.8462527890127376e-09
+      },
+      {
+        "scene_id": "0551",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972601069,
+        "reachable_energy_fraction": 0.9999139308929443,
+        "unreachable_energy_fraction": 2.7398929791644377e-09
+      },
+      {
+        "scene_id": "0552",
+        "difficulty": 0.43,
+        "rho": 0.9999999978410116,
+        "reachable_energy_fraction": 0.9999274611473083,
+        "unreachable_energy_fraction": 2.158988543499163e-09
+      },
+      {
+        "scene_id": "0553",
+        "difficulty": 0.31,
+        "rho": 0.9999999972741396,
+        "reachable_energy_fraction": 0.9999280571937561,
+        "unreachable_energy_fraction": 2.7258604262669905e-09
+      },
+      {
+        "scene_id": "0554",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.99999999778015,
+        "reachable_energy_fraction": 0.9999232888221741,
+        "unreachable_energy_fraction": 2.2198498594860894e-09
+      },
+      {
+        "scene_id": "0555",
+        "difficulty": 0.55,
+        "rho": 0.9999999971749515,
+        "reachable_energy_fraction": 0.9999144077301025,
+        "unreachable_energy_fraction": 2.8250486394654217e-09
+      },
+      {
+        "scene_id": "0556",
+        "difficulty": 0.55,
+        "rho": 0.9999999977129618,
+        "reachable_energy_fraction": 0.9999151229858398,
+        "unreachable_energy_fraction": 2.2870383364903546e-09
+      },
+      {
+        "scene_id": "0557",
+        "difficulty": 0.51,
+        "rho": 0.9999999977582442,
+        "reachable_energy_fraction": 0.9999264478683472,
+        "unreachable_energy_fraction": 2.2417556699849683e-09
+      },
+      {
+        "scene_id": "0558",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999964850017,
+        "reachable_energy_fraction": 0.9999111294746399,
+        "unreachable_energy_fraction": 3.5149982924309597e-09
+      },
+      {
+        "scene_id": "0559",
+        "difficulty": 0.31,
+        "rho": 0.9999999969712501,
+        "reachable_energy_fraction": 0.999920666217804,
+        "unreachable_energy_fraction": 3.0287499175329913e-09
+      },
+      {
+        "scene_id": "0560",
+        "difficulty": 0.55,
+        "rho": 0.9999999970197228,
+        "reachable_energy_fraction": 0.9999020099639893,
+        "unreachable_energy_fraction": 2.980277136188647e-09
+      },
+      {
+        "scene_id": "0561",
+        "difficulty": 0.31,
+        "rho": 0.9999999951043306,
+        "reachable_energy_fraction": 0.999889075756073,
+        "unreachable_energy_fraction": 4.89566964745336e-09
+      },
+      {
+        "scene_id": "0562",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999976690902,
+        "reachable_energy_fraction": 0.9999213218688965,
+        "unreachable_energy_fraction": 2.3309099095314423e-09
+      },
+      {
+        "scene_id": "0563",
+        "difficulty": 0.31,
+        "rho": 0.9999999974694183,
+        "reachable_energy_fraction": 0.9999140501022339,
+        "unreachable_energy_fraction": 2.5305817441534373e-09
+      },
+      {
+        "scene_id": "0564",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999974174635,
+        "reachable_energy_fraction": 0.9999163150787354,
+        "unreachable_energy_fraction": 2.582536628992216e-09
+      },
+      {
+        "scene_id": "0565",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999976880851,
+        "reachable_energy_fraction": 0.9999215006828308,
+        "unreachable_energy_fraction": 2.3119148817585256e-09
+      },
+      {
+        "scene_id": "0566",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999971695102,
+        "reachable_energy_fraction": 0.9999097585678101,
+        "unreachable_energy_fraction": 2.8304898425091096e-09
+      },
+      {
+        "scene_id": "0567",
+        "difficulty": 0.43,
+        "rho": 0.9999999980372853,
+        "reachable_energy_fraction": 0.9999302625656128,
+        "unreachable_energy_fraction": 1.9627146574663357e-09
+      },
+      {
+        "scene_id": "0568",
+        "difficulty": 0.31,
+        "rho": 0.999999997225232,
+        "reachable_energy_fraction": 0.9999140501022339,
+        "unreachable_energy_fraction": 2.774767970947778e-09
+      },
+      {
+        "scene_id": "0569",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999960196208,
+        "reachable_energy_fraction": 0.9999020099639893,
+        "unreachable_energy_fraction": 3.980379137402679e-09
+      },
+      {
+        "scene_id": "0570",
+        "difficulty": 0.31,
+        "rho": 0.9999999968072562,
+        "reachable_energy_fraction": 0.9999090433120728,
+        "unreachable_energy_fraction": 3.192743847080237e-09
+      },
+      {
+        "scene_id": "0571",
+        "difficulty": 0.43,
+        "rho": 0.9999999967541087,
+        "reachable_energy_fraction": 0.9999155402183533,
+        "unreachable_energy_fraction": 3.245891333492068e-09
+      },
+      {
+        "scene_id": "0572",
+        "difficulty": 0.31,
+        "rho": 0.9999999968240313,
+        "reachable_energy_fraction": 0.9999063014984131,
+        "unreachable_energy_fraction": 3.175968821267361e-09
+      },
+      {
+        "scene_id": "0573",
+        "difficulty": 0.55,
+        "rho": 0.999999997327383,
+        "reachable_energy_fraction": 0.9999188780784607,
+        "unreachable_energy_fraction": 2.672617016585832e-09
+      },
+      {
+        "scene_id": "0574",
+        "difficulty": 0.31,
+        "rho": 0.9999999969727127,
+        "reachable_energy_fraction": 0.9999011754989624,
+        "unreachable_energy_fraction": 3.02728730972035e-09
+      },
+      {
+        "scene_id": "0575",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999997533004,
+        "reachable_energy_fraction": 0.9999193549156189,
+        "unreachable_energy_fraction": 2.4669959408640807e-09
+      },
+      {
+        "scene_id": "0576",
+        "difficulty": 0.55,
+        "rho": 0.9999999958299284,
+        "reachable_energy_fraction": 0.9998872876167297,
+        "unreachable_energy_fraction": 4.170071399300923e-09
+      },
+      {
+        "scene_id": "0577",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999973865485,
+        "reachable_energy_fraction": 0.9999148845672607,
+        "unreachable_energy_fraction": 2.613451455246718e-09
+      },
+      {
+        "scene_id": "0578",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977713531,
+        "reachable_energy_fraction": 0.9999182820320129,
+        "unreachable_energy_fraction": 2.2286468226440093e-09
+      },
+      {
+        "scene_id": "0579",
+        "difficulty": 0.43,
+        "rho": 0.9999999970338337,
+        "reachable_energy_fraction": 0.9999209642410278,
+        "unreachable_energy_fraction": 2.9661664235902663e-09
+      },
+      {
+        "scene_id": "0580",
+        "difficulty": 0.63,
+        "rho": 0.9999999976712937,
+        "reachable_energy_fraction": 0.9999236464500427,
+        "unreachable_energy_fraction": 2.3287063388721663e-09
+      },
+      {
+        "scene_id": "0581",
+        "difficulty": 0.63,
+        "rho": 0.9999999968019062,
+        "reachable_energy_fraction": 0.9999170303344727,
+        "unreachable_energy_fraction": 3.198093789791301e-09
+      },
+      {
+        "scene_id": "0582",
+        "difficulty": 0.31,
+        "rho": 0.9999999961259114,
+        "reachable_energy_fraction": 0.9998984336853027,
+        "unreachable_energy_fraction": 3.8740886054711154e-09
+      },
+      {
+        "scene_id": "0583",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999975452175,
+        "reachable_energy_fraction": 0.9999211430549622,
+        "unreachable_energy_fraction": 2.4547825994147843e-09
+      },
+      {
+        "scene_id": "0584",
+        "difficulty": 0.43,
+        "rho": 0.9999999983353756,
+        "reachable_energy_fraction": 0.9999266266822815,
+        "unreachable_energy_fraction": 1.6646244382911846e-09
+      },
+      {
+        "scene_id": "0585",
+        "difficulty": 0.31,
+        "rho": 0.9999999971934652,
+        "reachable_energy_fraction": 0.9999263286590576,
+        "unreachable_energy_fraction": 2.8065347823513775e-09
+      },
+      {
+        "scene_id": "0586",
+        "difficulty": 0.31,
+        "rho": 0.9999999963394377,
+        "reachable_energy_fraction": 0.9999081492424011,
+        "unreachable_energy_fraction": 3.660562297724823e-09
+      },
+      {
+        "scene_id": "0587",
+        "difficulty": 0.31,
+        "rho": 0.9999999958795518,
+        "reachable_energy_fraction": 0.9998959898948669,
+        "unreachable_energy_fraction": 4.120447982813857e-09
+      },
+      {
+        "scene_id": "0588",
+        "difficulty": 0.31,
+        "rho": 0.9999999979894671,
+        "reachable_energy_fraction": 0.999923586845398,
+        "unreachable_energy_fraction": 2.010532851315361e-09
+      },
+      {
+        "scene_id": "0589",
+        "difficulty": 0.55,
+        "rho": 0.9999999980021171,
+        "reachable_energy_fraction": 0.9999207258224487,
+        "unreachable_energy_fraction": 1.997882748128177e-09
+      },
+      {
+        "scene_id": "0590",
+        "difficulty": 0.31,
+        "rho": 0.9999999965507654,
+        "reachable_energy_fraction": 0.9999098181724548,
+        "unreachable_energy_fraction": 3.4492344536118935e-09
+      },
+      {
+        "scene_id": "0591",
+        "difficulty": 0.63,
+        "rho": 0.9999999975742717,
+        "reachable_energy_fraction": 0.9999263882637024,
+        "unreachable_energy_fraction": 2.425728284904949e-09
+      },
+      {
+        "scene_id": "0592",
+        "difficulty": 0.31,
+        "rho": 0.9999999970023725,
+        "reachable_energy_fraction": 0.9999127388000488,
+        "unreachable_energy_fraction": 2.997627479572884e-09
+      },
+      {
+        "scene_id": "0593",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999980655992,
+        "reachable_energy_fraction": 0.9999233484268188,
+        "unreachable_energy_fraction": 1.9344006396693203e-09
+      },
+      {
+        "scene_id": "0594",
+        "difficulty": 0.55,
+        "rho": 0.9999999973787198,
+        "reachable_energy_fraction": 0.9999115467071533,
+        "unreachable_energy_fraction": 2.62128008188256e-09
+      },
+      {
+        "scene_id": "0595",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999973621655,
+        "reachable_energy_fraction": 0.9999189972877502,
+        "unreachable_energy_fraction": 2.6378343953581407e-09
+      },
+      {
+        "scene_id": "0596",
+        "difficulty": 0.31,
+        "rho": 0.9999999973038887,
+        "reachable_energy_fraction": 0.999920129776001,
+        "unreachable_energy_fraction": 2.6961113341883447e-09
+      },
+      {
+        "scene_id": "0597",
+        "difficulty": 0.63,
+        "rho": 0.9999999970247323,
+        "reachable_energy_fraction": 0.9999258518218994,
+        "unreachable_energy_fraction": 2.9752678099015384e-09
+      },
+      {
+        "scene_id": "0598",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999980029699,
+        "reachable_energy_fraction": 0.9999250769615173,
+        "unreachable_energy_fraction": 1.9970300968452648e-09
+      },
+      {
+        "scene_id": "0599",
+        "difficulty": 0.43,
+        "rho": 0.9999999974627158,
+        "reachable_energy_fraction": 0.9999163150787354,
+        "unreachable_energy_fraction": 2.5372841605530994e-09
+      },
+      {
+        "scene_id": "0600",
+        "difficulty": 0.31,
+        "rho": 0.9999999965752779,
+        "reachable_energy_fraction": 0.9999067783355713,
+        "unreachable_energy_fraction": 3.4247220614957996e-09
+      },
+      {
+        "scene_id": "0601",
+        "difficulty": 0.43,
+        "rho": 0.9999999970468628,
+        "reachable_energy_fraction": 0.9999123215675354,
+        "unreachable_energy_fraction": 2.9531370682178704e-09
+      },
+      {
+        "scene_id": "0602",
+        "difficulty": 0.43,
+        "rho": 0.9999999976646494,
+        "reachable_energy_fraction": 0.9999155402183533,
+        "unreachable_energy_fraction": 2.335350579585338e-09
+      },
+      {
+        "scene_id": "0603",
+        "difficulty": 0.55,
+        "rho": 0.9999999972473893,
+        "reachable_energy_fraction": 0.9999181628227234,
+        "unreachable_energy_fraction": 2.752610583911519e-09
+      },
+      {
+        "scene_id": "0604",
+        "difficulty": 0.31,
+        "rho": 0.9999999969048129,
+        "reachable_energy_fraction": 0.9999116659164429,
+        "unreachable_energy_fraction": 3.095187217638795e-09
+      },
+      {
+        "scene_id": "0605",
+        "difficulty": 0.43,
+        "rho": 0.9999999974012789,
+        "reachable_energy_fraction": 0.9999116063117981,
+        "unreachable_energy_fraction": 2.5987210161559915e-09
+      },
+      {
+        "scene_id": "0606",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999974922932,
+        "reachable_energy_fraction": 0.9999130964279175,
+        "unreachable_energy_fraction": 2.5077069309986655e-09
+      },
+      {
+        "scene_id": "0607",
+        "difficulty": 0.43,
+        "rho": 0.9999999974544168,
+        "reachable_energy_fraction": 0.9999215006828308,
+        "unreachable_energy_fraction": 2.5455830776621724e-09
+      },
+      {
+        "scene_id": "0608",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999997225496,
+        "reachable_energy_fraction": 0.9999233484268188,
+        "unreachable_energy_fraction": 2.774503959912522e-09
+      },
+      {
+        "scene_id": "0609",
+        "difficulty": 0.31,
+        "rho": 0.9999999966412452,
+        "reachable_energy_fraction": 0.9999091625213623,
+        "unreachable_energy_fraction": 3.358754829818622e-09
+      },
+      {
+        "scene_id": "0610",
+        "difficulty": 0.31,
+        "rho": 0.9999999966695762,
+        "reachable_energy_fraction": 0.9999143481254578,
+        "unreachable_energy_fraction": 3.3304237145870275e-09
+      },
+      {
+        "scene_id": "0611",
+        "difficulty": 0.43,
+        "rho": 0.9999999978036824,
+        "reachable_energy_fraction": 0.9999240636825562,
+        "unreachable_energy_fraction": 2.1963175722561346e-09
+      },
+      {
+        "scene_id": "0612",
+        "difficulty": 0.55,
+        "rho": 0.999999997724312,
+        "reachable_energy_fraction": 0.9999240040779114,
+        "unreachable_energy_fraction": 2.2756880824204018e-09
+      },
+      {
+        "scene_id": "0613",
+        "difficulty": 0.55,
+        "rho": 0.9999999956841883,
+        "reachable_energy_fraction": 0.9999030828475952,
+        "unreachable_energy_fraction": 4.315811708011097e-09
+      },
+      {
+        "scene_id": "0614",
+        "difficulty": 0.31,
+        "rho": 0.999999997125537,
+        "reachable_energy_fraction": 0.9999139904975891,
+        "unreachable_energy_fraction": 2.874462889934648e-09
+      },
+      {
+        "scene_id": "0615",
+        "difficulty": 0.31,
+        "rho": 0.9999999978301296,
+        "reachable_energy_fraction": 0.9999193549156189,
+        "unreachable_energy_fraction": 2.169870505497329e-09
+      },
+      {
+        "scene_id": "0616",
+        "difficulty": 0.55,
+        "rho": 0.9999999965089983,
+        "reachable_energy_fraction": 0.9999098777770996,
+        "unreachable_energy_fraction": 3.4910017099321067e-09
+      },
+      {
+        "scene_id": "0617",
+        "difficulty": 0.43,
+        "rho": 0.9999999975376638,
+        "reachable_energy_fraction": 0.9999207258224487,
+        "unreachable_energy_fraction": 2.462336112785124e-09
+      },
+      {
+        "scene_id": "0618",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972470917,
+        "reachable_energy_fraction": 0.9999166131019592,
+        "unreachable_energy_fraction": 2.7529083457267234e-09
+      },
+      {
+        "scene_id": "0619",
+        "difficulty": 0.31,
+        "rho": 0.9999999962780584,
+        "reachable_energy_fraction": 0.999902069568634,
+        "unreachable_energy_fraction": 3.7219416437750397e-09
+      },
+      {
+        "scene_id": "0620",
+        "difficulty": 0.31,
+        "rho": 0.9999999967596309,
+        "reachable_energy_fraction": 0.9999051690101624,
+        "unreachable_energy_fraction": 3.2403690841675825e-09
+      },
+      {
+        "scene_id": "0621",
+        "difficulty": 0.43,
+        "rho": 0.9999999967172437,
+        "reachable_energy_fraction": 0.9999136328697205,
+        "unreachable_energy_fraction": 3.2827562890247464e-09
+      },
+      {
+        "scene_id": "0622",
+        "difficulty": 0.51,
+        "rho": 0.9999999963645488,
+        "reachable_energy_fraction": 0.9999072551727295,
+        "unreachable_energy_fraction": 3.6354512733538513e-09
+      },
+      {
+        "scene_id": "0623",
+        "difficulty": 0.31,
+        "rho": 0.9999999954787157,
+        "reachable_energy_fraction": 0.9998904466629028,
+        "unreachable_energy_fraction": 4.5212842358921534e-09
+      },
+      {
+        "scene_id": "0624",
+        "difficulty": 0.31,
+        "rho": 0.9999999969045785,
+        "reachable_energy_fraction": 0.999915599822998,
+        "unreachable_energy_fraction": 3.095421474696991e-09
+      },
+      {
+        "scene_id": "0625",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999965265057,
+        "reachable_energy_fraction": 0.9999070167541504,
+        "unreachable_energy_fraction": 3.4734943810121877e-09
+      },
+      {
+        "scene_id": "0626",
+        "difficulty": 0.43,
+        "rho": 0.999999995941284,
+        "reachable_energy_fraction": 0.9998968243598938,
+        "unreachable_energy_fraction": 4.05871602993102e-09
+      },
+      {
+        "scene_id": "0627",
+        "difficulty": 0.31,
+        "rho": 0.9999999964228228,
+        "reachable_energy_fraction": 0.9999133944511414,
+        "unreachable_energy_fraction": 3.5771772211035113e-09
+      },
+      {
+        "scene_id": "0628",
+        "difficulty": 0.31,
+        "rho": 0.9999999954837226,
+        "reachable_energy_fraction": 0.999900221824646,
+        "unreachable_energy_fraction": 4.516277574140304e-09
+      },
+      {
+        "scene_id": "0629",
+        "difficulty": 0.31,
+        "rho": 0.9999999970171264,
+        "reachable_energy_fraction": 0.9999116659164429,
+        "unreachable_energy_fraction": 2.9828737257986404e-09
+      },
+      {
+        "scene_id": "0630",
+        "difficulty": 0.31,
+        "rho": 0.9999999977249936,
+        "reachable_energy_fraction": 0.9999208450317383,
+        "unreachable_energy_fraction": 2.275006405483282e-09
+      },
+      {
+        "scene_id": "0631",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999975656971,
+        "reachable_energy_fraction": 0.9999216794967651,
+        "unreachable_energy_fraction": 2.4343029814133388e-09
+      },
+      {
+        "scene_id": "0632",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977235124,
+        "reachable_energy_fraction": 0.9999216198921204,
+        "unreachable_energy_fraction": 2.276487442998132e-09
+      },
+      {
+        "scene_id": "0633",
+        "difficulty": 0.31,
+        "rho": 0.9999999974211111,
+        "reachable_energy_fraction": 0.9999161958694458,
+        "unreachable_energy_fraction": 2.5788888802225074e-09
+      },
+      {
+        "scene_id": "0634",
+        "difficulty": 0.31,
+        "rho": 0.9999999971190786,
+        "reachable_energy_fraction": 0.9999088644981384,
+        "unreachable_energy_fraction": 2.8809212793134975e-09
+      },
+      {
+        "scene_id": "0635",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999980212556,
+        "reachable_energy_fraction": 0.9999253749847412,
+        "unreachable_energy_fraction": 1.9787445015850835e-09
+      },
+      {
+        "scene_id": "0636",
+        "difficulty": 0.43,
+        "rho": 0.9999999971154929,
+        "reachable_energy_fraction": 0.9999091625213623,
+        "unreachable_energy_fraction": 2.884507077638432e-09
+      },
+      {
+        "scene_id": "0637",
+        "difficulty": 0.31,
+        "rho": 0.9999999970733514,
+        "reachable_energy_fraction": 0.9999123811721802,
+        "unreachable_energy_fraction": 2.9266487011625486e-09
+      },
+      {
+        "scene_id": "0638",
+        "difficulty": 0.43,
+        "rho": 0.9999999977682082,
+        "reachable_energy_fraction": 0.9999240040779114,
+        "unreachable_energy_fraction": 2.2317918624281674e-09
+      },
+      {
+        "scene_id": "0639",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999974291945,
+        "reachable_energy_fraction": 0.9999203681945801,
+        "unreachable_energy_fraction": 2.5708053463802116e-09
+      },
+      {
+        "scene_id": "0640",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999964278916,
+        "reachable_energy_fraction": 0.9999110698699951,
+        "unreachable_energy_fraction": 3.5721083868622827e-09
+      },
+      {
+        "scene_id": "0641",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999975978495,
+        "reachable_energy_fraction": 0.9999175071716309,
+        "unreachable_energy_fraction": 2.4021504785309844e-09
+      },
+      {
+        "scene_id": "0642",
+        "difficulty": 0.31,
+        "rho": 0.9999999987080103,
+        "reachable_energy_fraction": 0.9999369382858276,
+        "unreachable_energy_fraction": 1.2919897374175093e-09
+      },
+      {
+        "scene_id": "0643",
+        "difficulty": 0.31,
+        "rho": 0.9999999961120554,
+        "reachable_energy_fraction": 0.9999122023582458,
+        "unreachable_energy_fraction": 3.887944632907647e-09
+      },
+      {
+        "scene_id": "0644",
+        "difficulty": 0.43,
+        "rho": 0.999999996784796,
+        "reachable_energy_fraction": 0.9999116659164429,
+        "unreachable_energy_fraction": 3.215203880913009e-09
+      },
+      {
+        "scene_id": "0645",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999960913041,
+        "reachable_energy_fraction": 0.9999110698699951,
+        "unreachable_energy_fraction": 3.908696033505521e-09
+      },
+      {
+        "scene_id": "0646",
+        "difficulty": 0.55,
+        "rho": 0.9999999975671233,
+        "reachable_energy_fraction": 0.9999229907989502,
+        "unreachable_energy_fraction": 2.4328765668713004e-09
+      },
+      {
+        "scene_id": "0647",
+        "difficulty": 0.43,
+        "rho": 0.9999999981937482,
+        "reachable_energy_fraction": 0.9999306797981262,
+        "unreachable_energy_fraction": 1.806251814784332e-09
+      },
+      {
+        "scene_id": "0648",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999971510235,
+        "reachable_energy_fraction": 0.9999187588691711,
+        "unreachable_energy_fraction": 2.848976610181353e-09
+      },
+      {
+        "scene_id": "0649",
+        "difficulty": 0.31,
+        "rho": 0.9999999977377504,
+        "reachable_energy_fraction": 0.9999204874038696,
+        "unreachable_energy_fraction": 2.262249498841129e-09
+      },
+      {
+        "scene_id": "0650",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999974111599,
+        "reachable_energy_fraction": 0.9999182224273682,
+        "unreachable_energy_fraction": 2.5888402532814325e-09
+      },
+      {
+        "scene_id": "0651",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999973402399,
+        "reachable_energy_fraction": 0.9999189972877502,
+        "unreachable_energy_fraction": 2.659759967826858e-09
+      },
+      {
+        "scene_id": "0652",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999974204286,
+        "reachable_energy_fraction": 0.9999189376831055,
+        "unreachable_energy_fraction": 2.579571445338047e-09
+      },
+      {
+        "scene_id": "0653",
+        "difficulty": 0.31,
+        "rho": 0.9999999976537112,
+        "reachable_energy_fraction": 0.9999193549156189,
+        "unreachable_energy_fraction": 2.346288940913155e-09
+      },
+      {
+        "scene_id": "0654",
+        "difficulty": 0.31,
+        "rho": 0.9999999959079032,
+        "reachable_energy_fraction": 0.9998987913131714,
+        "unreachable_energy_fraction": 4.0920968835678195e-09
+      },
+      {
+        "scene_id": "0655",
+        "difficulty": 0.43,
+        "rho": 0.9999999976357232,
+        "reachable_energy_fraction": 0.9999138712882996,
+        "unreachable_energy_fraction": 2.3642767743581317e-09
+      },
+      {
+        "scene_id": "0656",
+        "difficulty": 0.31,
+        "rho": 0.9999999971415773,
+        "reachable_energy_fraction": 0.9999158978462219,
+        "unreachable_energy_fraction": 2.8584228317640736e-09
+      },
+      {
+        "scene_id": "0657",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999973628586,
+        "reachable_energy_fraction": 0.9999169111251831,
+        "unreachable_energy_fraction": 2.6371413941461697e-09
+      },
+      {
+        "scene_id": "0658",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999978762094,
+        "reachable_energy_fraction": 0.9999221563339233,
+        "unreachable_energy_fraction": 2.123790476815657e-09
+      },
+      {
+        "scene_id": "0659",
+        "difficulty": 0.55,
+        "rho": 0.9999999975017624,
+        "reachable_energy_fraction": 0.9999145269393921,
+        "unreachable_energy_fraction": 2.4982376167770326e-09
+      },
+      {
+        "scene_id": "0660",
+        "difficulty": 0.31,
+        "rho": 0.9999999965781267,
+        "reachable_energy_fraction": 0.9999026656150818,
+        "unreachable_energy_fraction": 3.4218732292146115e-09
+      },
+      {
+        "scene_id": "0661",
+        "difficulty": 0.31,
+        "rho": 0.999999997341702,
+        "reachable_energy_fraction": 0.9999238848686218,
+        "unreachable_energy_fraction": 2.6582980261480316e-09
+      },
+      {
+        "scene_id": "0662",
+        "difficulty": 0.43,
+        "rho": 0.9999999982398059,
+        "reachable_energy_fraction": 0.9999266862869263,
+        "unreachable_energy_fraction": 1.760194101585455e-09
+      },
+      {
+        "scene_id": "0663",
+        "difficulty": 0.31,
+        "rho": 0.9999999951181053,
+        "reachable_energy_fraction": 0.9998934864997864,
+        "unreachable_energy_fraction": 4.881894888342231e-09
+      },
+      {
+        "scene_id": "0664",
+        "difficulty": 0.31,
+        "rho": 0.9999999982087727,
+        "reachable_energy_fraction": 0.9999275207519531,
+        "unreachable_energy_fraction": 1.7912272776143823e-09
+      },
+      {
+        "scene_id": "0665",
+        "difficulty": 0.55,
+        "rho": 0.9999999972314809,
+        "reachable_energy_fraction": 0.999912679195404,
+        "unreachable_energy_fraction": 2.7685189696313728e-09
+      },
+      {
+        "scene_id": "0666",
+        "difficulty": 0.55,
+        "rho": 0.9999999968790672,
+        "reachable_energy_fraction": 0.9999152421951294,
+        "unreachable_energy_fraction": 3.1209328454906426e-09
+      },
+      {
+        "scene_id": "0667",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977046821,
+        "reachable_energy_fraction": 0.9999213218688965,
+        "unreachable_energy_fraction": 2.295317935718799e-09
+      },
+      {
+        "scene_id": "0668",
+        "difficulty": 0.43,
+        "rho": 0.9999999977591199,
+        "reachable_energy_fraction": 0.9999220967292786,
+        "unreachable_energy_fraction": 2.240880148107749e-09
+      },
+      {
+        "scene_id": "0669",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999997876528,
+        "reachable_energy_fraction": 0.9999217987060547,
+        "unreachable_energy_fraction": 2.1234720648521943e-09
+      },
+      {
+        "scene_id": "0670",
+        "difficulty": 0.43,
+        "rho": 0.999999997102195,
+        "reachable_energy_fraction": 0.9999164342880249,
+        "unreachable_energy_fraction": 2.897804884938182e-09
+      },
+      {
+        "scene_id": "0671",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999966311754,
+        "reachable_energy_fraction": 0.999917209148407,
+        "unreachable_energy_fraction": 3.3688245526519722e-09
+      },
+      {
+        "scene_id": "0672",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999997574875,
+        "reachable_energy_fraction": 0.9999132752418518,
+        "unreachable_energy_fraction": 2.4251249897133675e-09
+      },
+      {
+        "scene_id": "0673",
+        "difficulty": 0.31,
+        "rho": 0.9999999974176311,
+        "reachable_energy_fraction": 0.9999241232872009,
+        "unreachable_energy_fraction": 2.5823687632708925e-09
+      },
+      {
+        "scene_id": "0674",
+        "difficulty": 0.55,
+        "rho": 0.9999999960241487,
+        "reachable_energy_fraction": 0.9998937845230103,
+        "unreachable_energy_fraction": 3.9758512038190474e-09
+      },
+      {
+        "scene_id": "0675",
+        "difficulty": 0.63,
+        "rho": 0.9999999973800273,
+        "reachable_energy_fraction": 0.9999236464500427,
+        "unreachable_energy_fraction": 2.6199726832487613e-09
+      },
+      {
+        "scene_id": "0676",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999976664539,
+        "reachable_energy_fraction": 0.9999156594276428,
+        "unreachable_energy_fraction": 2.3335460230811123e-09
+      },
+      {
+        "scene_id": "0677",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999986819497,
+        "reachable_energy_fraction": 0.9999374151229858,
+        "unreachable_energy_fraction": 1.318050335541443e-09
+      },
+      {
+        "scene_id": "0678",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999957468793,
+        "reachable_energy_fraction": 0.9999027848243713,
+        "unreachable_energy_fraction": 4.253120522434983e-09
+      },
+      {
+        "scene_id": "0679",
+        "difficulty": 0.55,
+        "rho": 0.9999999978684545,
+        "reachable_energy_fraction": 0.9999224543571472,
+        "unreachable_energy_fraction": 2.1315456066872684e-09
+      },
+      {
+        "scene_id": "0680",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999974060991,
+        "reachable_energy_fraction": 0.9999227523803711,
+        "unreachable_energy_fraction": 2.593900871872279e-09
+      },
+      {
+        "scene_id": "0681",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999965798143,
+        "reachable_energy_fraction": 0.9999049305915833,
+        "unreachable_energy_fraction": 3.4201856902171812e-09
+      },
+      {
+        "scene_id": "0682",
+        "difficulty": 0.31,
+        "rho": 0.9999999965422344,
+        "reachable_energy_fraction": 0.9999068379402161,
+        "unreachable_energy_fraction": 3.457765629377718e-09
+      },
+      {
+        "scene_id": "0683",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999969114545,
+        "reachable_energy_fraction": 0.9999106526374817,
+        "unreachable_energy_fraction": 3.0885456414608825e-09
+      },
+      {
+        "scene_id": "0684",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999975897458,
+        "reachable_energy_fraction": 0.9999252557754517,
+        "unreachable_energy_fraction": 2.4102542184323283e-09
+      },
+      {
+        "scene_id": "0685",
+        "difficulty": 0.55,
+        "rho": 0.9999999967387865,
+        "reachable_energy_fraction": 0.9999043941497803,
+        "unreachable_energy_fraction": 3.26121352145492e-09
+      },
+      {
+        "scene_id": "0686",
+        "difficulty": 0.55,
+        "rho": 0.999999998495835,
+        "reachable_energy_fraction": 0.9999344348907471,
+        "unreachable_energy_fraction": 1.5041650147651353e-09
+      },
+      {
+        "scene_id": "0687",
+        "difficulty": 0.31,
+        "rho": 0.9999999962607521,
+        "reachable_energy_fraction": 0.9999094605445862,
+        "unreachable_energy_fraction": 3.7392480223275015e-09
+      },
+      {
+        "scene_id": "0688",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972663748,
+        "reachable_energy_fraction": 0.9999201893806458,
+        "unreachable_energy_fraction": 2.733625104056614e-09
+      },
+      {
+        "scene_id": "0689",
+        "difficulty": 0.43,
+        "rho": 0.9999999971926872,
+        "reachable_energy_fraction": 0.9999098181724548,
+        "unreachable_energy_fraction": 2.807312826647035e-09
+      },
+      {
+        "scene_id": "0690",
+        "difficulty": 0.43,
+        "rho": 0.9999999969412976,
+        "reachable_energy_fraction": 0.9999122619628906,
+        "unreachable_energy_fraction": 3.0587024024697484e-09
+      },
+      {
+        "scene_id": "0691",
+        "difficulty": 0.31,
+        "rho": 0.999999996544339,
+        "reachable_energy_fraction": 0.9999092221260071,
+        "unreachable_energy_fraction": 3.4556608685676338e-09
+      },
+      {
+        "scene_id": "0692",
+        "difficulty": 0.31,
+        "rho": 0.9999999979852998,
+        "reachable_energy_fraction": 0.9999207258224487,
+        "unreachable_energy_fraction": 2.014700184460594e-09
+      },
+      {
+        "scene_id": "0693",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999971461616,
+        "reachable_energy_fraction": 0.9999140501022339,
+        "unreachable_energy_fraction": 2.8538384988507914e-09
+      },
+      {
+        "scene_id": "0694",
+        "difficulty": 0.55,
+        "rho": 0.9999999978663849,
+        "reachable_energy_fraction": 0.9999231100082397,
+        "unreachable_energy_fraction": 2.1336150624051697e-09
+      },
+      {
+        "scene_id": "0695",
+        "difficulty": 0.55,
+        "rho": 0.9999999966797495,
+        "reachable_energy_fraction": 0.9998995065689087,
+        "unreachable_energy_fraction": 3.3202505189677822e-09
+      },
+      {
+        "scene_id": "0696",
+        "difficulty": 0.31,
+        "rho": 0.9999999969876929,
+        "reachable_energy_fraction": 0.9999234080314636,
+        "unreachable_energy_fraction": 3.012307070449083e-09
+      },
+      {
+        "scene_id": "0697",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999962789788,
+        "reachable_energy_fraction": 0.9999022483825684,
+        "unreachable_energy_fraction": 3.7210210468430205e-09
+      },
+      {
+        "scene_id": "0698",
+        "difficulty": 0.43,
+        "rho": 0.9999999970055827,
+        "reachable_energy_fraction": 0.9999143481254578,
+        "unreachable_energy_fraction": 2.994417158674878e-09
+      },
+      {
+        "scene_id": "0699",
+        "difficulty": 0.43,
+        "rho": 0.9999999980472261,
+        "reachable_energy_fraction": 0.9999286532402039,
+        "unreachable_energy_fraction": 1.952773942548447e-09
+      },
+      {
+        "scene_id": "0700",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999967481599,
+        "reachable_energy_fraction": 0.999908983707428,
+        "unreachable_energy_fraction": 3.2518401305026146e-09
+      },
+      {
+        "scene_id": "0701",
+        "difficulty": 0.43,
+        "rho": 0.999999997084275,
+        "reachable_energy_fraction": 0.9999132752418518,
+        "unreachable_energy_fraction": 2.9157249947786568e-09
+      },
+      {
+        "scene_id": "0702",
+        "difficulty": 0.43,
+        "rho": 0.9999999971635861,
+        "reachable_energy_fraction": 0.9999139904975891,
+        "unreachable_energy_fraction": 2.8364139925685095e-09
+      },
+      {
+        "scene_id": "0703",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999966139237,
+        "reachable_energy_fraction": 0.9999101758003235,
+        "unreachable_energy_fraction": 3.3860763082316225e-09
+      },
+      {
+        "scene_id": "0704",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977624312,
+        "reachable_energy_fraction": 0.9999301433563232,
+        "unreachable_energy_fraction": 2.237568796914502e-09
+      },
+      {
+        "scene_id": "0705",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999950034051,
+        "reachable_energy_fraction": 0.9998999834060669,
+        "unreachable_energy_fraction": 4.996594693551515e-09
+      },
+      {
+        "scene_id": "0706",
+        "difficulty": 0.43,
+        "rho": 0.9999999973990931,
+        "reachable_energy_fraction": 0.9999212622642517,
+        "unreachable_energy_fraction": 2.6009068232468735e-09
+      },
+      {
+        "scene_id": "0707",
+        "difficulty": 0.31,
+        "rho": 0.9999999961161969,
+        "reachable_energy_fraction": 0.9999017715454102,
+        "unreachable_energy_fraction": 3.8838030569365856e-09
+      },
+      {
+        "scene_id": "0708",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972970857,
+        "reachable_energy_fraction": 0.9999164342880249,
+        "unreachable_energy_fraction": 2.702914336794038e-09
+      },
+      {
+        "scene_id": "0709",
+        "difficulty": 0.31,
+        "rho": 0.9999999972783429,
+        "reachable_energy_fraction": 0.999913215637207,
+        "unreachable_energy_fraction": 2.7216571218957597e-09
+      },
+      {
+        "scene_id": "0710",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999963037975,
+        "reachable_energy_fraction": 0.9998984932899475,
+        "unreachable_energy_fraction": 3.696202455216735e-09
+      },
+      {
+        "scene_id": "0711",
+        "difficulty": 0.55,
+        "rho": 0.9999999976365858,
+        "reachable_energy_fraction": 0.9999146461486816,
+        "unreachable_energy_fraction": 2.363414353112603e-09
+      },
+      {
+        "scene_id": "0712",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999975410379,
+        "reachable_energy_fraction": 0.999916672706604,
+        "unreachable_energy_fraction": 2.458962145013288e-09
+      },
+      {
+        "scene_id": "0713",
+        "difficulty": 0.43,
+        "rho": 0.9999999978883938,
+        "reachable_energy_fraction": 0.9999203681945801,
+        "unreachable_energy_fraction": 2.1116062232096056e-09
+      },
+      {
+        "scene_id": "0714",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999965510848,
+        "reachable_energy_fraction": 0.9999059438705444,
+        "unreachable_energy_fraction": 3.4489151534700113e-09
+      },
+      {
+        "scene_id": "0715",
+        "difficulty": 0.31,
+        "rho": 0.9999999966883101,
+        "reachable_energy_fraction": 0.9999221563339233,
+        "unreachable_energy_fraction": 3.3116898112695026e-09
+      },
+      {
+        "scene_id": "0716",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999997335094,
+        "reachable_energy_fraction": 0.999915361404419,
+        "unreachable_energy_fraction": 2.6649060735906005e-09
+      },
+      {
+        "scene_id": "0717",
+        "difficulty": 0.31,
+        "rho": 0.9999999973738549,
+        "reachable_energy_fraction": 0.9999216198921204,
+        "unreachable_energy_fraction": 2.6261450791764673e-09
+      },
+      {
+        "scene_id": "0718",
+        "difficulty": 0.31,
+        "rho": 0.999999997702701,
+        "reachable_energy_fraction": 0.9999178647994995,
+        "unreachable_energy_fraction": 2.2972990176839403e-09
+      },
+      {
+        "scene_id": "0719",
+        "difficulty": 0.31,
+        "rho": 0.999999997205639,
+        "reachable_energy_fraction": 0.9999147057533264,
+        "unreachable_energy_fraction": 2.7943609648417578e-09
+      },
+      {
+        "scene_id": "0720",
+        "difficulty": 0.47,
+        "rho": 0.999999996916075,
+        "reachable_energy_fraction": 0.9999136328697205,
+        "unreachable_energy_fraction": 3.0839248932323926e-09
+      },
+      {
+        "scene_id": "0721",
+        "difficulty": 0.31,
+        "rho": 0.9999999948610329,
+        "reachable_energy_fraction": 0.9998881816864014,
+        "unreachable_energy_fraction": 5.138967029694186e-09
+      },
+      {
+        "scene_id": "0722",
+        "difficulty": 0.43,
+        "rho": 0.999999998129567,
+        "reachable_energy_fraction": 0.9999260306358337,
+        "unreachable_energy_fraction": 1.8704329196594927e-09
+      },
+      {
+        "scene_id": "0723",
+        "difficulty": 0.55,
+        "rho": 0.9999999978130031,
+        "reachable_energy_fraction": 0.9999191761016846,
+        "unreachable_energy_fraction": 2.1869970279198014e-09
+      },
+      {
+        "scene_id": "0724",
+        "difficulty": 0.31,
+        "rho": 0.9999999966421436,
+        "reachable_energy_fraction": 0.9999071955680847,
+        "unreachable_energy_fraction": 3.3578564373470954e-09
+      },
+      {
+        "scene_id": "0725",
+        "difficulty": 0.31,
+        "rho": 0.9999999957281289,
+        "reachable_energy_fraction": 0.9998939037322998,
+        "unreachable_energy_fraction": 4.2718713011424825e-09
+      },
+      {
+        "scene_id": "0726",
+        "difficulty": 0.55,
+        "rho": 0.9999999969625025,
+        "reachable_energy_fraction": 0.9999069571495056,
+        "unreachable_energy_fraction": 3.037497364744013e-09
+      },
+      {
+        "scene_id": "0727",
+        "difficulty": 0.31,
+        "rho": 0.9999999972803034,
+        "reachable_energy_fraction": 0.9999188184738159,
+        "unreachable_energy_fraction": 2.7196964680342717e-09
+      },
+      {
+        "scene_id": "0728",
+        "difficulty": 0.47,
+        "rho": 0.9999999949612872,
+        "reachable_energy_fraction": 0.9998959302902222,
+        "unreachable_energy_fraction": 5.0387130023921145e-09
+      },
+      {
+        "scene_id": "0729",
+        "difficulty": 0.55,
+        "rho": 0.9999999972715207,
+        "reachable_energy_fraction": 0.9999176263809204,
+        "unreachable_energy_fraction": 2.7284792203374764e-09
+      },
+      {
+        "scene_id": "0730",
+        "difficulty": 0.55,
+        "rho": 0.9999999977765502,
+        "reachable_energy_fraction": 0.9999184608459473,
+        "unreachable_energy_fraction": 2.223449868665739e-09
+      },
+      {
+        "scene_id": "0731",
+        "difficulty": 0.31,
+        "rho": 0.9999999957981038,
+        "reachable_energy_fraction": 0.9998906254768372,
+        "unreachable_energy_fraction": 4.201896164346408e-09
+      },
+      {
+        "scene_id": "0732",
+        "difficulty": 0.31,
+        "rho": 0.9999999980786318,
+        "reachable_energy_fraction": 0.9999333024024963,
+        "unreachable_energy_fraction": 1.9213681756724554e-09
+      },
+      {
+        "scene_id": "0733",
+        "difficulty": 0.31,
+        "rho": 0.9999999953751201,
+        "reachable_energy_fraction": 0.9999054074287415,
+        "unreachable_energy_fraction": 4.6248800344983465e-09
+      },
+      {
+        "scene_id": "0734",
+        "difficulty": 0.55,
+        "rho": 0.99999999701053,
+        "reachable_energy_fraction": 0.9999075531959534,
+        "unreachable_energy_fraction": 2.9894700048771483e-09
+      },
+      {
+        "scene_id": "0735",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999968876314,
+        "reachable_energy_fraction": 0.9999104142189026,
+        "unreachable_energy_fraction": 3.112368585078684e-09
+      },
+      {
+        "scene_id": "0736",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999978872539,
+        "reachable_energy_fraction": 0.9999241232872009,
+        "unreachable_energy_fraction": 2.1127462002112907e-09
+      },
+      {
+        "scene_id": "0737",
+        "difficulty": 0.31,
+        "rho": 0.9999999970772123,
+        "reachable_energy_fraction": 0.9999142289161682,
+        "unreachable_energy_fraction": 2.922787789572112e-09
+      },
+      {
+        "scene_id": "0738",
+        "difficulty": 0.47,
+        "rho": 0.9999999981997395,
+        "reachable_energy_fraction": 0.999926745891571,
+        "unreachable_energy_fraction": 1.8002604962319424e-09
+      },
+      {
+        "scene_id": "0739",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999976728224,
+        "reachable_energy_fraction": 0.9999187588691711,
+        "unreachable_energy_fraction": 2.3271775617672574e-09
+      },
+      {
+        "scene_id": "0740",
+        "difficulty": 0.43,
+        "rho": 0.999999995489072,
+        "reachable_energy_fraction": 0.9998931288719177,
+        "unreachable_energy_fraction": 4.51092807551845e-09
+      },
+      {
+        "scene_id": "0741",
+        "difficulty": 0.31,
+        "rho": 0.9999999961907745,
+        "reachable_energy_fraction": 0.9999023675918579,
+        "unreachable_energy_fraction": 3.809225379569625e-09
+      },
+      {
+        "scene_id": "0742",
+        "difficulty": 0.55,
+        "rho": 0.999999997601754,
+        "reachable_energy_fraction": 0.9999132752418518,
+        "unreachable_energy_fraction": 2.3982460461979827e-09
+      },
+      {
+        "scene_id": "0743",
+        "difficulty": 0.55,
+        "rho": 0.9999999979743347,
+        "reachable_energy_fraction": 0.9999299645423889,
+        "unreachable_energy_fraction": 2.0256654131856067e-09
+      },
+      {
+        "scene_id": "0744",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972115032,
+        "reachable_energy_fraction": 0.999912440776825,
+        "unreachable_energy_fraction": 2.7884967668256877e-09
+      },
+      {
+        "scene_id": "0745",
+        "difficulty": 0.55,
+        "rho": 0.999999996003203,
+        "reachable_energy_fraction": 0.9999010562896729,
+        "unreachable_energy_fraction": 3.9967971154908355e-09
+      },
+      {
+        "scene_id": "0746",
+        "difficulty": 0.31,
+        "rho": 0.9999999978759331,
+        "reachable_energy_fraction": 0.9999245405197144,
+        "unreachable_energy_fraction": 2.1240669223487885e-09
+      },
+      {
+        "scene_id": "0747",
+        "difficulty": 0.55,
+        "rho": 0.9999999968158337,
+        "reachable_energy_fraction": 0.999919593334198,
+        "unreachable_energy_fraction": 3.1841662639919832e-09
+      },
+      {
+        "scene_id": "0748",
+        "difficulty": 0.43,
+        "rho": 0.9999999972985192,
+        "reachable_energy_fraction": 0.9999136328697205,
+        "unreachable_energy_fraction": 2.701480816824642e-09
+      },
+      {
+        "scene_id": "0749",
+        "difficulty": 0.63,
+        "rho": 0.9999999963026358,
+        "reachable_energy_fraction": 0.9999008774757385,
+        "unreachable_energy_fraction": 3.6973641925897027e-09
+      },
+      {
+        "scene_id": "0750",
+        "difficulty": 0.31,
+        "rho": 0.9999999980291597,
+        "reachable_energy_fraction": 0.999935507774353,
+        "unreachable_energy_fraction": 1.9708401577389623e-09
+      },
+      {
+        "scene_id": "0751",
+        "difficulty": 0.31,
+        "rho": 0.9999999975292568,
+        "reachable_energy_fraction": 0.999920666217804,
+        "unreachable_energy_fraction": 2.4707431656167955e-09
+      },
+      {
+        "scene_id": "0752",
+        "difficulty": 0.31,
+        "rho": 0.9999999975848424,
+        "reachable_energy_fraction": 0.9999143481254578,
+        "unreachable_energy_fraction": 2.415157629442888e-09
+      },
+      {
+        "scene_id": "0753",
+        "difficulty": 0.31,
+        "rho": 0.9999999979572791,
+        "reachable_energy_fraction": 0.9999253749847412,
+        "unreachable_energy_fraction": 2.0427208813345032e-09
+      },
+      {
+        "scene_id": "0754",
+        "difficulty": 0.43,
+        "rho": 0.9999999970683179,
+        "reachable_energy_fraction": 0.9999150037765503,
+        "unreachable_energy_fraction": 2.931682230311594e-09
+      },
+      {
+        "scene_id": "0755",
+        "difficulty": 0.43,
+        "rho": 0.9999999969029485,
+        "reachable_energy_fraction": 0.9999143481254578,
+        "unreachable_energy_fraction": 3.0970515041417457e-09
+      },
+      {
+        "scene_id": "0756",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.999999998125502,
+        "reachable_energy_fraction": 0.9999306797981262,
+        "unreachable_energy_fraction": 1.874497890241855e-09
+      },
+      {
+        "scene_id": "0757",
+        "difficulty": 0.31,
+        "rho": 0.9999999978808708,
+        "reachable_energy_fraction": 0.9999261498451233,
+        "unreachable_energy_fraction": 2.1191293164690705e-09
+      },
+      {
+        "scene_id": "0758",
+        "difficulty": 0.31,
+        "rho": 0.9999999964712181,
+        "reachable_energy_fraction": 0.9999089241027832,
+        "unreachable_energy_fraction": 3.528781933326286e-09
+      },
+      {
+        "scene_id": "0759",
+        "difficulty": 0.55,
+        "rho": 0.9999999976246616,
+        "reachable_energy_fraction": 0.9999150037765503,
+        "unreachable_energy_fraction": 2.375338370441682e-09
+      },
+      {
+        "scene_id": "0760",
+        "difficulty": 0.31,
+        "rho": 0.9999999968999159,
+        "reachable_energy_fraction": 0.9999160170555115,
+        "unreachable_energy_fraction": 3.1000841893558118e-09
+      },
+      {
+        "scene_id": "0761",
+        "difficulty": 0.31,
+        "rho": 0.9999999967048238,
+        "reachable_energy_fraction": 0.9999022483825684,
+        "unreachable_energy_fraction": 3.295176131956623e-09
+      },
+      {
+        "scene_id": "0762",
+        "difficulty": 0.43,
+        "rho": 0.9999999962510978,
+        "reachable_energy_fraction": 0.9999018311500549,
+        "unreachable_energy_fraction": 3.748902077660432e-09
+      },
+      {
+        "scene_id": "0763",
+        "difficulty": 0.55,
+        "rho": 0.999999997075785,
+        "reachable_energy_fraction": 0.9999192357063293,
+        "unreachable_energy_fraction": 2.9242148702479653e-09
+      },
+      {
+        "scene_id": "0764",
+        "difficulty": 0.55,
+        "rho": 0.9999999973399554,
+        "reachable_energy_fraction": 0.9999150633811951,
+        "unreachable_energy_fraction": 2.660044629010372e-09
+      },
+      {
+        "scene_id": "0765",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999966981866,
+        "reachable_energy_fraction": 0.9999108910560608,
+        "unreachable_energy_fraction": 3.301813489287042e-09
+      },
+      {
+        "scene_id": "0766",
+        "difficulty": 0.31,
+        "rho": 0.9999999978275972,
+        "reachable_energy_fraction": 0.9999341368675232,
+        "unreachable_energy_fraction": 2.172402702171894e-09
+      },
+      {
+        "scene_id": "0767",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999975702888,
+        "reachable_energy_fraction": 0.9999141097068787,
+        "unreachable_energy_fraction": 2.429711098983489e-09
+      },
+      {
+        "scene_id": "0768",
+        "difficulty": 0.31,
+        "rho": 0.9999999968171724,
+        "reachable_energy_fraction": 0.9999043941497803,
+        "unreachable_energy_fraction": 3.18282755706889e-09
+      },
+      {
+        "scene_id": "0769",
+        "difficulty": 0.55,
+        "rho": 0.999999996370654,
+        "reachable_energy_fraction": 0.9999080300331116,
+        "unreachable_energy_fraction": 3.6293459348968327e-09
+      },
+      {
+        "scene_id": "0770",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999972123288,
+        "reachable_energy_fraction": 0.9999207854270935,
+        "unreachable_energy_fraction": 2.7876712049845764e-09
+      },
+      {
+        "scene_id": "0771",
+        "difficulty": 0.55,
+        "rho": 0.9999999968179921,
+        "reachable_energy_fraction": 0.9999145865440369,
+        "unreachable_energy_fraction": 3.182007768387507e-09
+      },
+      {
+        "scene_id": "0772",
+        "difficulty": 0.31,
+        "rho": 0.9999999955368145,
+        "reachable_energy_fraction": 0.9999052882194519,
+        "unreachable_energy_fraction": 4.463185376835099e-09
+      },
+      {
+        "scene_id": "0773",
+        "difficulty": 0.55,
+        "rho": 0.9999999958819938,
+        "reachable_energy_fraction": 0.9998977780342102,
+        "unreachable_energy_fraction": 4.118006380338102e-09
+      },
+      {
+        "scene_id": "0774",
+        "difficulty": 0.55,
+        "rho": 0.9999999970895435,
+        "reachable_energy_fraction": 0.9999071359634399,
+        "unreachable_energy_fraction": 2.9104565424376005e-09
+      },
+      {
+        "scene_id": "0775",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999981481588,
+        "reachable_energy_fraction": 0.9999264478683472,
+        "unreachable_energy_fraction": 1.8518412359114222e-09
+      },
+      {
+        "scene_id": "0776",
+        "difficulty": 0.47,
+        "rho": 0.9999999976842008,
+        "reachable_energy_fraction": 0.9999179840087891,
+        "unreachable_energy_fraction": 2.315799330077084e-09
+      },
+      {
+        "scene_id": "0777",
+        "difficulty": 0.31,
+        "rho": 0.9999999974962192,
+        "reachable_energy_fraction": 0.9999097585678101,
+        "unreachable_energy_fraction": 2.503780960338986e-09
+      },
+      {
+        "scene_id": "0778",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999978358376,
+        "reachable_energy_fraction": 0.999930202960968,
+        "unreachable_energy_fraction": 2.164162404838521e-09
+      },
+      {
+        "scene_id": "0779",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999969953343,
+        "reachable_energy_fraction": 0.9999111890792847,
+        "unreachable_energy_fraction": 3.004665627415193e-09
+      },
+      {
+        "scene_id": "0780",
+        "difficulty": 0.63,
+        "rho": 0.9999999979102459,
+        "reachable_energy_fraction": 0.9999241828918457,
+        "unreachable_energy_fraction": 2.0897541475051185e-09
+      },
+      {
+        "scene_id": "0781",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977421767,
+        "reachable_energy_fraction": 0.9999241232872009,
+        "unreachable_energy_fraction": 2.2578232616865535e-09
+      },
+      {
+        "scene_id": "0782",
+        "difficulty": 0.31,
+        "rho": 0.9999999981500297,
+        "reachable_energy_fraction": 0.9999253153800964,
+        "unreachable_energy_fraction": 1.849970288070324e-09
+      },
+      {
+        "scene_id": "0783",
+        "difficulty": 0.31,
+        "rho": 0.9999999978317621,
+        "reachable_energy_fraction": 0.9999222159385681,
+        "unreachable_energy_fraction": 2.16823803356192e-09
+      },
+      {
+        "scene_id": "0784",
+        "difficulty": 0.55,
+        "rho": 0.9999999972150609,
+        "reachable_energy_fraction": 0.9999156594276428,
+        "unreachable_energy_fraction": 2.784939168165579e-09
+      },
+      {
+        "scene_id": "0785",
+        "difficulty": 0.43,
+        "rho": 0.9999999966826054,
+        "reachable_energy_fraction": 0.9999027252197266,
+        "unreachable_energy_fraction": 3.3173945812592365e-09
+      },
+      {
+        "scene_id": "0786",
+        "difficulty": 0.31,
+        "rho": 0.9999999974737498,
+        "reachable_energy_fraction": 0.9999180436134338,
+        "unreachable_energy_fraction": 2.5262500980005598e-09
+      },
+      {
+        "scene_id": "0787",
+        "difficulty": 0.47,
+        "rho": 0.9999999968898232,
+        "reachable_energy_fraction": 0.9999071359634399,
+        "unreachable_energy_fraction": 3.1101767827834692e-09
+      },
+      {
+        "scene_id": "0788",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999970038044,
+        "reachable_energy_fraction": 0.9999185800552368,
+        "unreachable_energy_fraction": 2.9961957359603275e-09
+      },
+      {
+        "scene_id": "0789",
+        "difficulty": 0.51,
+        "rho": 0.9999999975832482,
+        "reachable_energy_fraction": 0.9999228715896606,
+        "unreachable_energy_fraction": 2.4167516876616446e-09
+      },
+      {
+        "scene_id": "0790",
+        "difficulty": 0.43,
+        "rho": 0.9999999983270766,
+        "reachable_energy_fraction": 0.9999380111694336,
+        "unreachable_energy_fraction": 1.6729233554002576e-09
+      },
+      {
+        "scene_id": "0791",
+        "difficulty": 0.31,
+        "rho": 0.9999999966296266,
+        "reachable_energy_fraction": 0.9999030232429504,
+        "unreachable_energy_fraction": 3.3703735358159292e-09
+      },
+      {
+        "scene_id": "0792",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999971872026,
+        "reachable_energy_fraction": 0.9999117255210876,
+        "unreachable_energy_fraction": 2.812797550433288e-09
+      },
+      {
+        "scene_id": "0793",
+        "difficulty": 0.55,
+        "rho": 0.9999999980169912,
+        "reachable_energy_fraction": 0.9999268651008606,
+        "unreachable_energy_fraction": 1.983008646178064e-09
+      },
+      {
+        "scene_id": "0794",
+        "difficulty": 0.63,
+        "rho": 0.9999999978989094,
+        "reachable_energy_fraction": 0.9999212622642517,
+        "unreachable_energy_fraction": 2.101090634809566e-09
+      },
+      {
+        "scene_id": "0795",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999973905962,
+        "reachable_energy_fraction": 0.9999129772186279,
+        "unreachable_energy_fraction": 2.6094038041435397e-09
+      },
+      {
+        "scene_id": "0796",
+        "difficulty": 0.51,
+        "rho": 0.9999999974022402,
+        "reachable_energy_fraction": 0.9999169707298279,
+        "unreachable_energy_fraction": 2.597759785061271e-09
+      },
+      {
+        "scene_id": "0797",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999956407775,
+        "reachable_energy_fraction": 0.9998934864997864,
+        "unreachable_energy_fraction": 4.35922231645236e-09
+      },
+      {
+        "scene_id": "0798",
+        "difficulty": 0.43,
+        "rho": 0.9999999961944108,
+        "reachable_energy_fraction": 0.9998990893363953,
+        "unreachable_energy_fraction": 3.805589177119373e-09
+      },
+      {
+        "scene_id": "0799",
+        "difficulty": 0.31,
+        "rho": 0.9999999970295513,
+        "reachable_energy_fraction": 0.9999141097068787,
+        "unreachable_energy_fraction": 2.9704485537962455e-09
+      },
+      {
+        "scene_id": "0800",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999969878453,
+        "reachable_energy_fraction": 0.9999125599861145,
+        "unreachable_energy_fraction": 3.0121547478501043e-09
+      },
+      {
+        "scene_id": "0801",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999977074707,
+        "reachable_energy_fraction": 0.9999221563339233,
+        "unreachable_energy_fraction": 2.2925292775255457e-09
+      },
+      {
+        "scene_id": "0802",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999935386567,
+        "reachable_energy_fraction": 0.9999021291732788,
+        "unreachable_energy_fraction": 6.461343460273383e-09
+      },
+      {
+        "scene_id": "0803",
+        "difficulty": 0.43,
+        "rho": 0.9999999965774976,
+        "reachable_energy_fraction": 0.999919056892395,
+        "unreachable_energy_fraction": 3.422502503624969e-09
+      },
+      {
+        "scene_id": "0804",
+        "difficulty": 0.31,
+        "rho": 0.9999999967734727,
+        "reachable_energy_fraction": 0.9999054074287415,
+        "unreachable_energy_fraction": 3.226527267585766e-09
+      },
+      {
+        "scene_id": "0805",
+        "difficulty": 0.43,
+        "rho": 0.999999997887474,
+        "reachable_energy_fraction": 0.9999216198921204,
+        "unreachable_energy_fraction": 2.11252615400781e-09
+      },
+      {
+        "scene_id": "0806",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999970585662,
+        "reachable_energy_fraction": 0.9999063014984131,
+        "unreachable_energy_fraction": 2.9414337632260867e-09
+      },
+      {
+        "scene_id": "0807",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999968257944,
+        "reachable_energy_fraction": 0.9999037384986877,
+        "unreachable_energy_fraction": 3.1742055650596512e-09
+      },
+      {
+        "scene_id": "0808",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999981047945,
+        "reachable_energy_fraction": 0.9999266266822815,
+        "unreachable_energy_fraction": 1.8952055480525587e-09
+      },
+      {
+        "scene_id": "0809",
+        "difficulty": 0.31,
+        "rho": 0.9999999980639721,
+        "reachable_energy_fraction": 0.9999239444732666,
+        "unreachable_energy_fraction": 1.936027782534211e-09
+      },
+      {
+        "scene_id": "0810",
+        "difficulty": 0.31,
+        "rho": 0.9999999949547574,
+        "reachable_energy_fraction": 0.9998896718025208,
+        "unreachable_energy_fraction": 5.04524244604454e-09
+      },
+      {
+        "scene_id": "0811",
+        "difficulty": 0.26999999999999996,
+        "rho": 0.9999999976749467,
+        "reachable_energy_fraction": 0.9999240636825562,
+        "unreachable_energy_fraction": 2.3250532610319397e-09
+      },
+      {
+        "scene_id": "0812",
+        "difficulty": 0.31,
+        "rho": 0.999999997825675,
+        "reachable_energy_fraction": 0.9999259114265442,
+        "unreachable_energy_fraction": 2.17432494231673e-09
+      }
+    ]
+  },
+  "conditional_lora_basis": {
+    "num_bases": 4,
+    "coefficient_entropy": 0.5183972120285034,
+    "coefficient_shape": [
+      813,
+      4
+    ]
+  },
+  "future_privileged_distillation": {
+    "state_loss_before": 20.85904312133789,
+    "state_loss_after": 5.340341091156006,
+    "kl_self_check": 1.6136875169436848e-09,
+    "horizon": 4
+  },
+  "latent_population": {
+    "size_before_after": [
+      32,
+      32
+    ],
+    "retrieved_shape": [
+      8,
+      16
+    ],
+    "top_score": 0.8820472359657288
+  }
+}

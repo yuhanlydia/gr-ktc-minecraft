@@ -1,0 +1,27 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Downloaded third-party resources and local runtimes
+models/
+data/
+third_party/
+runtime/
+logs/
+
+# Papers are referenced by identifier; do not redistribute local copies
+docs/*.pdf
+docs/*.txt
+
+# Binary experiment artifacts and trained adapters
+results/**/*.safetensors
+results/*_kv/
+results/qlora_*/
+
+# Local configuration and credentials
+.env
+*.env
+!configs/*.env.example

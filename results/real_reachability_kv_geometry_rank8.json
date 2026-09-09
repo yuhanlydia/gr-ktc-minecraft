@@ -1,0 +1,238 @@
+{
+  "protocol": "real-reachability-conditions-v1",
+  "rank": 8,
+  "scene_ids": [
+    "0281",
+    "0299"
+  ],
+  "seeds": [
+    310,
+    311
+  ],
+  "conditions": [
+    "base",
+    "state",
+    "weight_shared",
+    "kv_complement"
+  ],
+  "complement_value_scales": {
+    "0281": {
+      "key_scale": 1.0,
+      "value_scale": 0.25
+    },
+    "0299": {
+      "key_scale": 0.5,
+      "value_scale": 0.1875
+    }
+  },
+  "summary": {
+    "base": {
+      "full_successes": 4,
+      "mean_score": 1.0,
+      "parser_valid": 4,
+      "trials": 4
+    },
+    "state": {
+      "full_successes": 4,
+      "mean_score": 1.0,
+      "parser_valid": 4,
+      "trials": 4
+    },
+    "weight_shared": {
+      "full_successes": 0,
+      "mean_score": 0.25,
+      "parser_valid": 4,
+      "trials": 4
+    },
+    "kv_complement": {
+      "full_successes": 0,
+      "mean_score": 0.25,
+      "parser_valid": 4,
+      "trials": 4
+    }
+  },
+  "comparisons": {
+    "state_vs_base": {
+      "condition_only": 0,
+      "base_only": 0,
+      "p": 1.0
+    },
+    "weight_shared_vs_base": {
+      "condition_only": 0,
+      "base_only": 4,
+      "p": 0.125
+    },
+    "kv_complement_vs_base": {
+      "condition_only": 0,
+      "base_only": 4,
+      "p": 0.125
+    }
+  },
+  "trials": [
+    {
+      "scene_id": "0281",
+      "seed": 310,
+      "condition": "base",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 95,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 310,
+      "condition": "state",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 95,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 310,
+      "condition": "weight_shared",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 88,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await bot.exploreUntil(bot => bot.inventory.items().find(i => i.name === \"crafting_table\") && bot.inventory.items().find(i => i.name === \"iron_leggings\") === undefined);\n  await bot.craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 310,
+      "condition": "kv_complement",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 63,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await bot.exploreUntil(bot => bot.inventory.findItem(\"crafting_table\"));\n  await bot.craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 311,
+      "condition": "base",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 78,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 311,
+      "condition": "state",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 95,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 311,
+      "condition": "weight_shared",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await bot.craftItem(\"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 311,
+      "condition": "kv_complement",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await bot.craftItem(\"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 310,
+      "condition": "base",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 310,
+      "condition": "state",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 310,
+      "condition": "weight_shared",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 69,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 310,
+      "condition": "kv_complement",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 139,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(bot => bot.findBlock({ name: \"nether_quartz_ore\", maxDistance: 16 }) !== undefined, 16);\n  await bot.mineBlock(bot.findBlock({ name: \"nether_quartz_ore\", maxDistance: 16 }), 1);\n  await bot.exploreUntil(bot => bot.findBlock({ name: \"quartz_block\", maxDistance: 16 }) !== undefined, 16);\n  await bot.mineBlock(bot.findBlock({ name: \"quartz_block\", maxDistance: 16 }), 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 311,
+      "condition": "base",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 311,
+      "condition": "state",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 311,
+      "condition": "weight_shared",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 89,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(bot => bot.nearby_blocks.includes(\"nether_quartz_ore\"));\n  await bot.mineBlock(bot, \"nether_quartz_ore\", 1);\n  await bot.exploreUntil(bot => bot.nearby_blocks.includes(\"quartz_block\"));\n  await bot.mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 311,
+      "condition": "kv_complement",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 137,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(bot => bot.inventory.count(\"diamond_pickaxe\") > 0 && bot.findBlock({ nearby: 10, matching: \"nether_quartz_ore\" }) != null);\n  await bot.mineBlock(bot.findBlock({ nearby: 10, matching: \"nether_quartz_ore\" }));\n  await bot.exploreUntil(bot => bot.findBlock({ nearby: 10, matching: \"quartz_block\" }) != null);\n  await bot.mineBlock(bot.findBlock({ nearby: 10, matching: \"quartz_block\" }));\n}\n```"
+    }
+  ],
+  "rho_individual_mean": 0.7493799340833427,
+  "rho_shared": 0.47547076754834383,
+  "elapsed_seconds": 357.95205524004996,
+  "peak_gpu_gib": 16.584717750549316,
+  "scope_warning": "state_plus_weight uses full quality KV as an upper bound; decomposed variants inject the exact offline unreachable component as scheduled or query-retrieved hidden memory, not a reconstructed KV cache."
+}

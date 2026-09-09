@@ -1,0 +1,63 @@
+{
+  "protocol": "real-qwen-state-weight-reachability-proxy-v1",
+  "contexts": [
+    "0281",
+    "0299"
+  ],
+  "rank_curve": [
+    {
+      "rank": 1,
+      "rho_shared": 0.02263096860304925,
+      "rho_individual_mean": 0.25370200788527186
+    },
+    {
+      "rank": 2,
+      "rho_shared": 0.13308984833666715,
+      "rho_individual_mean": 0.43497675124152047
+    },
+    {
+      "rank": 4,
+      "rho_shared": 0.20979409382458591,
+      "rho_individual_mean": 0.5943695526661386
+    },
+    {
+      "rank": 8,
+      "rho_shared": 0.4754708271011665,
+      "rho_individual_mean": 0.7493799299212471
+    },
+    {
+      "rank": 16,
+      "rho_shared": 0.5743626272991275,
+      "rho_individual_mean": 0.849184524987477
+    },
+    {
+      "rank": 32,
+      "rho_shared": 0.797109050411919,
+      "rho_individual_mean": 0.9412578588105525
+    },
+    {
+      "rank": 64,
+      "rho_shared": 0.9281308875385198,
+      "rho_individual_mean": 0.9907922300808034
+    }
+  ],
+  "individual_at_max_rank": [
+    {
+      "scene_id": "0281",
+      "rho": 0.9815844601616667,
+      "target_norm": 297.50732421875,
+      "reachable_norm": 294.76116943359375,
+      "unreachable_norm": 40.374141693115234
+    },
+    {
+      "scene_id": "0299",
+      "rho": 0.9999999999999403,
+      "target_norm": 221.5884246826172,
+      "reachable_norm": 221.58973693847656,
+      "unreachable_norm": 5.4170206567505375e-05
+    }
+  ],
+  "rho_individual_mean_at_max_rank": 0.9907922300808034,
+  "rho_joint_at_max_rank": 0.9281308875385198,
+  "scope_warning": "Real causal KV effects with a residual-stream linear proxy; not yet an optimized multi-module QLoRA Jacobian fit."
+}

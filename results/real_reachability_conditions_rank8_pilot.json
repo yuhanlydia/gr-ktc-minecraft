@@ -1,0 +1,475 @@
+{
+  "protocol": "real-reachability-conditions-v1",
+  "rank": 8,
+  "scene_ids": [
+    "0281",
+    "0299"
+  ],
+  "seeds": [
+    300,
+    301,
+    302,
+    303
+  ],
+  "summary": {
+    "base": {
+      "full_successes": 1,
+      "mean_score": 0.125,
+      "parser_valid": 5,
+      "trials": 8
+    },
+    "state": {
+      "full_successes": 4,
+      "mean_score": 0.5,
+      "parser_valid": 5,
+      "trials": 8
+    },
+    "weight_individual": {
+      "full_successes": 0,
+      "mean_score": 0.1875,
+      "parser_valid": 7,
+      "trials": 8
+    },
+    "weight_shared": {
+      "full_successes": 0,
+      "mean_score": 0.25,
+      "parser_valid": 8,
+      "trials": 8
+    },
+    "state_plus_weight": {
+      "full_successes": 0,
+      "mean_score": 0.25,
+      "parser_valid": 8,
+      "trials": 8
+    }
+  },
+  "comparisons": {
+    "state_vs_base": {
+      "condition_only": 4,
+      "base_only": 1,
+      "p": 0.375
+    },
+    "weight_individual_vs_base": {
+      "condition_only": 0,
+      "base_only": 1,
+      "p": 1.0
+    },
+    "weight_shared_vs_base": {
+      "condition_only": 0,
+      "base_only": 1,
+      "p": 1.0
+    },
+    "state_plus_weight_vs_base": {
+      "condition_only": 0,
+      "base_only": 1,
+      "p": 1.0
+    }
+  },
+  "trials": [
+    {
+      "scene_id": "0281",
+      "seed": 300,
+      "condition": "base",
+      "score": 0.0,
+      "parser_valid": false,
+      "generated_tokens": 384,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 300,
+      "condition": "state",
+      "score": 0.0,
+      "parser_valid": false,
+      "generated_tokens": 384,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 300,
+      "condition": "weight_individual",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 73,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await bot.exploreUntil(bot => bot.inventory.count(\"crafting_table\") > 0);\n  await bot.craftItem(\"iron_leggings\", 1, { \"iron_ingot\": 7 });\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 300,
+      "condition": "weight_shared",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 126,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"crafting_table\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 300,
+      "condition": "state_plus_weight",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 64,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await bot.exploreUntil(bot => bot.inventory.count(\"crafting_table\") > 0);\n  await bot.craftItem(\"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 300,
+      "condition": "base",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 75,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 300,
+      "condition": "state",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 300,
+      "condition": "weight_individual",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 69,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 300,
+      "condition": "weight_shared",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 118,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(bot => bot.exploreUntil(bot => bot.inventory.findInventory('diamond_pickaxe')?.count > 0));\n  await bot.exploreUntil(bot => bot.nearby_blocks.includes('nether_quartz_ore'));\n  await bot.mineBlock(bot, \"nether_quartz_ore\", 1);\n  await bot.exploreUntil(bot => bot.nearby_blocks.includes('quartz_block'));\n  await bot.mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 300,
+      "condition": "state_plus_weight",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 101,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(bot => bot.inventory.count(\"diamond_pickaxe\") > 0 && bot.nearby_blocks.includes(\"nether_quartz_ore\"));\n  await bot.mineBlock(bot, \"nether_quartz_ore\", 1);\n  await bot.exploreUntil(bot => bot.nearby_blocks.includes(\"quartz_block\"));\n  await bot.mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 301,
+      "condition": "base",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 92,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await craftItem(bot, \"iron_leggings\");\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 301,
+      "condition": "state",
+      "score": 0.0,
+      "parser_valid": false,
+      "generated_tokens": 384,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 301,
+      "condition": "weight_individual",
+      "score": 0.0,
+      "parser_valid": false,
+      "generated_tokens": 384,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 301,
+      "condition": "weight_shared",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await bot.craftItem(\"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 301,
+      "condition": "state_plus_weight",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 66,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await bot.exploreUntil(bot => bot.inventory.count(\"crafting_table\") > 0);\n  await bot.craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 302,
+      "condition": "base",
+      "score": 0.0,
+      "parser_valid": false,
+      "generated_tokens": 384,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 302,
+      "condition": "state",
+      "score": 0.0,
+      "parser_valid": false,
+      "generated_tokens": 384,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 302,
+      "condition": "weight_individual",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 64,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await bot.exploreUntil(bot => bot.inventory.count(\"crafting_table\") > 0);\n  await bot.craftItem(\"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 302,
+      "condition": "weight_shared",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 66,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await bot.exploreUntil(bot => bot.inventory.count(\"crafting_table\") > 0);\n  await bot.craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 302,
+      "condition": "state_plus_weight",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await bot.craftItem(\"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 303,
+      "condition": "base",
+      "score": 0.0,
+      "parser_valid": false,
+      "generated_tokens": 384,
+      "error": "unknown: Unterminated template. (1:3)\n\n> 1 | ```javascript\n    |    ^\n  2 | async function solveTask(bot) {\n  3 |   await mineBlock(bot, \"chiseled_sandstone\", 1);\n  4 |   await mineBlock(bot, \"chiseled_sandstone\", 1);",
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 303,
+      "condition": "state",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 95,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await craftItem(bot, \"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 303,
+      "condition": "weight_individual",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 76,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await bot.exploreUntil(bot => bot.inventory.count(\"crafting_table\") > 0, 5);\n  await craftItem(bot, \"iron_leggings\", 1, { \"iron_ingot\": 7 });\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 303,
+      "condition": "weight_shared",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 55,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await bot.exploreUntil(\"crafting_table\");\n  await bot.craftItem(\"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0281",
+      "seed": 303,
+      "condition": "state_plus_weight",
+      "score": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"chiseled_sandstone\", 1);\n  await bot.craftItem(\"iron_leggings\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 301,
+      "condition": "base",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 69,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 301,
+      "condition": "state",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 69,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 301,
+      "condition": "weight_individual",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 69,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 301,
+      "condition": "weight_shared",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 117,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(bot => bot.findBlock({ near: bot, matching: \"nether_quartz_ore\" }) !== undefined);\n  await bot.mineBlock(bot.findBlock({ near: bot, matching: \"nether_quartz_ore\" }));\n  await bot.exploreUntil(bot => bot.findBlock({ near: bot, matching: \"quartz_block\" }) !== undefined);\n  await bot.mineBlock(bot.findBlock({ near: bot, matching: \"quartz_block\" }));\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 301,
+      "condition": "state_plus_weight",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 114,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(bot => bot.inventory.contains(\"diamond_pickaxe\"), 1);\n  await bot.exploreUntil(bot => bot.nearby_blocks.includes(\"nether_quartz_ore\"), 1);\n  await bot.mineBlock(bot, \"nether_quartz_ore\", 1);\n  await bot.exploreUntil(bot => bot.nearby_blocks.includes(\"quartz_block\"), 1);\n  await bot.mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 302,
+      "condition": "base",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 75,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 302,
+      "condition": "state",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 302,
+      "condition": "weight_individual",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 125,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(bot => bot.findBlock({ match: \"nether_quartz_ore\", maxDistance: 10 }) !== null);\n  await bot.mineBlock(bot.findBlock({ match: \"nether_quartz_ore\", maxDistance: 10 }));\n  await bot.exploreUntil(bot => bot.findBlock({ match: \"quartz_block\", maxDistance: 10 }) !== null);\n  await bot.mineBlock(bot.findBlock({ match: \"quartz_block\", maxDistance: 10 }));\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 302,
+      "condition": "weight_shared",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 114,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(bot => bot.inventory.contains(\"diamond_pickaxe\"), 1);\n  await bot.exploreUntil(bot => bot.nearby_blocks.includes(\"nether_quartz_ore\"), 1);\n  await bot.mineBlock(bot, \"nether_quartz_ore\", 1);\n  await bot.exploreUntil(bot => bot.nearby_blocks.includes(\"quartz_block\"), 1);\n  await bot.mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 302,
+      "condition": "state_plus_weight",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 75,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 303,
+      "condition": "base",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 69,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 303,
+      "condition": "state",
+      "score": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 44,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 303,
+      "condition": "weight_individual",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 69,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 303,
+      "condition": "weight_shared",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 69,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await exploreUntil(bot, \"nether_quartz_ore\");\n  await mineBlock(bot, \"nether_quartz_ore\", 1);\n  await exploreUntil(bot, \"quartz_block\");\n  await mineBlock(bot, \"quartz_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0299",
+      "seed": 303,
+      "condition": "state_plus_weight",
+      "score": 0.0,
+      "parser_valid": true,
+      "generated_tokens": 99,
+      "error": null,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await bot.exploreUntil(bot.isInNether, 10);\n  await bot.exploreUntil(bot.findBlock, \"nether_quartz_ore\", 5);\n  await bot.mineBlock(\"nether_quartz_ore\", 1);\n  await bot.exploreUntil(bot.findBlock, \"quartz_block\", 5);\n  await bot.mineBlock(\"quartz_block\", 1);\n}\n```"
+    }
+  ],
+  "rho_individual_mean": 0.7493799340833427,
+  "rho_shared": 0.47547076754834383,
+  "elapsed_seconds": 607.0126320149284,
+  "peak_gpu_gib": 16.53969144821167,
+  "scope_warning": "state_plus_weight uses the full quality KV memory as an upper-bound control; exact unreachable-only memory is not claimed."
+}

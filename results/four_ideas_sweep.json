@@ -1,0 +1,137 @@
+{
+  "protocol": "four-ideas-sweep-api-free-v1",
+  "scenario_count": 813,
+  "probe_contexts": 32,
+  "rank_scaling": [
+    {
+      "rank": 1,
+      "rho_shared": 0.18864581604938901,
+      "rho_individual_mean": 0.26749848300418255
+    },
+    {
+      "rank": 2,
+      "rho_shared": 0.32210812680776313,
+      "rho_individual_mean": 0.4861744148126842
+    },
+    {
+      "rank": 4,
+      "rho_shared": 0.5419391675213436,
+      "rho_individual_mean": 0.7856851264138959
+    },
+    {
+      "rank": 8,
+      "rho_shared": 0.8089714942296165,
+      "rho_individual_mean": 0.9999999971311522
+    },
+    {
+      "rank": 16,
+      "rho_shared": 0.9996479935982281,
+      "rho_individual_mean": 0.9999999971311522
+    },
+    {
+      "rank": 32,
+      "rho_shared": 0.9996479935982281,
+      "rho_individual_mean": 0.9999999971311522
+    },
+    {
+      "rank": 64,
+      "rho_shared": 0.9996479935982281,
+      "rho_individual_mean": 0.9999999971311522
+    }
+  ],
+  "context_heterogeneity": [
+    {
+      "contexts": 1,
+      "rho_individual_mean": 0.9999999971932066,
+      "rho_joint": 0.9999999971932066
+    },
+    {
+      "contexts": 2,
+      "rho_individual_mean": 0.9999999965784319,
+      "rho_joint": 0.904386791724986
+    },
+    {
+      "contexts": 4,
+      "rho_individual_mean": 0.9999999969370809,
+      "rho_joint": 0.8229200417692923
+    },
+    {
+      "contexts": 8,
+      "rho_individual_mean": 0.9999999972559336,
+      "rho_joint": 0.8055788969176848
+    },
+    {
+      "contexts": 16,
+      "rho_individual_mean": 0.9999999973013377,
+      "rho_joint": 0.8084977238789333
+    },
+    {
+      "contexts": 32,
+      "rho_individual_mean": 0.9999999971311522,
+      "rho_joint": 0.8089714942296165
+    }
+  ],
+  "conditional_lora_basis": [
+    {
+      "bases": 1,
+      "coefficient_entropy": 0.0
+    },
+    {
+      "bases": 2,
+      "coefficient_entropy": 0.319178968667984
+    },
+    {
+      "bases": 4,
+      "coefficient_entropy": 0.5183972120285034
+    },
+    {
+      "bases": 8,
+      "coefficient_entropy": 0.6727690696716309
+    }
+  ],
+  "future_horizon": [
+    {
+      "horizon": 1,
+      "loss_before": 0.039581213146448135,
+      "loss_after": 0.009895369410514832
+    },
+    {
+      "horizon": 2,
+      "loss_before": 0.041115209460258484,
+      "loss_after": 0.010278875008225441
+    },
+    {
+      "horizon": 4,
+      "loss_before": 0.04485948756337166,
+      "loss_after": 0.011215073987841606
+    },
+    {
+      "horizon": 8,
+      "loss_before": 0.061215147376060486,
+      "loss_after": 0.015303956344723701
+    }
+  ],
+  "population_scaling": [
+    {
+      "population_size": 8,
+      "retained": 8,
+      "retrieved_tokens": 8
+    },
+    {
+      "population_size": 16,
+      "retained": 16,
+      "retrieved_tokens": 8
+    },
+    {
+      "population_size": 32,
+      "retained": 32,
+      "retrieved_tokens": 8
+    },
+    {
+      "population_size": 64,
+      "retained": 64,
+      "retrieved_tokens": 8
+    }
+  ],
+  "scope_warning": "Mechanism sweep over deterministic activation-shaped tensors; causal model claims require recorded KV/hidden effects."
+}

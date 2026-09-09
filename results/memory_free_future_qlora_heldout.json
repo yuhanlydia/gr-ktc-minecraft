@@ -1,0 +1,306 @@
+{
+  "protocol": "memory-free-qlora-v1",
+  "full_adapter": "results/qlora_future_100",
+  "control_adapter": "results/qlora_future_control_100",
+  "system_style": "raw",
+  "scene_ids": [
+    "0000",
+    "0034",
+    "0044",
+    "0065"
+  ],
+  "seeds": [
+    332,
+    333
+  ],
+  "summary": {
+    "base": {
+      "mean_score": 0.75,
+      "full_successes": 5,
+      "trials": 8,
+      "success_wilson_95ci": [
+        0.3057423946026273,
+        0.8631557141764027
+      ],
+      "parser_valid": 8
+    },
+    "control": {
+      "mean_score": 0.875,
+      "full_successes": 6,
+      "trials": 8,
+      "success_wilson_95ci": [
+        0.40927543031016883,
+        0.9285207872478909
+      ],
+      "parser_valid": 8
+    },
+    "full": {
+      "mean_score": 0.875,
+      "full_successes": 6,
+      "trials": 8,
+      "success_wilson_95ci": [
+        0.40927543031016883,
+        0.9285207872478909
+      ],
+      "parser_valid": 8
+    }
+  },
+  "comparisons": {
+    "full_vs_base": {
+      "full_only": 1,
+      "other_only": 0,
+      "mcnemar_two_sided_p": 1.0
+    },
+    "full_vs_control": {
+      "full_only": 0,
+      "other_only": 0,
+      "mcnemar_two_sided_p": 1.0
+    }
+  },
+  "trials": [
+    {
+      "scene_id": "0000",
+      "seed": 332,
+      "condition": "base",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 10);\n  await craftItem(bot, \"oak_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0000",
+      "seed": 332,
+      "condition": "control",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 45,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 10);\n  await craftItem(bot, \"oak_stairs\", 10);\n}\n```"
+    },
+    {
+      "scene_id": "0000",
+      "seed": 332,
+      "condition": "full",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 43,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"oak_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0000",
+      "seed": 333,
+      "condition": "base",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 44,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 10);\n  await craftItem(bot, \"oak_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0000",
+      "seed": 333,
+      "condition": "control",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 45,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 10);\n  await craftItem(bot, \"oak_stairs\", 10);\n}\n```"
+    },
+    {
+      "scene_id": "0000",
+      "seed": 333,
+      "condition": "full",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 43,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"oak_planks\", 6);\n  await craftItem(bot, \"oak_stairs\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0034",
+      "seed": 332,
+      "condition": "base",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"diamond_shovel\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0034",
+      "seed": 332,
+      "condition": "control",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"diamond_shovel\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0034",
+      "seed": 332,
+      "condition": "full",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"diamond_shovel\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0034",
+      "seed": 333,
+      "condition": "base",
+      "parser_valid": true,
+      "score": 0.0,
+      "error": null,
+      "generated_tokens": 28,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"shovel_diamond\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0034",
+      "seed": 333,
+      "condition": "control",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"diamond_shovel\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0034",
+      "seed": 333,
+      "condition": "full",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"diamond_shovel\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0044",
+      "seed": 332,
+      "condition": "base",
+      "parser_valid": true,
+      "score": 0.5,
+      "error": null,
+      "generated_tokens": 58,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"birch_log\", 3);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n  await mineBlock(bot, \"red_nether_bricks\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0044",
+      "seed": 332,
+      "condition": "control",
+      "parser_valid": true,
+      "score": 0.5,
+      "error": null,
+      "generated_tokens": 58,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"birch_log\", 6);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n  await mineBlock(bot, \"red_nether_bricks\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0044",
+      "seed": 332,
+      "condition": "full",
+      "parser_valid": true,
+      "score": 0.5,
+      "error": null,
+      "generated_tokens": 58,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"birch_log\", 6);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n  await mineBlock(bot, \"red_nether_bricks\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0044",
+      "seed": 333,
+      "condition": "base",
+      "parser_valid": true,
+      "score": 0.5,
+      "error": null,
+      "generated_tokens": 58,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"birch_log\", 3);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n  await mineBlock(bot, \"red_nether_bricks\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0044",
+      "seed": 333,
+      "condition": "control",
+      "parser_valid": true,
+      "score": 0.5,
+      "error": null,
+      "generated_tokens": 58,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"birch_log\", 6);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n  await mineBlock(bot, \"red_nether_bricks\", 6);\n}\n```"
+    },
+    {
+      "scene_id": "0044",
+      "seed": 333,
+      "condition": "full",
+      "parser_valid": true,
+      "score": 0.5,
+      "error": null,
+      "generated_tokens": 58,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await mineBlock(bot, \"birch_log\", 6);\n  await craftItem(bot, \"wooden_pickaxe\", 1);\n  await mineBlock(bot, \"red_nether_bricks\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0065",
+      "seed": 332,
+      "condition": "base",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"lapis_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0065",
+      "seed": 332,
+      "condition": "control",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"lapis_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0065",
+      "seed": 332,
+      "condition": "full",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"lapis_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0065",
+      "seed": 333,
+      "condition": "base",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"lapis_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0065",
+      "seed": 333,
+      "condition": "control",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"lapis_block\", 1);\n}\n```"
+    },
+    {
+      "scene_id": "0065",
+      "seed": 333,
+      "condition": "full",
+      "parser_valid": true,
+      "score": 1.0,
+      "error": null,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"lapis_block\", 1);\n}\n```"
+    }
+  ],
+  "elapsed_seconds": 519.9338934978005,
+  "peak_gpu_gib": 6.794483184814453,
+  "suite": "retention",
+  "scope_warning": "MineExplorer memory-free generalization; not PEAM held-out success."
+}

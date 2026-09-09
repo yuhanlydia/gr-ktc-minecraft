@@ -1,0 +1,28 @@
+{
+  "protocol": "real-qwen-kv-reachability-data-v1",
+  "model": "Qwen3-VL-8B-Instruct",
+  "precision": "bf16",
+  "layer": 24,
+  "contexts": [
+    {
+      "scene_id": "0281",
+      "task_text": "Mine the chiseled sandstone blocks in the wall (marked by torches) to access the room behind, then use the crafting table inside to craft iron leggings from the iron ingots in your inventory.",
+      "prompt_tokens": 288,
+      "response_tokens": 77,
+      "aligned_tokens": 77,
+      "feature_dim": 4096
+    },
+    {
+      "scene_id": "0299",
+      "task_text": "You are in a Nether chamber. First, find and mine the nether quartz ore (brownish blocks with white streaks in the netherrack walls). Then find and mine the smooth white quartz block.",
+      "prompt_tokens": 269,
+      "response_tokens": 43,
+      "aligned_tokens": 43,
+      "feature_dim": 4096
+    }
+  ],
+  "peak_gpu_gib": 16.546464443206787,
+  "feature_semantics": "no-memory residual stream entering selected text layer",
+  "target_semantics": "matched quality-KV causal output hidden shift",
+  "scope": "first-order residual-stream proxy; actual LoRA optimization is a separate gate"
+}

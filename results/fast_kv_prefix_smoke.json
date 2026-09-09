@@ -1,0 +1,124 @@
+{
+  "protocol": "real-fast-kv-prefix-smoke-v1",
+  "layers": 36,
+  "teacher_parser_valid": true,
+  "baseline_parser_valid": true,
+  "teacher_text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+  "baseline_text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```",
+  "sweep": [
+    {
+      "memory_tokens": 1,
+      "value_scale": 0.1,
+      "parser_valid": true,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```"
+    },
+    {
+      "memory_tokens": 1,
+      "value_scale": 0.25,
+      "parser_valid": true,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```"
+    },
+    {
+      "memory_tokens": 1,
+      "value_scale": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```"
+    },
+    {
+      "memory_tokens": 1,
+      "value_scale": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```"
+    },
+    {
+      "memory_tokens": 2,
+      "value_scale": 0.1,
+      "parser_valid": true,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```"
+    },
+    {
+      "memory_tokens": 2,
+      "value_scale": 0.25,
+      "parser_valid": true,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```"
+    },
+    {
+      "memory_tokens": 2,
+      "value_scale": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```"
+    },
+    {
+      "memory_tokens": 2,
+      "value_scale": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```"
+    },
+    {
+      "memory_tokens": 4,
+      "value_scale": 0.1,
+      "parser_valid": true,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```"
+    },
+    {
+      "memory_tokens": 4,
+      "value_scale": 0.25,
+      "parser_valid": true,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```"
+    },
+    {
+      "memory_tokens": 4,
+      "value_scale": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```"
+    },
+    {
+      "memory_tokens": 4,
+      "value_scale": 1.0,
+      "parser_valid": true,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```"
+    },
+    {
+      "memory_tokens": 8,
+      "value_scale": 0.1,
+      "parser_valid": true,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```"
+    },
+    {
+      "memory_tokens": 8,
+      "value_scale": 0.25,
+      "parser_valid": true,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```"
+    },
+    {
+      "memory_tokens": 8,
+      "value_scale": 0.5,
+      "parser_valid": true,
+      "generated_tokens": 27,
+      "text": "```javascript\nasync function solveTask(bot) {\n  await craftItem(bot, \"crafting_table\", 1);\n}\n```"
+    },
+    {
+      "memory_tokens": 8,
+      "value_scale": 1.0,
+      "parser_valid": false,
+      "generated_tokens": 2,
+      "text": "```"
+    }
+  ],
+  "peak_gpu_gib": 16.480238437652588,
+  "scope_warning": "Interface smoke only; teacher advantage is synthetic."
+}

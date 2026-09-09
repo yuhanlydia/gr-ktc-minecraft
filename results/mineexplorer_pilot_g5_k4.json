@@ -1,0 +1,98 @@
+{
+  "protocol": "mineexplorer-local-pilot-v1",
+  "groups": 5,
+  "trajectories": 20,
+  "mixed_groups": 0,
+  "successes": 20,
+  "parser_valid": 20,
+  "manifest_files": 85,
+  "peak_gpu_gib": 16.427916526794434,
+  "pool": "data/acquisition/mineexplorer_pilot_g5_k4",
+  "group_results": [
+    {
+      "scene_id": "0003",
+      "task": "Mine the emerald block nearby using the iron pickaxe in your inventory.",
+      "scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0034",
+      "task": "Craft a diamond shovel using the crafting table nearby. You have the required materials (1 diamond and 2 sticks) in your inventory.",
+      "scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0065",
+      "task": "You have 9 lapis lazuli in your inventory. Find the nearby crafting table and craft a lapis block.",
+      "scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0076",
+      "task": "Craft an oak pressure plate.",
+      "scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    },
+    {
+      "scene_id": "0079",
+      "task": "Mine a block of gray terracotta using the wooden pickaxe in your inventory. The gray terracotta structure is the dark brownish-red cube visible nearby.",
+      "scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mixed_outcome": false
+    }
+  ]
+}

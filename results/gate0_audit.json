@@ -1,0 +1,120 @@
+{
+  "gate": 0,
+  "protocol": "local-qwen-voyager-v1",
+  "passed": true,
+  "checks": [
+    {
+      "ok": true,
+      "check": "CUDA is available"
+    },
+    {
+      "ok": true,
+      "check": "GPU has at least 23 GiB VRAM"
+    },
+    {
+      "ok": true,
+      "check": "Voyager Python package imports"
+    },
+    {
+      "ok": true,
+      "check": "Mineflayer is installed"
+    },
+    {
+      "ok": true,
+      "check": "Mineflayer lockfile exists"
+    },
+    {
+      "ok": true,
+      "check": "Mineflayer 4.14.0 crafting fix is pinned"
+    },
+    {
+      "ok": true,
+      "check": "local Node 18.20.8 runtime is pinned"
+    },
+    {
+      "ok": true,
+      "check": "Minecraft 1.19 is installed"
+    },
+    {
+      "ok": true,
+      "check": "Fabric loader 0.14.18 for Minecraft 1.19 is installed"
+    },
+    {
+      "ok": true,
+      "check": "five Voyager Fabric mods are installed"
+    },
+    {
+      "ok": true,
+      "check": "local Minecraft 1.19 dedicated server exists"
+    },
+    {
+      "ok": true,
+      "check": "server jar matches Mojang SHA-1"
+    },
+    {
+      "ok": true,
+      "check": "offline server is loopback-only"
+    },
+    {
+      "ok": true,
+      "check": "local protocol requires no Microsoft login"
+    },
+    {
+      "ok": true,
+      "check": "all four Qwen3-VL model shards exist"
+    },
+    {
+      "ok": true,
+      "check": "Qwen3-VL config loads"
+    },
+    {
+      "ok": true,
+      "check": "Qwen text stack has 36 layers"
+    },
+    {
+      "ok": true,
+      "check": "MineExplorer main split has 813 scenarios"
+    },
+    {
+      "ok": true,
+      "check": "MineExplorer hard split has 100 scenarios"
+    },
+    {
+      "ok": true,
+      "check": "MineExplorer schema has required fields"
+    },
+    {
+      "ok": true,
+      "check": "Java 17 is active"
+    },
+    {
+      "ok": true,
+      "check": "Voyager bridge health endpoint responds"
+    },
+    {
+      "ok": true,
+      "check": "local Qwen smoke action is parser-valid"
+    },
+    {
+      "ok": true,
+      "check": "local Qwen action passed oak-log environment verifier"
+    },
+    {
+      "ok": true,
+      "check": "10-scene BF16 parser smoke passed"
+    },
+    {
+      "ok": true,
+      "check": "10-scene Minecraft verifier smoke passed"
+    },
+    {
+      "ok": true,
+      "check": "real-rollout QLoRA backward/update smoke passed"
+    },
+    {
+      "ok": true,
+      "check": "real K=4 acquisition pool is finalized and checksum-valid"
+    }
+  ],
+  "peam_difference": "No Azure GPT-4o slow tier; local Qwen is the rollout sampler."
+}
