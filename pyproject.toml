@@ -4,9 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gr-ktc-minecraft"
-version = "0.1.0"
-description = "Group-relative KV trajectory consolidation for Minecraft agents"
-requires-python = ">=3.10"
+version = "0.2.0"
+description = "Training-free verifier-contrastive latent skill acquisition for embodied agents"
+requires-python = ">=3.11"
 dependencies = [
   "numpy>=1.24",
   "pyyaml>=6",
@@ -29,4 +29,3 @@ include = ["gr_ktc*", "acquisition*", "evaluation*", "peam_repro*"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
-
