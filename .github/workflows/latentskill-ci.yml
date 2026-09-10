@@ -23,6 +23,21 @@ jobs:
           python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
       - name: Compile
         run: python -m compileall -q gr_ktc scripts tests
+      - name: Static runbook checks
+        env:
+          PYTHONPATH: .
+        run: |
+          bash -n scripts/bootstrap_androidworld.sh
+          python scripts/run_androidworld_latentskill_gate.py --help >/dev/null
+          python scripts/analyze_androidworld_latentskill.py --help >/dev/null
+          python - <<'PY'
+          from pathlib import Path
+          import yaml
+          config = yaml.safe_load(Path('configs/latentskill_androidworld_24gb.yaml').read_text())
+          assert config['latent_skill']['quality_layer'] == 24
+          assert config['latent_skill']['memory_tokens'] == 4
+          assert config['benchmark']['commit'] == 'e3fea3ccc69787570e282c99573298f1c3019a34'
+          PY
       - name: LatentSkill tests
         env:
           PYTHONPATH: .
