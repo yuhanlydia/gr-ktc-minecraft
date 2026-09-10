@@ -1,0 +1,33 @@
+name: LatentSkill CPU tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install CPU test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pytest numpy pyyaml safetensors
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Compile
+        run: python -m compileall -q gr_ktc scripts tests
+      - name: LatentSkill tests
+        env:
+          PYTHONPATH: .
+        run: |
+          pytest -q \
+            tests/test_latent_skill.py \
+            tests/test_androidworld_latentskill_protocol.py \
+            tests/test_androidworld_latentskill_analysis.py
