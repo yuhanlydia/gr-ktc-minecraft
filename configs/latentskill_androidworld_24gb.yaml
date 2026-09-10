@@ -1,0 +1,76 @@
+experiment: latentskill_androidworld_oracle_family_v1
+
+benchmark:
+  repository: https://github.com/google-research/android_world.git
+  commit: e3fea3ccc69787570e282c99573298f1c3019a34
+  family: android_world
+  observation_protocol: official_t3a_text
+  oracle_task_family_routing: true
+
+model:
+  name: Qwen3-VL-8B-Instruct
+  path: models/Qwen3-VL-8B-Instruct
+  precision: bf16
+  frozen: true
+
+latent_skill:
+  quality_layer: 24
+  memory_tokens: 4
+  value_scale: 0.25
+  negative_scale: 0.5
+  acquisition_temperature: 0.9
+  acquisition_top_p: 0.95
+  evaluation_temperature: 0.0
+  tune_layer_on_androidworld: false
+
+modes:
+  - base
+  - context
+  - positive_all
+  - failed
+  - quality_all
+  - clsc
+
+default_tasks:
+  - ContactsAddContact
+  - SimpleCalendarAddOneEvent
+  - MarkorCreateNote
+  - SimpleSmsSend
+  - ClockTimerEntry
+  - ExpenseAddSingle
+  - RecipeAddSingleRecipe
+  - VlcCreatePlaylist
+
+phases:
+  smoke:
+    task_count: 2
+    acquisition_instances_per_family: 1
+    rollouts_per_instance: 4
+    evaluation_instances_per_family: 1
+    modes: [base, clsc]
+  pilot:
+    task_count: 6
+    acquisition_instances_per_family: 2
+    rollouts_per_instance: 4
+    evaluation_instances_per_family: 4
+    modes: [base, context, positive_all, failed, quality_all, clsc]
+  full:
+    task_count: 8
+    acquisition_instances_per_family: 4
+    rollouts_per_instance: 4
+    evaluation_instances_per_family: 8
+    modes: [base, context, positive_all, failed, quality_all, clsc]
+
+hard_gate:
+  min_clsc_minus_base: 0.05
+  require_clsc_gt_positive_all: true
+  require_clsc_gt_context: true
+  min_positive_families: 2
+  min_mixed_signal_families: 2
+  failure_action: stop_latent_kv_skill_direction
+
+resource_profile:
+  primary_gpu: RTX_3090_24GB_or_equivalent
+  measured_prior_bf16_peak_gib: 16.5
+  use_nf4_for_primary_gate: false
+  use_api_teacher: false
