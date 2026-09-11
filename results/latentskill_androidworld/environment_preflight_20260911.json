@@ -1,0 +1,43 @@
+{
+  "date_utc": "2026-09-11",
+  "source_commit": "594b7323103510d2d9681258258779eada706f9d",
+  "benchmark_commit": "e3fea3ccc69787570e282c99573298f1c3019a34",
+  "status": "environment_setup_in_progress",
+  "benchmark_results_available": false,
+  "completed_phases": [],
+  "model": {
+    "id": "Qwen/Qwen3-VL-8B-Instruct",
+    "precision": "BF16",
+    "device": "NVIDIA GeForce RTX 3090",
+    "weight_updates": false,
+    "load_and_generation": "passed",
+    "kv_capture_and_four_token_injection": "passed",
+    "injection_peak_allocated_gib": 16.358
+  },
+  "static_validation": {
+    "latent_skill_tests": "10/10 passed",
+    "compileall": "passed",
+    "bootstrap_shell_syntax": "passed",
+    "runner_and_analyzer_help": "passed",
+    "config_pin_check": "passed",
+    "pip_check": "passed"
+  },
+  "emulator": {
+    "avd": "Pixel 6 / API 33",
+    "version": "35.4.9",
+    "acceleration": "software TCG; /dev/kvm open denied by container",
+    "vcpus": 1,
+    "health_check": "passed",
+    "activity_query_seconds": 1.28,
+    "accessibility_broadcast_seconds": 5.29,
+    "official_androidworld_setup": "pending",
+    "diagnostics": "Four-vCPU software emulation had repeated Android service timeouts. A narrowly scoped emulator-only resolver workaround fixes failed numeric ::1 AI_ADDRCONFIG lookup; one-vCPU configuration substantially improved health-check latency. Full initialization and actual benchmark validity remain unverified."
+  },
+  "execution_policy_amendment": {
+    "source": "User instruction before benchmark outcomes on 2026-09-11",
+    "policy": "Run Smoke, Pilot and Full without the original numerical scientific stopping gates. Report all outcomes, positive or negative, and assess reuse across instances and families. Engineering failures still require debugging before resuming.",
+    "method_and_comparison_settings": "unchanged",
+    "legacy_analyzer_go_no_go": "not an execution stop"
+  },
+  "note": "This file is an environment preflight record, not an experiment summary. No success rates or scientific GO/NO-GO conclusions are available."
+}
