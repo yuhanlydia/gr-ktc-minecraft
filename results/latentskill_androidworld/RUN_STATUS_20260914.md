@@ -1,9 +1,42 @@
 # AndroidWorld execution status — 2026-09-14
 
-Status: **the preregistered two-family Smoke is complete**.
+Status: **the preregistered two-family Smoke is complete and the formal Pilot
+acquisition is in progress**.
 
 The analyzer reports `smoke_complete` with `pass: null`. Smoke is integration
 evidence only, so it does not issue a scientific GO/NO-GO decision.
+
+## Pilot checkpoint
+
+The first stable formal-Pilot checkpoint contains 30 valid acquisition
+episodes and 24 Contacts fresh-instance evaluation episodes. The Contacts
+result is ceiling-limited, so this checkpoint does not support a transfer
+advantage or GO/NO-GO claim.
+
+- `ContactsAddContact`: 20/20 acquisition episodes complete across two exact
+  instances. The verifier outcomes are 19 successes and 1 failure. The first
+  group is mixed (9/10 successes), while the second is all-success (10/10).
+  The runner produced a four-token family skill with one mixed acquisition
+  group. The 95% acquisition success rate creates a ceiling-effect risk, and
+  the quality contrast currently depends on only one negative trajectory.
+  Across four fresh instances, Base, Context, Failed, Quality-All, and CLSC each
+  score 4/4; Positive-All scores 3/4. CLSC therefore preserves Base performance
+  but cannot show an improvement because Base is already at 100%.
+- `SimpleCalendarAddOneEvent`: the first exact-instance group is complete with
+  0/10 successes. The model repeatedly manipulates the event form but the
+  official database verifier cannot find the requested row. This group has no
+  outcome contrast and cannot produce a quality skill by itself.
+- One Contacts attempt encountered an Android crash/ANR dialog. The runner
+  discarded that infrastructure attempt and replayed the same parameter and
+  model seeds; the replacement episode records `infrastructure_retries: 1`.
+- Reliability remains untested until a second, non-ceiling mixed-signal family
+  is found and CLSC is compared with Base, Context, and Positive-All on fresh
+  instances.
+
+The tracked checkpoint includes the Pilot manifest, stable acquisition and
+evaluation result JSON, the incremental summary, and Contacts skill metadata.
+Large episode KV tensors and the serialized skill tensor remain ignored by Git;
+they are local runtime artifacts required to resume the experiment.
 
 ## Completed evidence
 

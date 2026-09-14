@@ -1,0 +1,22 @@
+{
+  "family": "ContactsAddContact",
+  "goal": "Create a new contact for Petar Gonzalez. Their number is +14338430489.",
+  "param_seed": 820554302,
+  "param_fingerprint": "0075df361316600bac4650771e03b45b5d80f37b686a4eaf8472e88e05c14d29",
+  "mode": "base",
+  "verifier_reward": 1.0,
+  "success": true,
+  "steps": 9,
+  "parser_valid": true,
+  "parser_valid_rate": 1.0,
+  "action_calls": 9,
+  "summary_calls": 8,
+  "exception": null,
+  "elapsed_seconds": 310.28935457696207,
+  "infrastructure_retries": 0,
+  "split": "acquisition",
+  "instance_id": "acq-01",
+  "rollout_index": 2,
+  "model_seed": 2080110720,
+  "group_id": "ContactsAddContact:acq:1"
+}

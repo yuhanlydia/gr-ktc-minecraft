@@ -1,0 +1,22 @@
+{
+  "family": "SimpleCalendarAddOneEvent",
+  "goal": "In Simple Calendar Pro, create a calendar event on 2023-10-23 at 12h with the title 'Review session for Annual Report' and the description 'We will organize contract details. Snacks will be provided.'. The event should last for 45 mins.",
+  "param_seed": 1222933527,
+  "param_fingerprint": "6c956762ba7967d01e0d66dc694021adcbd17881671508339538dc55b941be62",
+  "mode": "base",
+  "verifier_reward": 0.0,
+  "success": false,
+  "steps": 18,
+  "parser_valid": true,
+  "parser_valid_rate": 1.0,
+  "action_calls": 18,
+  "summary_calls": 17,
+  "exception": null,
+  "elapsed_seconds": 585.4009790959535,
+  "infrastructure_retries": 0,
+  "split": "acquisition",
+  "instance_id": "acq-00",
+  "rollout_index": 6,
+  "model_seed": 571407687,
+  "group_id": "SimpleCalendarAddOneEvent:acq:0"
+}

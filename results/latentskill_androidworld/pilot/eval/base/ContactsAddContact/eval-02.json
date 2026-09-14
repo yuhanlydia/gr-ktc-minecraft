@@ -1,0 +1,20 @@
+{
+  "family": "ContactsAddContact",
+  "goal": "Create a new contact for Elias Lopez. Their number is +14181935082.",
+  "param_seed": 449245858,
+  "param_fingerprint": "9beb08a29892195126f5d64b11f47a21ceb8078989937f1745624904297d2d0f",
+  "mode": "base",
+  "verifier_reward": 1.0,
+  "success": true,
+  "steps": 8,
+  "parser_valid": true,
+  "parser_valid_rate": 1.0,
+  "action_calls": 8,
+  "summary_calls": 7,
+  "exception": null,
+  "elapsed_seconds": 280.7774011810543,
+  "infrastructure_retries": 0,
+  "split": "evaluation",
+  "instance_id": "eval-02",
+  "model_seed": 242112519
+}

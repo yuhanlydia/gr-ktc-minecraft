@@ -1,0 +1,101 @@
+{
+  "protocol": "latentskill-androidworld-oracle-family-v1",
+  "phase": "pilot",
+  "androidworld_pin": "e3fea3ccc69787570e282c99573298f1c3019a34",
+  "androidworld_head": "e3fea3ccc69787570e282c99573298f1c3019a34",
+  "model": "/root/gr-ktc-minecraft/models/Qwen3-VL-8B-Instruct",
+  "precision": "bf16",
+  "observation_protocol": "official-T3A-text",
+  "quality_layer": 24,
+  "memory_tokens": 4,
+  "value_scale": 0.25,
+  "negative_scale": 0.5,
+  "acquisition_temperature": 0.9,
+  "acquisition_top_p": 0.95,
+  "evaluation_temperature": 0.0,
+  "oracle_routing": true,
+  "base_seed": 42,
+  "tasks": [
+    "ContactsAddContact",
+    "SimpleCalendarAddOneEvent",
+    "MarkorCreateNote",
+    "SimpleSmsSend",
+    "ClockTimerEntry",
+    "ExpenseAddSingle"
+  ],
+  "modes": [
+    "base",
+    "context",
+    "positive_all",
+    "failed",
+    "quality_all",
+    "clsc"
+  ],
+  "train_instances_per_family": 2,
+  "rollouts_per_instance": 10,
+  "test_instances_per_family": 4,
+  "acquisition_param_seeds": {
+    "ContactsAddContact": [
+      1044017462,
+      820554302
+    ],
+    "SimpleCalendarAddOneEvent": [
+      1222933527,
+      909803176
+    ],
+    "MarkorCreateNote": [
+      1455634662,
+      2024761550
+    ],
+    "SimpleSmsSend": [
+      682861041,
+      1267288091
+    ],
+    "ClockTimerEntry": [
+      1067270788,
+      1856347735
+    ],
+    "ExpenseAddSingle": [
+      1772581962,
+      1284156815
+    ]
+  },
+  "evaluation_param_seeds": {
+    "ContactsAddContact": [
+      699182047,
+      1030453622,
+      449245858,
+      567781511
+    ],
+    "SimpleCalendarAddOneEvent": [
+      500768788,
+      1460271262,
+      1799618817,
+      528172304
+    ],
+    "MarkorCreateNote": [
+      238710904,
+      2052015709,
+      494110699,
+      2069519649
+    ],
+    "SimpleSmsSend": [
+      951129241,
+      864877656,
+      1864052920,
+      157237979
+    ],
+    "ClockTimerEntry": [
+      310297586,
+      1613537532,
+      1875444535,
+      1260633071
+    ],
+    "ExpenseAddSingle": [
+      1010999470,
+      376433794,
+      1971630481,
+      1710244075
+    ]
+  }
+}

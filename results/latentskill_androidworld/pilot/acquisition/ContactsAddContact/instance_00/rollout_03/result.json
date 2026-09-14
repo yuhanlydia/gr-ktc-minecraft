@@ -1,0 +1,22 @@
+{
+  "family": "ContactsAddContact",
+  "goal": "Create a new contact for Amelia dos Santos. Their number is +10893543626.",
+  "param_seed": 1044017462,
+  "param_fingerprint": "faecedf3dce40a01b7d6751e09930c0ca21db4ce168823fb2eedda440b0497bb",
+  "mode": "base",
+  "verifier_reward": 1.0,
+  "success": true,
+  "steps": 8,
+  "parser_valid": false,
+  "parser_valid_rate": 0.875,
+  "action_calls": 8,
+  "summary_calls": 6,
+  "exception": null,
+  "elapsed_seconds": 275.61843104602303,
+  "infrastructure_retries": 0,
+  "split": "acquisition",
+  "instance_id": "acq-00",
+  "rollout_index": 3,
+  "model_seed": 1744750935,
+  "group_id": "ContactsAddContact:acq:0"
+}

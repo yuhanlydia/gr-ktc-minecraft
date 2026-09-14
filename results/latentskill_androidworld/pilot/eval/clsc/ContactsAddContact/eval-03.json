@@ -1,0 +1,20 @@
+{
+  "family": "ContactsAddContact",
+  "goal": "Create a new contact for George da Silva. Their number is +18751557392.",
+  "param_seed": 567781511,
+  "param_fingerprint": "c633afa883863b8fa324ff2b110cdc370768e363eab8f182c91b8fb2ee0bd126",
+  "mode": "clsc",
+  "verifier_reward": 1.0,
+  "success": true,
+  "steps": 7,
+  "parser_valid": true,
+  "parser_valid_rate": 1.0,
+  "action_calls": 7,
+  "summary_calls": 6,
+  "exception": null,
+  "elapsed_seconds": 253.15087949100416,
+  "infrastructure_retries": 0,
+  "split": "evaluation",
+  "instance_id": "eval-03",
+  "model_seed": 604583567
+}
