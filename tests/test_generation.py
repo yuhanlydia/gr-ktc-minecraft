@@ -1,6 +1,12 @@
+from types import SimpleNamespace
+
 import torch
 
-from gr_ktc.generation import GeneratedKVTrajectory, extract_generated_kv
+from gr_ktc.generation import (
+    GeneratedKVTrajectory,
+    extract_generated_kv,
+    generate_with_kv_prefix,
+)
 from gr_ktc.model_loader import choose_24gb_precision
 
 
@@ -35,3 +41,32 @@ def test_trajectory_dataclass_distinguishes_generated_and_cached_tokens():
     )
     assert result.all_generated_token_ids.shape[-1] == 2
     assert result.trajectory_token_ids.shape[-1] == 1
+
+
+def test_kv_prefix_prefill_requests_only_last_token_logits():
+    class FakeModel:
+        config = SimpleNamespace(
+            text_config=SimpleNamespace(num_hidden_layers=1)
+        )
+
+        def __init__(self):
+            self.calls = []
+
+        def __call__(self, **kwargs):
+            self.calls.append(kwargs)
+            return SimpleNamespace(
+                logits=torch.tensor([[[0.0, 1.0, 0.0]]]),
+                past_key_values=SimpleNamespace(),
+            )
+
+    model = FakeModel()
+    output = generate_with_kv_prefix(
+        model,
+        {"input_ids": torch.tensor([[1, 2, 3]])},
+        None,
+        context_id=None,
+        max_new_tokens=1,
+        temperature=0.0,
+    )
+    assert output.tolist() == [[1]]
+    assert model.calls[0]["logits_to_keep"] == 1

@@ -1,0 +1,45 @@
+{
+  "protocol": "latentskill-androidworld-oracle-family-v1",
+  "phase": "smoke",
+  "androidworld_pin": "e3fea3ccc69787570e282c99573298f1c3019a34",
+  "androidworld_head": "e3fea3ccc69787570e282c99573298f1c3019a34",
+  "model": "/root/gr-ktc-minecraft/models/Qwen3-VL-8B-Instruct",
+  "precision": "bf16",
+  "observation_protocol": "official-T3A-text",
+  "quality_layer": 24,
+  "memory_tokens": 4,
+  "value_scale": 0.25,
+  "negative_scale": 0.5,
+  "acquisition_temperature": 0.9,
+  "acquisition_top_p": 0.95,
+  "evaluation_temperature": 0.0,
+  "oracle_routing": true,
+  "base_seed": 42,
+  "tasks": [
+    "ContactsAddContact",
+    "SimpleCalendarAddOneEvent"
+  ],
+  "modes": [
+    "base",
+    "clsc"
+  ],
+  "train_instances_per_family": 1,
+  "rollouts_per_instance": 4,
+  "test_instances_per_family": 1,
+  "acquisition_param_seeds": {
+    "ContactsAddContact": [
+      1044017462
+    ],
+    "SimpleCalendarAddOneEvent": [
+      1222933527
+    ]
+  },
+  "evaluation_param_seeds": {
+    "ContactsAddContact": [
+      699182047
+    ],
+    "SimpleCalendarAddOneEvent": [
+      500768788
+    ]
+  }
+}

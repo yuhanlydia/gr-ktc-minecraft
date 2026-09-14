@@ -113,6 +113,45 @@ def analyze(summary: dict[str, Any]) -> dict[str, Any]:
         "positive_family_count": int(positive_family_count),
         "family_status": families,
     }
+    phase = str(summary.get("phase", ""))
+    expected_tasks = [str(task) for task in summary.get("tasks", [])]
+    expected_modes = [str(mode) for mode in summary.get("modes", [])]
+    expected_instances = int(summary.get("test_instances_per_family", 0) or 0)
+    missing_families = [task for task in expected_tasks if task not in families]
+    missing_evaluation: list[dict[str, Any]] = []
+    for family, info in families.items():
+        if str(info.get("status", "")) != "ready":
+            continue
+        for mode in expected_modes:
+            trials = sum(
+                str(record.get("family", "")) == family
+                and str(record.get("mode", "")) == mode
+                for record in records
+            )
+            if expected_instances and trials < expected_instances:
+                missing_evaluation.append(
+                    {
+                        "family": family,
+                        "mode": mode,
+                        "expected": expected_instances,
+                        "observed": trials,
+                    }
+                )
+    run_complete = not missing_families and not missing_evaluation
+    if phase == "smoke":
+        applicability = "smoke_complete" if run_complete else "incomplete"
+    elif phase in {"pilot", "full"}:
+        applicability = "scientific" if run_complete else "incomplete"
+    else:
+        # Preserve compatibility for reports created before phase metadata.
+        applicability = "scientific"
+    report["completion"] = {
+        "phase": phase or None,
+        "run_complete": run_complete,
+        "missing_families": missing_families,
+        "missing_evaluation": missing_evaluation,
+    }
+    report["gate_applicability"] = applicability
     report["gate"] = hard_gate(report)
     return report
 
@@ -146,15 +185,38 @@ def hard_gate(report: dict[str, Any]) -> dict[str, Any]:
             report.get("mixed_signal_family_count", 0)
         ) >= 2,
     }
+    applicability = str(report.get("gate_applicability", "scientific"))
+    if applicability == "incomplete":
+        return {
+            "status": "incomplete",
+            "pass": None,
+            "criteria": criteria,
+            "clsc_minus_base": (
+                clsc - base if clsc is not None and base is not None else None
+            ),
+            "decision": "INCOMPLETE: resume the preregistered run before GO/NO-GO",
+        }
+    if applicability == "smoke_complete":
+        return {
+            "status": "smoke_complete",
+            "pass": None,
+            "criteria": criteria,
+            "clsc_minus_base": (
+                clsc - base if clsc is not None and base is not None else None
+            ),
+            "decision": "SMOKE COMPLETE: integration evidence only; no scientific GO/NO-GO",
+        }
+    passed = bool(all(criteria.values()))
     return {
-        "pass": bool(all(criteria.values())),
+        "status": "go" if passed else "no_go",
+        "pass": passed,
         "criteria": criteria,
         "clsc_minus_base": (
             clsc - base if clsc is not None and base is not None else None
         ),
         "decision": (
             "GO: scale LatentSkill to paper benchmarks"
-            if all(criteria.values())
+            if passed
             else "NO-GO: stop the latent-KV skill direction; do not rescue with extra modules"
         ),
     }
@@ -193,7 +255,10 @@ def _markdown(report: dict[str, Any]) -> str:
         "## Hard-gate criteria",
     ])
     for name, passed in gate["criteria"].items():
-        lines.append(f"- {'PASS' if passed else 'FAIL'} — `{name}`")
+        label = (
+            "PASS" if passed else "FAIL"
+        ) if gate.get("status") in {"go", "no_go"} else "NOT EVALUATED"
+        lines.append(f"- {label} — `{name}`")
     return "\n".join(lines) + "\n"
 
 

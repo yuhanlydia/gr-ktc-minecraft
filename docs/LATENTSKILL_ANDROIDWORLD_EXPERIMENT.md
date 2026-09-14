@@ -91,6 +91,30 @@ Override with `--model-path` if necessary.
 
 No OpenAI/GCP/Azure key is used. All action and summary calls use the local frozen Qwen model.
 
+If KVM is unavailable but the host is fast enough to run the emulator with
+`-accel off`, add:
+
+```bash
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+python scripts/run_androidworld_latentskill_gate.py \
+  --phase smoke \
+  --adb-path /absolute/path/to/adb \
+  --slow-emulator \
+  --resume
+```
+
+`--slow-emulator` waits longer for UI transitions and ADB operations, repairs an
+Android accessibility service left unbound after a slow APK reinstall, and
+asynchronously synchronizes the forwarder's gRPC port. It does not change task
+parameters, prompts, actions, verifier logic, or model settings. Prefer KVM for
+Pilot and Full because software emulation is much slower.
+
+Before parameter sampling, runs without `--perform-emulator-setup` verify that
+the AndroidWorld snapshot directory exists for every app required by the chosen
+task families. This check fails closed and lists missing packages. A cold boot
+may remove snapshot directories even when app data survives; rerun official
+emulator setup or restore the exact validated snapshots before resuming.
+
 ## 5. Method
 
 For a task family `g`, each acquisition instance has the same exact AndroidWorld parameters for four sampled rollouts:

@@ -22,6 +22,7 @@ import copy
 from dataclasses import dataclass
 import hashlib
 import json
+import math
 from pathlib import Path
 import pickle
 import subprocess
@@ -67,6 +68,11 @@ _DEFAULT_TASKS = (
     "RecipeAddSingleRecipe",
     "VlcCreatePlaylist",
 )
+_A11Y_FORWARDER_PACKAGE = "com.google.androidenv.accessibilityforwarder"
+_A11Y_FORWARDER_SERVICE = (
+    f"{_A11Y_FORWARDER_PACKAGE}/"
+    f"{_A11Y_FORWARDER_PACKAGE}.AccessibilityForwarder"
+)
 
 
 @dataclass(frozen=True)
@@ -99,6 +105,187 @@ def phase_spec(name: str) -> PhaseSpec:
 
 def default_task_names() -> tuple[str, ...]:
     return _DEFAULT_TASKS
+
+
+def repair_crashed_a11y_forwarder(
+    env: Any, adb_path: str | Path, *, timeout_sec: float = 45.0
+) -> bool:
+    """Clear Android's crashed-service latch after a slow forwarder reinstall.
+
+    Android can retain ``enabled_accessibility_services`` while marking the
+    reinstalled service as crashed. Rewriting the same value does not rebind it.
+    Only intervene when ``dumpsys accessibility`` reports this exact package in
+    the crashed-services field, then restore the wrapper's current gRPC port.
+    """
+    adb = str(adb_path)
+
+    def run_adb(*args: str) -> str:
+        completed = subprocess.run(
+            [adb, *args],
+            check=True,
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+        return completed.stdout
+
+    def status() -> str:
+        return run_adb("shell", "dumpsys", "accessibility")
+
+    initial = status()
+    bound_line = next(
+        (line for line in initial.splitlines() if "Bound services:" in line),
+        "",
+    )
+    crashed_line = next(
+        (line for line in initial.splitlines() if "Crashed services:" in line),
+        "",
+    )
+    rebound = (
+        _A11Y_FORWARDER_PACKAGE not in bound_line
+        or _A11Y_FORWARDER_PACKAGE in crashed_line
+    )
+    if rebound:
+        # A service enabled while the user is locked may remain neither bound nor
+        # crashed. Wake and unlock before toggling the setting so Android binds it.
+        run_adb("shell", "input", "keyevent", "KEYCODE_WAKEUP")
+        run_adb("shell", "wm", "dismiss-keyguard")
+        run_adb("shell", "input", "keyevent", "KEYCODE_HOME")
+        run_adb(
+            "shell", "settings", "put", "secure", "accessibility_enabled", "0"
+        )
+        run_adb(
+            "shell", "settings", "delete", "secure", "enabled_accessibility_services"
+        )
+        run_adb(
+            "shell",
+            "settings",
+            "put",
+            "secure",
+            "enabled_accessibility_services",
+            _A11Y_FORWARDER_SERVICE,
+        )
+        run_adb(
+            "shell", "settings", "put", "secure", "accessibility_enabled", "1"
+        )
+
+        deadline = time.monotonic() + timeout_sec
+        while True:
+            current = status()
+            bound_line = next(
+                (line for line in current.splitlines() if "Bound services:" in line),
+                "",
+            )
+            crashed_line = next(
+                (
+                    line
+                    for line in current.splitlines()
+                    if "Crashed services:" in line
+                ),
+                "",
+            )
+            if (
+                _A11Y_FORWARDER_PACKAGE in bound_line
+                and _A11Y_FORWARDER_PACKAGE not in crashed_line
+            ):
+                break
+            if time.monotonic() >= deadline:
+                raise RuntimeError(
+                    "accessibility forwarder did not bind after explicit rebind"
+                )
+            time.sleep(2.0)
+
+    wrapper = env.controller.env
+    get_port = getattr(wrapper, "get_port", None)
+    if not callable(get_port):
+        raise RuntimeError("AndroidEnv a11y wrapper has no get_port hook")
+    port = int(get_port())
+    run_adb("shell", "settings", "put", "global", "no_proxy", f"10.0.2.2:{port}")
+    run_adb("shell", "svc", "wifi", "enable")
+    receiver = (
+        f"{_A11Y_FORWARDER_PACKAGE}/"
+        f"{_A11Y_FORWARDER_PACKAGE}.FlagsBroadcastReceiver"
+    )
+    run_adb(
+        "shell",
+        "am",
+        "broadcast",
+        "--async",
+        "-a",
+        "accessibility_forwarder.intent.action.ENABLE_ACCESSIBILITY_TREE_LOGS",
+        "-n",
+        receiver,
+    )
+    run_adb(
+        "shell",
+        "am",
+        "broadcast",
+        "--async",
+        "-a",
+        "accessibility_forwarder.intent.action.SET_GRPC",
+        "--ei",
+        "port",
+        str(port),
+        "-n",
+        receiver,
+    )
+    time.sleep(5.0)
+    return rebound
+
+
+def configure_slow_emulator_a11y(runtime: SimpleNamespace) -> None:
+    """Increase fixed AndroidWorld timeouts for a device running without KVM."""
+    module = runtime.android_world_controller
+    original = module.get_a11y_tree
+    if getattr(original, "_latentskill_slow_emulator", False) is True:
+        return
+
+    def patient_get_a11y_tree(env: Any) -> Any:
+        return original(env, max_retries=30, sleep_duration=2.0)
+
+    patient_get_a11y_tree._latentskill_slow_emulator = True  # type: ignore[attr-defined]
+    module.get_a11y_tree = patient_get_a11y_tree
+
+    adb_utils = runtime.adb_utils
+    original_start_activity = adb_utils.start_activity
+    original_type_text = adb_utils.type_text
+    original_generic_request = adb_utils.issue_generic_request
+
+    def patient_start_activity(
+        activity: str,
+        extra_args: Any,
+        env: Any,
+        timeout_sec: float | None = None,
+    ) -> Any:
+        return original_start_activity(
+            activity,
+            extra_args,
+            env,
+            timeout_sec=max(60.0, float(timeout_sec or 0.0)),
+        )
+
+    def patient_type_text(
+        text: str, env: Any, timeout_sec: float | None = None
+    ) -> Any:
+        return original_type_text(
+            text,
+            env,
+            timeout_sec=max(60.0, float(timeout_sec or 0.0)),
+        )
+
+    def patient_generic_request(
+        args: Any, env: Any, timeout_sec: float | None = None
+    ) -> Any:
+        return original_generic_request(
+            args,
+            env,
+            timeout_sec=max(60.0, float(timeout_sec or 0.0)),
+        )
+
+    adb_utils.start_activity = patient_start_activity
+    adb_utils.type_text = patient_type_text
+    adb_utils.issue_generic_request = patient_generic_request
+    runtime.transition_pause_seconds = 8.0
 
 
 def instance_seed(split: str, family: str, index: int, base_seed: int) -> int:
@@ -156,7 +343,12 @@ def _load_androidworld_runtime(root: Path, *, allow_drift: bool = False) -> Simp
         )
     from android_world import constants, episode_runner, registry, suite_utils
     from android_world.agents import agent_utils, m3a_utils, t3a
-    from android_world.env import env_launcher, json_action
+    from android_world.env import (
+        adb_utils,
+        android_world_controller,
+        env_launcher,
+        json_action,
+    )
 
     return SimpleNamespace(
         head=head,
@@ -167,6 +359,8 @@ def _load_androidworld_runtime(root: Path, *, allow_drift: bool = False) -> Simp
         agent_utils=agent_utils,
         m3a_utils=m3a_utils,
         t3a=t3a,
+        adb_utils=adb_utils,
+        android_world_controller=android_world_controller,
         env_launcher=env_launcher,
         json_action=json_action,
     )
@@ -307,6 +501,17 @@ def _param_fingerprint(params: Mapping[str, Any]) -> str:
     return hashlib.sha256(raw).hexdigest()
 
 
+def safe_episode_length(value: Any) -> int:
+    """Normalize AndroidWorld's NaN episode length after an episode exception."""
+    try:
+        numeric = float(value)
+    except (TypeError, ValueError):
+        return 0
+    if not math.isfinite(numeric) or numeric < 0:
+        return 0
+    return int(numeric)
+
+
 def _parser_stats(runtime: SimpleNamespace, episode: Mapping[str, Any]) -> tuple[bool, float]:
     constants = runtime.constants.EpisodeConstants
     data = episode.get(constants.EPISODE_DATA) or {}
@@ -363,6 +568,8 @@ def _run_one_episode(
         top_p=ACQUISITION_TOP_P,
     )
     agent = runtime.t3a.T3A(env, wrapper, name=f"LatentSkill-{mode}")
+    if hasattr(runtime, "transition_pause_seconds"):
+        agent.transition_pause = float(runtime.transition_pause_seconds)
 
     def run_episode(current_task):
         return runtime.episode_runner.run_episode(
@@ -399,7 +606,7 @@ def _run_one_episode(
         "mode": mode,
         "verifier_reward": reward,
         "success": bool(reward > 0.5),
-        "steps": int(result.get(fields.EPISODE_LENGTH, 0) or 0),
+        "steps": safe_episode_length(result.get(fields.EPISODE_LENGTH, 0)),
         "parser_valid": bool(parser_valid),
         "parser_valid_rate": float(parser_valid_rate),
         "action_calls": wrapper.action_calls,
@@ -454,6 +661,45 @@ def _resolve_adb_path(raw: Path | None) -> Path:
     raise FileNotFoundError(
         "adb not found. Pass --adb-path or install Android SDK platform-tools."
     )
+
+
+def verify_task_snapshots(
+    tasks: Sequence[str],
+    registry: Mapping[str, Any],
+    adb_utils: Any,
+    adb_path: str | Path,
+) -> None:
+    """Fail before sampling if AndroidWorld cannot restore a task's app state."""
+    required: dict[str, set[str]] = {}
+    for family in tasks:
+        task_type = registry[family]
+        for app_name in getattr(task_type, "app_names", ()):
+            activity = adb_utils.get_adb_activity(app_name)
+            if not activity:
+                raise RuntimeError(
+                    f"no Android activity mapping for {family} app {app_name!r}"
+                )
+            package = adb_utils.extract_package_name(activity)
+            required.setdefault(package, set()).add(family)
+
+    missing: list[str] = []
+    for package, families in sorted(required.items()):
+        snapshot = f"/data/data/android_world/snapshots/{package}"
+        completed = subprocess.run(
+            [str(adb_path), "shell", "test", "-d", snapshot],
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+        if completed.returncode != 0:
+            missing.append(f"{package} ({', '.join(sorted(families))})")
+    if missing:
+        raise RuntimeError(
+            "required AndroidWorld app snapshots are missing: "
+            + "; ".join(missing)
+            + ". Re-run app setup after a cold emulator boot before sampling."
+        )
 
 
 def _build_family_skill(
@@ -750,6 +996,14 @@ def main() -> None:
     parser.add_argument("--adb-path", type=Path)
     parser.add_argument("--console-port", type=int, default=5554)
     parser.add_argument("--perform-emulator-setup", action="store_true")
+    parser.add_argument(
+        "--slow-emulator",
+        action="store_true",
+        help=(
+            "Use patient accessibility-tree retries and asynchronous forwarder "
+            "configuration for an emulator running without KVM"
+        ),
+    )
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--allow-androidworld-drift", action="store_true")
     parser.add_argument("--action-max-new-tokens", type=int, default=192)
@@ -769,6 +1023,8 @@ def main() -> None:
     runtime = _load_androidworld_runtime(
         args.androidworld_root, allow_drift=args.allow_androidworld_drift
     )
+    if args.slow_emulator:
+        configure_slow_emulator_a11y(runtime)
     registry = runtime.registry.TaskRegistry().get_registry(
         runtime.registry.TaskRegistry.ANDROID_WORLD_FAMILY
     )
@@ -782,6 +1038,8 @@ def main() -> None:
             f"model not found at {model_path}; expected Qwen3-VL-8B-Instruct"
         )
     adb_path = _resolve_adb_path(args.adb_path)
+    if not args.perform_emulator_setup:
+        verify_task_snapshots(tasks, registry, runtime.adb_utils, adb_path)
     manifest = _manifest(
         phase=spec,
         tasks=tasks,
@@ -801,6 +1059,12 @@ def main() -> None:
         emulator_setup=args.perform_emulator_setup,
         adb_path=str(adb_path),
     )
+    if args.slow_emulator:
+        rebound = repair_crashed_a11y_forwarder(env, adb_path)
+        message = "rebound and synchronized" if rebound else "synchronized"
+        print(f"Accessibility forwarder {message} for slow emulator.", flush=True)
+    if args.perform_emulator_setup:
+        verify_task_snapshots(tasks, registry, runtime.adb_utils, adb_path)
 
     previous_summary = {}
     summary_path = output_dir / "summary.json"

@@ -69,7 +69,12 @@ def generate_with_kv_prefix(
         memory.validate(expected_layers)
         if context_id is None:
             raise ValueError("context_id is required when memory is provided")
-    prefill = model(**inputs, use_cache=True, return_dict=True)
+    # Qwen's default returns vocabulary logits for every prompt token. T3A
+    # prompts grow across steps, so that tensor alone can require several GiB.
+    # Generation only samples from the final prompt position.
+    prefill = model(
+        **inputs, use_cache=True, return_dict=True, logits_to_keep=1
+    )
     cache = prefill.past_key_values
     if memory is not None:
         cache = append_memory_to_cache(

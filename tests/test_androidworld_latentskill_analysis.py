@@ -1,4 +1,4 @@
-from scripts.analyze_androidworld_latentskill import analyze, hard_gate
+from scripts.analyze_androidworld_latentskill import _markdown, analyze, hard_gate
 
 
 def _record(family, instance_id, mode, success, parser_valid=True, steps=5):
@@ -79,3 +79,58 @@ def test_hard_gate_rejects_no_advantage():
     decision = hard_gate(report)
     assert decision["pass"] is False
     assert decision["criteria"]["clsc_beats_base_by_5pp"] is False
+
+
+def test_partial_smoke_is_incomplete_instead_of_scientific_no_go():
+    summary = {
+        "phase": "smoke",
+        "tasks": ["A", "B"],
+        "modes": ["base", "clsc"],
+        "test_instances_per_family": 1,
+        "families": {"A": {"status": "ready", "mixed_group_count": 1}},
+        "evaluation": [
+            _record("A", "eval-00", "base", 1),
+            _record("A", "eval-00", "clsc", 1),
+        ],
+    }
+    gate = analyze(summary)["gate"]
+    assert gate["status"] == "incomplete"
+    assert gate["pass"] is None
+    assert gate["decision"].startswith("INCOMPLETE")
+
+
+def test_complete_smoke_is_integration_only_instead_of_scientific_no_go():
+    summary = {
+        "phase": "smoke",
+        "tasks": ["A"],
+        "modes": ["base", "clsc"],
+        "test_instances_per_family": 1,
+        "families": {"A": {"status": "ready", "mixed_group_count": 1}},
+        "evaluation": [
+            _record("A", "eval-00", "base", 1),
+            _record("A", "eval-00", "clsc", 0),
+        ],
+    }
+    gate = analyze(summary)["gate"]
+    assert gate["status"] == "smoke_complete"
+    assert gate["pass"] is None
+    assert gate["decision"].startswith("SMOKE COMPLETE")
+
+
+def test_smoke_markdown_marks_scientific_criteria_not_evaluated():
+    summary = {
+        "phase": "smoke",
+        "tasks": ["A"],
+        "modes": ["base", "clsc"],
+        "test_instances_per_family": 1,
+        "families": {"A": {"status": "ready", "mixed_group_count": 1}},
+        "evaluation": [
+            _record("A", "eval-00", "base", 1),
+            _record("A", "eval-00", "clsc", 1),
+        ],
+    }
+
+    markdown = _markdown(analyze(summary))
+
+    assert "NOT EVALUATED — `clsc_beats_base_by_5pp`" in markdown
+    assert "OBSERVED" not in markdown
