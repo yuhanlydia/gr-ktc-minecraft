@@ -158,6 +158,7 @@ def build_family_memory_bundle(
     trajectories: Sequence[Mapping[int, torch.Tensor]],
     rewards: Sequence[float],
     group_ids: Sequence[str],
+    successes: Sequence[bool] | None = None,
     kv_heads: int,
     head_dim: int,
     quality_layer: int = 24,
@@ -168,6 +169,8 @@ def build_family_memory_bundle(
     """Build context, controls, and quality-localized CLSC for one task family."""
     if len(trajectories) != len(rewards) or len(rewards) != len(group_ids):
         raise ValueError("trajectory/reward/group counts must match")
+    if successes is not None and len(successes) != len(rewards):
+        raise ValueError("explicit success mask must match reward count")
     layers, flattened_width = _validate_trajectories(trajectories)
     if quality_layer not in layers:
         raise ValueError(f"quality layer {quality_layer} is absent from trajectories")
@@ -190,7 +193,11 @@ def build_family_memory_bundle(
             "LatentSkill requires at least one mixed-outcome acquisition group"
         )
 
-    success_mask = reward_tensor > 0
+    success_mask = (
+        torch.tensor(successes, dtype=torch.bool)
+        if successes is not None
+        else reward_tensor > 0
+    )
     failed_mask = ~success_mask
     if not bool(success_mask.any()) or not bool(failed_mask.any()):
         raise ValueError("family requires at least one successful and one failed rollout")
