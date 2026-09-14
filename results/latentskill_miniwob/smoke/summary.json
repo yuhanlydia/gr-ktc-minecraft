@@ -1,0 +1,128 @@
+{
+  "protocol": "latentskill-miniwob-raw-reward-v1",
+  "phase": "smoke",
+  "browsergym_pin": "9e779f087de9a65668b6974d11f9ce9816026e96",
+  "browsergym_head": "9e779f087de9a65668b6974d11f9ce9816026e96",
+  "miniwob_pin": "7fd85d71a4b60325c6585396ec4f48377d049838",
+  "miniwob_head": "7fd85d71a4b60325c6585396ec4f48377d049838",
+  "model": "/root/gr-ktc-minecraft/models/Qwen3-VL-8B-Instruct",
+  "precision": "bf16",
+  "observation_protocol": "browsergym-accessibility-tree",
+  "raw_reward_success_threshold": 0.5,
+  "quality_reward": "clip(RAW_REWARD_GLOBAL, 0, 1)",
+  "quality_layer": 24,
+  "memory_tokens": 4,
+  "value_scale": 0.25,
+  "negative_scale": 0.5,
+  "acquisition_temperature": 0.9,
+  "acquisition_top_p": 0.95,
+  "evaluation_temperature": 0.0,
+  "rollouts_per_instance": 2,
+  "test_instances_per_family": 1,
+  "target_qualified_families": 1,
+  "minimum_successes": 3,
+  "minimum_failures": 3,
+  "minimum_reward_std": 0.15,
+  "modes": [
+    "base",
+    "context",
+    "positive_all",
+    "clsc"
+  ],
+  "tasks": [
+    "miniwob.click-dialog-2"
+  ],
+  "base_seed": 42,
+  "acquisition_task_seeds": {
+    "miniwob.click-dialog-2": 551900766
+  },
+  "acquisition_model_seeds": {
+    "miniwob.click-dialog-2": [
+      1127191645,
+      955019890
+    ]
+  },
+  "evaluation_task_seeds": {
+    "miniwob.click-dialog-2": [
+      74075229
+    ]
+  },
+  "evaluation_model_seeds": {
+    "miniwob.click-dialog-2": [
+      1006641836
+    ]
+  },
+  "qualified_families": 0,
+  "families": {
+    "miniwob.click-dialog-2": {
+      "family": "miniwob.click-dialog-2",
+      "status": "no_quality_signal",
+      "qualification": {
+        "successes": 2,
+        "failures": 0,
+        "reward_std": 0.0,
+        "reason": "smoke requires one success and one failure"
+      },
+      "acquisition": [
+        {
+          "family": "miniwob.click-dialog-2",
+          "goal": "Click the button in the dialog box labeled \"x\".",
+          "goal_fingerprint": "d482b9c22a8b6a323fac5a9cec8f83f5c986a5353881601609ac388fa27b4c26",
+          "task_seed": 551900766,
+          "model_seed": 1127191645,
+          "mode": "base",
+          "raw_reward": 1.0,
+          "acquisition_reward": 1.0,
+          "success_threshold": 0.5,
+          "success": true,
+          "browsergym_wrapper_reward": 1.0,
+          "reward_reason": "None",
+          "terminated": true,
+          "truncated": false,
+          "steps": 1,
+          "actions": [
+            "click('20')"
+          ],
+          "parser_valid": true,
+          "parser_valid_rate": 1.0,
+          "action_errors": [],
+          "elapsed_seconds": 3.455788890016265,
+          "split": "acquisition",
+          "instance_id": "acq-00",
+          "rollout_index": 0,
+          "group_id": "miniwob.click-dialog-2:acq:0"
+        },
+        {
+          "family": "miniwob.click-dialog-2",
+          "goal": "Click the button in the dialog box labeled \"x\".",
+          "goal_fingerprint": "d482b9c22a8b6a323fac5a9cec8f83f5c986a5353881601609ac388fa27b4c26",
+          "task_seed": 551900766,
+          "model_seed": 955019890,
+          "mode": "base",
+          "raw_reward": 1.0,
+          "acquisition_reward": 1.0,
+          "success_threshold": 0.5,
+          "success": true,
+          "browsergym_wrapper_reward": 1.0,
+          "reward_reason": "None",
+          "terminated": true,
+          "truncated": false,
+          "steps": 1,
+          "actions": [
+            "click('20')"
+          ],
+          "parser_valid": true,
+          "parser_valid_rate": 1.0,
+          "action_errors": [],
+          "elapsed_seconds": 2.318103297962807,
+          "split": "acquisition",
+          "instance_id": "acq-00",
+          "rollout_index": 1,
+          "group_id": "miniwob.click-dialog-2:acq:0"
+        }
+      ]
+    }
+  },
+  "evaluation": [],
+  "peak_gpu_gib": 16.39280414581299
+}

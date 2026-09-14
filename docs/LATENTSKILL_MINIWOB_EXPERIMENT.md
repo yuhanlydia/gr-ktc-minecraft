@@ -69,6 +69,13 @@ generation, action execution, native reward capture, and K/V serialization. Two
 smoke outcomes need not be mixed; the runner reports `no_quality_signal` rather
 than inventing a skill.
 
+The 2026-09-14 real smoke at seed 42 completed both rollouts in one action. Both
+generated `click('20')`, received native raw reward 1.0, and serialized 36
+non-empty K/V layer tensors. Peak allocated GPU memory was 16.39 GiB. The smoke
+status is `insufficient_quality_signal` because the two outcomes were both
+successful; this validates the runtime path but is not evidence that CLSC
+improves transfer.
+
 ## Quick reliability gate
 
 ```bash

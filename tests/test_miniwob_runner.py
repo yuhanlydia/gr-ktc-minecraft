@@ -89,6 +89,7 @@ def test_episode_uses_native_raw_reward_and_captures_action_kv():
     )
     assert env.closed is True
     assert env.actions == ["click('12')"]
+    assert record["actions"] == ["click('12')"]
     assert record["raw_reward"] == 0.8
     assert record["acquisition_reward"] == 0.8
     assert record["success"] is True

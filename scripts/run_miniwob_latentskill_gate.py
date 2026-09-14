@@ -376,6 +376,7 @@ def run_episode(
             "terminated": bool(terminated),
             "truncated": bool(truncated),
             "steps": steps,
+            "actions": [action for action, _tree in history],
             "parser_valid": parser_valid_count == steps,
             "parser_valid_rate": parser_valid_count / steps if steps else 0.0,
             "action_errors": action_errors,
