@@ -88,7 +88,9 @@ timeout-created Pilot manifest was removed so it cannot be mistaken for data.
 The six validated device snapshots were archived locally at
 `/root/androidworld-pilot-snapshots-20260914.tar.gz` before emulator shutdown.
 
-Pilot requires 48 acquisition episodes and up to 144 evaluation episodes. On
+The formal protocol was subsequently raised from 4 to 10 fixed rollouts per
+acquisition instance before any Pilot result was collected. Pilot therefore
+requires 120 acquisition episodes and up to 144 evaluation episodes. On
 this software-only emulator, the observed Smoke episode times imply a run
 measured in many hours or days rather than the two-hour debugging budget. Use
 KVM or another accelerated Android host for the scientific Pilot.

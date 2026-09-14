@@ -261,7 +261,7 @@ Pilot uses:
 ```text
 6 families
 2 acquisition instances/family
-4 rollouts/instance
+10 fixed rollouts/instance
 4 fresh evaluation instances/family
 all 6 modes
 ```
@@ -289,7 +289,7 @@ Full uses:
 ```text
 8 families
 4 acquisition instances/family
-4 rollouts/instance
+10 fixed rollouts/instance
 8 fresh evaluation instances/family
 all 6 modes
 ```

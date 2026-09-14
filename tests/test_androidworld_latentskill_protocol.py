@@ -1,5 +1,8 @@
+from pathlib import Path
 from types import SimpleNamespace
 from unittest import mock
+
+import yaml
 
 from scripts.run_androidworld_latentskill_gate import (
     configure_slow_emulator_a11y,
@@ -17,11 +20,22 @@ def test_phase_specs_are_fixed_before_androidworld_results():
     assert phase_spec("smoke").train_instances == 1
     assert phase_spec("smoke").test_instances == 1
     assert phase_spec("pilot").train_instances == 2
-    assert phase_spec("pilot").rollouts_per_instance == 4
+    assert phase_spec("pilot").rollouts_per_instance == 10
     assert phase_spec("pilot").test_instances == 4
     assert phase_spec("full").train_instances == 4
-    assert phase_spec("full").rollouts_per_instance == 4
+    assert phase_spec("full").rollouts_per_instance == 10
     assert phase_spec("full").test_instances == 8
+
+
+def test_yaml_phase_rollout_counts_match_executable_protocol():
+    config = yaml.safe_load(
+        Path("configs/latentskill_androidworld_24gb.yaml").read_text()
+    )
+
+    for name in ("smoke", "pilot", "full"):
+        assert config["phases"][name]["rollouts_per_instance"] == (
+            phase_spec(name).rollouts_per_instance
+        )
 
 
 def test_default_task_families_are_exactly_preregistered_set():

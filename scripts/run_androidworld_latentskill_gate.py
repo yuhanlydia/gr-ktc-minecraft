@@ -94,8 +94,8 @@ class GenerationRoute:
 def phase_spec(name: str) -> PhaseSpec:
     specs = {
         "smoke": PhaseSpec("smoke", 2, 1, 4, 1, ("base", "clsc")),
-        "pilot": PhaseSpec("pilot", 6, 2, 4, 4, MODES),
-        "full": PhaseSpec("full", 8, 4, 4, 8, MODES),
+        "pilot": PhaseSpec("pilot", 6, 2, 10, 4, MODES),
+        "full": PhaseSpec("full", 8, 4, 10, 8, MODES),
     }
     try:
         return specs[str(name)]

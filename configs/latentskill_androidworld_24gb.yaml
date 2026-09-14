@@ -51,13 +51,13 @@ phases:
   pilot:
     task_count: 6
     acquisition_instances_per_family: 2
-    rollouts_per_instance: 4
+    rollouts_per_instance: 10
     evaluation_instances_per_family: 4
     modes: [base, context, positive_all, failed, quality_all, clsc]
   full:
     task_count: 8
     acquisition_instances_per_family: 4
-    rollouts_per_instance: 4
+    rollouts_per_instance: 10
     evaluation_instances_per_family: 8
     modes: [base, context, positive_all, failed, quality_all, clsc]
 
