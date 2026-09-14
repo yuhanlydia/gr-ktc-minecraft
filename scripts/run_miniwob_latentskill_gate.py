@@ -427,9 +427,12 @@ def _git_head(path: Path, expected: str, name: str) -> str:
 
 
 class _FlattenedBrowserEnv:
-    def __init__(self, env: Any, flatten: Callable[..., str]) -> None:
+    def __init__(
+        self, env: Any, flatten: Callable[..., str], *, task_seed: int
+    ) -> None:
         self.env = env
         self.flatten = flatten
+        self.task_seed = int(task_seed)
 
     def _convert(self, observation: Mapping[str, Any]) -> dict[str, Any]:
         converted = dict(observation)
@@ -443,7 +446,7 @@ class _FlattenedBrowserEnv:
         return converted
 
     def reset(self):
-        observation, info = self.env.reset()
+        observation, info = self.env.reset(seed=self.task_seed)
         return self._convert(observation), info
 
     def step(self, action: str):
@@ -481,7 +484,6 @@ def _load_browsergym_runtime(
         env = gym.make(
             f"browsergym/{family}",
             task_kwargs={
-                "seed": int(task_seed),
                 "base_url": os.environ["MINIWOB_URL"],
                 "episode_max_time": 300_000,
             },
@@ -489,7 +491,9 @@ def _load_browsergym_runtime(
             action_mapping=action_set.to_python_code,
             pre_observation_delay=0.1,
         )
-        return _FlattenedBrowserEnv(env, flatten_axtree_to_str)
+        return _FlattenedBrowserEnv(
+            env, flatten_axtree_to_str, task_seed=int(task_seed)
+        )
 
     return SimpleNamespace(
         browsergym_head=browsergym_head,

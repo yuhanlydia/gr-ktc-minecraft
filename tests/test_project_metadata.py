@@ -26,6 +26,8 @@ def test_miniwob_extra_and_bootstrap_are_declared():
     text = bootstrap.read_text()
     assert "9e779f087de9a65668b6974d11f9ce9816026e96" in text
     assert "7fd85d71a4b60325c6585396ec4f48377d049838" in text
+    assert "uv pip install --python" in text
+    assert 'playwright install-deps chromium' in text
 
 
 def test_miniwob_docs_state_raw_reward_and_k10_protocol():

@@ -15,6 +15,7 @@ from scripts.run_miniwob_latentskill_gate import (
     memory_for_mode,
     run_episode,
     validate_same_fingerprint,
+    _FlattenedBrowserEnv,
 )
 
 
@@ -280,3 +281,25 @@ def test_memory_for_mode_uses_only_named_bundle_memories():
     assert memory_for_mode(bundle, "context") is context
     assert memory_for_mode(bundle, "positive_all") is positive
     assert memory_for_mode(bundle, "clsc") is clsc
+
+
+def test_flattened_browser_env_passes_task_seed_only_at_reset():
+    class SeedEnv:
+        def __init__(self):
+            self.seed = None
+
+        def reset(self, *, seed):
+            self.seed = seed
+            return {
+                "axtree_object": {"nodes": []},
+                "extra_element_properties": {},
+            }, {}
+
+        def close(self):
+            pass
+
+    raw = SeedEnv()
+    wrapped = _FlattenedBrowserEnv(raw, lambda *args, **kwargs: "tree", task_seed=731)
+    observation, _ = wrapped.reset()
+    assert raw.seed == 731
+    assert observation["axtree_txt"] == "tree"

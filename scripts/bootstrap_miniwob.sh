@@ -23,9 +23,19 @@ checkout_pin() {
 checkout_pin https://github.com/ServiceNow/BrowserGym.git "$browsergym_root" "$browsergym_pin"
 checkout_pin https://github.com/Farama-Foundation/miniwob-plusplus.git "$miniwob_root" "$miniwob_pin"
 
-"$python_bin" -m pip install \
-  -e "$browsergym_root/browsergym/core" \
-  -e "$browsergym_root/browsergym/miniwob"
+if "$python_bin" -m pip --version >/dev/null 2>&1; then
+  "$python_bin" -m pip install \
+    -e "$browsergym_root/browsergym/core" \
+    -e "$browsergym_root/browsergym/miniwob"
+elif command -v uv >/dev/null 2>&1; then
+  uv pip install --python "$python_bin" \
+    -e "$browsergym_root/browsergym/core" \
+    -e "$browsergym_root/browsergym/miniwob"
+else
+  echo "Neither pip nor uv is available for $python_bin" >&2
+  exit 1
+fi
+"$python_bin" -m playwright install-deps chromium
 "$python_bin" -m playwright install chromium
 
 miniwob_url="file://$miniwob_root/miniwob/html/miniwob/"
