@@ -85,8 +85,10 @@ Pilot launch passed snapshot preflight, loaded the model, repaired the
 accessibility forwarder, and began the first acquisition episode; it was then
 stopped by the 90-second validation timeout before producing a result. The
 timeout-created Pilot manifest was removed so it cannot be mistaken for data.
-The six validated device snapshots were archived locally at
-`/root/androidworld-pilot-snapshots-20260914.tar.gz` before emulator shutdown.
+The first streaming snapshot archive was later found truncated during restore
+and is not valid. A complete per-file backup was re-created with `adb pull`,
+verified to contain all six packages, and archived at
+`/root/androidworld-pilot-snapshots-20260914-v2.tar.gz`.
 
 The formal protocol was subsequently raised from 4 to 10 fixed rollouts per
 acquisition instance before any Pilot result was collected. Pilot therefore

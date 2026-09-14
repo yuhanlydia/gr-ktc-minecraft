@@ -5,12 +5,14 @@ from unittest import mock
 import yaml
 
 from scripts.run_androidworld_latentskill_gate import (
+    contains_android_infrastructure_dialog,
     configure_slow_emulator_a11y,
     default_task_names,
     generation_route,
     instance_seed,
     phase_spec,
     repair_crashed_a11y_forwarder,
+    run_with_infrastructure_retries,
     safe_episode_length,
     verify_task_snapshots,
 )
@@ -88,6 +90,53 @@ def test_generation_route_keeps_skill_out_of_acquisition_and_summaries():
     )
     assert summary.capture_kv is False
     assert summary.inject_memory is False
+
+
+def test_android_anr_and_crash_dialogs_are_infrastructure_not_task_failures():
+    assert contains_android_infrastructure_dialog(
+        "UI elements:\nSystem UI isn't responding\nClose app\nWait"
+    )
+    assert contains_android_infrastructure_dialog(
+        "Permission controller keeps stopping\nApp info\nClose app"
+    )
+    assert not contains_android_infrastructure_dialog(
+        "Goal: diagnose why a website isn't responding\nUI elements:\nRetry"
+    )
+
+
+def test_infrastructure_retry_discards_invalid_attempt_and_keeps_seeded_result():
+    attempts = iter(
+        [
+            ({"exception": "Android infrastructure dialog detected: ANR"}, None),
+            ({"exception": None, "success": True}, {0: "kv"}),
+        ]
+    )
+    recover = mock.Mock()
+
+    record, trajectory = run_with_infrastructure_retries(
+        lambda: next(attempts), recover, max_retries=2
+    )
+
+    assert record["success"] is True
+    assert record["infrastructure_retries"] == 1
+    assert trajectory == {0: "kv"}
+    recover.assert_called_once_with()
+
+
+def test_infrastructure_retry_fails_closed_after_limit():
+    recover = mock.Mock()
+
+    with __import__("pytest").raises(RuntimeError, match="after 3 attempts"):
+        run_with_infrastructure_retries(
+            lambda: (
+                {"exception": "Android infrastructure dialog detected: ANR"},
+                None,
+            ),
+            recover,
+            max_retries=2,
+        )
+
+    assert recover.call_count == 2
 
 
 def test_a11y_repair_keeps_bound_service_and_resynchronizes_grpc():

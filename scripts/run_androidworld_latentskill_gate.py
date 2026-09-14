@@ -29,7 +29,7 @@ import subprocess
 import sys
 import time
 from types import SimpleNamespace
-from typing import Any, Mapping, Sequence
+from typing import Any, Callable, Mapping, Sequence
 
 from safetensors.torch import load_file, save_file
 import torch
@@ -73,6 +73,7 @@ _A11Y_FORWARDER_SERVICE = (
     f"{_A11Y_FORWARDER_PACKAGE}/"
     f"{_A11Y_FORWARDER_PACKAGE}.AccessibilityForwarder"
 )
+_INFRASTRUCTURE_DIALOG_MARKER = "Android infrastructure dialog detected"
 
 
 @dataclass(frozen=True)
@@ -105,6 +106,45 @@ def phase_spec(name: str) -> PhaseSpec:
 
 def default_task_names() -> tuple[str, ...]:
     return _DEFAULT_TASKS
+
+
+def contains_android_infrastructure_dialog(prompt: str) -> bool:
+    """Identify Android crash/ANR dialogs in a T3A UI-element prompt."""
+    lowered = str(prompt).lower()
+    anr = (
+        "isn't responding" in lowered
+        and "close app" in lowered
+        and "wait" in lowered
+    )
+    crash = (
+        "keeps stopping" in lowered
+        and "app info" in lowered
+        and "close app" in lowered
+    )
+    return anr or crash
+
+
+def run_with_infrastructure_retries(
+    run_once: Callable[[], tuple[dict[str, Any], Any]],
+    recover: Callable[[], None],
+    *,
+    max_retries: int = 2,
+) -> tuple[dict[str, Any], Any]:
+    """Return one valid episode, excluding Android infrastructure attempts."""
+    if max_retries < 0:
+        raise ValueError("max_retries must be non-negative")
+    attempts = max_retries + 1
+    for attempt in range(attempts):
+        record, trajectory = run_once()
+        exception = str(record.get("exception") or "")
+        if _INFRASTRUCTURE_DIALOG_MARKER not in exception:
+            record["infrastructure_retries"] = attempt
+            return record, trajectory
+        if attempt < max_retries:
+            recover()
+    raise RuntimeError(
+        f"Android infrastructure dialog persisted after {attempts} attempts"
+    )
 
 
 def repair_crashed_a11y_forwarder(
@@ -443,6 +483,10 @@ class LocalQwenT3AWrapper:
         return self.processor.tokenizer.decode(ids[0], skip_special_tokens=True)
 
     def predict(self, prompt: str) -> tuple[str, bool, str]:
+        if contains_android_infrastructure_dialog(prompt):
+            raise RuntimeError(
+                f"{_INFRASTRUCTURE_DIALOG_MARKER}: crash or ANR UI intercepted"
+            )
         call_kind = _call_kind(prompt)
         route = generation_route(
             call_kind=call_kind, acquisition=self.acquisition, mode=self.mode
@@ -534,7 +578,7 @@ def _parser_stats(runtime: SimpleNamespace, episode: Mapping[str, Any]) -> tuple
     return valid == len(outputs), rate
 
 
-def _run_one_episode(
+def _run_one_episode_once(
     *,
     runtime: SimpleNamespace,
     env: Any,
@@ -618,6 +662,57 @@ def _run_one_episode(
     if acquisition and wrapper.captured_action_kv and not exception:
         trajectory = concat_step_kv(wrapper.captured_action_kv)
     return record, trajectory
+
+
+def _recover_android_infrastructure(runtime: SimpleNamespace, env: Any) -> None:
+    """Dismiss system-owned failure UI before replaying the same seeded episode."""
+    controller = env.controller
+    for package in ("com.android.systemui", "com.google.android.permissioncontroller"):
+        runtime.adb_utils.issue_generic_request(
+            ["shell", "am", "force-stop", package], controller
+        )
+    runtime.adb_utils.press_home_button(controller)
+    time.sleep(30.0 if hasattr(runtime, "transition_pause_seconds") else 5.0)
+
+
+def _run_one_episode(
+    *,
+    runtime: SimpleNamespace,
+    env: Any,
+    task_type: Any,
+    param_seed: int,
+    model: Any,
+    processor: Any,
+    family: str,
+    acquisition: bool,
+    mode: str,
+    memory: Any,
+    model_seed: int,
+    action_max_new_tokens: int,
+    summary_max_new_tokens: int,
+) -> tuple[dict[str, Any], dict[int, torch.Tensor] | None]:
+    def run_once() -> tuple[dict[str, Any], dict[int, torch.Tensor] | None]:
+        return _run_one_episode_once(
+            runtime=runtime,
+            env=env,
+            task_type=task_type,
+            param_seed=param_seed,
+            model=model,
+            processor=processor,
+            family=family,
+            acquisition=acquisition,
+            mode=mode,
+            memory=memory,
+            model_seed=model_seed,
+            action_max_new_tokens=action_max_new_tokens,
+            summary_max_new_tokens=summary_max_new_tokens,
+        )
+
+    return run_with_infrastructure_retries(
+        run_once,
+        lambda: _recover_android_infrastructure(runtime, env),
+        max_retries=2,
+    )
 
 
 def _save_episode_kv(path: Path, trajectory: Mapping[int, torch.Tensor]) -> None:
