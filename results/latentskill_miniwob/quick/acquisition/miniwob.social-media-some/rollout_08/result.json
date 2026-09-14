@@ -1,0 +1,41 @@
+{
+  "family": "miniwob.social-media-some",
+  "goal": "Click the \"Reply\" button on 2 posts by @sodales and then click Submit.",
+  "goal_fingerprint": "11e51a3f4211747a30107ea6f0f15706e300063bc61dc557092142693914935b",
+  "task_seed": 1671086166,
+  "model_seed": 1847815280,
+  "mode": "base",
+  "raw_reward": 0.0,
+  "acquisition_reward": 0.0,
+  "success_threshold": 0.5,
+  "success": false,
+  "browsergym_wrapper_reward": 0.0,
+  "reward_reason": "None",
+  "terminated": false,
+  "truncated": false,
+  "steps": 12,
+  "actions": [
+    "noop()",
+    "scroll(0, 500)",
+    "scroll(0, 1000)",
+    "scroll(0, 1500)",
+    "scroll(0, 2000)",
+    "click('Submit')",
+    "noop()",
+    "scroll(0, 3000)",
+    "noop()",
+    "noop()",
+    "scroll(0, 5000)",
+    "noop()"
+  ],
+  "parser_valid": false,
+  "parser_valid_rate": 0.6666666666666666,
+  "action_errors": [
+    "ValueError: Could not find element with bid \"Submit\""
+  ],
+  "elapsed_seconds": 36.31429123098496,
+  "split": "acquisition",
+  "instance_id": "acq-00",
+  "rollout_index": 8,
+  "group_id": "miniwob.social-media-some:acq:0"
+}

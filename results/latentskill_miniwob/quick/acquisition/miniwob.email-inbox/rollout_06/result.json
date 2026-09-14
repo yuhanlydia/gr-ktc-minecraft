@@ -1,0 +1,42 @@
+{
+  "family": "miniwob.email-inbox",
+  "goal": "Find the email by Allyson and click the trash icon to delete it.",
+  "goal_fingerprint": "507205fd26e9e8c771b1e581c61b7004c85d6fa4e0fe64c3a9adde96fafb1c26",
+  "task_seed": 325309947,
+  "model_seed": 1541032908,
+  "mode": "base",
+  "raw_reward": 0.0,
+  "acquisition_reward": 0.0,
+  "success_threshold": 0.5,
+  "success": false,
+  "browsergym_wrapper_reward": 0.0,
+  "reward_reason": "None",
+  "terminated": false,
+  "truncated": false,
+  "steps": 12,
+  "actions": [
+    "click('bid')",
+    "noop()",
+    "click('17')",
+    "click('17')",
+    "noop()",
+    "noop()",
+    "noop()",
+    "scroll(0, 500)",
+    "scroll(0, 500)",
+    "fill('63', 'Allyson')",
+    "press('63', 'Enter')",
+    "click('76')"
+  ],
+  "parser_valid": false,
+  "parser_valid_rate": 0.8333333333333334,
+  "action_errors": [
+    "ValueError: Could not find element with bid \"bid\"",
+    "TimeoutError: Locator.click: Timeout 500ms exceeded.\nCall log:\nwaiting for get_by_test_id(\"17\")\n  -   locator resolved to <span bid=\"17\" id=\"open-search\" browsergym_set_of_mark\u2026></span>\n  - attempting click action\n  -   waiting for element to be visible, enabled and stable\n  -   element is not visible\n  - retrying click action, attempt #1\n  -   waiting for element to be visible, enabled and stable\n  -   element is not visible\n  - retrying click action, attempt #2\n  -   waiting 20ms\n  -   waiting for element to be visible, enabled and stable\n  -   element is not visible\n  - retrying click action, attempt #3\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and stable\n  -   element is not visible\n  - retrying click action, attempt #4\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and stable\n  -   element is not visible\n  - retrying click action, attempt #5\n  -   waiting 500ms"
+  ],
+  "elapsed_seconds": 26.93114226392936,
+  "split": "acquisition",
+  "instance_id": "acq-00",
+  "rollout_index": 6,
+  "group_id": "miniwob.email-inbox:acq:0"
+}

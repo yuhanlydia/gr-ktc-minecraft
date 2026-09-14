@@ -1,0 +1,37 @@
+{
+  "family": "miniwob.choose-date",
+  "goal": "Select 10/22/2016 as the date and hit submit.",
+  "goal_fingerprint": "1659f8d83e435cdc24733017ca4825fe266c07bd2b460f71a479eedcd95b3072",
+  "task_seed": 1226808270,
+  "model_seed": 2134517813,
+  "mode": "base",
+  "raw_reward": -1.0,
+  "acquisition_reward": 0.0,
+  "success_threshold": 0.5,
+  "success": false,
+  "browsergym_wrapper_reward": 0.0,
+  "reward_reason": "None",
+  "terminated": true,
+  "truncated": false,
+  "steps": 7,
+  "actions": [
+    "focus('17')",
+    "fill('17', '10/22/2016')",
+    "click('72')",
+    "focus('17')",
+    "fill('17', '10/22/2016')",
+    "click('195')",
+    "click('19')"
+  ],
+  "parser_valid": true,
+  "parser_valid_rate": 1.0,
+  "action_errors": [
+    "TimeoutError: Locator.fill: Timeout 500ms exceeded.\nCall log:\nwaiting for get_by_test_id(\"17\")\n  -   locator resolved to <input readonly value=\"\" bid=\"17\" type=\"text\" id=\"datep\u2026/>\n  -   fill(\"10/22/2016\")\n  - attempting fill action\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #1\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #2\n  -   waiting 20ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #3\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #4\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #5\n  -   waiting 500ms",
+    "TimeoutError: Locator.fill: Timeout 500ms exceeded.\nCall log:\nwaiting for get_by_test_id(\"17\")\n  -   locator resolved to <input readonly bid=\"17\" type=\"text\" id=\"datepicker\" va\u2026/>\n  -   fill(\"10/22/2016\")\n  - attempting fill action\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #1\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #2\n  -   waiting 20ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #3\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #4\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #5\n  -   waiting 500ms"
+  ],
+  "elapsed_seconds": 16.17625258397311,
+  "split": "acquisition",
+  "instance_id": "acq-00",
+  "rollout_index": 3,
+  "group_id": "miniwob.choose-date:acq:0"
+}

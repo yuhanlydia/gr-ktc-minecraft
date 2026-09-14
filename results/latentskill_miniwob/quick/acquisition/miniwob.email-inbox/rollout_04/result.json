@@ -1,0 +1,31 @@
+{
+  "family": "miniwob.email-inbox",
+  "goal": "Find the email by Allyson and click the trash icon to delete it.",
+  "goal_fingerprint": "507205fd26e9e8c771b1e581c61b7004c85d6fa4e0fe64c3a9adde96fafb1c26",
+  "task_seed": 325309947,
+  "model_seed": 2035085918,
+  "mode": "base",
+  "raw_reward": 1.0,
+  "acquisition_reward": 1.0,
+  "success_threshold": 0.5,
+  "success": true,
+  "browsergym_wrapper_reward": 1.0,
+  "reward_reason": "None",
+  "terminated": true,
+  "truncated": false,
+  "steps": 2,
+  "actions": [
+    "click('bid')",
+    "click('26')"
+  ],
+  "parser_valid": true,
+  "parser_valid_rate": 1.0,
+  "action_errors": [
+    "ValueError: Could not find element with bid \"bid\""
+  ],
+  "elapsed_seconds": 4.841674578026868,
+  "split": "acquisition",
+  "instance_id": "acq-00",
+  "rollout_index": 4,
+  "group_id": "miniwob.email-inbox:acq:0"
+}

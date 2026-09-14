@@ -1,0 +1,32 @@
+{
+  "family": "miniwob.choose-date",
+  "goal": "Select 10/22/2016 as the date and hit submit.",
+  "goal_fingerprint": "1659f8d83e435cdc24733017ca4825fe266c07bd2b460f71a479eedcd95b3072",
+  "task_seed": 1226808270,
+  "model_seed": 776200566,
+  "mode": "base",
+  "raw_reward": 1.0,
+  "acquisition_reward": 1.0,
+  "success_threshold": 0.5,
+  "success": true,
+  "browsergym_wrapper_reward": 1.0,
+  "reward_reason": "None",
+  "terminated": true,
+  "truncated": false,
+  "steps": 5,
+  "actions": [
+    "focus('17')",
+    "click('22')",
+    "click('119')",
+    "click('293')",
+    "click('19')"
+  ],
+  "parser_valid": true,
+  "parser_valid_rate": 1.0,
+  "action_errors": [],
+  "elapsed_seconds": 11.360048783011734,
+  "split": "acquisition",
+  "instance_id": "acq-00",
+  "rollout_index": 7,
+  "group_id": "miniwob.choose-date:acq:0"
+}

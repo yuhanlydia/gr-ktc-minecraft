@@ -1,0 +1,43 @@
+{
+  "family": "miniwob.book-flight-nodelay",
+  "goal": "Book the cheapest one-way flight from: Decatur, IL to: Grand Rapids, MI on 10/17/2016.",
+  "goal_fingerprint": "f5aa2a29341986a672cb20505f0187f3b8a03dddbc44750d3d1731d168bf8b4e",
+  "task_seed": 1004667098,
+  "model_seed": 1998888149,
+  "mode": "base",
+  "raw_reward": 0.0,
+  "acquisition_reward": 0.0,
+  "success_threshold": 0.5,
+  "success": false,
+  "browsergym_wrapper_reward": 0.0,
+  "reward_reason": "None",
+  "terminated": false,
+  "truncated": false,
+  "steps": 12,
+  "actions": [
+    "fill('19', 'Decatur, IL')",
+    "fill('21', 'Grand Rapids, MI')",
+    "fill('25', '10/17/2016')",
+    "click('25')",
+    "click('106')",
+    "click('27')",
+    "fill('25', '10/17/2016')",
+    "click('25')",
+    "click('203')",
+    "fill('25', '10/17/2016')",
+    "click('25')",
+    "click('235')"
+  ],
+  "parser_valid": true,
+  "parser_valid_rate": 1.0,
+  "action_errors": [
+    "TimeoutError: Locator.fill: Timeout 500ms exceeded.\nCall log:\nwaiting for get_by_test_id(\"25\")\n  -   locator resolved to <input readonly value=\"\" bid=\"25\" type=\"text\" id=\"datep\u2026/>\n  -   fill(\"10/17/2016\")\n  - attempting fill action\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #1\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #2\n  -   waiting 20ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #3\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #4\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #5\n  -   waiting 500ms",
+    "TimeoutError: Locator.fill: Timeout 500ms exceeded.\nCall log:\nwaiting for get_by_test_id(\"25\")\n  -   locator resolved to <input readonly bid=\"25\" type=\"text\" id=\"datepicker\" va\u2026/>\n  -   fill(\"10/17/2016\")\n  - attempting fill action\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #1\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #2\n  -   waiting 20ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #3\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #4\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #5\n  -   waiting 500ms",
+    "TimeoutError: Locator.fill: Timeout 500ms exceeded.\nCall log:\nwaiting for get_by_test_id(\"25\")\n  -   locator resolved to <input readonly bid=\"25\" type=\"text\" id=\"datepicker\" va\u2026/>\n  -   fill(\"10/17/2016\")\n  - attempting fill action\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #1\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #2\n  -   waiting 20ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #3\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #4\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #5\n  -   waiting 500ms"
+  ],
+  "elapsed_seconds": 29.298689975985326,
+  "split": "acquisition",
+  "instance_id": "acq-00",
+  "rollout_index": 4,
+  "group_id": "miniwob.book-flight-nodelay:acq:0"
+}

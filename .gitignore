@@ -19,6 +19,7 @@ docs/*.txt
 
 # Binary experiment artifacts and trained adapters
 results/**/*.safetensors
+results/**/*.log
 results/*_kv/
 results/qlora_*/
 

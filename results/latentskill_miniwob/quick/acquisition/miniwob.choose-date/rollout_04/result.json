@@ -1,0 +1,40 @@
+{
+  "family": "miniwob.choose-date",
+  "goal": "Select 10/22/2016 as the date and hit submit.",
+  "goal_fingerprint": "1659f8d83e435cdc24733017ca4825fe266c07bd2b460f71a479eedcd95b3072",
+  "task_seed": 1226808270,
+  "model_seed": 203126556,
+  "mode": "base",
+  "raw_reward": -1.0,
+  "acquisition_reward": 0.0,
+  "success_threshold": 0.5,
+  "success": false,
+  "browsergym_wrapper_reward": 0.0,
+  "reward_reason": "None",
+  "terminated": true,
+  "truncated": false,
+  "steps": 8,
+  "actions": [
+    "fill('17', '10/22/2016')",
+    "click('17')",
+    "click('19')",
+    "click('19')",
+    "click('98')",
+    "noop()",
+    "click('22')",
+    "click('19')"
+  ],
+  "parser_valid": false,
+  "parser_valid_rate": 0.875,
+  "action_errors": [
+    "TimeoutError: Locator.fill: Timeout 500ms exceeded.\nCall log:\nwaiting for get_by_test_id(\"17\")\n  -   locator resolved to <input readonly value=\"\" bid=\"17\" type=\"text\" id=\"datep\u2026/>\n  -   fill(\"10/22/2016\")\n  - attempting fill action\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #1\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #2\n  -   waiting 20ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #3\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #4\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and editable\n  -   element is not editable\n  - retrying fill action, attempt #5\n  -   waiting 500ms",
+    "TimeoutError: Locator.click: Timeout 500ms exceeded.\nCall log:\nwaiting for get_by_test_id(\"19\")\n  -   locator resolved to <button value=\"\" bid=\"19\" id=\"subbtn\" class=\"secondary-a\u2026>Submit</button>\n  - attempting click action\n  -   waiting for element to be visible, enabled and stable\n  -   element is visible, enabled and stable\n  -   scrolling into view if needed\n  -   done scrolling\n  -   <span bid=\"37\" title=\"Tuesday\" browsergym_set_of_marks\u2026>Tu</span> from <div bid=\"20\" id=\"ui-datepicker-div\" browsergym_set_o\u2026>\u2026</div> subtree intercepts pointer events\n  - retrying click action, attempt #1\n  -   waiting for element to be visible, enabled and stable\n  -   element is visible, enabled and stable\n  -   scrolling into view if needed\n  -   done scrolling\n  -   <span bid=\"37\" title=\"Tuesday\" browsergym_set_of_marks\u2026>Tu</span> from <div bid=\"20\" id=\"ui-datepicker-div\" browsergym_set_o\u2026>\u2026</div> subtree intercepts pointer events\n  - retrying click action, attempt #2\n  -   waiting 20ms\n  -   waiting for element to be visible, enabled and stable\n  -   element is visible, enabled and stable\n  -   scrolling into view if needed\n  -   done scrolling\n  -   <span bid=\"37\" title=\"Tuesday\" browsergym_set_of_marks\u2026>Tu</span> from <div bid=\"20\" id=\"ui-datepicker-div\" browsergym_set_o\u2026>\u2026</div> subtree intercepts pointer events\n  - retrying click action, attempt #3\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and stable\n  -   element is visible, enabled and stable\n  -   scrolling into view if needed\n  -   done scrolling\n  -   <span bid=\"37\" title=\"Tuesday\" browsergym_set_of_marks\u2026>Tu</span> from <div bid=\"20\" id=\"ui-datepicker-div\" browsergym_set_o\u2026>\u2026</div> subtree intercepts pointer events\n  - retrying click action, attempt #4\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and stable\n  -   element is visible, enabled and stable\n  -   scrolling into view if needed\n  -   done scrolling\n  -   <span bid=\"37\" title=\"Tuesday\" browsergym_set_of_marks\u2026>Tu</span> from <div bid=\"20\" id=\"ui-datepicker-div\" browsergym_set_o\u2026>\u2026</div> subtree intercepts pointer events\n  - retrying click action, attempt #5\n  -   waiting 500ms",
+    "TimeoutError: Locator.click: Timeout 500ms exceeded.\nCall log:\nwaiting for get_by_test_id(\"19\")\n  -   locator resolved to <button value=\"\" bid=\"19\" id=\"subbtn\" class=\"secondary-a\u2026>Submit</button>\n  - attempting click action\n  -   waiting for element to be visible, enabled and stable\n  -   element is visible, enabled and stable\n  -   scrolling into view if needed\n  -   done scrolling\n  -   <span bid=\"37\" title=\"Tuesday\" browsergym_set_of_marks\u2026>Tu</span> from <div bid=\"20\" id=\"ui-datepicker-div\" browsergym_set_o\u2026>\u2026</div> subtree intercepts pointer events\n  - retrying click action, attempt #1\n  -   waiting for element to be visible, enabled and stable\n  -   element is visible, enabled and stable\n  -   scrolling into view if needed\n  -   done scrolling\n  -   <span bid=\"37\" title=\"Tuesday\" browsergym_set_of_marks\u2026>Tu</span> from <div bid=\"20\" id=\"ui-datepicker-div\" browsergym_set_o\u2026>\u2026</div> subtree intercepts pointer events\n  - retrying click action, attempt #2\n  -   waiting 20ms\n  -   waiting for element to be visible, enabled and stable\n  -   element is visible, enabled and stable\n  -   scrolling into view if needed\n  -   done scrolling\n  -   <span bid=\"37\" title=\"Tuesday\" browsergym_set_of_marks\u2026>Tu</span> from <div bid=\"20\" id=\"ui-datepicker-div\" browsergym_set_o\u2026>\u2026</div> subtree intercepts pointer events\n  - retrying click action, attempt #3\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and stable\n  -   element is visible, enabled and stable\n  -   scrolling into view if needed\n  -   done scrolling\n  -   <span bid=\"37\" title=\"Tuesday\" browsergym_set_of_marks\u2026>Tu</span> from <div bid=\"20\" id=\"ui-datepicker-div\" browsergym_set_o\u2026>\u2026</div> subtree intercepts pointer events\n  - retrying click action, attempt #4\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and stable\n  -   element is visible, enabled and stable\n  -   scrolling into view if needed\n  -   done scrolling\n  -   <span bid=\"37\" title=\"Tuesday\" browsergym_set_of_marks\u2026>Tu</span> from <div bid=\"20\" id=\"ui-datepicker-div\" browsergym_set_o\u2026>\u2026</div> subtree intercepts pointer events\n  - retrying click action, attempt #5\n  -   waiting 500ms",
+    "TimeoutError: Locator.click: Timeout 500ms exceeded.\nCall log:\nwaiting for get_by_test_id(\"22\")\n  -   locator resolved to <a bid=\"22\" title=\"Prev\" data-event=\"click\" data-ha\u2026>\u2026</a>\n  - attempting click action\n  -   waiting for element to be visible, enabled and stable\n  -   element is not visible\n  - retrying click action, attempt #1\n  -   waiting for element to be visible, enabled and stable\n  -   element is not visible\n  - retrying click action, attempt #2\n  -   waiting 20ms\n  -   waiting for element to be visible, enabled and stable\n  -   element is not visible\n  - retrying click action, attempt #3\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and stable\n  -   element is not visible\n  - retrying click action, attempt #4\n  -   waiting 100ms\n  -   waiting for element to be visible, enabled and stable\n  -   element is not visible\n  - retrying click action, attempt #5\n  -   waiting 500ms"
+  ],
+  "elapsed_seconds": 21.280834920005873,
+  "split": "acquisition",
+  "instance_id": "acq-00",
+  "rollout_index": 4,
+  "group_id": "miniwob.choose-date:acq:0"
+}

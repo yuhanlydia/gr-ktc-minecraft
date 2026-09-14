@@ -1,0 +1,30 @@
+{
+  "family": "miniwob.form-sequence",
+  "goal": "Select 9 with the slider, click the 1st checkbox, then hit Submit.",
+  "goal_fingerprint": "1ae0781eba4956ad75bc6755fb7e420c33ca003aaaca481d9e5c3eee7bfe4e24",
+  "task_seed": 1954503988,
+  "model_seed": 1250337418,
+  "mode": "base",
+  "raw_reward": -1.0,
+  "acquisition_reward": 0.0,
+  "success_threshold": 0.5,
+  "success": false,
+  "browsergym_wrapper_reward": 0.0,
+  "reward_reason": "None",
+  "terminated": true,
+  "truncated": false,
+  "steps": 3,
+  "actions": [
+    "click('20')",
+    "noop()",
+    "click('24')"
+  ],
+  "parser_valid": false,
+  "parser_valid_rate": 0.6666666666666666,
+  "action_errors": [],
+  "elapsed_seconds": 9.456399639951997,
+  "split": "acquisition",
+  "instance_id": "acq-00",
+  "rollout_index": 8,
+  "group_id": "miniwob.form-sequence:acq:0"
+}

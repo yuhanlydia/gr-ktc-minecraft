@@ -94,5 +94,19 @@ Context and Positive-All, and CLSC has more paired wins than losses against Base
 in both families. Failure to find two qualified families is reported separately
 as `insufficient_quality_signal`.
 
+## 2026-09-14 quick-gate result
+
+The completed K=10 scan found one qualified family out of eight. The planned
+gate required two, so the formal result is `insufficient_quality_signal`, with
+no pass/fail claim about CLSC as a whole. `miniwob.navigate-tree` qualified with
+4/10 successes. Its eight fresh instances produced the same 6/8 success rate
+for Base, Context, Positive-All, and CLSC (all eight CLSC/Base pairs tied).
+
+This is not positive evidence for reusable latent skill. The benchmark scan did
+not provide enough qualified families for the preregistered aggregate test, and
+the one evaluable family showed zero task-level benefit. Per the one-final-gate
+decision rule, do not expand this experiment or prepare an ICASSP submission
+from these results.
+
 Large K/V tensors remain ignored by Git. Commit manifests, scalar episode JSON,
 summaries, and reports.

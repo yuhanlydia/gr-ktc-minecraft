@@ -1,0 +1,315 @@
+{
+  "protocol": "latentskill-miniwob-raw-reward-v1",
+  "phase": "quick",
+  "browsergym_pin": "9e779f087de9a65668b6974d11f9ce9816026e96",
+  "browsergym_head": "9e779f087de9a65668b6974d11f9ce9816026e96",
+  "miniwob_pin": "7fd85d71a4b60325c6585396ec4f48377d049838",
+  "miniwob_head": "7fd85d71a4b60325c6585396ec4f48377d049838",
+  "model": "/root/gr-ktc-minecraft/models/Qwen3-VL-8B-Instruct",
+  "precision": "bf16",
+  "observation_protocol": "browsergym-accessibility-tree",
+  "raw_reward_success_threshold": 0.5,
+  "quality_reward": "clip(RAW_REWARD_GLOBAL, 0, 1)",
+  "quality_layer": 24,
+  "memory_tokens": 4,
+  "value_scale": 0.25,
+  "negative_scale": 0.5,
+  "acquisition_temperature": 0.9,
+  "acquisition_top_p": 0.95,
+  "evaluation_temperature": 0.0,
+  "rollouts_per_instance": 10,
+  "test_instances_per_family": 8,
+  "target_qualified_families": 2,
+  "minimum_successes": 3,
+  "minimum_failures": 3,
+  "minimum_reward_std": 0.15,
+  "modes": [
+    "base",
+    "context",
+    "positive_all",
+    "clsc"
+  ],
+  "tasks": [
+    "miniwob.form-sequence",
+    "miniwob.choose-date",
+    "miniwob.email-inbox",
+    "miniwob.login-user-popup",
+    "miniwob.social-media-some",
+    "miniwob.use-autocomplete",
+    "miniwob.navigate-tree",
+    "miniwob.book-flight-nodelay"
+  ],
+  "base_seed": 42,
+  "acquisition_task_seeds": {
+    "miniwob.form-sequence": 1954503988,
+    "miniwob.choose-date": 1226808270,
+    "miniwob.email-inbox": 325309947,
+    "miniwob.login-user-popup": 832974597,
+    "miniwob.social-media-some": 1671086166,
+    "miniwob.use-autocomplete": 2066648371,
+    "miniwob.navigate-tree": 1012321309,
+    "miniwob.book-flight-nodelay": 1004667098
+  },
+  "acquisition_model_seeds": {
+    "miniwob.form-sequence": [
+      302575590,
+      2075922909,
+      1066462030,
+      1104978000,
+      1332500828,
+      1415189402,
+      1543056739,
+      502016358,
+      1250337418,
+      887204352
+    ],
+    "miniwob.choose-date": [
+      1796401396,
+      1354165453,
+      332916462,
+      2134517813,
+      203126556,
+      1034998078,
+      1302679535,
+      776200566,
+      1099205189,
+      29632216
+    ],
+    "miniwob.email-inbox": [
+      2100833525,
+      668019370,
+      2123959755,
+      1783771365,
+      2035085918,
+      1611135010,
+      1541032908,
+      1194326158,
+      968672788,
+      1914707733
+    ],
+    "miniwob.login-user-popup": [
+      534687439,
+      2094126849,
+      842019523,
+      1013900691,
+      1610978824,
+      240664028,
+      674888543,
+      420013941,
+      2067496061,
+      239020080
+    ],
+    "miniwob.social-media-some": [
+      1841292983,
+      1531385723,
+      1696514096,
+      2077255422,
+      1208152427,
+      853516861,
+      1000075306,
+      944483596,
+      1847815280,
+      1649422217
+    ],
+    "miniwob.use-autocomplete": [
+      623303173,
+      1104922338,
+      1858074591,
+      1139991359,
+      2083494304,
+      1402153810,
+      1599161886,
+      1360054809,
+      715672908,
+      2136032956
+    ],
+    "miniwob.navigate-tree": [
+      1992294585,
+      1919263339,
+      134838259,
+      725782608,
+      454702218,
+      2083964042,
+      1411183953,
+      199566762,
+      867073030,
+      465903162
+    ],
+    "miniwob.book-flight-nodelay": [
+      852240664,
+      17728474,
+      1695909995,
+      954896700,
+      1998888149,
+      76049462,
+      1171265119,
+      1233066452,
+      1735385349,
+      1327606985
+    ]
+  },
+  "evaluation_task_seeds": {
+    "miniwob.form-sequence": [
+      1764931700,
+      1950812154,
+      685631742,
+      990127490,
+      948231416,
+      606194512,
+      1495733018,
+      1273827382
+    ],
+    "miniwob.choose-date": [
+      902544145,
+      215380002,
+      262733472,
+      1798544470,
+      1652403414,
+      424498314,
+      1444961088,
+      893137189
+    ],
+    "miniwob.email-inbox": [
+      2143501410,
+      2015628216,
+      1014330827,
+      2023309007,
+      1141922697,
+      739867278,
+      849271600,
+      649714858
+    ],
+    "miniwob.login-user-popup": [
+      21409823,
+      248056552,
+      1102001895,
+      655360115,
+      2115137156,
+      189151693,
+      1074631047,
+      293245590
+    ],
+    "miniwob.social-media-some": [
+      419577432,
+      972642976,
+      1448696087,
+      1309241534,
+      684355530,
+      401124356,
+      1590791576,
+      1106626610
+    ],
+    "miniwob.use-autocomplete": [
+      1558007274,
+      1471358711,
+      1923697781,
+      368256909,
+      1291704665,
+      1934847683,
+      539928098,
+      1256658253
+    ],
+    "miniwob.navigate-tree": [
+      1933418872,
+      888783513,
+      1246830527,
+      503554305,
+      1573176136,
+      1796935968,
+      1196553444,
+      1054615779
+    ],
+    "miniwob.book-flight-nodelay": [
+      1692756302,
+      2058909579,
+      1205790142,
+      1225967066,
+      853266576,
+      896559311,
+      1357239206,
+      693079288
+    ]
+  },
+  "evaluation_model_seeds": {
+    "miniwob.form-sequence": [
+      329483652,
+      361945040,
+      717838543,
+      960176908,
+      1695348033,
+      50400584,
+      923374495,
+      1453183741
+    ],
+    "miniwob.choose-date": [
+      1201856478,
+      329437270,
+      870453449,
+      555499113,
+      1951204699,
+      299957662,
+      1946086580,
+      1455372992
+    ],
+    "miniwob.email-inbox": [
+      611102014,
+      1775229650,
+      841463721,
+      630712089,
+      354556549,
+      46155687,
+      494572227,
+      1141627343
+    ],
+    "miniwob.login-user-popup": [
+      891596346,
+      1098456394,
+      1751114722,
+      813046370,
+      294755396,
+      1864321424,
+      1415722903,
+      136721358
+    ],
+    "miniwob.social-media-some": [
+      1746184865,
+      1264713714,
+      1324061594,
+      1508757954,
+      276324140,
+      630674012,
+      1182101774,
+      172860980
+    ],
+    "miniwob.use-autocomplete": [
+      1292417651,
+      885215098,
+      1448007001,
+      1049029900,
+      1387019188,
+      962890327,
+      2015341830,
+      115993225
+    ],
+    "miniwob.navigate-tree": [
+      353699749,
+      772059405,
+      561427995,
+      1481005156,
+      1794797440,
+      1499222469,
+      196664177,
+      443296267
+    ],
+    "miniwob.book-flight-nodelay": [
+      147738212,
+      2072176829,
+      871580365,
+      320206579,
+      575608010,
+      299841410,
+      1382381951,
+      997438047
+    ]
+  }
+}

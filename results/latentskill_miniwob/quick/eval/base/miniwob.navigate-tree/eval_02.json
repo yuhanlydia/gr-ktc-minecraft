@@ -1,0 +1,26 @@
+{
+  "family": "miniwob.navigate-tree",
+  "goal": "Navigate through the file tree. Find and click on the folder or file named \"Teodoro\".",
+  "goal_fingerprint": "b62fed8f6168998c25d0344727b35727890e157aceaad298a662b0c46ca39585",
+  "task_seed": 1246830527,
+  "model_seed": 561427995,
+  "mode": "base",
+  "raw_reward": 1.0,
+  "acquisition_reward": 1.0,
+  "success_threshold": 0.5,
+  "success": true,
+  "browsergym_wrapper_reward": 1.0,
+  "reward_reason": "None",
+  "terminated": true,
+  "truncated": false,
+  "steps": 1,
+  "actions": [
+    "click('25')"
+  ],
+  "parser_valid": true,
+  "parser_valid_rate": 1.0,
+  "action_errors": [],
+  "elapsed_seconds": 1.7762409070273861,
+  "split": "evaluation",
+  "instance_id": "eval-02"
+}
