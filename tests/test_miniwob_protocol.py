@@ -1,6 +1,8 @@
 import math
+from pathlib import Path
 
 import pytest
+import yaml
 
 from gr_ktc.miniwob_protocol import (
     extract_single_action,
@@ -86,3 +88,31 @@ def test_extract_single_action_accepts_one_safe_browsergym_call(raw, expected):
 def test_extract_single_action_rejects_code_and_unknown_calls(raw):
     with pytest.raises(ValueError, match="single allowed BrowserGym action"):
         extract_single_action(raw)
+
+
+def test_yaml_matches_executable_quick_protocol():
+    config = yaml.safe_load(
+        (Path(__file__).parents[1] / "configs/latentskill_miniwob_24gb.yaml").read_text()
+    )
+    quick = phase_spec("quick")
+    assert config["benchmark"]["browsergym_commit"] == (
+        "9e779f087de9a65668b6974d11f9ce9816026e96"
+    )
+    assert config["benchmark"]["miniwob_commit"] == (
+        "7fd85d71a4b60325c6585396ec4f48377d049838"
+    )
+    assert tuple(config["scan"]["tasks"]) == tuple(
+        [
+            "miniwob.form-sequence",
+            "miniwob.choose-date",
+            "miniwob.email-inbox",
+            "miniwob.login-user-popup",
+            "miniwob.social-media-some",
+            "miniwob.use-autocomplete",
+            "miniwob.navigate-tree",
+            "miniwob.book-flight-nodelay",
+        ]
+    )
+    assert config["quick"]["rollouts_per_instance"] == quick.rollouts_per_instance
+    assert config["quick"]["fresh_instances"] == quick.test_instances
+    assert tuple(config["quick"]["modes"]) == quick.modes

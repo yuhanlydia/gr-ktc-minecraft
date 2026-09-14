@@ -6,10 +6,15 @@ import pytest
 import torch
 
 from scripts.run_miniwob_latentskill_gate import (
+    DEFAULT_TASKS,
     GeneratedAction,
     MiniwobQwenPolicy,
+    build_manifest,
     build_action_prompt,
+    can_resume_acquisition,
+    memory_for_mode,
     run_episode,
+    validate_same_fingerprint,
 )
 
 
@@ -44,8 +49,10 @@ class FakeEnv:
             True,
             False,
             {
-                "RAW_REWARD_GLOBAL": self.raw_reward,
-                "REWARD_REASON": "task ended",
+                "task_info": {
+                    "RAW_REWARD_GLOBAL": self.raw_reward,
+                    "REWARD_REASON": "task ended",
+                },
             },
         )
 
@@ -216,3 +223,60 @@ def test_qwen_policy_captures_for_acquisition_and_injects_for_evaluation(monkeyp
     assert capture_calls[0][2]["layer_ids"] == [0, 1]
     assert inject_calls[0][2] is marker
     assert inject_calls[0][3]["context_id"] == "family:miniwob"
+
+
+def test_quick_manifest_preregisters_fixed_tasks_seeds_and_four_modes(tmp_path):
+    manifest = build_manifest(
+        phase="quick",
+        tasks=DEFAULT_TASKS,
+        model_path=tmp_path / "model",
+        browsergym_head="browser-head",
+        miniwob_head="miniwob-head",
+        base_seed=42,
+    )
+    assert manifest["rollouts_per_instance"] == 10
+    assert manifest["test_instances_per_family"] == 8
+    assert manifest["target_qualified_families"] == 2
+    assert manifest["modes"] == ["base", "context", "positive_all", "clsc"]
+    assert manifest["tasks"] == list(DEFAULT_TASKS)
+    family = DEFAULT_TASKS[0]
+    assert len(manifest["acquisition_model_seeds"][family]) == 10
+    assert len(manifest["evaluation_task_seeds"][family]) == 8
+    assert set(manifest["acquisition_model_seeds"][family]).isdisjoint(
+        manifest["evaluation_model_seeds"][family]
+    )
+
+
+def test_resume_requires_result_and_kv_for_acquisition(tmp_path):
+    result = tmp_path / "result.json"
+    kv = tmp_path / "episode_kv.safetensors"
+    assert can_resume_acquisition(result, kv) is False
+    result.write_text("{}")
+    assert can_resume_acquisition(result, kv) is False
+    kv.write_bytes(b"tensor")
+    assert can_resume_acquisition(result, kv) is True
+
+
+def test_group_and_paired_modes_require_identical_goal_fingerprint():
+    validate_same_fingerprint(
+        [{"goal_fingerprint": "same"}, {"goal_fingerprint": "same"}],
+        "group",
+    )
+    with pytest.raises(RuntimeError, match="different randomized goals"):
+        validate_same_fingerprint(
+            [{"goal_fingerprint": "a"}, {"goal_fingerprint": "b"}],
+            "group",
+        )
+
+
+def test_memory_for_mode_uses_only_named_bundle_memories():
+    context, positive, clsc = object(), object(), object()
+    bundle = type(
+        "Bundle",
+        (),
+        {"memories": lambda self: {"context": context, "positive_all": positive, "clsc": clsc}},
+    )()
+    assert memory_for_mode(bundle, "base") is None
+    assert memory_for_mode(bundle, "context") is context
+    assert memory_for_mode(bundle, "positive_all") is positive
+    assert memory_for_mode(bundle, "clsc") is clsc

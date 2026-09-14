@@ -1,0 +1,52 @@
+experiment: latentskill_miniwob_raw_reward_v1
+
+benchmark:
+  browsergym_repository: https://github.com/ServiceNow/BrowserGym.git
+  browsergym_commit: 9e779f087de9a65668b6974d11f9ce9816026e96
+  miniwob_repository: https://github.com/Farama-Foundation/miniwob-plusplus.git
+  miniwob_commit: 7fd85d71a4b60325c6585396ec4f48377d049838
+  observation_protocol: browsergym_accessibility_tree
+  raw_reward_success_threshold: 0.5
+  quality_reward: clip_raw_reward_0_1
+
+model:
+  name: Qwen3-VL-8B-Instruct
+  path: models/Qwen3-VL-8B-Instruct
+  precision: bf16
+  frozen: true
+
+latent_skill:
+  quality_layer: 24
+  memory_tokens: 4
+  value_scale: 0.25
+  negative_scale: 0.5
+  acquisition_temperature: 0.9
+  acquisition_top_p: 0.95
+  evaluation_temperature: 0.0
+
+scan:
+  tasks:
+    - miniwob.form-sequence
+    - miniwob.choose-date
+    - miniwob.email-inbox
+    - miniwob.login-user-popup
+    - miniwob.social-media-some
+    - miniwob.use-autocomplete
+    - miniwob.navigate-tree
+    - miniwob.book-flight-nodelay
+  minimum_successes: 3
+  minimum_failures: 3
+  minimum_reward_std: 0.15
+  target_qualified_families: 2
+
+quick:
+  acquisition_instances_per_family: 1
+  rollouts_per_instance: 10
+  fresh_instances: 8
+  modes: [base, context, positive_all, clsc]
+
+hard_gate:
+  minimum_clsc_minus_base: 0.05
+  require_clsc_gt_context: true
+  require_clsc_gt_positive_all: true
+  require_positive_paired_difference_per_family: true
