@@ -18,30 +18,7 @@ Prior MineExplorer Gate-2, Qwen3-VL-8B BF16, 16 paired trials:
 
 `layer24_quality` beat no-memory with 9 one-sided paired wins and 0 reverse wins (exact McNemar `p=0.00390625`). The new experiment asks whether that latent state is a **reusable skill**, rather than an exact-context rescue effect.
 
-## Fast reliability benchmark: MiniWoB++
-
-AndroidWorld produced a ceiling-limited Contacts result and an all-failure
-Calendar acquisition group. The fast reliability gate therefore uses seeded
-MiniWoB++ task families to locate real mixed verifier signal before spending
-more Android emulator time.
-
-```bash
-python -m pip install -e '.[train,test,miniwob]'
-bash scripts/bootstrap_miniwob.sh
-python scripts/run_miniwob_latentskill_gate.py --phase smoke --resume
-python scripts/run_miniwob_latentskill_gate.py --phase quick --resume
-python scripts/analyze_miniwob_latentskill.py \
-  results/latentskill_miniwob/quick/summary.json
-```
-
-The quick gate uses K=10 acquisition rollouts, native
-`RAW_REWARD_GLOBAL >= 0.5` success semantics, a fixed 3-success/3-failure
-signal filter, eight fresh seeds, and paired Base/Context/Positive-All/CLSC
-evaluation. See
-[`docs/LATENTSKILL_MINIWOB_EXPERIMENT.md`](docs/LATENTSKILL_MINIWOB_EXPERIMENT.md)
-for the fixed protocol.
-
-## Confirmatory survival benchmark: AndroidWorld
+## New survival benchmark: AndroidWorld
 
 The survival gate uses official AndroidWorld pinned to:
 
