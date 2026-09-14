@@ -23,6 +23,11 @@ train = [
   "transformers>=4.57",
 ]
 test = ["pytest>=8"]
+miniwob = [
+  "browsergym-miniwob==0.14.3",
+  "gymnasium>=0.27",
+  "playwright==1.44",
+]
 
 [tool.setuptools.packages.find]
 include = ["gr_ktc*", "acquisition*", "evaluation*", "peam_repro*"]
